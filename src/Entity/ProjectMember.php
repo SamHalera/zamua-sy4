@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ProjectMemberRepository;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -28,12 +29,14 @@ class ProjectMember
     private $lastName;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="Give at least an Artist Name")
      */
     private $artistName;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="Specify what this artist does")
      */
     private $features;
 
@@ -88,5 +91,14 @@ class ProjectMember
         $this->features = $features;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        if($this->getArtistName()){
+            return $this->getArtistName();
+        } else {
+            return $this->getFirstName() . ' ' . $this->getLastName();
+        }
     }
 }

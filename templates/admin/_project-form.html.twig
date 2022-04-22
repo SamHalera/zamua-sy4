@@ -5,19 +5,32 @@
     })}}
 
     {{ form_row(projectForm.mainTitle)}}
+    {{ form_errors(projectForm.mainTitle)}}
+
     {{ form_row(projectForm.firstTitle)}}
+    {{ form_errors(projectForm.firstTitle)}}
+
     {{ form_row(projectForm.secondTitle)}}
+    {{ form_errors(projectForm.secondTitle)}}
+
     {{ form_row(projectForm.priority, {
         'label' : 'Priority (the lowest you can give is: ' ~ priority ~ ')',
         })}}
-
+    {{ form_errors(projectForm.priority)}}
 
     {{ form_row(projectForm.members)}}
+    {{ form_errors(projectForm.members, {
+        'attr' : {
+            'class' : 'error-message'
+        }
+    })}}
+
     {{ form_row(projectForm.content, {
         'attr': {
             'rows' : 10
         }
     })}}
+    {{ form_errors(projectForm.content)}}
 
     <button class="btn-admin" type="submit">{{ button_text }}</button>
 

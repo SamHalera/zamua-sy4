@@ -115,7 +115,10 @@ textarea{
     display: none;
 }
 
-
+form ul li{
+    color: var(--color-danger);
+    font-weight: 600;
+}
 /*SECTIONS*/
 
 .navigation-panel{
@@ -1230,6 +1233,11 @@ form textarea:focus{
 .lg-backdrop{
     background-color: #000000fd !important;
 }
+.lg-components{
+    margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.692);
+    padding: 2rem 0;
+}
 /*PAGE CONTACT*/
 
 .bg-main-contact{
@@ -2091,6 +2099,7 @@ footer{
         width: 28rem;
     }
 
+  
     /* MUSICA*/
 
     .bg-main-music{

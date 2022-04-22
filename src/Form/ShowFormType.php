@@ -9,6 +9,8 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\NotBlank;
+
 
 class ShowFormType extends AbstractType
 {
@@ -16,13 +18,24 @@ class ShowFormType extends AbstractType
     {
         $builder
             ->add('date', null, [
-                'widget' => 'single_text'
+                'widget' => 'single_text',
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'You must choose a date for this show!'
+                    ])
+                ]
             ])
             ->add('name', TextType::class, [
                 'required' => false
             ])
             ->add('venue',TextType::class, [
-                'required' => true
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'This field is mandatory!'
+                    ])
+                ]
             ])
             ->add('venueUrl',UrlType::class, [
                 'required' => false
@@ -34,7 +47,12 @@ class ShowFormType extends AbstractType
                 'required' => false
             ])
             ->add('location', TextType::class, [
-                'required' => true
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'This field is mandatory!'
+                    ])
+                ]
             ])
             ->add('isPassed')
             ->add('isCancelled')

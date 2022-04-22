@@ -4,10 +4,16 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @UniqueEntity(
+*     fields={"email"},
+*     message="I think you're already registered!"
+* )
  */
 class User implements UserInterface
 {
@@ -19,8 +25,12 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
-     */
+    * @ORM\Column(type="string", length=180, unique=true)
+    * @Assert\NotBlank()
+    * @Assert\Email(message="Please enter an email")
+    * 
+    * 
+    */
     private $email;
 
     /**

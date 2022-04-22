@@ -45,6 +45,11 @@ class Contact
      */
     private $isDone;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isSent;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -106,6 +111,18 @@ class Contact
     public function setIsDone(bool $isDone): self
     {
         $this->isDone = $isDone;
+
+        return $this;
+    }
+
+    public function getIsSent(): ?bool
+    {
+        return $this->isSent;
+    }
+
+    public function setIsSent(bool $isSent): self
+    {
+        $this->isSent = $isSent;
 
         return $this;
     }

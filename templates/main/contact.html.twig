@@ -43,16 +43,23 @@
                     {% endfor %}
 
                         <div class="mb-3">
+                            {{ form_errors(form.senderName)}}
                             {{ form_label(form.senderName)}}
                             {{ form_widget(form.senderName)}}
+                            
                         </div>
                           <div class="mb-3">
+                            {{ form_errors(form.senderEmail)}}
                             {{ form_label(form.senderEmail)}}
                             {{ form_widget(form.senderEmail)}}
+                            
+
                         </div>
                           <div class="mb-3">
+                            {{ form_errors(form.content)}}
                             {{ form_label(form.content)}}
                             {{ form_widget(form.content)}}
+                           
                         </div>
 
                         <div class="">
