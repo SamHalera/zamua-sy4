@@ -23,11 +23,14 @@ use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
-
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class MainController extends BaseController
 {
 
+    /**
+     * @Route("/", name="app_homepage")
+     */
     public function index(ProjectRepository $projectRepository,  Request $request, EntityManagerInterface $em): Response
     {
 
@@ -63,6 +66,18 @@ class MainController extends BaseController
             'projects' => $projects,
             // 'form' => $form->createView()
         ]);
+    }
+
+    /**
+     * @Route("/encode", name="encode")
+     */
+    public function encodePass(UserPasswordEncoderInterface $passwordEncoderInterface)
+    {
+        $user = new User();
+        $pass = 'helloAdmin!';
+        $hashed = $passwordEncoderInterface->encodePassword($user, $pass );
+        dd($hashed);
+
     }
 
 }
