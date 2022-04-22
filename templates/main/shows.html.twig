@@ -1,0 +1,82 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | SHOWS
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="bg-main bg-main-shows">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1>SHOWS</h1>
+            </div>
+        </div>
+        <div class="line-scroll">
+            <a href="#toScroll">scroll</a>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div id="toScroll"></div>
+    <div class="section-show">
+        <div class="container overlay">
+            <div class="container-shows">
+            {% if shows|length > 0 %}
+            
+                {% for show in shows %}
+                    
+                    <div class="one-show-item {% if show.isCancelled%} show-is-canceled {% endif %} reveal-up">
+                        {% if show.isCancelled%} 
+                            <div class="badge">canceled</div>
+                        {% endif %}
+                        <div class="one-show-infos">
+                            <div class="one-show-date">
+                                <span>{{show.date|date}}</span>
+                            </div>
+                            <div class="one-show-venu-location">
+                                <div class="venu">
+                                    {% if show.venueUrl %}
+                                        <a  href="{{show.venueUrl}}" target="_blank"  class="">{{show.venue}}</a>
+                                    {% else %}
+                                        <span>{{show.venue}}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="location">
+                                    {% if show.locationUrl %} 
+                                        <a href="{{show.locationUrl}}" target="_blank" >{{ show.location}}</a>
+                                    {% else %}
+                                        <span class="">{{ show.location}}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-show-actions">
+                            {% if show.ticketUrl %}
+                                <a href=" {{show.ticketUrl}}" target="_blank" class="action-show">BIGLIETTI</a>
+                            {% else %}
+                                <span class="action-show">BIGLIETTI</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+
+            {% else %}
+                <h3>New shows coming soon! Stay in touch!</h3>
+                
+            {% endif %}
+
+
+            </div>
+            
+        </div>
+    </div>
+
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+   <script src="{{ asset('js/shows.js')}}"></script>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{{ form_start(showForm, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+    {{form_row(showForm.date)}}
+    {{form_row(showForm.name)}}
+    {{form_row(showForm.venue)}}
+    {{form_row(showForm.venueUrl)}}
+    {{form_row(showForm.location)}}
+    {{form_row(showForm.locationUrl)}}
+    {{form_row(showForm.ticketUrl)}}
+    {{form_row(showForm.isPassed)}}
+
+    
+    {{form_row(showForm.isCancelled)}}
+    <button class="btn-admin" type="submit">
+        {{ button_text }}
+    </button>
+{{ form_end(showForm)}}

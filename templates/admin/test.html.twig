@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | TEST CONTENT{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" integrity="sha512-WvVX1YO12zmsvTpUQV8s7ZU98DnkaAokcciMZJfnNWyNzm7//QRV61t4aEr0WdIa4pe854QHLTV302vH92FSMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">NEW CONTENT</h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                <a class="btn-admin" href="{{ path('app_admin')}}">add some content</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container content-manager-section mb-4">
+
+    {{ form_start(form)}}
+    {{ form_widget(form)}}
+    {{ form_end(form)}}
+    
+</div>
+    
+<div>
+    {% for content in contents %}
+        
+        {% for text in content.textFields %}
+            {{ text.textField|raw }}
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block javascripts %}
+
+{{ parent() }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js" integrity="sha512-oQq8uth41D+gIH/NJvSJvVB85MFk1eWpMK6glnkg6I7EdMqC1XVkW7RxLheXwmFdG03qScCM7gKS/Cx3FYt7Tg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{asset('js/content-manager.js')}}"></script>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

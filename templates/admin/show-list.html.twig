@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | SHOWs LIST {% endblock %}
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+    <div class="bg-admin">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1 class="mb-4">SHOWS LIST</h1>
+                <div class="add-section">
+                    <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>    
+                    <a class="btn-admin" href="{{ path('app_admin_show_new')}}">add a show</a>
+                                      
+                </div>
+                <div class="">
+                    <a class="d-block font-weight-bold m-2" href="{{path('app_shows')}}"><i class="el-icon-view font-size-l vertical-align"></i> public view</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="mt-4 container show-list-container">
+
+        {% if shows|length > 0 %}
+        
+            {% for show in shows %}
+                <div class="admin-card">
+                    {% if show.name is defined %}
+                        <h3 class="show-name">{{ show.name}}</h3>
+                    {% endif %}
+                                
+                    <span class="show-date"> <i class="el-icon-date"></i> {{ show.date|date}}</span>
+                    <span class="show-venue"><i class="el-icon-place"></i> {{ show.venue}}</span>
+                    <span class="show-location"><i class="el-icon-location-information"></i> {{ show.location}}</span>
+
+                    <a class="btn-admin mb-1 d-block" href="{{path('app_admin_show_edit', { id : show.id})}}">EDIT</a>
+                    
+                </div>
+            {% endfor %}
+        {% else %}
+            <h3>You don't have any show scheduled!</h3>
+        {% endif %}
+        
+
+    </div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

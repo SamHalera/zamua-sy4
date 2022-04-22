@@ -1,0 +1,133 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | PROGETTI
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="bg-main bg-main-projects">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1 class="uppercase">Progetti</h1>
+            </div>
+        </div>
+        <div id="toTopProject"></div>
+        <div class="line-scroll">
+            <a href="#toScroll">scroll</a>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div id="toScroll"></div>
+    <div>
+        <div class="sections-all-projects">
+            
+            <div class="container-projects-cards">
+
+            
+
+                {% for project in projects%}
+                    <a href="#toTopProject" class="project-card reveal-up box-shadow" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}">
+                    <div class="overlay">
+                        <div class="wrapper">
+                            <div class="title-project">
+                                <div class="block-title">
+                                    <h3 class="title-artist uppercase">{{project.firstTitle}}</h3>
+                                    <div class="stroke"></div>
+                                    <h3 class="title-partner uppercase font-weight">{{ project.secondTitle }}</h3>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %} 
+                
+            </div>
+
+            <div class="container-projects-to-display">
+                <div class="close-container">
+                    <i class="el-icon-circle-close close-project"></i>
+                </div>
+
+                {% for project in projects %}
+                <div class="hide container-project" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}-container">
+                    <div class="head-picture box-shadow" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}-to-display">
+                        <div class="overlay">
+                            <div class="">
+                                <div class="title-project">
+                                    <div class="block-title">
+                                        <h3 class="title-artist uppercase">{{project.firstTitle}}</h3>
+                                        <div class="stroke"></div>
+                                        <h3 class="title-partner uppercase font-weight">{{project.secondTitle}}</h3>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="one-project-content">
+                        <div class="project-elements mb-1">
+                        
+                            {% for member in project.members %}
+                                <span class="elemnt-item d-block">
+                                    <strong>
+                                        {% if member.firstName and member.lastName %}
+                                            {{ member.firstName  }} {{member.lastName}}
+                                        {% else %}
+                                            {{ member.artistName }}
+                                        {% endif %}
+                                    </strong> - {{member.features}}
+                                </span>
+                            {% endfor %}
+                            
+                        </div>
+                        <div class="project-presentation">
+                            <div class="text">
+                                <p class="">
+                                    {{project.content|raw}}
+                                </p>
+                            </div>
+
+                            <div class="images">
+                            
+                            {% if project.zamuaFiles|length > 0 %}
+                            
+                                {% for zamuaFile in project.zamuaFiles %}
+                                    <div class="wrapper-img">
+                                        <img class="image-fluid" src="{{ asset(zamuaFile.getFilePath) | imagine_filter('squared_thumbnail') }}" {% if zamuaFile.alt is defined %} alt="{{zamuaFile.alt}}" {% endif %}
+                                        >
+                                        {% if zamuaFile.credit is not null %}
+                                        
+                                         <div class="tooltip">
+                                            <span> {{ zamuaFile.credit|raw}} </span>
+                                        </div>
+                                        {% endif %}
+                                        
+                                       
+                                    </div>
+                                {% endfor %}
+                            
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                {% endfor %}
+                
+                
+            </div>
+
+        </div>
+    </div>
+    
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+   <script src="{{ asset('js/projects.js')}}"></script>
+
+{% endblock %}

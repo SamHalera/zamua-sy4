@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | EDIT MEDIA{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">EDIT MEDIA</h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                <a class="btn-admin" href="{{ path('app_admin_media_manager')}}">media manager</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container media-section">
+    <div class="block-image m-2">
+        <img src="{{ asset(file.getFilePath)| imagine_filter('squared_thumbnail_small')}}"/>
+    </div>
+    <div class="block-form m-2">
+    
+        {{ form_start(form)}}
+            {{ form_row(form.isGalleryItem)}}
+            {{ form_row(form.alt)}}
+            {{ form_row(form.credit)}}
+            {{ form_row(form.priority, {
+                'label' : 'Position (The lowest position you can assign is: ' ~ filePosition ~ ')'
+            })}}
+            {{ form_row(form.projects)}}
+            <button type="submit" class="btn-admin">Send</button>
+        {{ form_end(form)}}
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

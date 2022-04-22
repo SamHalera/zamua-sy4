@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | CONTACTS MANAGER{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" integrity="sha512-WvVX1YO12zmsvTpUQV8s7ZU98DnkaAokcciMZJfnNWyNzm7//QRV61t4aEr0WdIa4pe854QHLTV302vH92FSMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">CONTENT MANAGER</h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                <a class="btn-admin" href="{{ path('app_admin_contact_manager')}}">contact messages manager</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container single-contact-section mb-4">
+
+    <div class="contact-item">
+        {% if contact.isDone %}
+        
+            <div class="is-done-message">
+            
+                <h4 class"font-size-l">This message has been treated</h4>
+                <i class="el-icon-success is-done-badge font-size-xl"></i>    
+            </div>
+            
+        {% endif %}
+        
+        <div class="font-size-l mb-1"><i class="el-icon-message"></i>: {{ contact.senderEmail }}</div>
+        <div class="font-size-l mb-1"><i class="el-icon-user"></i>: {{ contact.senderName }}</div>
+        <div class="content-message font-size-l mb-2"><i class="el-icon-chat-line-square"></i>: "{{ contact.content|u.truncate(50, '...')}}"</div>
+    
+    </div>
+
+    <div class="actions">
+        {% if contact.isDone %}
+            <a class="btn-admin mb-1" href="{{ path('app_admin_contact_treat', { id : contact.id})}}">open</a>
+        {% else %}
+            <a class="btn-admin mb-1" href="{{ path('app_admin_contact_treat', { id : contact.id})}}">mark as done</a>     
+        
+        {% endif %}
+       
+       <a class="btn-admin mb-1" href="{{ path('app_admin_contact_delete', { id : contact.id })}}">delete</a>
+    
+    </div>
+    
+    
+</div>
+    
+        
+</div>
+{% endblock %}
+
+{% block javascripts %}
+
+{{ parent() }}
+
+
+<script src="{{asset('js/content-manager.js')}}"></script>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

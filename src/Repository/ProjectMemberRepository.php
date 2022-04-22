@@ -47,6 +47,19 @@ class ProjectMemberRepository extends ServiceEntityRepository
         }
     }
 
+    /**
+     * @return ProjectMember[]
+     */
+    public function findAllIdAscending()
+    {
+
+        return $this->createQueryBuilder('pm')
+            ->orderBy('pm.id', 'ASC')
+            ->getQuery()
+            ->execute()
+        ;
+    }
+
     // /**
     //  * @return ProjectMember[] Returns an array of ProjectMember objects
     //  */

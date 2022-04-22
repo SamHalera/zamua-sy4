@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | MEDIA MANAGER{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" integrity="sha512-WvVX1YO12zmsvTpUQV8s7ZU98DnkaAokcciMZJfnNWyNzm7//QRV61t4aEr0WdIa4pe854QHLTV302vH92FSMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">MEDIA MANAGER</h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container media-manager-section mb-4">
+
+    {# <form action={{ path('app_admin_media_manager')}} method="POST" enctype="multipart/form-data" class="dropzone js-media-dropzone">
+
+        <label class="mb-1">Upload a file</label>
+        <input class="mb-2" type="file" name="newFile">
+
+        <button type="submit" class="btn-admin">Upload</button>
+    </form> #}
+    
+    
+    {{ form_start(formUpload, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+        {{form_row(formUpload.newFiles)}}
+
+        <button type="submit" class="btn-admin">Upload</button>
+    {{ form_end(formUpload)}}
+    
+    <hr>
+</div>
+<div class="container files-section js-media-list mb-4">
+    {% if files|length > 0 %}
+
+        {% for aFile in files %}
+            <div class="file-container">
+                <img src="{{ asset(aFile.getFilePath)| imagine_filter('squared_thumbnail_small') }}"/>
+                
+                <div class="media-features">
+                    {% if aFile.isGalleryItem %}
+                        <span class="d-block font-weight-bold">Is a galery item</span>
+                        <span class="d-block font-weight-bold">Position: {{aFile.priority}}</span>
+                    {% endif %}
+                    {% if aFile.projects | length > 0 %}
+                        <span class="d-block">Media for:</span>
+                        <ul>
+                        {% for project in aFile.projects %}
+                            
+                            <li class="font-weight-bold">{{project.mainTitle}}</li>
+                            
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                    
+                    <div class="actions-container">
+                        <a href="{{ path('app_admin_media_edit', {id : aFile.id}) }}" class="btn-edit m-1"><i class="el-icon-edit-outline"></i></a>
+                        <a href="{{ path('app_admin_media_delete', {id : aFile.id}) }}" class="btn-danger m-1"><i class="el-icon-delete"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        {% endfor %}
+    {% else %}
+        <h3>You don't have any files yet</h3>
+    {% endif %}
+        
+</div>
+{% endblock %}
+
+{% block javascripts %}
+
+{{ parent() }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js" integrity="sha512-oQq8uth41D+gIH/NJvSJvVB85MFk1eWpMK6glnkg6I7EdMqC1XVkW7RxLheXwmFdG03qScCM7gKS/Cx3FYt7Tg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{asset('js/media-manager.js')}}"></script>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

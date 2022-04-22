@@ -13,7 +13,6 @@
                     <span class="text2">nella tua vita, </span>
                     <span class="text3">é destinata a lasciare un segno indelebile</span>
 
-                       
                     
                 </h1>
             </div>
@@ -62,10 +61,16 @@
                     finché non realizzi che il modo migliore per vivere la musica é farla, vederla nascere...</strong>
                     
                 </p>
-               
-                {# <div>
-                    <a href="{{path('app_bio')}}" class="btn-custom">BIOGRAFIA</a>
+                {# <div class="reveal-up">
+                    <a href="{{path('app_bio')}}" class="btn">
+                        <div class="btn-stroke"></div>
+                        <div class="btn-text">BIOGRAFIA</div>
+                        
+                    </a>
                 </div> #}
+                <div>
+                    <a href="{{path('app_bio')}}" class="btn-custom">BIOGRAFIA</a>
+                </div>
             </div>
 
         </div>
@@ -73,7 +78,7 @@
         
     </div>
     <div class="second-section">
-        
+        {# <div class="box-bg-ep reveal-down"></div> #}
         <div class="box-prez-ep reval-up">
         
             <div class="block-text">
@@ -119,10 +124,16 @@
 
             </p>
         </div>
-      
-        {# <a href="{{path('app_music')}}" class="btn-custom align-center">
+        {# <div class="btn-container reveal-up">
+            <a href="{{path('app_music')}}" class="btn">
+                <div class="btn-stroke"></div>
+                <div class="btn-text"> MUSICA</div>
+                
+            </a>
+        </div> #}
+        <a href="{{path('app_music')}}" class="btn-custom align-center">
              MUSICA
-        </a> #}
+        </a>
     </div>
 
     {% if projects|length > 0 %}
@@ -149,8 +160,14 @@
                 
             </div>
         </div>    
-           
-        {# <a href="{{path('app_projects')}}" class="btn-custom mx-auto">PROGETTI</a> #}
+            {# <div class="align-center">
+                <a href="{{path('app_projects')}}" class="btn">
+                    <div class="btn-stroke"></div>
+                    <div class="btn-text">PROGETTI</div>
+                    
+                </a>
+            </div> #}
+            <a href="{{path('app_projects')}}" class="btn-custom mx-auto">PROGETTI</a>
         
     </div>
     {% endif %}
@@ -160,7 +177,7 @@
             <div class="main-form-container">
                 <div class="contact-container">
                     <h2 class="mb-3 white">CONTATTI</h2>
-                    {# {{ form_start(form)}}
+                    {{ form_start(form)}}
                         {% for message  in app.flashes('successMessage')%}
                         <div class="alert alert-success mb-4">
                             {{ message }}
@@ -184,8 +201,8 @@
                             <button type="submit" class="btn-custom font-weight">INVIA</a>
                         </div>
 
-                    {{ form_end(form)}} #}
-                    <form action="">
+                    {{ form_end(form)}}
+                    {# <form action="">
                         <div class="mb-3">
                             <label class="mb-1"  for="name">Nome</label>
                             <input type="text" name="name" id="name">
@@ -202,7 +219,7 @@
                         <div class="align-right">
                             <a href="" class="btn-custom font-weight">INVIA</div></a>
                         </div>
-                    </form>
+                    </form> #}
                 </div>
                 
                 <div class="infos">

@@ -1,0 +1,14 @@
+{{ form_start(videoForm, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+    {{form_row(videoForm.src)}}
+    {{form_row(videoForm.priority, {
+        'label' : 'Priority (the lowest you can give is: ' ~ priority ~ ')'
+    })}}
+
+    <button class="btn-admin" type="submit">
+        {{ button_text }}
+    </button>
+{{ form_end(videoForm)}}

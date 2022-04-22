@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | PROJECT MEMBERS LIST {% endblock %}
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+    <div class="bg-admin">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1 class="mb-4">MEMBERS LIST</h1>
+                <div class="add-section align-center">
+                    <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                    <a class="btn-admin" href="{{ path('app_admin_member_new')}}">add a member</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="mt-4 container show-list-container">
+
+        {% if projectMembers|length > 0 %}
+        
+            <ul class="member-list">
+                {% for member in projectMembers %}
+                    <li class="member-list-item">
+                        <a href="{{path('app_admin_member_edit', { id : member.id})}}"><i class="el-icon-edit-outline font-size-xl"></i></a>
+                        <span class="member">
+                            {% if member.firstName and member.lastName %}
+                               {{ member.firstName  }} {{member.lastName}}
+                            {% else %}
+                                {{ member.artistName }}
+                            {% endif %}
+                            :
+                        </span>
+                        <span class="member-feature"> {{member.features}}</span>
+                    </li>    
+                {% endfor %}
+                
+            </ul>
+        {% else %}
+            <h3>You don't have any members being part of one of your projects!</h3>
+        {% endif %}
+        
+
+    </div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

@@ -2,18 +2,205 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+            
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+            {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
     </head>
-    <body>
+
+    <body class="{% if 'app_admin' in app.request.attributes.get('_route')%}admin{% endif %}">
+        <div class="loader-wrapper">
+            <div class="block-loader"></div>
+            <img src="{{ asset('images/logo.png')}}" class="image-fluid animation" alt="">
+        </div>
+        <div class="navigation-panel" id="main-panel">
+            <div id="icon-container">
+                <i class="el-icon-circle-close"></i>
+            </div>
+            <ul>
+                {% if is_granted("ROLE_ADMIN") %}
+                <li class="btn-logout ">
+                    <a href="{{ path('app_logout')}}">LOGOUT</a>
+                </li>
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_admin')}}"><i class="el-icon-setting"></i> Admin</a>
+                </li>
+                {% endif %}
+                
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_home')}}">HOME</a>
+                </li>
+                <li class="navigation-panel-item  reveal-up">
+                    <a href="{{ path('app_bio')}}">BIO</a>
+                </li>
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_music')}}">MUSICA</a>
+                </li>
+                <li class="navigation-panel-item  reveal-up">
+                    <a href="{{ path('app_shows')}}">SHOWS</a>
+                </li>
+                {# <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_listenings')}}">I MIEI ASCOLTI</a>
+                </li> #}
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_gallery')}}">GALLERIA</a>
+                </li>
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_video')}}">VIDEO</a>
+                </li>
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_projects')}}">PROGETTI</a>
+                </li>
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('app_contact')}}">CONTATTI</a>
+                </li>
+            </ul>
+        </div>
+        <header>
+            <div id="brand-logo">
+                <a href="{{ path('app_home')}}">
+                    <img class="ml-2 first" src="{{asset('images/logo.png')}}" alt="" width="180">
+                    <img class="ml-2 second" src="{{asset('images/logo.png')}}" alt="" width="120">
+                </a>
+            </div>
+            
+            <div class="menu">
+                <div class="active-page">
+                    {% if activeName is defined %}
+                        <p class="uppercase">{{ activeName }}</p>
+
+                        {% else %}
+                            <p>HOME</p>
+                    {% endif %}
+                    
+                    
+                    <div class="active-block"></div>
+                </div>
+                <div class="burger" id="burger-panel">
+                    <div class="stroke burger1"></div>
+                    <div class="stroke burger2"></div>
+                    <div class="stroke burger3"></div>
+                </div>
+            </div>
+        </header>
+
+        {% for message  in app.flashes('success')%}
+            <div class="alert-general alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message  in app.flashes('warning')%}
+            <div class="alert-general alert alert-warning">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message  in app.flashes('error')%}
+            <div class="alert-general alert alert-danger">
+                Error: {{ message }}
+            </div>
+        {% endfor %}
+        {% for message  in app.flashes('danger')%}
+            <div class="alert-general alert alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
         {% block body %}{% endblock %}
+        {% if is_granted("ROLE_ADMIN") %}
+        
+            <div class="sticky-to-admin-container">
+                <a class="btn-to-admin-section" href="{{ path('app_admin')}}">
+                    <i class="el-icon-setting"></i>
+                </a>
+            </div>
+        {% endif %}
+        
+        
+        <div class="scroll-to-top">
+            <i class="el-icon-top"></i>
+        </div>
+
+        {% block footer %}
+        
+            <footer>
+                <div>
+                    <h4>© 2022 - ZAMUA</h4>
+                </div>
+                <section class="social-media">
+                    <a href="https://www.facebook.com/zamua.haleri">
+                        <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com/zamua_haleri/">
+                        <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+                    </a>
+                    <a href="https://www.youtube.com/user/ZamuaMusic">
+                        <ion-icon name="logo-youtube" class="social-icon"></ion-icon>
+                    </a>
+                </section>
+                <section class="legal-section">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="{{path('app_cookies')}}">Privacy e Cookies Policy</a>
+                        </li>
+                    </ul>
+                </section>
+            </footer>
+        {% endblock %}
+        
+
+       {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+        
+            
+            <!-- import du JavaScript -->
+        
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+            <script>
+
+                window.addEventListener("load", function () {
+                    window.cookieconsent.initialise({
+                        "content": {
+                            "message": "Questo sito utilizza i cookies per finalità tecniche e al fine di migliorare la vostra esperienza di navigazione.\n\
+                                <a href='{{ path('app_cookies') }}' class='cc-link' target='_blank'>Per maggiori informazioni</a>",
+                            "dismiss": "Ok",
+                            "allow" : "OK",
+                            "deny" : "Rifiuto",
+                            "link": "",
+                            "href": "{{ path('app_home') }}"
+                        },
+                        "palette": {
+                            "popup": {
+                                "background": "var(--color-primary)",
+                                "text" : "#000"
+                            },
+                            "button": {
+                                "background": "#000",
+                                "text" : "var(--color-primary)",
+                                "border" : "#000",
+                            },
+                        },
+                        "position": "bottom",
+                        
+                    });
+
+                    
+
+
+                });
+
+            </script>
+
+        {% endblock %}
     </body>
 </html>

@@ -1,0 +1,74 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | GALLERIA
+{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery-bundle.min.css" integrity="sha512-91yJwfiGTCo9TM74ZzlAIAN4Eh5EWHpQJUfvo/XhpH6lzQtiRFkFRW1W+JSg4ch4XW3/xzh+dY4TOw/ILpavQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+{% block body %}
+     <div class="bg-main bg-main-gallery">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1><span class="title1">GALLERIA</span></h1>
+            </div>
+        </div>
+        <div class="line-scroll">
+            <a href="#toScroll">scroll</a>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div id="toScroll"></div>
+   
+    {% if itemsGallery|length > 0 %}
+
+        <div class="section-gallery">
+            <div class=" d-none" id="icon-selecters-gallery">
+                <i class="el-icon-caret-left"></i>
+                <i class="el-icon-caret-right"></i>
+            </div>
+            <div class="container-lightgallery">
+                
+                
+                <div id="lightgallery">
+                    {% for item in itemsGallery %}
+                        <a href="{{asset(item.getFilePath)}}" class="reveal gallery-item" {% if item.credit is defined %} data-sub-html="<span>{{ item.credit }}</span>" {% endif %}>
+                            
+                            <img class="fluid-image" src="{{asset(item.getFilePath)}}" {% if item.alt is defined %} alt="{{item.alt}}" {% endif %}>
+                           
+                        </a>
+                        
+                    {% endfor %}
+                </div>
+            </div>
+            {# <div class="block-btn" id="load-more">
+                <a href="" class="btn-custom mx-auto font-weight">MORE</a>
+            </div> #}
+        </div>
+    
+    
+    {% endif %}
+    
+    
+
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.umd.min.js" integrity="sha512-e+39qUKXdaNAHHzMx+zHLald62YcdVqJpJGAqs6iIJ6RRWy5/9PKJr1eDAc3SuM/PTpguz9v2d83j6SFgnbTdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="{{ asset('js/gallery.js')}}"></script>
+
+   <script type="text/javascript">
+    
+    lightGallery(document.getElementById('lightgallery'), {
+        mode: 'lg-fade',
+        subHtmlSelectorRelative : true,
+        // cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+    });
+   </script>
+   
+
+{% endblock %}

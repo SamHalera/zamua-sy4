@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | NEW PROJECT{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">NEW PROJECT </h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                <a class="btn-admin" href="{{ path('app_admin_project_list')}}">project list</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container project-section">
+
+    
+    {{ include('admin/_project-form.html.twig', {
+        priority : priorityValue,
+        button_text : 'Create'
+    })}}
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

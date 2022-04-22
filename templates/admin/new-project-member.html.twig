@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | NEW SHOW{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">NEW PROJECT MEMBER</h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                <a class="btn-admin" href="{{ path('app_admin_member_list')}}">members list</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container show-section">
+
+    {{ form_start(memberForm, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+        {{form_widget(memberForm)}}
+
+        <button class="btn-admin" type="submit">
+            Create
+        </button>
+    {{ form_end(memberForm)}}
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

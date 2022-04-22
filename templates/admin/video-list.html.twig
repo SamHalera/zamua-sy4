@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | VIDEO LIST {% endblock %}
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+    <div class="bg-admin">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1 class="mb-4">VIDEO LIST</h1>
+                <div class="add-section align-center">
+                    <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                    <a class="btn-admin" href="{{ path('app_admin_video_new')}}">add a video</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="mt-4 container container">
+
+        {% if videos|length > 0 %}
+        
+            
+            {% for video in videos %}
+                <div class="align-center admin-card">
+                    
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="{{video.src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                   
+
+                    <a class="btn-admin mb-1" href="{{path('app_admin_video_edit', { id : video.id})}}">EDIT</a>
+                    <a class="btn-admin alert-danger mb-1" href="{{path('app_admin_video_delete', { id : video.id})}}">DELETE</a>
+                    <a class="d-block mb-2" href="{{path('app_video')}}/#{{video.id}}"><i class="el-icon-view"></i> public view</a>
+
+                </div>    
+            {% endfor %}
+                
+            
+        {% else %}
+            <h3>You don't have any video yet!</h3>
+        {% endif %}
+        
+
+    </div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

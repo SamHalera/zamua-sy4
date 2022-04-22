@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | I MIEI ASCOLTI
+{% endblock %}
+
+
+{% block body %}
+
+<div class="bg-main bg-in-my-ears ">
+        <div class="container overlay">
+            <!--<div class="black-square">
+            <img src="./images/portrait-zamua.jpg" alt=""></div>-->
+            <div class="block-title">
+                <h1><span class="title1">I MIEI</span><span class="title2"> ASCOLTI</span></h1>
+                <div class="block-title-after"></div>
+            </div>
+        </div>
+        <div class="line-scroll">
+            <a href="#toScroll">scroll</a>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div id="toScroll"></div>
+
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+   <script src="{{ asset('js/in-my-ears.js')}}"></script>
+
+{% endblock %}

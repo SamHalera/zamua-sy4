@@ -1,0 +1,85 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | CONTATTI
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="bg-main bg-main-contact">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1>CONTATTI</h1>
+            </div>
+            <div class="contact-section">
+                <div class="form-container">
+                    
+                    
+                    {# <form action="">
+                        <div class="mb-3">
+                            <label class="mb-1"  for="name">Nome</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mb-1"  for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="mb-2">
+                            <label class="mb-1"  for="message">Messaggio</label>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="">
+                            <a href="" class="btn-custom font-weight">INVIA</a>
+                        </div>
+                    </form> #}
+
+                   
+
+                    {{ form_start(form)}}
+                     {% for message  in app.flashes('successMessage')%}
+                        <div class="alert alert-success mb-4">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+
+                        <div class="mb-3">
+                            {{ form_label(form.senderName)}}
+                            {{ form_widget(form.senderName)}}
+                        </div>
+                          <div class="mb-3">
+                            {{ form_label(form.senderEmail)}}
+                            {{ form_widget(form.senderEmail)}}
+                        </div>
+                          <div class="mb-3">
+                            {{ form_label(form.content)}}
+                            {{ form_widget(form.content)}}
+                        </div>
+
+                        <div class="">
+                            <button type="submit" class="btn-custom font-weight">INVIA</a>
+                        </div>
+
+                    {{ form_end(form)}}
+                    
+                    
+                    <div class="infos">
+                        <h2 class="mb-3 white">Booking e Management</h2>
+                        <a class="mb-1" href="mailto:info@zamuamusic.com">info@zamuamusic.com</a>
+                        <a class="mb-1" href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
+                        <a class="mb-1" href="tel:+33615292630"> +33 6 15 29 26 30</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+   <script src="{{ asset('js/contact.js')}}"></script>
+
+{% endblock %}

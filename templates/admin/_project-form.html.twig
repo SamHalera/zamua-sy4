@@ -1,0 +1,24 @@
+{{ form_start(projectForm, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+
+    {{ form_row(projectForm.mainTitle)}}
+    {{ form_row(projectForm.firstTitle)}}
+    {{ form_row(projectForm.secondTitle)}}
+    {{ form_row(projectForm.priority, {
+        'label' : 'Priority (the lowest you can give is: ' ~ priority ~ ')',
+        })}}
+
+
+    {{ form_row(projectForm.members)}}
+    {{ form_row(projectForm.content, {
+        'attr': {
+            'rows' : 10
+        }
+    })}}
+
+    <button class="btn-admin" type="submit">{{ button_text }}</button>
+
+{{ form_end(projectForm, { render_rest : true})}}

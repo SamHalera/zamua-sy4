@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Manager{% endblock %}
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+
+
+    <div class="bg-admin">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1>DASHBOARD</h1>
+                <div class="add-section"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container dashboard-section">
+        
+        <a href="{{ path('app_admin_contact_manager')}}" class="dashboard-item">
+            <h2>CONTACTS MANAGER</h2>
+        </a>
+        <a href="{{ path('app_admin_media_manager')}}" class="dashboard-item">
+            <h2>MEDIA MANAGER</h2>
+        </a> 
+        <a href="{{ path('app_admin_video_list')}}" class="dashboard-item">
+            <h2>VIDEOS</h2>
+        </a>
+        <a href="{{ path('app_admin_project_list')}}" class="dashboard-item">
+            <h2>PROJECTS</h2>
+        </a>
+        <a href="{{ path('app_admin_member_list')}}"  class="dashboard-item">
+            <h2>MEMBERS (projects)</h2>
+        </a>
+        <a href="{{ path('app_admin_show_list')}}" class="dashboard-item">
+            <h2>SHOWS</h2>
+        </a>
+        
+        
+    </div>
+{% endblock %}
+
+{% block footer %}{% endblock %}
