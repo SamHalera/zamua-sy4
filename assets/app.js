@@ -6,7 +6,20 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
+require('cookieconsent/build/cookieconsent.min.css');
 import './styles/app.css';
+import './styles/variables.css';
+import './styles/helpers.css';
+import './styles/classes.css';
+import './styles/styles.css';
+
+
+require('cookieconsent');
+import './js/main';
+import './js/fade';
+
 
 // start the Stimulus application
 import './bootstrap';
+
+console.log('hello');

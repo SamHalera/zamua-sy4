@@ -1,0 +1,10 @@
+:root{
+   --text-color : #303030;
+   --color-primary : #FFBC20;
+   --color-secondary : #8a642c;
+   --color-success : #51ab92;
+   --color-warning : #995c11;
+   --color-danger : #cf2727;
+   --bg-light : #eee;
+   --bg-dark: #080907;
+}

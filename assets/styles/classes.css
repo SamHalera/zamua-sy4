@@ -1,0 +1,357 @@
+@import './variables.css';
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.size-l{
+    font-size: 5rem;
+}
+.size-xl{
+    font-size: 8rem;
+}
+.btn-to-admin-section{
+    background: var(--color-primary);
+    color: var(--bg-dark);
+    padding: 2rem;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 4rem;
+    line-height: 4rem;
+    position: fixed;
+    bottom: 189px;
+    right: 3rem;
+    z-index: 24;
+}
+.btn{
+    padding: 2rem 5rem 2rem 1rem;
+    display: inline-block;
+    position: relative;
+}
+.btn-text{
+    margin-left: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1.7rem;
+    transition: 0.3s all cubic-bezier(.645,.045,.355,1);
+    
+}
+.btn-stroke{
+    height: 5rem;
+    width: 0.3rem;
+    background: var(--color-primary);
+    position: absolute;
+    top: 0.3rem;
+    left: 0.6rem;
+    transition: .4s all cubic-bezier(.645,.045,.355,1);
+}
+.btn:hover .btn-stroke{
+    width: 14rem;
+    z-index: 0;
+
+}
+.btn:hover .btn-text{
+    color: #fff;
+    margin-left: 35%;
+    
+}
+.btn-logout{
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    -webkit-animation: 1 .8s cubic-bezier(.1,.8,.9,1) navigationAppears;
+    animation: 1 .8s cubic-bezier(.1,.8,.9,1) navigationAppears;
+    margin-bottom: 3rem;
+    border: 0.1rem solid transparent;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.btn-logout a
+{
+    font-size: 2rem;
+    color: #000;
+    transition: all .4s ease-in-out;
+}
+.btn-logout:hover{
+    background-color: transparent;
+    border: 0.1rem solid var(--color-primary);
+}
+.btn-logout:hover a{
+    color: var(--color-primary);
+}
+.bg-settings{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.vertical-line{
+    height: 30rem;
+    width: 0.2rem;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 58.3rem;
+    left: 50%;
+}
+.overlay{
+    width: 100%;
+    background: rgb(0 0 0 / 37%);
+    height: 100%;
+}
+.image-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.line-height{
+    line-height: 2.5rem;
+}
+.line-height-l{
+    line-height: 3.5rem;
+}
+
+.reveal {
+    opacity: 0;
+}
+.reveal-up{
+    opacity: 0;
+    transform: translateY(4rem);
+}
+.reveal-down{
+    opacity: 0;
+    transform: translateY(-6rem);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s ease-out;
+}
+/* .reveal-up:nth-child(2){
+    transition-delay: .6s;
+} */
+.reveal-width{
+    opacity: 0;
+    width: 0rem;
+}
+.reveal-height{
+    opacity: 0;
+    height: 0rem;
+}
+ .reveal-height-visible{
+    opacity: 1;
+    height: 100%;
+    transition: all .6s ease-out;
+} 
+.reveal-width-visible{
+    opacity: 1;
+    width: 100%;
+    transition: all .6s ease-out;
+}
+.fade-in{
+    opacity: 1 !important;
+}
+.line-scroll{
+    bottom: -6.9rem;
+}
+.line-scroll .line{
+    background: var(--color-secondary);
+    height: 19rem;
+    width: 0.2rem;
+}
+.line-scroll a{
+    color: #fff;
+    writing-mode: vertical-lr;
+    position: absolute;
+    bottom: 19.5rem;
+    left: -0.7rem;
+    -webkit-animation: infinite 2.5s linear  scrollAnimation;
+    animation: infinite 2.5s linear scrollAnimation;
+}
+
+@keyframes scrollAnimation {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-0.5rem);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0.2rem);
+    }
+}
+
+.scroll-to-top{
+    background: var(--color-primary);
+    color: white;
+    border: 0.2rem solid transparent;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    bottom: 4rem;
+    right: 5rem;
+    cursor: pointer;
+    display: none;
+    transition: all .35s ease-in-out;
+}
+.scroll-to-top i{
+    display: block;
+    
+    font-size: 2.5rem;
+    margin: 1.2rem auto;
+}
+.scroll-to-top:hover{
+    background: transparent;
+    border: 0.2rem solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.show{
+    opacity: 1;
+}
+.hide{
+    opacity: 0;
+}
+.d-block {
+    display: block;
+}
+.divider{
+    margin: 8rem auto;
+}
+.white{
+    color: white !important;
+}
+.alert-general{
+    position: absolute;
+    top: 40rem;
+}
+.alert{
+    padding: 2rem 4rem;
+    color: #fff;
+    border-radius: 0.4rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all .4s ease-in-out;
+    opacity: 1;
+    z-index: 30;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    /* position: fixed;
+    top: 47.5rem; */
+}
+.alert-danger{
+    background: var(--color-danger);
+}
+.alert-warning{
+    background:var(--color-warning);
+}
+.alert-success{
+    background:var(--color-success);
+}
+.alert i{
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+input[type=checkbox]{
+    width: 2rem;
+    display: inline-block;
+    padding: 2rem;
+    height: 2rem;
+    vertical-align: top;
+    margin-right: 0.5rem;
+}
+.form-container.register label{
+    display: inline-block;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-size-l{
+    font-size: 2rem;
+}
+
+.font-size-xl{
+    font-size: 4rem;
+}
+.back-opacity{
+    font-size: 56rem;
+    font-weight: 500;
+    opacity: 0.3;
+    position: absolute;
+    top: -20rem;
+    left: 20rem;
+}
+
+.box-shadow{
+    box-shadow: .2rem .2rem 1.2rem rgba(0, 0, 0, 0.445);
+}
+.display-lg{
+    display: block;
+}
+.display-sm{
+    display: none;
+}
+
+.show-is-passed{
+    background: #0006 !important;
+}
+.show-is-canceled{
+    position: relative;
+}
+.show-is-canceled .badge{
+    padding: 0.5rem 2rem;
+    background-color: var(--color-primary);
+    color: #000;
+    border-radius: 3.3rem;
+}
+.btn-custom{
+    border: .2rem solid var(--color-primary);
+    width: 18rem;
+    padding: 1.8rem 0;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    background-image: linear-gradient(40deg, var(--color-primary) 50%, transparent 0%);
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background .6s cubic-bezier(.645,.045,.355,1);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.btn-custom:hover{
+    background-position: 100%;
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+/* OVERRIDE Cookieconsent CSS*/
+.cc-window.cc-banner{
+    padding: 3rem 3rem;
+    font-size: 1.8rem;
+}
+.cc-window.cc-banner .cc-btn{
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+}
+.cc-window.cc-banner .cc-btn:hover{
+    background-color: transparent;
+    color: #000;
+}

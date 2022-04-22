@@ -1,0 +1,38 @@
+.bg-login{
+    background-image: url(../images/bg-projects-3.jpeg);
+    background-repeat: no-repeat;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.bg-login .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    background: #81512880;
+    padding: 15rem;
+    border-radius: 1.4rem;
+    width: 45%;
+}
+form h1{
+    color: #fff;
+}
+/* button{
+    padding: 1.5rem 2.5rem;
+    font-size: 1.6rem;
+    background: var(--color-primary);
+    border: 0.1rem solid transparent;
+    cursor: pointer;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+}
+button:hover{
+    background: transparent;
+    border: 0.1rem solid var(--color-primary);
+    color: var(--color-primary);
+} */

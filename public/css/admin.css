@@ -1,0 +1,183 @@
+body{
+    background-color: lightgray;
+}
+
+.btn-admin{
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    border: 0.1rem solid transparent;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #000;
+}
+.btn-admin:hover{
+    background-color: transparent;
+    border: 0.1rem solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-danger{
+    font-size: 2.5rem;
+    color: var(--color-danger);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.btn-danger:hover{
+    color: #6b0d0d;
+}
+.btn-delete{
+    background: var(--color-danger);
+    transition: all .4s ease-in-out;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.btn-edit{
+    font-size: 2.5rem;
+    color: var(--color-success);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.btn-edit:hover{
+    color: #076349;
+}
+
+.bg-admin{
+    background: #000;
+    height: 40vh;
+    color: #fff;
+}
+.bg-admin .block-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-admin h1{
+    font-size: 4rem;
+}
+
+.dashboard-section{
+    margin-top: 6rem;
+}
+.dashboard-item{
+    padding: 2.5rem 3.5rem;
+    margin: 3rem;
+    background: var(--color-primary);
+    color: var(--color-dark);
+    cursor: pointer;
+}
+.dashboard-item h2{
+    margin: 0;
+}
+form > div{
+    margin-bottom: 4rem;
+}
+form.admin-form{
+    width: 60%;
+    background-color: #fff;
+    padding: 10rem;
+    border-radius: 1rem;
+}
+form label,
+form textarea{
+    color: rgb(65, 65, 65);
+    margin-bottom: 1rem;
+}
+form textarea{
+    background-color: #e8e8e8;
+}
+form select{
+    margin-bottom: 4rem;
+}
+form input{
+    color: #000;
+    border-color: rgb(65, 65, 65);
+    margin-bottom: 4rem;
+    display: block;
+}
+select{
+    width: 100%;
+    background: #ede8e8;
+    border: 0.1rem solid #c4c4c4;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+option{
+    margin: 1rem 0;
+}
+.admin-card{
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+.admin-card span{
+    margin-bottom: 1.5rem;
+}
+
+.member-list-item{
+    font-size: 2rem;
+    margin: 2rem;
+}
+body.admin .project-title{
+    font-size: 2.5rem;
+    border-bottom: 0.1rem solid;
+}
+
+.media-manager-section form{
+    width: auto;
+    padding: 2rem 4rem;
+}
+.file-container{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.media-features{
+    padding: 2rem 1rem;
+    background: #fff;
+} 
+.actions-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.media-features span,
+.media-features li{
+    margin-bottom: 1rem;
+}
+
+.contact-item{
+    background: #fff;
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+.contact-item div{
+    
+    font-weight: 600;
+
+}
+.contact-item .content-message{
+    font-style: italic;
+}
+.contact-manager-section{
+
+}
+.single-contact-section .contact-item{
+    flex-basis: 50%;
+}
+.is-done-message{
+    color: var(--color-success);
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
