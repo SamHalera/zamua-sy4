@@ -27,7 +27,7 @@
                 <i class="el-icon-circle-close"></i>
             </div>
             <ul>
-                {% if is_granted("ROLE_ADMIN") %}
+                {% if app.user %}
                 <li class="btn-logout ">
                     <a href="{{ path('app_logout')}}">LOGOUT</a>
                 </li>

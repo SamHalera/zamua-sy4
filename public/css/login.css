@@ -36,3 +36,12 @@ button:hover{
     border: 0.1rem solid var(--color-primary);
     color: var(--color-primary);
 } */
+
+
+@media screen and (max-width: 600px){
+
+    .form-container{
+        width: 80%;
+        padding: 7rem;
+    }
+}

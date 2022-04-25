@@ -23,26 +23,7 @@ imagesElement.forEach(function(oneImage, index){
 
 });
 
-// const loadBtn = document.getElementById('load-more');
-// let currentItems = 10;
 
-// loadBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     let itemGallery = [... document.querySelectorAll('#lightgallery .gallery-item')];
-
-//     for(let i = currentItems; i < currentItems + 10; i++){
-//         if(itemGallery[i]){
-//             itemGallery[i].style.display = "block";
-//         }
-//     }
-
-//     currentItems += 10;
-
-//     if(currentItems >= itemGallery.length){
-//         loadBtn.style.display = "none";
-//     }
-
-// });
 
 
 
