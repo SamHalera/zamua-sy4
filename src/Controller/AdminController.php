@@ -467,28 +467,32 @@ class AdminController extends AbstractController
 
         if($formUpload->isSubmitted() && $formUpload->isValid()){
         
-            //  /**
-            //  * @var UploadedFile $uploadedFile
-            //  */
-     
+            
             $uploadedFiles = $formUpload->get('newFiles')->getData();
             
             //dd($uploadedFiles);
             
+            /**
+            * @var UploadedFile $uploadedFile
+             */
+     
             foreach ($uploadedFiles as $uploadedFile) {
                
+                
                 $file = new ZamuaFiles();
                 
                 $destination = $this->getParameter('kernel.project_dir').'/public/uploads/' . $file::UPLOADS_FILES_FOLDER;
 
                 $originalFileName = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
 
-                $newFileName =  bin2hex($originalFileName). '-' .uniqid().'.'.$uploadedFile->guessExtension();
+                $newFileName =  bin2hex(random_bytes(8)). '-' .uniqid().'.'.$uploadedFile->guessExtension();
 
+                //dd($uploadedFile->move($destination));
                 try {
                     $uploadedFile->move(
                         $destination,
                         $newFileName,
+                        $file
                     );
                 } catch (FileException $e) {
                     

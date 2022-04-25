@@ -49,7 +49,7 @@
 
         {% for aFile in files %}
             <div class="file-container">
-                <img src="{{ asset(aFile.getFilePath)| imagine_filter('squared_thumbnail_small') }}"/>
+                <img src="{{ asset(aFile.getFilePath)|imagine_filter('squared_thumbnail_small') }}"/>
                 
                 <div class="media-features">
                     {% if aFile.isGalleryItem %}
