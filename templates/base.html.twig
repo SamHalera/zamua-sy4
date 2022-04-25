@@ -31,6 +31,9 @@
                 <li class="btn-logout ">
                     <a href="{{ path('app_logout')}}">LOGOUT</a>
                 </li>
+                {% endif %}
+                {% if is_granted("ROLE_ADMIN") %}
+                
                 <li class="navigation-panel-item reveal-up">
                     <a href="{{ path('app_admin')}}"><i class="el-icon-setting"></i> Admin</a>
                 </li>

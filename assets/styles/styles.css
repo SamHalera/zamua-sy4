@@ -1507,7 +1507,7 @@ form textarea:focus{
     position: absolute;
     right: 46.4rem;
     top: 2rem;
-    z-index: 10;
+    z-index: 20;
 }
 .container-projects-to-display .close-container i{
     font-size: 5rem;
@@ -1539,6 +1539,7 @@ form textarea:focus{
 }
 .project-presentation .images img{
     margin: 2rem;
+    width: 25rem;
 }
 .wrapper-img{
     position: relative;
