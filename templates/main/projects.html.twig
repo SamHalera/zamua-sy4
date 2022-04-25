@@ -95,7 +95,7 @@
                             
                                 {% for zamuaFile in project.zamuaFiles %}
                                     <div class="wrapper-img">
-                                        <img class="image-fluid" src="{{ asset(zamuaFile.getFilePath) | imagine_filter('squared_thumbnail') }}" {% if zamuaFile.alt is defined %} alt="{{zamuaFile.alt}}" {% endif %}
+                                        <img class="image-fluid" src="{{ asset(zamuaFile.getFilePath)}}" {% if zamuaFile.alt is defined %} alt="{{zamuaFile.alt}}" {% endif %}
                                         >
                                         {% if zamuaFile.credit is not null %}
                                         

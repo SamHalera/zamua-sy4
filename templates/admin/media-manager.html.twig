@@ -37,6 +37,7 @@
             'class' : 'admin-form'
         }
     })}}
+    
         {{form_row(formUpload.newFiles)}}
 
         <button type="submit" class="btn-admin">Upload</button>
@@ -49,7 +50,7 @@
 
         {% for aFile in files %}
             <div class="file-container">
-                <img src="{{ asset(aFile.getFilePath)|imagine_filter('squared_thumbnail_small') }}"/>
+                <img src="{{ asset(aFile.getFilePath)}}"/>
                 
                 <div class="media-features">
                     {% if aFile.isGalleryItem %}

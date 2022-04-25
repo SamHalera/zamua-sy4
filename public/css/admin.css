@@ -140,6 +140,7 @@ body.admin .project-title{
     margin: 2rem;
     display: flex;
     flex-direction: column;
+    max-width: 40rem;
 }
 .media-features{
     padding: 2rem 1rem;
