@@ -119,6 +119,27 @@ form ul li{
     color: var(--color-danger);
     font-weight: 600;
 }
+
+/*PAGE ERRORS*/
+.bg-error-page .container{
+    flex-direction: column;
+    justify-content: center;
+}
+.bg-error-page .block-text{
+    flex-direction: column;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.bg-error-page .block-text h1{
+    font-size: 7rem;
+}
+.bg-error-page .block-text h2{
+    font-size: 4rem;
+}
+.bg-error-page p{
+    font-size: 3rem;
+}
+
 /*SECTIONS*/
 
 .navigation-panel{
@@ -279,7 +300,8 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
 }
-.bg-home .overlay{
+.bg-home .overlay,
+.bg-error-page .overlay{
     transition: all .2s ease-in-out;
     background: rgba(0, 0, 0, 0);
 }
@@ -296,7 +318,8 @@ nav ul li a:hover{
 
 /*HOME*************************/
 
-.bg-home{
+.bg-home,
+.bg-error-page{
     /* background-image: url(/public/images/portrait-zamua.jpg); */
     background-image: url(/public/images/bg-contacts.jpg);
     height: 100vh;
@@ -1740,6 +1763,9 @@ footer{
         opacity: 1;
         top: 25rem;
         left: 0;
+    }
+    .main-cookies-container {
+        padding: 16rem 4rem;
     }
 /*SECTIONS*/
 

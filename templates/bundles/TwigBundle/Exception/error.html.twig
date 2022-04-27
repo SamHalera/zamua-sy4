@@ -1,0 +1,26 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="bg-main bg-error-page">
+        <div class="container overlay">
+            <div class="block-text block-title">
+                <h1>Oups!</h1>
+                <h2>It seems like something get wrong!</h2>
+            </div>
+            <p class="mb-2">We are sorry for the inconvenience.</p>
+                
+            <p class="mb-3 font-weight-bold">Try again or you can return to the homepage and chill!</p>
+            <div>
+                <a href="{{path('app_home')}}" class="btn-custom">HOME</a>
+            </div>
+            
+            
+        </div>
+    
+    
+    </div>
+
+    
+{% endblock %}
