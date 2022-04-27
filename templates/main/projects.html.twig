@@ -51,19 +51,19 @@
                 </div>
 
                 {% for project in projects %}
-                <div class="hide container-project" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}-container">
+                <div class="hide opacity-0 container-project" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}-container">
                     <div class="head-picture box-shadow" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}-to-display">
                         <div class="overlay">
-                            <div class="">
-                                <div class="title-project">
-                                    <div class="block-title">
-                                        <h3 class="title-artist uppercase">{{project.firstTitle}}</h3>
-                                        <div class="stroke"></div>
-                                        <h3 class="title-partner uppercase font-weight">{{project.secondTitle}}</h3>
-                                    </div>
-                                    
+                            
+                            <div class="title-project">
+                                <div class="block-title">
+                                    <h3 class="title-artist uppercase">{{project.firstTitle}}</h3>
+                                    <div class="stroke"></div>
+                                    <h3 class="title-partner uppercase font-weight">{{project.secondTitle}}</h3>
                                 </div>
+                                
                             </div>
+                            
                         </div> 
                     </div>
                     <div class="one-project-content">

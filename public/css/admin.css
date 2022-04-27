@@ -140,7 +140,7 @@ body.admin .project-title{
     margin: 2rem;
     display: flex;
     flex-direction: column;
-    max-width: 40rem;
+    max-width: 35rem;
 }
 .media-features{
     padding: 2rem 1rem;
@@ -156,6 +156,9 @@ body.admin .project-title{
     margin-bottom: 1rem;
 }
 
+.media-section .block-image img{
+    max-width: 60rem;
+}
 .contact-item{
     background: #fff;
     margin: 2rem;

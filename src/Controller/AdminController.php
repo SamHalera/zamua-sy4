@@ -81,7 +81,10 @@ class AdminController extends AbstractController
                 ->setName($data->getName())
                 ->setVenue($data->getVenue())
                 ->setVenueUrl($data->getVenueUrl())
-                ->setLocation($data->getLocation());
+                ->setLocation($data->getLocation())
+                ->setIsCancelled(false)
+                ->setIsPassed(false)
+            ;
 
             $em->persist($show);
             $em->flush();
