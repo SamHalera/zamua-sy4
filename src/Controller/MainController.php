@@ -221,6 +221,18 @@ class MainController extends BaseController
     }
 
     /**
+     * @Route("/change_locale/{locale}" , name="app_change_locale")
+     */
+    public function changeLocal($locale, Request $request)
+    {
+        // We keep the language into the session
+        $request->getSession()->set('_locale', $locale);
+
+        //We come back to the previous page
+        return $this->redirect($request->headers->get('referer'));
+    }
+
+    /**
      * @Route("/encode", name="encode")
      */
     public function encodePass(UserPasswordEncoderInterface $passwordEncoderInterface)

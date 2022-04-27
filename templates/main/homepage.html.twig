@@ -9,11 +9,11 @@
         <div class="container overlay">
             <div class="block-text block-title">
                 <h1>
-                    <span class="text1">Quando la musica entra</span>
-                    <span class="text2">nella tua vita, </span>
-                    <span class="text3">é destinata a lasciare un segno indelebile</span>
-
-                    
+                
+                    <span class="text1">{% trans %}Quando la musica entra{% endtrans %}</span>
+                    <span class="text2">{% trans %}nella tua vita, {% endtrans %}</span>
+                    <span class="text3">{% trans %}é destinata a lasciare un segno indelebile{% endtrans %}</span>
+                
                 </h1>
             </div>
             
@@ -34,17 +34,20 @@
                    
                 <p class="mb-2 line-height-l reveal-up font-size-l">
                 
-                    Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.
+                    {% trans %}Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.{% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l reveal-up font-size-l">
+                    {% trans %}
                     Il suo sogno era diventare un calciatore, 
                     ma si ritrova immobilizzato a letto in seguito a un incidente sul campo da calcio. 
-                    Durante la convalescenza il suo amico Deodatus Nduwimana gli insegna a suonare la chitarra.
+                    Durante la convalescenza il suo amico Deodatus Nduwimana gli insegna a suonare la chitarra. 
                     <strong><em>« Volevo semplicemente imparare a cantare Redemption Song, Bob Marley é il mio eroe ».</em></strong>
+                    {% endtrans %}
                 </p>
                 <p class="mb-2 line-height-l  reveal-up font-size-l">
                 
+                    {% trans %}
                     <em>« La prima volta che cantai davanti alla mia famiglia avevo sette anni. Feci un rap.<br>
                     A casa nessuno ascoltava rap e ancora oggi mi chiedo dove sentii quella musica cosi potente!<br> 
                     Mio padre ascoltava spesso il jazz su Radio Rai 3. <br>Mi ricordo la tromba di Louis Amstrong la mattina, 
@@ -52,17 +55,20 @@
                     di Luigi Tenco, di Lucio Dalla e di Fabrizio De André.<br>
                     Oggi, quando riascolto la registrazione di quella prima performance, 
                     capisco che quando la musica colpisce, lascia un segno indelebile... » </em>
+                    {% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l  reveal-up font-size-l">
                 
+                    {% trans %}
                     <strong>Questo segno resta intatto col passare del tempo, 
                     finché non realizzi che il modo migliore per vivere la musica é farla, vederla nascere...</strong>
+                    {% endtrans %}
                     
                 </p>
                 
                 <div>
-                    <a href="{{path('app_bio')}}" class="btn-custom">BIOGRAFIA</a>
+                    <a href="{{path('app_bio')}}" class="btn-custom">{% trans %}BIOGRAFIA{% endtrans %}</a>
                 </div>
             </div>
 
@@ -75,7 +81,7 @@
         <div class="box-prez-ep reval-up">
         
             <div class="block-text">
-                <h2 class="title reveal-up">LITANIE</h2>
+                <h2 class="title reveal-up">{% trans %}LITANIE{% endtrans %}</h2>
                 <h2 class="title-2 reveal-up">EP</h2>
                 
                 
@@ -111,11 +117,11 @@
     <div class="section-music mb-4">
         <div class="block-text">
             <p class="mb-1 reveal-up line-height-l font-size-l">
-                
+                {% trans %}
                 <strong>LITANIE</strong> é il primo EP di Zamua, prodotto dalla giovane etichetta indipendente OD MusicLab.<br>
                 Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie e litanie, 
                 e fa di questo artista un elemento inclassificabile ma indispensabile. 
-
+                {% endtrans %}
             </p>
         </div>
         {# <div class="btn-container reveal-up">
@@ -126,7 +132,7 @@
             </a>
         </div> #}
         <a href="{{path('app_music')}}" class="btn-custom align-center">
-             MUSICA
+            {% trans %} MUSICA {% endtrans %}
         </a>
     </div>
 
@@ -138,7 +144,7 @@
 
     <div class="four-section-projects mb-3">
         <div class="">
-            <h2 class="uppercase mb-4 reveal">Progetti </h2>
+            <h2 class="uppercase mb-4 reveal"> {% trans %} Progetti {% endtrans %}</h2>
             <div class="container mb-4">
                 
                 {% for project in projects %}
@@ -161,7 +167,7 @@
                     
                 </a>
             </div> #}
-            <a href="{{path('app_projects')}}" class="btn-custom mx-auto">PROGETTI</a>
+            <a href="{{path('app_projects')}}" class="btn-custom mx-auto">{% trans %} PROGETTI {% endtrans %}</a>
         
     </div>
     {% endif %}
@@ -170,7 +176,7 @@
         <div class="container overlay">
             <div class="main-form-container">
                 <div class="contact-container">
-                    <h2 class="mb-3 white">CONTATTI</h2>
+                    <h2 class="mb-3 white">{% trans %} CONTATTI {% endtrans %}</h2>
                     {{ form_start(form)}}
                         {% for message  in app.flashes('successMessage')%}
                         <div class="alert alert-success mb-4">
@@ -199,7 +205,7 @@
                         </div>
 
                         <div class="">
-                            <button type="submit" class="btn-custom font-weight">INVIA</a>
+                            <button type="submit" class="btn-custom font-weight">{% trans %} INVIA {% endtrans %}</a>
                         </div>
 
                     {{ form_end(form)}}
@@ -224,7 +230,7 @@
                 </div>
                 
                 <div class="infos">
-                    <h3 class="mb-3 white">Booking e Management</h3>
+                    <h3 class="mb-3 white">{% trans %} Booking e Management {% endtrans %}</h3>
                     <a class="mb-1" href="mailto:info@zamuamusic.com">info@zamuamusic.com</a>
                     <a href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
                 </div>

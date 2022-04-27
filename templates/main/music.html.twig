@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 {% block title %}
-    ZAMUA | MUSICA
+    ZAMUA | {% trans %}MUSICA{% endtrans %}
 {% endblock %}
 
 
@@ -9,7 +9,7 @@
         <div class="bg-main bg-main-music">
         <div class="container overlay">
             <div class="block-title">
-                <h1><span class="title1">La </span><span class="title2">musica</span><span class="title3"> é </span><span class="title-dots">...</span></h1>
+                {% trans %}<h1><span class="title1">La </span><span class="title2">musica</span><span class="title3"> é </span><span class="title-dots">...</span></h1>{% endtrans %}
                 
             </div>
         </div>
@@ -25,32 +25,38 @@
         <div class="container">
             <div class="block-text">
                 <p class="mb-1 line-height-l font-size-l">
+                {% trans %}
                     La musica è urgenza e necessità impellente di condivisione della propria voce, della propria anima, della propria presenza.
                     <strong>Uno strumento per sviluppare un senso critico sulla nostra esperienza nella società in cui viviamo.</strong> <br>
                     Fare musica, mette al centro la persona che crea, che parla e la persona che ascolta; 
                     è il principio e la fine di un percorso verso l’autodeterminazione.
                     Un mezzo per toccare il cuore delle persone, per comunicare un’immagine, un’idea, un concetto, 
                     per dare un senso alla percezione della realtà.
+                {% endtrans %}
                 </p>
                 <p class="mb-1 line-height-l font-size-l">
+                {% trans %}
                     <strong>La musica crea un ponte tra il mondo interiore e il mondo esteriore. 
                     Permette di tradurre in forma sensibile, i segreti dell’anima, 
                     segreti che neanche noi stessi sappiamo spiegare ma che a volte riescono a fuoriuscire attraverso le note.</strong>
+                {% endtrans %}
                 </p>
                 
                 <p class="mb-1 line-height-l font-size-l">
+                {% trans %}    
                     <em>"Vivo la musica in modo quasi maniacale, la faccio da quando ero ragazzino.
                     Attraverso la musica, e in modo particolare attraverso il canto, riesco a <strong>intraprendere un percorso di ricerca e di 
                     riflessione su questioni per me centrali come l’identità</strong>, o meglio, le nostre identità, fluide, mutevoli, 
                     mai identiche a se stesse, in un movimento che annienta ogni idea di confine fisico e immaginario tra il “Noi” e il “Loro”".</em> 
-
+                {% endtrans %}
                 <p class="mb-1 line-height-l font-size-l">
+                {% trans %}
                     <em>"La Musica è stata, lo è tuttora, un elemento fondamentale della mia esistenza.
                     Non esiste un genere musicale, parto dai miei due strumenti, la voce e la chitarra. 
                     E da li inizio a lavorare, a costruire, a raccontare una storia.
                     <strong>Cerco di dare forma a un'estetica, la trama di un viaggio tra i miei universi musicali quali il soul, il jazz, il reggae, 
                     la musica elettronica…. Mi lascio attraversare da questo bagaglio per poi far nascere brani profondamente ibridi.”</strong></em>
-
+                {% endtrans %}
                 </p>
                 
             </div>

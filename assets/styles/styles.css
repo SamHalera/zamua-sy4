@@ -120,6 +120,24 @@ form ul li{
     font-weight: 600;
 }
 
+.switch-language{
+    padding: 1.5rem;
+    border: 1px solid;
+}
+.switch-language a{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+
+}
+.switch-language a:first-child{
+    border-right: 1px solid;
+}
+.privacy-container .sub-section ul{
+    list-style-type: disc;
+    margin-left: 4rem;
+}
+
 /*PAGE ERRORS*/
 .bg-error-page .container{
     flex-direction: column;

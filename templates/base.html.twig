@@ -39,6 +39,15 @@
                 <i class="el-icon-circle-close"></i>
             </div>
             <ul>
+                <div class="switch-language reveal-up mb-2">
+                {% for locale in locales %}
+                    {% if locale != app.request.locale %}
+                
+                    <a href="{{ path('app_change_locale', {'locale': locale}) }}">{{ locale }}</a> 
+                    {% endif %}
+                    
+                {% endfor %}
+                </div> 
                 {% if app.user %}
                 <li class="btn-logout ">
                     <a href="{{ path('app_logout')}}">LOGOUT</a>
@@ -58,7 +67,7 @@
                     <a href="{{ path('app_bio')}}">BIO</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_music')}}">MUSICA</a>
+                    <a href="{{ path('app_music')}}">{% trans %} MUSICA {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item  reveal-up">
                     <a href="{{ path('app_shows')}}">SHOWS</a>
@@ -67,17 +76,18 @@
                     <a href="{{ path('app_listenings')}}">I MIEI ASCOLTI</a>
                 </li> #}
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_gallery')}}">GALLERIA</a>
+                    <a href="{{ path('app_gallery')}}">{% trans %} GALLERIA {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_video')}}">VIDEO</a>
+                    <a href="{{ path('app_video')}}">{% trans %} VIDEO {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_projects')}}">PROGETTI</a>
+                    <a href="{{ path('app_projects')}}">{% trans %} PROGETTI {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_contact')}}">CONTATTI</a>
+                    <a href="{{ path('app_contact')}}">{% trans %} CONTATTI {% endtrans %}</a>
                 </li>
+                
             </ul>
         </div>
         <header>
@@ -87,6 +97,18 @@
                     <img class="ml-2 second" src="{{asset('images/logo.png')}}" alt="" width="120">
                 </a>
             </div>
+
+            
+            <div class="switch-language">
+                {% for locale in locales %}
+                    {% if locale != app.request.locale %}
+                
+                    <a href="{{ path('app_change_locale', {'locale': locale}) }}">{{ locale }}</a> 
+                    {% endif %}
+                    
+                {% endfor %}
+            </div>   
+            
             
             <div class="menu">
                 <div class="active-page">
@@ -163,7 +185,7 @@
                 <section class="legal-section">
                     <ul>
                         <li class="mb-1">
-                            <a href="{{path('app_cookies')}}">Privacy e Cookies Policy</a>
+                            <a href="{{path('app_cookies')}}">{% trans %} Privacy e Cookies Policy {% endtrans %}</a>
                         </li>
                     </ul>
                 </section>
