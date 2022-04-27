@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head prefix="og: http://ogp.me/ns#">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="title" content="Zamua soul and folk song-writer">
+        <meta name="description" content="Zamua is an italian and burundian song-writer, singer and guitarist based in Paris. His music is a fusion between pop-folk and soul-jazz.">
+        <meta name="keywords" content="Soul, jazz, folk, black  music">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block opengraph %}
 
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta property="og:url"           content="{{ app.request.getSchemeAndHttpHost() }}" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Zamua - soul and folk song-writer" />
+        <meta property="og:description"   content="Zamua is an italian and burundian song-writer, singer and guitarist based in Paris. His music is a fusion between pop-folk and soul-jazz." />
+        <meta property="og:image"         content="https://skillsfactor.io/images/logo-zamua.png" />
+
+        {% endblock %}
+        <title>{% block title %}ZAMUA{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
