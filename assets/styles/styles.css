@@ -471,9 +471,11 @@ ON LOAD HOMEPAGE
     
 }
 .image-project{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 40rem;
     height: 40rem;
-    position: relative;
     margin: 5rem;
     box-shadow: .2rem .2rem 1.2rem rgba(0, 0, 0, 0.445);
 }
@@ -493,19 +495,19 @@ ON LOAD HOMEPAGE
     transition-delay: .6s;
 }
 .project-content{
-    background-color: #0000008c;
-    width: 40rem;
-    height: 7rem;
+    /* background-color: #0000008c; */
+    /* width: 40rem;
+    height: 7rem; */
     display: flex;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0; */
     padding: 2rem;
     
 }
 .project-details h2{
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: left;
     color: var(--color-primary);
 }
@@ -1432,7 +1434,12 @@ form textarea:focus{
     display: flex;
     justify-content: center;
 }
-
+.show.container-project .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(0 0 0 / 54%);
+}
 .show.container-project .title-project{
     position: initial;
     
@@ -1441,12 +1448,12 @@ form textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.show.container-project .title-project .block-title .title-artist{
-    position: initial;
-}
+.show.container-project .title-project .block-title .title-artist,
 .show.container-project .title-project .block-title .title-partner{
     position: initial;
+    font-size: 3rem;
 }
 .one-project-content{
     padding: 7rem;
@@ -2257,6 +2264,19 @@ footer{
         margin-bottom: 20rem;
         padding-bottom: 25rem;
     }
+
+    .wrapper {
+        width: 30rem;
+        height: 30rem;
+        border: 0.1rem solid var(--color-primary);
+        position: relative;
+    }
+    .title-project {
+        position: absolute;
+        top: 20rem;
+        left: 17rem;
+        color: var(--color-primary);
+    }
     .container-projects-to-display .close-container{
         top: 42rem;
         right: 4.6rem;
@@ -2265,6 +2285,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    
     .container-project .head-picture{
         margin-right: 0;
         margin-bottom: 3rem;
@@ -2509,12 +2530,15 @@ footer{
 
     /*SECTION PROJECTS*/
     .image-project{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         width: 40rem;
         height: 40rem;
         margin: 2rem;
     }
     .project-content{
-        width: 40rem;
+        
     }
     
 
@@ -2530,7 +2554,7 @@ footer{
         margin-left: 0;
     }
     .project-details h2{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
 
