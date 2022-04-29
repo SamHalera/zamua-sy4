@@ -119,11 +119,17 @@ form ul li{
     color: var(--color-danger);
     font-weight: 600;
 }
-
+.mobile-view{
+    display: none;
+}
+.no-mobile-view{
+    display: block;
+}
 .switch-language{
     padding: 1.5rem;
     border: 1px solid;
 }
+
 .switch-language a{
     font-size: 2rem;
     text-transform: uppercase;
@@ -265,7 +271,7 @@ header .menu{
 }
 
 .active-page{
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 4rem;
     color: #fff;
     position: relative;
 }
@@ -1749,10 +1755,12 @@ footer{
 
 @media screen and (max-width: 600px) {
     
-    .display-lg{
+    .display-lg,
+    .no-mobile-view{
         display: none;
     }
-    .display-sm{
+    .display-sm,
+    .mobile-view{
         display: block;
     }
 
@@ -2421,10 +2429,12 @@ footer{
 
 @media screen and (min-width: 601px) and (max-width: 1024px){
     
-    .display-lg{
+    .display-lg,
+    .no-mobile-view{
         display: none;
     }
-    .display-sm{
+    .display-sm,
+    .mobile-view{
         display: block;
     }
     .back-opacity{

@@ -6,6 +6,7 @@ use App\Repository\ProjectRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -13,6 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Project
 {
+    
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -56,6 +58,13 @@ class Project
      * @ORM\ManyToMany(targetEntity=ZamuaFiles::class, mappedBy="projects")
      */
     private $zamuaFiles;
+
+      /**
+     * @Gedmo\Locale
+     * Used locale to override Translation listener`s locale
+     * this is not a mapped field of entity metadata, just a simple property
+     */
+    private $locale;
 
     public function __construct()
     {
@@ -182,5 +191,10 @@ class Project
     public function __toString()
     {
         return $this->getMainTitle();
+    }
+
+    public function setTranslatableLocale($locale)
+    {
+        $this->locale = $locale;
     }
 }

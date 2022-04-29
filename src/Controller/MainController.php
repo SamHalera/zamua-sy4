@@ -71,8 +71,9 @@ class MainController extends BaseController
     /**
      * @Route("/biografia", name="app_bio")
      */
-    public function biography(ZamuaFilesRepository $zamuaFilesRepository): Response
+    public function biography(ZamuaFilesRepository $zamuaFilesRepository, Request $request): Response
     {
+
         $media = $zamuaFilesRepository->findBy(
             [
                 'isGalleryItem' => true
@@ -232,6 +233,13 @@ class MainController extends BaseController
         return $this->redirect($request->headers->get('referer'));
     }
 
+    /**
+     * @Route("/test/{locale}/testTrans", name="test")
+     */
+    public function routeTest($locale, Request $request)
+    {
+        return $this->render('main/test.html.twig');
+    }
     /**
      * @Route("/encode", name="encode")
      */

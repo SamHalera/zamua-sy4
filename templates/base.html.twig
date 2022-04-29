@@ -16,8 +16,13 @@
         <meta property="og:image"         content="https://skillsfactor.io/images/logo-zamua.png" />
 
         {% endblock %}
+
+        {# no index outside prod #}
+        {% if not('zamuamusic.com' in app.request.getSchemeAndHttpHost()) %}   
+            <meta name="robots" content="noindex, nofollow">
+        {% endif %}
         <title>{% block title %}ZAMUA{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             
@@ -26,6 +31,8 @@
             <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon/favicon_zamua.ico') }}" />
 
     </head>
 
@@ -39,7 +46,7 @@
                 <i class="el-icon-circle-close"></i>
             </div>
             <ul>
-                <div class="switch-language reveal-up mb-2">
+                <div class="switch-language reveal-up mb-2 mobile-view">
                 {% for locale in locales %}
                     {% if locale != app.request.locale %}
                 
@@ -87,6 +94,9 @@
                 <li class="navigation-panel-item reveal-up">
                     <a href="{{ path('app_contact')}}">{% trans %} CONTATTI {% endtrans %}</a>
                 </li>
+                <li class="navigation-panel-item reveal-up">
+                    <a href="{{ path('test', { locale : app.request.locale })}}">{% trans %} TEST {% endtrans %}</a>
+                </li>
                 
             </ul>
         </div>
@@ -99,18 +109,19 @@
             </div>
 
             
-            <div class="switch-language">
+            
+            <div class="menu">
+                <div class="switch-language reveal-up mb-2 no-mobile-view">
                 {% for locale in locales %}
                     {% if locale != app.request.locale %}
                 
                     <a href="{{ path('app_change_locale', {'locale': locale}) }}">{{ locale }}</a> 
                     {% endif %}
+
+
                     
                 {% endfor %}
-            </div>   
-            
-            
-            <div class="menu">
+                </div> 
                 <div class="active-page">
                     {% if activeName is defined %}
                         <p class="uppercase">{{ activeName }}</p>

@@ -6,3 +6,4 @@ twig:
 
     globals:
         locales: '%app.locales%'
+        defaultLocale: '%locale%'
