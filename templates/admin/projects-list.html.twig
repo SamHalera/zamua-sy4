@@ -31,19 +31,30 @@
                     
                     <h3 class="project-title"> {{project.mainTitle}} </h3>
                     
-                    {% for member in project.members %}
-                        <h4 class="project-members mb-1">
-                            {% if member.firstName and member.lastName %}
-
-                                {{ member.firstName  }} {{member.lastName}}
-                            {% else %}
-                                {{ member.artistName }}
-                            {% endif %}
-                         </h4>
-                    {% endfor %}
+                
                    
 
-                    <a class="btn-admin mb-1 d-block" href="{{path('app_admin_project_edit', { id : project.id})}}">EDIT</a>
+                    <a class="btn-admin mb-2 d-block" href="{{path('app_admin_project_edit', { id : project.id})}}">EDIT</a>
+                    <div class="action-translate mb-2">
+                    
+                    <span class="d-block">TRANSLATIONS</span>
+                    {% if project.translations|length == 2 %}
+                        {% for translation in project.translations %}
+                             <a class="btn-admin mb-1" href="{{path('app_admin_edit_trans_project', { id : translation.id})}}">{{translation.language}}</a>
+                        
+                        {% endfor %} 
+                    {% elseif project.translations|length == 1 %}
+                        {% for translation in project.translations %}
+                             <a class="btn-admin mb-1" href="{{path('app_admin_edit_trans_project', { id : translation.id})}}">{{translation.language}}</a>
+                        
+                        {% endfor %}
+                        <a class="btn-admin mb-1" href="{{path('app_admin_trans_project', { id : project.id })}}"><i class="el-icon-plus"></i></a>
+
+                    {% else %}
+                        <a class="btn-admin mb-1" href="{{path('app_admin_trans_project', { id : project.id })}}"><i class="el-icon-plus"></i></a>
+                    {% endif %}
+                    
+                    </div>
                     <a class="d-block mb-2" href="{{path('app_projects')}}"><i class="el-icon-view"></i> public view</a>
 
                 </div>    

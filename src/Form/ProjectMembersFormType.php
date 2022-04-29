@@ -32,6 +32,18 @@ class ProjectMembersFormType extends AbstractType
                     'class' => 'mb-2'
                 ]
             ])
+            ->add('featuresFR', null, [
+                'label' => 'Features (FR)',
+                'attr' => [
+                    'class' => 'mb-2'
+                ]
+            ])
+            ->add('featuresEN', null, [
+                'label' => 'Features (EN)',
+                'attr' => [
+                    'class' => 'mb-2'
+                ]
+            ])
         ;
     }
 

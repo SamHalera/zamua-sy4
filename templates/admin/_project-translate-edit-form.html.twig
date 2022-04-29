@@ -1,0 +1,36 @@
+{{ form_start(projectTransForm, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+
+   
+    {{ form_row(projectTransForm.language)}}
+    {{ form_errors(projectTransForm.language)}}
+
+     <div class="original-version-container">
+        <h3>Original main title version (IT)</h3>
+        <div class="original-version">{{ projectTranslation.project.mainTitle}}</div>
+    </div>
+    <div class="mb-4">
+        {{ form_row(projectTransForm.mainTitleTrans)}}
+        {{ form_errors(projectTransForm.mainTitleTrans)}}
+    </div>
+    
+
+
+     <div class="original-version-container">
+        <h3>Original content version (IT)</h3>
+        <div class="original-version">{{ projectTranslation.project.content|raw}}</div>
+    </div>
+    <div class="mb-4">
+        {{ form_row(projectTransForm.contentTrans, {
+            'attr': {
+                'rows' : 10
+            }
+        })}}
+        {{ form_errors(projectTransForm.contentTrans)}}
+    </div>
+    <button class="btn-admin" type="submit">{{ button_text }}</button>
+
+{{ form_end(projectTransForm, { render_rest : true})}}

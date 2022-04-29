@@ -3,9 +3,12 @@
 namespace App\Repository;
 
 use App\Entity\Project;
+use App\Entity\ProjectTranslation;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
+use Doctrine\ORM\Query\ResultSetMapping;
+use Doctrine\ORM\Query\ResultSetMappingBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -46,6 +49,33 @@ class ProjectRepository extends ServiceEntityRepository
             $this->_em->flush();
         }
     }
+
+
+    public function findProjectandTranslation()
+    {
+        
+        $qb = $this->createQueryBuilder('p')
+        
+            ->leftJoin('p.translations', 'pt')
+            ->addSelect('pt')
+            ->getQuery();
+
+            return $qb->getResult();
+
+    }
+
+    // public function findProjectByLocaleLanguage($locale)
+    // {
+    //     $qb = $this->createQueryBuilder('p')
+        
+    //         ->leftJoin('p.translations', 'pt')
+    //         ->addSelect('pt')
+    //         ->andWhere('pt.language = :locale')
+    //         ->setParameter(':locale', $locale)
+    //         ->getQuery();
+
+    //         return $qb->getResult();
+    // }
 
     // /**
     //  * @return Project[] Returns an array of Project objects

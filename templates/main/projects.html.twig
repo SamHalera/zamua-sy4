@@ -77,7 +77,13 @@
                                         {% else %}
                                             {{ member.artistName }}
                                         {% endif %}
-                                    </strong> - {{member.features}}
+                                    </strong> - {% if app.request.locale == 'fr' %}
+                                                    {{member.featuresFR}}
+                                                {% elseif app.request.locale == 'en' %}
+                                                    {{member.featuresEN}}
+                                                {% else %}
+                                                    {{member.features}}               
+                                                {% endif %}
                                 </span>
                             {% endfor %}
                             
@@ -85,7 +91,20 @@
                         <div class="project-presentation">
                             <div class="text">
                                 <p class="">
-                                    {{project.content|raw}}
+                                    {% if app.request.locale == 'it' %}
+                                    
+                                        {{project.content|raw}}
+                                    {% else %}
+                                        {% for translation in project.translations %}
+                                            {% if app.request.locale == translation.language %}
+                                            
+                                                {{translation.contentTrans|raw}}
+                                            {% endif %}
+                                            
+                                        {% endfor %}
+                                    {% endif %}
+                                    
+                                    
                                 </p>
                             </div>
 

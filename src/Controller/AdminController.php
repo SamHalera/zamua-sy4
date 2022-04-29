@@ -6,6 +6,7 @@ use App\Entity\Contact;
 use App\Entity\ContentEntity;
 use App\Entity\Project;
 use App\Entity\ProjectMember;
+use App\Entity\ProjectTranslation;
 use App\Entity\Show;
 use App\Entity\TextContent;
 use App\Entity\Video;
@@ -15,6 +16,7 @@ use App\Form\EditMediaFormType;
 use App\Form\FileFormType;
 use App\Form\ProjectFormType;
 use App\Form\ProjectMembersFormType;
+use App\Form\ProjectTranslationFormType;
 use App\Form\ShowFormType;
 use App\Form\TextFieldFormType;
 use App\Form\VideoFormType;
@@ -204,7 +206,7 @@ class AdminController extends AbstractController
             $em->persist($projectMember);
             $em->flush();
 
-            $this->addFlash('success', 'A new member has been created');
+            $this->addFlash('success', 'The member has been updated!');
             return $this->redirectToRoute('app_admin_member_list');
         }
         return $this->render('admin/new-project-member.html.twig', [
@@ -280,25 +282,6 @@ class AdminController extends AbstractController
 
     
     /**
-    * @Route("/admin/projectList", name="app_admin_project_list")
-    */
-    public function projectList(EntityManagerInterface $em, ProjectRepository $projectRepository, Request $request)
-    {
-        $projects= $projectRepository->findBy([],
-            [
-                'priority' => 'ASC'
-            ]
-        );
-        
-        return $this->render('admin/projects-list.html.twig', [
-            'activeName' => 'ADMIN',
-            'projects' => $projects
-        ]);
-    }
-
-
-    
-    /**
     * @Route("/admin/project/{id}/edit", name="app_admin_project_edit")
     */
     public function editProject(EntityManagerInterface $em, Request $request, ProjectRepository $projectRepository, Project $project)
@@ -337,6 +320,96 @@ class AdminController extends AbstractController
             
         ]);
 
+    }
+
+    /**
+     * @Route("/admin/project/{id}/translate", name="app_admin_trans_project")
+     */
+    public function tnewTanslateProject(EntityManagerInterface $em, Project $project, Request $request)
+    {   
+
+        $form = $this->createForm(ProjectTranslationFormType::class);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+
+            $projectTrans = new ProjectTranslation();
+
+            $data = $form->getData();
+
+            $projectTrans 
+                ->setProject($project)
+                ->setLanguage($data->getLanguage())
+                ->setMainTitleTrans($data->getMainTitleTrans())
+                ->setContentTrans($data->getContentTrans())
+            ;
+
+            $em->persist($projectTrans);
+            $em->flush();
+
+            $this->addFlash('success', 'The translation has been created!');
+
+            return $this->redirectToRoute('app_admin_project_list');
+
+        }
+
+        return $this->render('admin/new-project-translate.html.twig', [
+            'activeName' => 'ADMIN',
+            'project' => $project,
+            'projectTransForm' => $form->createView()
+        ]);
+    }
+
+    /**
+     * @Route("/admin/project/edit/{id}/translation", name="app_admin_edit_trans_project")
+     */
+    public function editTranslateProject(EntityManagerInterface $em, ProjectTranslation $projectTranslation, Request $request)
+    {
+        $form = $this->createForm(ProjectTranslationFormType::class, $projectTranslation);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+
+
+            $projectTranslation = $form->getData();
+
+            
+
+            $em->persist($projectTranslation);
+            $em->flush();
+
+            $this->addFlash('success', 'The translation has been created!');
+
+            return $this->redirectToRoute('app_admin_project_list');
+
+        }
+
+        return $this->render('admin/edit-project-translate.html.twig', [
+            'activeName' => 'ADMIN',
+            'projectTranslation' => $projectTranslation,
+            'projectTransForm' => $form->createView()
+        ]);
+    }
+
+    /**
+    * @Route("/admin/projectList", name="app_admin_project_list")
+    */
+    public function projectList(EntityManagerInterface $em, ProjectRepository $projectRepository, Request $request)
+    {
+        // $projects= $projectRepository->findBy([],
+        //     [
+        //         'priority' => 'ASC'
+        //     ]
+        // );
+        
+        $projects = $projectRepository->findProjectandTranslation();
+        
+        return $this->render('admin/projects-list.html.twig', [
+            'activeName' => 'ADMIN',
+            'projects' => $projects
+        ]);
     }
     
     /**

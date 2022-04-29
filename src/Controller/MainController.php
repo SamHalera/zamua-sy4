@@ -168,13 +168,16 @@ class MainController extends BaseController
      /**
      * @Route("/progetti", name="app_projects")
      */
-    public function projects(ProjectRepository $projectRepository): Response
+    public function projects(ProjectRepository $projectRepository, Request $request): Response
     {
-        $projects= $projectRepository->findBy([],
-            [
-                'priority' => 'ASC'
-            ]
-        );
+        // $projects= $projectRepository->findBy([],
+        //     [
+        //         'priority' => 'ASC'
+        //     ]
+        // );
+        $locale = $request->getLocale();
+        
+        $projects = $projectRepository->findProjectandTranslation();
         
         return $this->render('main/projects.html.twig', [
             'activeName' => 'Progetti',

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}ADMIN | NEW SHOW{% endblock %}
+{% block title %}ADMIN | NEW PROJECT TRANSLATION{% endblock %}
 
 {% block stylesheets %}
     {{parent()}}
@@ -12,28 +12,23 @@
 <div class="bg-admin mb-4">
     <div class="container overlay">
         <div class="block-title">
-            <h1 class="mb-2">NEW PROJECT MEMBER</h1>
+            <h1 class="mb-2">NEW TRANSLATION</h1>
+            <h2 class="mb-2">{{project.mainTitle}}</h2>
             <div class="add-section align-center">
                 <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
-                <a class="btn-admin" href="{{ path('app_admin_member_list')}}">members list</a>
+                <a class="btn-admin" href="{{ path('app_admin_project_list')}}">project list</a>
+
             </div>
         </div>
     </div>
 </div>
 
-<div class="container show-section">
+<div class="container project-section">
 
-    {{ form_start(memberForm, {
-        'attr' : {
-            'class' : 'admin-form'
-        }
+    
+    {{ include('admin/_project-translate-form.html.twig', {
+        button_text : 'Create'
     })}}
-        {{form_widget(memberForm)}}
-
-        <button class="btn-admin" type="submit">
-            Send
-        </button>
-    {{ form_end(memberForm)}}
 </div>
 {% endblock %}
 

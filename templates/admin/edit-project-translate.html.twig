@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}ADMIN | EDIT PROJECT{% endblock %}
+{% block title %}ADMIN | EDIT PROJECT TRANSLATION{% endblock %}
 
 {% block stylesheets %}
     {{parent()}}
@@ -12,7 +12,8 @@
 <div class="bg-admin mb-4">
     <div class="container overlay">
         <div class="block-title">
-            <h1 class="mb-2">EDIT PROJECT </h1>
+            <h1 class="mb-2 mt-4">EDIT PROJECT TRANSLATION</h1>
+            <h2 class="mb-2">{{projectTranslation.project.mainTitle}}</h2>
             <div class="add-section align-center">
                 <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>    
                 <a class="btn-admin" href="{{ path('app_admin_project_list')}}">project list</a>
@@ -24,8 +25,7 @@
 
 <div class="container project-section">
 
-    {{ include('admin/_project-form.html.twig', {
-        priority : priorityValue,
+    {{ include('admin/_project-translate-edit-form.html.twig', {
         button_text : 'Update',
     })}}
 </div>

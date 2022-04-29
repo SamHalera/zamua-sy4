@@ -185,3 +185,10 @@ body.admin .project-title{
     justify-content: space-between;
     margin: 2rem;
 }
+
+.original-version{
+    padding: 4rem 2rem;
+    
+    background: #d1d1d1;
+    font-style: italic;
+}

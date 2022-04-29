@@ -66,10 +66,16 @@ class Project
      */
     private $locale;
 
+    /**
+     * @ORM\OneToMany(targetEntity=ProjectTranslation::class, mappedBy="project", orphanRemoval=true)
+     */
+    private $translations;
+
     public function __construct()
     {
         $this->members = new ArrayCollection();
         $this->zamuaFiles = new ArrayCollection();
+        $this->translations = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -196,5 +202,35 @@ class Project
     public function setTranslatableLocale($locale)
     {
         $this->locale = $locale;
+    }
+
+    /**
+     * @return Collection<int, ProjectTranslation>
+     */
+    public function getTranslations(): Collection
+    {
+        return $this->translations;
+    }
+
+    public function addTranslation(ProjectTranslation $translation): self
+    {
+        if (!$this->translations->contains($translation)) {
+            $this->translations[] = $translation;
+            $translation->setProject($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTranslation(ProjectTranslation $translation): self
+    {
+        if ($this->translations->removeElement($translation)) {
+            // set the owning side to null (unless already changed)
+            if ($translation->getProject() === $this) {
+                $translation->setProject(null);
+            }
+        }
+
+        return $this;
     }
 }

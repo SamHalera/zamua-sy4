@@ -17,7 +17,7 @@ class ContactFormType extends AbstractType
     {
         $builder
             ->add('senderName', TextType::class, [
-                'label' => 'Nome',
+                
                 'label_attr' => [
                     'class' => 'font-size-l'
                 ],
@@ -40,7 +40,7 @@ class ContactFormType extends AbstractType
                 ]
             ])
             ->add('content', TextareaType::class, [
-                'label' => 'Messaggio',
+                
                 'label_attr' => [
                     'class' => 'font-size-l'
                 ],

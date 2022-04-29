@@ -40,6 +40,16 @@ class ProjectMember
      */
     private $features;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $featuresFR;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $featuresEN;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -100,5 +110,29 @@ class ProjectMember
         } else {
             return $this->getFirstName() . ' ' . $this->getLastName();
         }
+    }
+
+    public function getFeaturesFR(): ?string
+    {
+        return $this->featuresFR;
+    }
+
+    public function setFeaturesFR(?string $featuresFR): self
+    {
+        $this->featuresFR = $featuresFR;
+
+        return $this;
+    }
+
+    public function getFeaturesEN(): ?string
+    {
+        return $this->featuresEN;
+    }
+
+    public function setFeaturesEN(?string $featuresEN): self
+    {
+        $this->featuresEN = $featuresEN;
+
+        return $this;
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="it" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -422,17 +422,10 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
         <source>Secondo la legislazione vigente, ogni utente ha il diritto di accesso, di aggiornamento, di retifica, di cancellazione e il diritto di limitare l'uso dei suoi dati personali.
 
                     L'utente puo esercitare il proprio diritto contattando il nostro servizio: &lt;a class="font-weight-bold" mailto="personal.data@zamuamusic.com"&gt;personal.data@zamuamusic.com&lt;/a&gt;</source>
-        <target><![CDATA[__Secondo la legislazione vigente, ogni utente ha il diritto di accesso, di aggiornamento, di retifica, di cancellazione e il diritto di limitare l'uso dei suoi dati personali.
-
-                    L'utente puo esercitare il proprio diritto contattando il nostro servizio: <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>]]></target>
-      </trans-unit>
-      <trans-unit id="lO4FkzX" resname="TEST">
-        <source>TEST</source>
-        <target>LE TEST</target>
-      </trans-unit>
-      <trans-unit id="1IpYubS" resname="QUESTA PAGINA">
-        <source>QUESTA PAGINA</source>
-        <target>CETTE PAGE</target>
+        <target><![CDATA[
+        Conformément à la législation en vigueur, chaque utilisateur dispose d'un droit d'accès, de mise à jour, de rectification, 
+          de suppression et de limitation de l'utilisation de ses données personnelles. 
+          L'utilisateur peut exercer ce droit en s'adressant à notre service : <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>]]></target>
       </trans-unit>
     </body>
   </file>
