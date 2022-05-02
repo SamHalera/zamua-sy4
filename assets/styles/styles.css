@@ -123,11 +123,16 @@ form ul li{
     display: none;
 }
 .no-mobile-view{
-    display: block;
+    display: flex;
+    align-items: center;
 }
 .switch-language{
     padding: 1.5rem;
-    border: 1px solid;
+    border: 1px solid var(--color-primary);
+    
+}
+.switch-language.no-mobile-view{
+    margin-right: 3rem;
 }
 
 .switch-language a{

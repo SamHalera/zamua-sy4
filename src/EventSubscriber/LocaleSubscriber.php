@@ -14,9 +14,12 @@ class LocaleSubscriber implements EventSubscriberInterface
     public function __construct($defaultLocale = 'it')
     {
         $this->defaultLocale = $defaultLocale;
+        
+        
     }
     public function onKernelRequest(RequestEvent $event)
     {
+        
         $request = $event->getRequest();
         if (!$request->hasPreviousSession()) {
             return;
@@ -33,6 +36,7 @@ class LocaleSubscriber implements EventSubscriberInterface
 
     public static function getSubscribedEvents()
     {
+        
         return [
             KernelEvents::REQUEST => [['onKernelRequest', 20]],
         ];

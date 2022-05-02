@@ -172,7 +172,11 @@ class AdminController extends AbstractController
                 ->setFirstName($projectMemberFirstName)
                 ->setLastName($projectMemberLastName)
                 ->setArtistName($projectMemberArtirstName)
-                ->setFeatures($data->getFeatures());
+                ->setFeatures($data->getFeatures())
+                ->setFeaturesIt($data->getFeaturesIt())
+                ->setFeaturesFr($data->getFeaturesFr())
+            
+                ;
 
             $em->persist($projectMember);
             $em->flush();

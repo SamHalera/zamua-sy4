@@ -5,7 +5,9 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     app.locales: [en, fr, it]
-    locale: 'it'
+    locale: 'en'
+    app.supported_locales: 'en|fr|it'
+    app.default_locale: 'en'
 services:
     # default configuration for services in *this* file
     _defaults:
@@ -15,6 +17,8 @@ services:
 
         bind: 
             $uploadsPath: '%kernel.project_dir%/public/uploads'
+            # $locales: '%app.locales%'
+            # $defaultLocale: '%app.default.locale%'
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name

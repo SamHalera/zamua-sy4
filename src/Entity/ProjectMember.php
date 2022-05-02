@@ -43,12 +43,12 @@ class ProjectMember
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $featuresFR;
+    private $featuresIt;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $featuresEN;
+    private $featuresFr;
 
     public function getId(): ?int
     {
@@ -112,26 +112,26 @@ class ProjectMember
         }
     }
 
-    public function getFeaturesFR(): ?string
+    public function getFeaturesIt(): ?string
     {
-        return $this->featuresFR;
+        return $this->featuresIt;
     }
 
-    public function setFeaturesFR(?string $featuresFR): self
+    public function setFeaturesIt(?string $featuresIt): self
     {
-        $this->featuresFR = $featuresFR;
+        $this->featuresIt = $featuresIt;
 
         return $this;
     }
 
-    public function getFeaturesEN(): ?string
+    public function getFeaturesFr(): ?string
     {
-        return $this->featuresEN;
+        return $this->featuresFr;
     }
 
-    public function setFeaturesEN(?string $featuresEN): self
+    public function setFeaturesFr(?string $featuresFr): self
     {
-        $this->featuresEN = $featuresEN;
+        $this->featuresFr = $featuresFr;
 
         return $this;
     }

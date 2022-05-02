@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 {% block title %}
-    ZAMUA | Privacy e Cookies Policy
+    ZAMUA | Privacy and Cookies Policy
 {% endblock %}
 
 
@@ -15,34 +15,31 @@
         </div>
         <div class="section-content">
             <div class="sub-section">
-                <h2>{% trans %}I Cookies{% endtrans %}</h2>
+                <h2>{% trans %}Cookies{% endtrans %}</h2>
                 <p>
                 {% trans %}
-                    Il nostro sito utilizza i <strong>cookies </strong>: dei piccoli file testo che vengono 
-                    inviati al vostro terminale durante la vostra visita.
+                    Our website uses <strong>cookies </strong>:some small text files that are sent to your terminal during your visit.
                 {% endtrans %}
                 </p>
                 <p>
-                    {% trans %}Questi file testo vengono utilizzati per rendere più efficente l'esperienza di navigazione sul sito dell'utente{% endtrans %}
+                    {% trans %}These text files are used to make your browsing experience on the site more efficient.{% endtrans %}
                 </p>
                 <p>
                 {% trans %}
-                    I cookies utilizzati sono, "cookies tecnici" ovvero strettamente necessari per il funzionamento di questo sito.
-                    Per l'installazione e l'utilizzo dei cookie tecnici non è richiesto il preventivo consenso degli utenti, 
-                    poiché i dati gestiti dai cookie di sessione o navigazione vengono utilizzati al solo fine di controllare e garantire 
-                    il corretto funzionamento del servizio offerto o per ricavare informazioni statistiche anonime sull'uso del sito.
+                    The cookies used are "technical cookies", i.e. they are strictly necessary for the operation of this site. 
+          Users' prior consent is not required for the installation and use of technical cookies, 
+          as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
+          the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website. 
                 {% endtrans %}
                 </p>
             </div>
             <div class="sub-section">
-                <h2>{% trans %}Disattivare i cookies{% endtrans %}</h2>
+                <h2>{% trans %}Deactivate cookies{% endtrans %}</h2>
                 <p>
                 {% trans %}
-                    L'utente puo controllare le proprie scelte sull'utilizzo dei cookies ingenerale tramite le impostazioni del proprio browser, 
-                    attraverso le quali può decidere di subordinare l’installazione di qualsiasi tipo di cookie al proprio consenso preventivo o 
-                    di impedirne completamente l’installazione. 
-                    
-                    Si invita l’Utente a visitare la rubrica relativa alle impostazioni dei cookies messa a disposizione dal proprio broser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).
+                    The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
+          through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
+          You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer). 
                 {% endtrans %}
                 </p>
             </div>
@@ -59,51 +56,49 @@
         </div>
         <div class="section-content">
             <div class="sub-section">
-                <h2>{% trans %}Introduzione{% endtrans %}</h2>
+                <h2>{% trans %}Introduction{% endtrans %}</h2>
         
                 <p>
                 {% trans %}
-                    Noi consideriamo di foncadmentale importanza la tutela e il rispetto della privacy dell'utente.
-                    Pertanto, ci impegniamo a rispettare la riservatezza dei dati personali e a garantire un trattamento etico e nel pieno rispetto delle norme vigenti.
+                    We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
+                    of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.
                 {% endtrans %}
                 </p>
             </div>
             <div class="sub-section">
-                <h2>{% trans %}I dati personali{% endtrans %}</h2>
+                <h2>{% trans %}Personal data{% endtrans %}</h2>
                 <p>
                 {% trans %}
-                    Ci impegniamo a raccogliere solo i dati che sono necessari in relazione al fine per il quale vengono raccolti (vedere la parte successiva) :
+                    We are committed to collecting only the data that are necessary in relation to the purpose for which they are collected (see next part):
                 {% endtrans %}
                 </p>
                     <ul class="font-size-l mt-1 mb-2">
-                        <li>{% trans %}Nome{% endtrans %}</li>
-                        <li>{% trans %}Cognome{% endtrans %}</li>
-                        <li>{% trans %}Indirizzo e-mail{% endtrans %}</li>
-                        <li>{% trans %}Messaggio inviato tramite modulo Contatti{% endtrans %}</li>
+                        <li>{% trans %}Firstname{% endtrans %}</li>
+                        <li>{% trans %}Lastname{% endtrans %}</li>
+                        <li>{% trans %}E-mail address{% endtrans %}</li>
+                        <li>{% trans %}Messagge sent by Contact form{% endtrans %}</li>
                     </ul>
                 
                 <p>
-                    {% trans %}I dati raccolti non saranno soggetti a nessuna diffusione né comunicazione a servizi terzi.{% endtrans %}
+                    {% trans %}The data the are collected will not be subject to any communication to third party services.{% endtrans %}
                 </p>
             </div>
 
              <div class="sub-section">
-                <h2>{% trans %}Lo scopo della raccolta dei dati{% endtrans %}</h2>
+                <h2>{% trans %}The purpose of data collection{% endtrans %}</h2>
                 <p>
                 
-                {% trans %}L'unica finalità della raccolta e dell'utilizzazione dei dati é la seguente :{% endtrans %}
-                {% trans %}Comunicazione con gli utenti attraverso il {% endtrans %} <a class="font-weight-bold" href="{{path('app_contact')}}">{% trans %} modulo Contatti{% endtrans %}</a>
+                {% trans %}The only purpose of the collection and use of data is the Communication with users via the {% endtrans %} <a class="font-weight-bold" href="{{path('app_contact')}}">{% trans %} Contact form{% endtrans %}</a>
                 
                 </p>
             </div>
 
             <div class="sub-section">
-                <h2>{% trans %}Diritti dell'utente{% endtrans %}</h2>
+                <h2>{% trans %}User's rights {% endtrans %}</h2>
                 <p>
                 {% trans %}
-                    Secondo la legislazione vigente, ogni utente ha il diritto di accesso, di aggiornamento, di retifica, di cancellazione e il diritto di limitare l'uso dei suoi dati personali.
-
-                    L'utente puo esercitare il proprio diritto contattando il nostro servizio: <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>
+                    According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
+                    <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>
                 {% endtrans %}    
                 </p>
             </div>

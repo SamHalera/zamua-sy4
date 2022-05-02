@@ -10,9 +10,9 @@
             <div class="block-text block-title">
                 <h1>
                 
-                    <span class="text1">{% trans %}Quando la musica entra{% endtrans %}</span>
-                    <span class="text2">{% trans %}nella tua vita, {% endtrans %}</span>
-                    <span class="text3">{% trans %}é destinata a lasciare un segno indelebile{% endtrans %}</span>
+                    <span class="text1">{% trans %}When music enters {% endtrans %}</span>
+                    <span class="text2">{% trans %}your life, {% endtrans %}</span>
+                    <span class="text3">{% trans %}it is bound to leave an indelible mark{% endtrans %}</span>
                 
                 </h1>
             </div>
@@ -34,41 +34,38 @@
                    
                 <p class="mb-2 line-height-l reveal-up font-size-l">
                 
-                    {% trans %}Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.{% endtrans %}
+                    {% trans %}Zamua is a singer, guitarist and songwriter born in Sardinia from a Sardinian mother and a Burundian father.{% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l reveal-up font-size-l">
                     {% trans %}
-                    Il suo sogno era diventare un calciatore, 
-                    ma si ritrova immobilizzato a letto in seguito a un incidente sul campo da calcio. 
-                    Durante la convalescenza il suo amico Deodatus Nduwimana gli insegna a suonare la chitarra. 
-                    <strong><em>« Volevo semplicemente imparare a cantare Redemption Song, Bob Marley é il mio eroe ».</em></strong>
+                    His dream was to become a footballer, but he found himself bedridden after an accident on the football playground. 
+                    During his convalescence, his friend Deodatus Nduwimana taught him how to play the guitar.
+                    <strong><em>"I just wanted to learn Redemption Song, Bob Marley was my hero".</em></strong>
                     {% endtrans %}
                 </p>
                 <p class="mb-2 line-height-l  reveal-up font-size-l">
                 
                     {% trans %}
-                    <em>« La prima volta che cantai davanti alla mia famiglia avevo sette anni. Feci una cosa che somigliava vagamente a un rap.<br>
-                    A casa nessuno ascoltava rap e ancora oggi mi chiedo dove sentii quella musica cosi potente!<br> 
-                    Mio padre ascoltava spesso il jazz su Radio Rai 3. <br>Mi ricordo la tromba di Louis Amstrong la mattina, 
-                    mentre facevamo colazione, le voci dei Ladysmith Black Mambazo, di Tracy Chapman, 
-                    di Luigi Tenco, di Lucio Dalla e di Fabrizio De André.<br>
-                    Oggi, quando riascolto la registrazione di quella prima performance, 
-                    capisco che quando la musica colpisce, lascia un segno indelebile... » </em>
+                    <em>"The first time I sang in front of someone, I was seven years old and it was in front of ma family. I did something that vaguely sounded like rap.<br>
+                    Nobody at home listened to rap music and I still wonder where I heard that powerful music!<br> 
+                    MMy father often listened to some jazz music on Radio Rai 3. 
+                    I remember Louis Armstrong's trumpet in the morning while we were having breakfast, the voices of Ladysmith Black Mambazo, 
+                    Tracy Chapman, Luigi Tenco, Lucio Dalla and Fabrizio De André.<br>
+                    Today, when I listen to the recording of that first so-called performance, I understand that when music hits, it leaves an indelible mark... "</em>
                     {% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l  reveal-up font-size-l">
                 
                     {% trans %}
-                    <strong>Questo segno resta intatto col passare del tempo, 
-                    finché non realizzi che il modo migliore per vivere la musica é farla, vederla nascere...</strong>
+                    <strong>This mark remains intact over time, until you realise that the best way to experience music is to make it, to see it come to life... </strong>
                     {% endtrans %}
                     
                 </p>
                 
                 <div>
-                    <a href="{{path('app_bio')}}" class="btn-custom">{% trans %}BIOGRAFIA{% endtrans %}</a>
+                    <a href="{{path('app_bio')}}" class="btn-custom">{% trans %}BIOGRAPHY{% endtrans %}</a>
                 </div>
             </div>
 
@@ -118,9 +115,9 @@
         <div class="block-text">
             <p class="mb-1 reveal-up line-height-l font-size-l">
                 {% trans %}
-                <strong>LITANIE</strong> é il primo EP di Zamua, prodotto dalla giovane etichetta indipendente OD MusicLab.<br>
-                Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie e litanie, 
-                e fa di questo artista un elemento inclassificabile ma indispensabile. 
+                <strong>LITANIE</strong>  is Zamua's first EP, produced by the young independent label OD MusicLab. 
+                His debut mini-album offers an atypical musical immersion between euphoric moods and litanies, and makes this artist unclassifiable but indispensable.
+ 
                 {% endtrans %}
             </p>
         </div>
@@ -132,7 +129,7 @@
             </a>
         </div> #}
         <a href="{{path('app_music')}}" class="btn-custom align-center">
-            {% trans %} MUSICA {% endtrans %}
+            {% trans %} MUSIC {% endtrans %}
         </a>
     </div>
 
@@ -144,7 +141,7 @@
 
     <div class="four-section-projects mb-3">
         <div class="">
-            <h2 class="uppercase mb-4 reveal"> {% trans %} Progetti {% endtrans %}</h2>
+            <h2 class="uppercase mb-4 reveal"> {% trans %} Projects {% endtrans %}</h2>
             <div class="container mb-4">
                 
                 {% for project in projects %}
@@ -167,7 +164,7 @@
                     
                 </a>
             </div> #}
-            <a href="{{path('app_projects')}}" class="btn-custom mx-auto">{% trans %} PROGETTI {% endtrans %}</a>
+            <a href="{{path('app_projects')}}" class="btn-custom mx-auto">{% trans %} PROJECTS {% endtrans %}</a>
         
     </div>
     {% endif %}
@@ -176,7 +173,19 @@
         <div class="container overlay">
             <div class="main-form-container">
                 <div class="contact-container">
-                    <h2 class="mb-3 white">{% trans %} CONTATTI {% endtrans %}</h2>
+                    <h2 class="mb-3 white">{% trans %} CONTACT {% endtrans %}</h2>
+                    
+                    {% if app.request.locale == 'fr' %}
+                        {% set name = 'Nom' %}
+                        {% set messageContent = 'Message' %}
+                    {% elseif app.request.locale == 'en' %}
+                        {% set name = 'Name' %}
+                        {% set messageContent = 'Message' %}
+                    {% else %}
+                        {% set name = 'Nome' %}
+                        {% set messageContent = 'Messaggio' %}
+                   {% endif %}
+                    
                     {{ form_start(form)}}
                         {% for message  in app.flashes('successMessage')%}
                         <div class="alert alert-success mb-4">
@@ -186,7 +195,7 @@
 
                         <div class="mb-3">
                             {{ form_errors(form.senderName)}}
-                            {{ form_label(form.senderName)}}
+                            {{ form_label(form.senderName, name)}}
                             {{ form_widget(form.senderName)}}
                             
                         </div>
@@ -199,13 +208,13 @@
                         </div>
                           <div class="mb-3">
                             {{ form_errors(form.content)}}
-                            {{ form_label(form.content)}}
+                            {{ form_label(form.content, messageContent)}}
                             {{ form_widget(form.content)}}
                            
                         </div>
 
                         <div class="">
-                            <button type="submit" class="btn-custom font-weight">{% trans %} INVIA {% endtrans %}</a>
+                            <button type="submit" class="btn-custom font-weight">{% trans %} SEND {% endtrans %}</a>
                         </div>
 
                     {{ form_end(form)}}
@@ -230,7 +239,7 @@
                 </div>
                 
                 <div class="infos">
-                    <h3 class="mb-3 white">{% trans %} Booking e Management {% endtrans %}</h3>
+                    <h3 class="mb-3 white">{% trans %} Booking and Management {% endtrans %}</h3>
                     <a class="mb-1" href="mailto:info@zamuamusic.com">info@zamuamusic.com</a>
                     <a href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
                 </div>

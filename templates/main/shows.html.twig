@@ -52,16 +52,16 @@
                         </div>
                         <div class="one-show-actions">
                             {% if show.ticketUrl %}
-                                <a href=" {{show.ticketUrl}}" target="_blank" class="action-show">{% trans %} BIGLIETTI {% endtrans %}</a>
+                                <a href=" {{show.ticketUrl}}" target="_blank" class="action-show">{% trans %} TICKETS {% endtrans %}</a>
                             {% else %}
-                                <span class="action-show">{% trans %} BIGLIETTI {% endtrans %}</span>
+                                <span class="action-show">{% trans %} TICKETS {% endtrans %}</span>
                             {% endif %}
                         </div>
                     </div>
                 {% endfor %}
 
             {% else %}
-                <h3>{% trans %} Nuovi concerti in arrivo! Restate in contatto!{% endtrans %} </h3>
+                <h3>{% trans %} New show are coming soon. Stay in touch!{% endtrans %} </h3>
                 
             {% endif %}
 

@@ -63,6 +63,7 @@ body{
     margin-top: 6rem;
 }
 .dashboard-item{
+    text-align: center;
     padding: 2.5rem 3.5rem;
     margin: 3rem;
     background: var(--color-primary);
@@ -191,4 +192,19 @@ body.admin .project-title{
     
     background: #d1d1d1;
     font-style: italic;
+}
+.add-section{
+    display: flex;
+}
+.add-section a{
+    margin: 1rem;
+}
+
+@media screen and (max-width: 600px){
+
+    form.admin-form{
+        width: 100%;
+        margin: 1rem 2rem;
+        padding: 4rem 4rem;
+    }
 }

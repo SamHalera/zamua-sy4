@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 {% block title %}
-    ZAMUA | VIDEO
+    ZAMUA | {% trans %}VIDEOS {% endtrans %}
 {% endblock %}
 
 
@@ -9,7 +9,7 @@
        <div class="bg-main bg-main-video">
         <div class="container overlay">
             <div class="block-title">
-                <h1>VIDEO</h1>
+                <h1>{% trans %}VIDEOS {% endtrans %}</h1>
                 
             </div>
         </div>
@@ -57,7 +57,7 @@
         <div class="wrapper-position">
             <div class="container">
                 <div class="block-title">
-                    <h2 class="reveal-up">Un intreccio personale<br>tra folk e soul-jazz</h2>
+                    <h2 class="reveal-up">{% trans %}A personal blend<br>of folk and soul-jazz{% endtrans %}</h2>
                     
                 </div>
                 <div class="block-1 reveal"></div>
@@ -68,7 +68,7 @@
                 </div>
                 
                 <div class="block-btn">
-                    <a href="{{ path('app_music')}}" class="btn-custom font-weight">MUSICA</a>
+                    <a href="{{ path('app_music')}}" class="btn-custom font-weight">{% trans %} MUSIC {% endtrans %}</a>
                 </div>
                 
             </div>

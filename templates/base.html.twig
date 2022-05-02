@@ -50,9 +50,9 @@
                 {% for locale in locales %}
                     {% if locale != app.request.locale %}
                 
-                    <a href="{{ path('app_change_locale', {'locale': locale}) }}">{{ locale }}</a> 
+                    <a href="{{ path('app_change_locale', {_locale: locale}) }}">{{ locale }}</a> 
                     {% endif %}
-                    
+
                 {% endfor %}
                 </div> 
                 {% if app.user %}
@@ -74,7 +74,7 @@
                     <a href="{{ path('app_bio')}}">BIO</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_music')}}">{% trans %} MUSICA {% endtrans %}</a>
+                    <a href="{{ path('app_music')}}">{% trans %} MUSIC {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item  reveal-up">
                     <a href="{{ path('app_shows')}}">SHOWS</a>
@@ -83,16 +83,16 @@
                     <a href="{{ path('app_listenings')}}">I MIEI ASCOLTI</a>
                 </li> #}
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_gallery')}}">{% trans %} GALLERIA {% endtrans %}</a>
+                    <a href="{{ path('app_gallery')}}">{% trans %} PHOTO {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_video')}}">{% trans %} VIDEO {% endtrans %}</a>
+                    <a href="{{ path('app_video')}}">{% trans %} VIDEOS {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_projects')}}">{% trans %} PROGETTI {% endtrans %}</a>
+                    <a href="{{ path('app_projects')}}">{% trans %} PROJECTS {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_contact')}}">{% trans %} CONTATTI {% endtrans %}</a>
+                    <a href="{{ path('app_contact')}}">{% trans %} CONTACT {% endtrans %}</a>
                 </li>
                 
             </ul>
@@ -108,11 +108,13 @@
             
             
             <div class="menu">
-                <div class="switch-language reveal-up mb-2 no-mobile-view">
+                <div class="switch-language reveal-up no-mobile-view">
+
+            
                 {% for locale in locales %}
                     {% if locale != app.request.locale %}
                 
-                    <a href="{{ path('app_change_locale', {'locale': locale}) }}">{{ locale }}</a> 
+                    <a href="{{ path('app_change_locale', {_locale: locale}) }}">{{ locale }}</a> 
                     {% endif %}
 
 
@@ -193,7 +195,7 @@
                 <section class="legal-section">
                     <ul>
                         <li class="mb-1">
-                            <a href="{{path('app_cookies')}}">{% trans %} Privacy e Cookies Policy {% endtrans %}</a>
+                            <a href="{{path('app_cookies')}}">{% trans %} Privacy and Cookies Policy {% endtrans %}</a>
                         </li>
                     </ul>
                 </section>
