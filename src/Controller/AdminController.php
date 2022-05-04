@@ -639,19 +639,19 @@ class AdminController extends AbstractController
         if($form->isSubmitted() && $form->isValid()){
 
            
-            $data = $form->getData();
+            $zamuaFiles = $form->getData();
             // dd($data->getProjects());
-            $zamuaFiles->setIsGalleryItem($data->getIsGalleryItem());
+            //$zamuaFiles->setIsGalleryItem($data->getIsGalleryItem());
 
-            foreach ($data->getProjects() as $aProject) {
-                $projectToPersist = $projectRepository->find($aProject->getId());
+            // foreach ($data->getProjects() as $aProject) {
+            //     $projectToPersist = $projectRepository->find($aProject->getId());
 
-                // $projectToPersist->addMedium($zamuaFiles);
-                // $em->persist($projectToPersist);
-                // $em->flush();
+            //     // $projectToPersist->addMedium($zamuaFiles);
+            //     // $em->persist($projectToPersist);
+            //     // $em->flush();
 
-                // $zamuaFiles->addProject($projectToPersist);
-            }
+            //     // $zamuaFiles->addProject($projectToPersist);
+            // }
 
             $em->persist($zamuaFiles);
             $em->flush();

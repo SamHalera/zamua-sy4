@@ -332,7 +332,7 @@ class MainController extends BaseController
     public function encodePass(UserPasswordEncoderInterface $passwordEncoderInterface)
     {
         $user = new User();
-        $pass = 'helloAdmin!';
+        $pass = 'Mwaramutse!$';
         $hashed = $passwordEncoderInterface->encodePassword($user, $pass );
         dd($hashed);
 

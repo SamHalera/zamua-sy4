@@ -28,6 +28,7 @@ class EditMediaFormType extends AbstractType
             ])
             ->add('alt')
             ->add('credit')
+            ->add('caption')
             ->add('priority')
             ->add('projects', EntityType::class, [
                 'label' => 'Add to some projects',

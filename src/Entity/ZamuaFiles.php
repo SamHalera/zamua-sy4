@@ -53,6 +53,11 @@ class ZamuaFiles
      */
     private $credit;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $caption;
+
     public function __construct()
     {
         $this->projects = new ArrayCollection();
@@ -151,5 +156,17 @@ class ZamuaFiles
     public function getFilePath()
     {
         return 'uploads/' . self::UPLOADS_FILES_FOLDER . '/' . $this->getFileName();
+    }
+
+    public function getCaption(): ?string
+    {
+        return $this->caption;
+    }
+
+    public function setCaption(?string $caption): self
+    {
+        $this->caption = $caption;
+
+        return $this;
     }
 }

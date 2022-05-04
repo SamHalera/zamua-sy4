@@ -2038,6 +2038,7 @@ footer{
 
     /*PAGE GALLERIA*/
     .bg-main-gallery{
+        background-attachment: scroll;
         background-position: -65rem -15rem;
         height: 70vh;
     }
@@ -2060,6 +2061,7 @@ footer{
 
     /*PAGE BIO*/
     .bg-bio{
+        background-attachment: scroll;
         background-position: -18rem -23rem;
     }
     .bg-bio .block-title{
@@ -2392,6 +2394,7 @@ footer{
     /*PAGE SHOWS*/
 
     .bg-main-shows{
+        background-attachment: scroll;
         background-position: -26rem -22rem;
     }
     .bg-main-shows .container .block-title h1{

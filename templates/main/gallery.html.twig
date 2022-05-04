@@ -33,10 +33,10 @@
                 
                 <div id="lightgallery">
                     {% for item in itemsGallery %}
-                        <a href="{{asset(item.getFilePath)}}" class="reveal gallery-item" {% if item.credit is defined %} data-sub-html="<span>{{ item.credit }}</span>" {% endif %}>
+                        <a href="{{asset(item.getFilePath)}}" class="reveal gallery-item" {% if item.credit is defined %} data-sub-html="{% if item.caption is defined %}<div> {{item.caption}} </div>{% endif %}<br><span>{{ item.credit }}</span> {% endif %}">
                             
                             <img class="fluid-image" src="{{asset(item.getFilePath)}}" {% if item.alt is defined %} alt="{{item.alt}}" {% endif %}>
-                           
+                            
                         </a>
                         
                     {% endfor %}

@@ -28,26 +28,28 @@
 
                 {% for project in projects%}
                     <a href="#toTopProject" class="project-card reveal-up box-shadow" id="zamua-{{project.secondTitle|lower|replace({" " : "-"})}}">
-                    <div class="overlay">
-                        <div class="wrapper">
-                            <div class="title-project">
-                                <div class="block-title">
-                                    <h3 class="title-artist uppercase">{{project.firstTitle}}</h3>
-                                    <div class="stroke"></div>
-                                    <h3 class="title-partner uppercase font-weight">{{ project.secondTitle }}</h3>
+                        <div class="overlay">
+                            <div class="wrapper">
+                                <div class="title-project">
+                                    <div class="block-title">
+                                        <h3 class="title-artist uppercase">{{project.firstTitle}}</h3>
+                                        <div class="stroke"></div>
+                                        <h3 class="title-partner uppercase font-weight">{{ project.secondTitle }}</h3>
+                                    </div>
+                                    
                                 </div>
-                                
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 {% endfor %} 
                 
             </div>
 
             <div class="container-projects-to-display">
                 <div class="close-container">
+                    
                     <i class="el-icon-circle-close close-project"></i>
+                    
                 </div>
 
                 {% for project in projects %}
@@ -78,9 +80,9 @@
                                             {{ member.artistName }}
                                         {% endif %}
                                     </strong> - {% if app.request.locale == 'fr' %}
-                                                    {{member.featuresFR}}
-                                                {% elseif app.request.locale == 'en' %}
-                                                    {{member.featuresEN}}
+                                                    {{member.featuresFr}}
+                                                {% elseif app.request.locale == 'it' %}
+                                                    {{member.featuresIt}}
                                                 {% else %}
                                                     {{member.features}}               
                                                 {% endif %}
@@ -91,7 +93,7 @@
                         <div class="project-presentation">
                             <div class="text">
                                 <p class="">
-                                    {% if app.request.locale == 'it' %}
+                                    {% if app.request.locale == 'en' %}
                                     
                                         {{project.content|raw}}
                                     {% else %}
