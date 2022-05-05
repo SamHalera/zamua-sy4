@@ -83,7 +83,7 @@
                     <a href="{{ path('app_listenings')}}">I MIEI ASCOLTI</a>
                 </li> #}
                 <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_gallery')}}">{% trans %} PHOTO {% endtrans %}</a>
+                    <a href="{{ path('app_gallery')}}">{% trans %} PHOTOS {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item reveal-up">
                     <a href="{{ path('app_video')}}">{% trans %} VIDEOS {% endtrans %}</a>
@@ -100,8 +100,8 @@
         <header>
             <div id="brand-logo">
                 <a href="{{ path('app_home')}}">
-                    <img class="ml-2 first" src="{{asset('images/logo.png')}}" alt="" width="180">
-                    <img class="ml-2 second" src="{{asset('images/logo.png')}}" alt="" width="120">
+                    {# <img class="ml-2 first" src="{{asset('images/logo.png')}}" alt="" width="180"> #}
+                    <img class="ml-2" src="{{asset('images/logo.png')}}" alt="" width="120">
                 </a>
             </div>
 
@@ -218,11 +218,11 @@
                 window.addEventListener("load", function () {
                     window.cookieconsent.initialise({
                         "content": {
-                            "message": "Questo sito utilizza i cookies per finalità tecniche e al fine di migliorare la vostra esperienza di navigazione.\n\
-                                <a href='{{ path('app_cookies') }}' class='cc-link' target='_blank'>Per maggiori informazioni</a>",
+                            "message": "This website uses cookies for technical purposes and to improve your browsing experience. \n\
+                                <a href='{{ path('app_cookies') }}' class='cc-link' target='_blank'>For further information</a>",
                             "dismiss": "Ok",
                             "allow" : "OK",
-                            "deny" : "Rifiuto",
+                            "deny" : "Deny",
                             "link": "",
                             "href": "{{ path('app_home') }}"
                         },
@@ -240,8 +240,6 @@
                         "position": "bottom",
                         
                     });
-
-                    
 
 
                 });

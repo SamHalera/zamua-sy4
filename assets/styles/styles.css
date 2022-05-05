@@ -81,7 +81,7 @@ html,
 body{
     font-size: 1.6rem;
     /* background: var(--bg-light); */
-    background-color: #fff;
+    background-color: #f7f7f7;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
 }
@@ -248,13 +248,13 @@ header{
     z-index: 20;
     transition: all .3s ease-in-out;
 }
-#brand-logo img.first{
+/* #brand-logo img.first{
     opacity: 1;
     transform: translate(1rem, 1rem);
     transition: all .4s ease-in-out;
-}
+} */
 #brand-logo img.second{
-    transform: translate(-18rem, -12.6rem);
+    /* transform: translate(-18rem, -12.6rem); */
     transition: all .4s ease-out;
 }
 header .menu{
@@ -408,7 +408,7 @@ ON LOAD HOMEPAGE
     position: relative;
 }
 .first-section-text .container div.para{
-    margin: 12rem;
+    margin: 12rem 12rem 0rem 12rem;
     color: #000;
 }
 
@@ -1798,6 +1798,7 @@ footer{
     .main-cookies-container {
         padding: 16rem 4rem;
     }
+
 /*SECTIONS*/
 
 
@@ -1933,7 +1934,7 @@ footer{
         font-size: 7rem;
     }
     .box-prez-ep .block-text .title-2{
-        margin-left: 3rem;
+        margin: auto;
     }
     .second-section .ep-section{
         width: auto;
@@ -1945,6 +1946,10 @@ footer{
         display: block;
     }
 
+    .box-prez-ep .block-text .title-2::before,
+    .box-prez-ep .block-text .title-2::after{
+        width: 4rem;
+    }
     /*SECTION MUSIC*/
     .section-music{
         padding: 2rem;
@@ -2062,7 +2067,8 @@ footer{
     /*PAGE BIO*/
     .bg-bio{
         background-attachment: scroll;
-        background-position: -18rem -23rem;
+        background-position: -18rem 0rem;
+        margin-bottom: 8rem;
     }
     .bg-bio .block-title{
         margin-left: 2rem;
@@ -2311,7 +2317,7 @@ footer{
     .bg-main-projects{
         background-attachment: scroll;
         background-position: -6rem 0;
-        margin-bottom: 15rem;
+        margin-bottom: 10rem;
     }
 
     .bg-main-projects .container .block-title h1{

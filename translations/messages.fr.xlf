@@ -9,6 +9,30 @@
         <source>message.send.success</source>
         <target>Ton message a bien été enregistré. Merci!</target>
       </trans-unit>
+      <trans-unit id="mg4DIAj" resname="active.name.contact">
+        <source>active.name.contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="VHYm7C6" resname="active.name.video">
+        <source>active.name.video</source>
+        <target>Vidéos</target>
+      </trans-unit>
+      <trans-unit id="60Q8r1h" resname="active.name.shows">
+        <source>active.name.shows</source>
+        <target>Concerts</target>
+      </trans-unit>
+      <trans-unit id="Vo4DYt0" resname="active.name.project">
+        <source>active.name.project</source>
+        <target>Projets</target>
+      </trans-unit>
+      <trans-unit id="KFwdxsz" resname="active.name.music">
+        <source>active.name.music</source>
+        <target>Music</target>
+      </trans-unit>
+      <trans-unit id="PPVejCk" resname="active.name.photo">
+        <source>active.name.photo</source>
+        <target>Photos</target>
+      </trans-unit>
       <trans-unit id="CNX5LKn" resname="MUSIC">
         <source>MUSIC</source>
         <target>MUSIQUE</target>
@@ -100,7 +124,6 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
                 Pendant sa convalescence, son ami Deodatus Nduwimana lui a appris à jouer de la guitare. 
                     <strong><em>"Je voulais juste apprendre Redemption Song, Bob Marley était mon héros".</em></strong>]]></target>
       </trans-unit>
-      
       <trans-unit id="IGbifWO" resname="&lt;strong&gt;This mark remains intact over time, until you realise that the best way to experience music is to make it, to see it come to life... &lt;/strong&gt;">
         <source>&lt;strong&gt;This mark remains intact over time, until you realise that the best way to experience music is to make it, to see it come to life... &lt;/strong&gt;</source>
         <target><![CDATA[<strong>Cette marque reste intacte au fil du temps, jusqu'à ce que vous réalisiez que la meilleure façon de vivre

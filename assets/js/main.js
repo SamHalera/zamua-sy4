@@ -3,8 +3,8 @@ let loaderWrapperImg = document.querySelector('.loader-wrapper img');
 
 let headerElement = document.querySelector('header');
 let logoContainer = document.getElementById("brand-logo");
-let logoElement = document.querySelector('#brand-logo img.second');
-let logoFirstElement = document.querySelector('#brand-logo img.first');
+// let logoElement = document.querySelector('#brand-logo img.second');
+// let logoFirstElement = document.querySelector('#brand-logo img.first');
 let scroolToTopElement = document.querySelector('div.scroll-to-top');
 
 let blockTitle = document.querySelector('.block-title');
@@ -49,14 +49,14 @@ window.addEventListener("scroll", function () {
         headerElement.style.backgroundColor = "rgb(0 0 0 / 89%)";
         headerElement.style.justifyContent = "space-between";
         
-        logoFirstElement.style.opacity = '0';
-        if(window.screen.width < 601){
-            logoFirstElement.style.transform = "translate(-300px, 10px)";
-            logoElement.style.transform = "translate(-16px, -8px)";
-        } else {
-            logoFirstElement.style.transform = "translate(-300px, 10px)";
-            logoElement.style.transform = "translate(-180px, 10px)";
-        }
+        // logoFirstElement.style.opacity = '0';
+        // if(window.screen.width < 601){
+        //     logoFirstElement.style.transform = "translate(-300px, 10px)";
+        //     logoElement.style.transform = "translate(-16px, -8px)";
+        // } else {
+        //     logoFirstElement.style.transform = "translate(-300px, 10px)";
+        //     logoElement.style.transform = "translate(-180px, 10px)";
+        // }
         
         scroolToTopElement.style.display = "block";
     }
@@ -64,15 +64,15 @@ window.addEventListener("scroll", function () {
         scroolToTopElement.style.display = "none";
         headerElement.style.backgroundColor = "rgb(0 0 0 / 70%)";
         
-        logoFirstElement.style.opacity = '1';
+        // logoFirstElement.style.opacity = '1';
 
-        if(window.screen.width < 601){
-            logoFirstElement.style.transform = "translate(10px, 10px)";
-            logoElement.style.transform = "translate(-16px, -126px)";
-        } else {
-            logoFirstElement.style.transform = "translate(10px, 10px)";
-            logoElement.style.transform = "translate(-180px, -126px)";
-        }
+        // if(window.screen.width < 601){
+        //     logoFirstElement.style.transform = "translate(10px, 10px)";
+        //     logoElement.style.transform = "translate(-16px, -126px)";
+        // } else {
+        //     logoFirstElement.style.transform = "translate(10px, 10px)";
+        //     logoElement.style.transform = "translate(-180px, -126px)";
+        // }
         // logoFirstElement.style.transform = "translate(10px, 10px)";
         
         
