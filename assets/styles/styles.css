@@ -530,6 +530,7 @@ ON LOAD HOMEPAGE
     height: 40rem;
     margin: 5rem;
     box-shadow: .2rem .2rem 1.2rem rgba(0, 0, 0, 0.445);
+    position: relative;
 }
 .image-project:nth-child(2){
     transition-delay: .2s;
@@ -552,6 +553,7 @@ ON LOAD HOMEPAGE
     height: 7rem; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* position: absolute;
     bottom: 0;
     right: 0; */
@@ -562,6 +564,27 @@ ON LOAD HOMEPAGE
     font-size: 2rem;
     text-align: left;
     color: var(--color-primary);
+    position: absolute;
+    top: 30rem;
+    left: 3rem;
+    transition: all .8s ease-in-out;
+}
+.project-details h2::after{
+    content: '';
+    background-color: var(--color-primary);
+    display: block;
+    height: 0.2rem;
+    width: 0%;
+    transition: all .8s ease-in-out;
+}
+.project-link:hover .project-details h2::after{
+    width: 100%;
+}
+.project-link:hover .image-project{
+    opacity: 0.8;
+}
+.project-link:hover .project-details h2{
+    top: 28rem;
 }
 .project-details h3{
     font-weight: normal;
