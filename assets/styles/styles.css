@@ -462,6 +462,9 @@ ON LOAD HOMEPAGE
     display: flex;
     flex-direction: row;
 }
+.img-ep img{
+    max-width: 35rem;
+}
 .img-ep .tooltip{
     opacity: 0;
     position: absolute;
@@ -1978,6 +1981,9 @@ footer{
     .box-prez-ep .block-text .title-2::after{
         width: 4rem;
     }
+    .img-ep img{
+        max-width: 30rem;
+    }
     /*SECTION MUSIC*/
     .section-music{
         padding: 2rem;
@@ -2078,7 +2084,7 @@ footer{
     /*PAGE GALLERIA*/
     .bg-main-gallery{
         background-attachment: scroll;
-        background-position: -65rem -15rem;
+        background-position: 50% 50%;
         height: 70vh;
     }
     .bg-main-gallery .block-title {

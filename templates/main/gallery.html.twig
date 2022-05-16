@@ -6,6 +6,10 @@
 {% block stylesheets %}
     {{parent()}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery-bundle.min.css" integrity="sha512-91yJwfiGTCo9TM74ZzlAIAN4Eh5EWHpQJUfvo/XhpH6lzQtiRFkFRW1W+JSg4ch4XW3/xzh+dY4TOw/ILpavQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- lightgallery plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-pager.min.css" integrity="sha512-F4gJy0MBz7nwvFMIYNeap+CXaVQY0Y9pwsn/Up4mvOfjYD50u+8D7jIVZBkeHV7hZ2xjhY8uJRMkRzWQBvznRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-share.min.css" integrity="sha512-dOqsuo1HGMv5ohBl/0OIUVzkwFLF8ZmjhpZp2VT2mpH5UuOJXwtBhxxtbrrEIpvTDWm7mESg0JsEl4zkUGv/gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-zoom.min.css" integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 {% endblock %}
 {% block body %}
      <div class="bg-main bg-main-gallery">
@@ -56,10 +60,15 @@
 
     {{ encore_entry_script_tags('gallery')}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.umd.min.js" integrity="sha512-e+39qUKXdaNAHHzMx+zHLald62YcdVqJpJGAqs6iIJ6RRWy5/9PKJr1eDAc3SuM/PTpguz9v2d83j6SFgnbTdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- lightgallery plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/pager/lg-pager.min.js" integrity="sha512-KoBwd0uHxIA3pdb+tXMByTACHPWBbf109VniSdkvHysDA76OIgg7pCs/ba+hB2ayX1FcJUrp34T2Cl1tfZRg5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/zoom/lg-zoom.min.js" integrity="sha512-CFy+xT+nDI3oEsnu6zLgBYr1ECW3cfnaFw6k3zkc1qpOG71BvulPWMrPNksGgIQq8WaMZIotttJkmSmNJdC4eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/share/lg-share.min.js" integrity="sha512-Xrr3ws2xubQKmAGFjN35DbAz1ysFHMbO/ntU93CoWV/Xn8343T5AM0dpJhWPu0Z9QVXGCTIyf9U5XWM29g1lvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
    <script type="text/javascript">
     
     lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgShare],
         mode: 'lg-fade',
         subHtmlSelectorRelative : true,
         // cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
