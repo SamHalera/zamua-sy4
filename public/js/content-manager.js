@@ -19,7 +19,6 @@ const addFieldItem = (e) => {
     .prototype
     .replace(
         /__name__/g, collectionContainer.dataset.index
-    
     );
 
     item.querySelector('.btn-delete').addEventListener('click', () => item.remove());

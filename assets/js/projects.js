@@ -1,12 +1,5 @@
-let bgMainOverlay = document.querySelector('.bg-main-projects .overlay');
-
-window.onload = function(){
-    bgMainOverlay.style.background = "rgb(0 0 0 / 60%)";
-    
-}
 
 // DISPLAY ONE PROJECT
-
 
 let sectionAllProjects = document.querySelector('.sections-all-projects');
 

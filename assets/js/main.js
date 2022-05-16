@@ -3,8 +3,6 @@ let loaderWrapperImg = document.querySelector('.loader-wrapper img');
 
 let headerElement = document.querySelector('header');
 let logoContainer = document.getElementById("brand-logo");
-// let logoElement = document.querySelector('#brand-logo img.second');
-// let logoFirstElement = document.querySelector('#brand-logo img.first');
 let scroolToTopElement = document.querySelector('div.scroll-to-top');
 
 let blockTitle = document.querySelector('.block-title');
@@ -27,14 +25,14 @@ window.addEventListener("load", function () {
     logoContainer.style.display = "block";
     loaderWrapperImg.style.display = "none";
     loaderWrapper.style.height = "0vh";
-    title.style.opacity = '1'; 
-
+    
     setTimeout(function(){
        
         if(document.querySelector('.line-scroll')){
             let scroller = document.querySelector('.line-scroll');
             scrollerFadeIn(scroller);
         }
+        title.style.opacity = '1'; 
         menuElement.classList.add('fade-in');
         activeBlock.style.opacity = '1';
         activeBlock.style.left = '-6px';
@@ -43,43 +41,17 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("scroll", function () {
-    //console.log(this.scrollY);
 
     if (this.scrollY >= 300) {
         headerElement.style.backgroundColor = "rgb(0 0 0 / 89%)";
         headerElement.style.justifyContent = "space-between";
-        
-        // logoFirstElement.style.opacity = '0';
-        // if(window.screen.width < 601){
-        //     logoFirstElement.style.transform = "translate(-300px, 10px)";
-        //     logoElement.style.transform = "translate(-16px, -8px)";
-        // } else {
-        //     logoFirstElement.style.transform = "translate(-300px, 10px)";
-        //     logoElement.style.transform = "translate(-180px, 10px)";
-        // }
         
         scroolToTopElement.style.display = "block";
     }
     if (this.scrollY < 200) {
         scroolToTopElement.style.display = "none";
         headerElement.style.backgroundColor = "rgb(0 0 0 / 70%)";
-        
-        // logoFirstElement.style.opacity = '1';
-
-        // if(window.screen.width < 601){
-        //     logoFirstElement.style.transform = "translate(10px, 10px)";
-        //     logoElement.style.transform = "translate(-16px, -126px)";
-        // } else {
-        //     logoFirstElement.style.transform = "translate(10px, 10px)";
-        //     logoElement.style.transform = "translate(-180px, -126px)";
-        // }
-        // logoFirstElement.style.transform = "translate(10px, 10px)";
-        
-        
-        //headerElement.style.justifyContent = "flex-end";
-
     }
-
 });
 
 let navPanelElement = document.getElementById('main-panel');
@@ -100,14 +72,10 @@ burgerElement.addEventListener('click', function () {
     closeIconElement.style.opacity = "1";
     navUlElement.style.opacity = "1";
     navLiElements.forEach(function(navLi, index){
-        // navLi.style.opacity = "1";
-        // navLi.style.transform = "translateY(15px)";
         navLi.style.transitionDelay = "." + (index + 1) + "s";
     });
 
 });
-
-
 closeIconElement.addEventListener('click', function () {
 
     setTimeout(function () {
@@ -137,12 +105,7 @@ if(alertDiv){
 
     setTimeout(function(){
         alertDiv.style.opacity = "0";
-    }, 4000)
-    // closeAlert.addEventListener('click', function(){
-
-    //     alertDiv.style.opacity = "0";
-        
-    // });
+    }, 4000);
 }
 
 

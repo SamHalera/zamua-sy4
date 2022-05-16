@@ -47,6 +47,17 @@ class ZamuaFilesRepository extends ServiceEntityRepository
         }
     }
 
+    // public function findZamuaFilesCredits()
+    // {
+    //     $conn = $this->getEntityManager()->getConnection();
+
+    //     $sql = "SELECT credit FROM zamua_files";
+
+    //     $stmt = $conn->prepare($sql);
+    //     $result = $stmt->executeQuery();
+
+    //     return $result->fetchAllAssociative();
+    // }
     // /**
     //  * @return ZamuaFiles[] Returns an array of ZamuaFiles objects
     //  */

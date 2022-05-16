@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | Credits
+{% endblock %}
+
+
+{% block body %}
+<div class="main-credits-container">
+
+    <div class="credits-container mb-4">
+        
+        <div class="block-title mb-4">
+            <h1>{% trans %} CREDITS {% endtrans %}</h1>
+
+        </div>
+        <div class="section-content">
+            <p class="mb-4">
+                 {% trans %}The site displays images taken by professional and dedicated photographers.{% endtrans %}<br>
+
+                {% trans %}It is important to mention them all because they do a remarkable job.{% endtrans %}<br>
+
+               {% trans %} So thank you to them for giving me permission to use their work, especially in the {% endtrans %}<a class="font-weight-bold" href="{{path('app_gallery')}}"> {% trans %}Photos section{% endtrans %}</a>.</br>
+
+                {% trans %}On the {% endtrans %}<a class="font-weight-bold" href="{{path('app_gallery')}}"> {% trans %} Photos section{% endtrans %}</a>, {% trans %}their name appears below the image, after clicking on it. On the other pages of the site, their name appears when you hover the mouse. {% endtrans %}
+            </p>
+
+            <p class="mb-2 font-weight-bold"> {% trans %}The photographers are (in alphabetical order): {% endtrans %}</p>
+            <ul>
+            {% for item in credits|sort %}
+                <li class="mb-1">{{item|raw}}</li>  
+            {% endfor %}
+            </ul>
+        </div>
+       
+    </div>
+    
+</div>
+    
+{%  endblock %}
+
+
+

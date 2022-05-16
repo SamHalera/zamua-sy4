@@ -34,32 +34,30 @@
                    
                 <p class="mb-2 line-height-l reveal-up font-size-l">
                 
-                    {% trans %}Zamua is a singer, guitarist and songwriter born in Sardinia from a Sardinian mother and a Burundian father.{% endtrans %}
+                    {% trans %}Zamua is a singer, guitarist, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.{% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l reveal-up font-size-l">
                     {% trans %}
-                    His dream was to become a footballer, but he found himself bedridden after an accident on the football playground. 
-                    During his convalescence, his friend Deodatus Nduwimana taught him how to play the guitar.
-                    <strong><em>"I just wanted to learn Redemption Song, Bob Marley was my hero".</em></strong>
+                    His dream was to become a footballer, but he found himself bedridden after an accident on the football field. 
+                    During his convalescence, his friend Deodatus Nduwimana taught him how to play the guitar. 
+                    <strong><em>"I just wanted to learn the Redemption Song, Bob Marley was my hero."</em></strong>
                     {% endtrans %}
                 </p>
                 <p class="mb-2 line-height-l  reveal-up font-size-l">
                 
                     {% trans %}
-                    <em>"The first time I sang in front of someone, I was seven years old and it was in front of ma family. I did something that vaguely sounded like rap.<br>
-                    Nobody at home listened to rap music and I still wonder where I heard that powerful music!<br> 
-                    MMy father often listened to some jazz music on Radio Rai 3. 
-                    I remember Louis Armstrong's trumpet in the morning while we were having breakfast, the voices of Ladysmith Black Mambazo, 
-                    Tracy Chapman, Luigi Tenco, Lucio Dalla and Fabrizio De André.<br>
-                    Today, when I listen to the recording of that first so-called performance, I understand that when music hits, it leaves an indelible mark... "</em>
+                    <em>"The first time I sang in front of someone, I was seven years old. It was in front of my family. I did something that vaguely sounded like rap music.<br>
+                    There was no rap music being played at home; in fact, I'm still not sure where I got that powerful music from... <br> 
+                    My father often listened to jazz radio shows. I recall Louis Armstrong's trumpet playing in the mornings while we ate breakfast, as well as the vocals of Ladysmith Black Mambazo, Tracy Chapman, Luigi Tenco, Lucio Dalla, and Fabrizio De André. <br>
+                    <strong>Today, when I listen to the recording of that first so-called performance, I understand that when the music hits, it leaves an indelible mark... </strong> "</em>
                     {% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l  reveal-up font-size-l">
                 
                     {% trans %}
-                    <strong>This mark remains intact over time, until you realise that the best way to experience music is to make it, to see it come to life... </strong>
+                    <strong>This sensation endures until one realizes that the greatest way to appreciate music is to create it, to bring it to life...</strong>
                     {% endtrans %}
                     
                 </p>
@@ -86,9 +84,9 @@
                     <div class="ep-infos-container">
                         <div class="img-ep reveal-up">
                             
-                            <img src="{{ asset('images/pochette-ep.jpg')}}" alt="" width="350">
+                            <img src="{{ asset('images/pochette-ep.jpg')}}" alt="" width="300">
                             <div class="tooltip">
-                                <span> photo and cover by Chloé Dupeyrat - Acidulée Production</span>
+                                <span> photo and cover by Chloé Dupeyrat <a class="font-weight-bold" href="https://www.aciduleeprod.com/" target="_blank">Acidulée Production</a></span>
                             </div>
                             
                         </div>
@@ -116,35 +114,36 @@
             <p class="mb-1 reveal-up line-height-l font-size-l">
                 {% trans %}
                 <strong>LITANIE</strong>  is Zamua's first EP, produced by the young independent label OD MusicLab. 
-                His debut mini-album offers an atypical musical immersion between euphoric moods and litanies, and makes this artist unclassifiable but indispensable.
- 
+                His debut mini-album is <strong> a unique blend of ecstatic feelings and litanies,</strong>making it hard to categorize his art form yet essential to know about. 
                 {% endtrans %}
             </p>
         </div>
-        {# <div class="btn-container reveal-up">
-            <a href="{{path('app_music')}}" class="btn">
-                <div class="btn-stroke"></div>
-                <div class="btn-text"> MUSICA</div>
-                
-            </a>
-        </div> #}
+        
         <a href="{{path('app_music')}}" class="btn-custom align-center">
             {% trans %} MUSIC {% endtrans %}
         </a>
     </div>
 
-    {% if projects|length > 0 %}
+   
     
     <div class="divider align-center">
         <img class="image-fluid" src="{{asset('images/divider.png')}}" alt="" width="180">
     </div>
 
-    <div class="four-section-projects mb-3">
-        <div class="">
-            <h2 class="uppercase mb-4 reveal"> {% trans %} Projects {% endtrans %}</h2>
-            <div class="container mb-4">
-                
-                {% for project in projects %}
+    <div class="four-section-projects">
+        <div class="container overlay">
+            <h2 class="uppercase mb-4 reveal-up"> {% trans %} Zamua's projects {% endtrans %}</h2>
+            <div class="content mb-4">
+                <p class="reveal-up mb-2 font-weight-bold">
+                    {% trans %}Zamua is involved in many musical projects and he collaborates with many artists and performers.{% endtrans %}
+                </p>
+                <p class="reveal-p mb-2 reveal-up">
+                    {% trans %}Who are they? What these projects and featuring are about?{% endtrans %}
+                </p>
+                <p class="reveal-p reveal-up">
+                    {% trans %}Let find out more!{% endtrans %}
+                </p>
+                {# {% for project in projects %}
                 <a  class="project-link" href="{{path('app_projects')}}/#zamua-{{project.secondTitle|lower|replace({" " : "-"})}}">
                     <div class="image-project project-zamua-{{project.secondTitle|lower|replace({" " : "-"})}} reveal-up">
                         <div class="project-content">
@@ -155,20 +154,13 @@
                     </div>  
                 </a>
                 {% endfor %}
-                
+                    #}
+
             </div>
-        </div>    
-            {# <div class="align-center">
-                <a href="{{path('app_projects')}}" class="btn">
-                    <div class="btn-stroke"></div>
-                    <div class="btn-text">PROGETTI</div>
-                    
-                </a>
-            </div> #}
             <a href="{{path('app_projects')}}" class="btn-custom mx-auto">{% trans %} PROJECTS {% endtrans %}</a>
-        
+        </div>
     </div>
-    {% endif %}
+    
     
     <div class="section-contact-home" id="contact-frame">
         <div class="container overlay">
@@ -219,24 +211,7 @@
                         </div>
 
                     {{ form_end(form)}}
-                    {# <form action="">
-                        <div class="mb-3">
-                            <label class="mb-1"  for="name">Nome</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div class="mb-3">
-                            <label class="mb-1"  for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="mb-2">
-                            <label class="mb-1"  for="message">Messaggio</label>
-                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                        </div>
-                       
-                        <div class="align-right">
-                            <a href="" class="btn-custom font-weight">INVIA</div></a>
-                        </div>
-                    </form> #}
+                   
                 </div>
                 
                 <div class="infos">
@@ -257,6 +232,6 @@
 {% block javascripts %}
 
     {{ parent()}}
-   <script src="{{ asset('js/index.js')}}"></script>
+    {{ encore_entry_script_tags('home')}}
 
 {% endblock %}

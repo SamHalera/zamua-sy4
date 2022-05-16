@@ -45,11 +45,11 @@ class MainController extends BaseController
     public function index(ProjectRepository $projectRepository,  Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator): Response
     {
 
-        $projects= $projectRepository->findBy([],
-            [
-                'priority' => 'ASC'
-            ]
-        );
+        // $projects= $projectRepository->findBy([],
+        //     [
+        //         'priority' => 'ASC'
+        //     ]
+        // );
 
         //Contact form
         $contact = new Contact();
@@ -75,7 +75,7 @@ class MainController extends BaseController
         }
         return $this->render('main/homepage.html.twig', [
             'activeName' => 'Home',
-            'projects' => $projects,
+            // 'projects' => $projects,
             'form' => $form->createView()
         ]);
     }
@@ -274,6 +274,30 @@ class MainController extends BaseController
 
     }
 
+    /**
+     * @Route({
+     *          "it": "/crediti",
+     *          "fr": "/credits",
+     *          "en": "/credits"
+     *      }, name="app_credits")
+     */
+    public function credits(ZamuaFilesRepository $zamuaFilesRepository, TranslationTranslatorInterface $translator)
+    {
+
+        //$credits = $zamuaFilesRepository->findZamuaFilesCredits();
+
+        $zamuaFiles = $zamuaFilesRepository->findAll();
+        $credits = [];
+        foreach ($zamuaFiles as $file) {
+        $credits[] = $file->getCredit();
+        }
+        $credits = array_unique($credits);
+        
+        return $this->render("main/credits.html.twig", [
+            'credits' => $credits,
+            'activeName' => $translator->trans('active.name.credits')
+        ]);
+    }
     /**
      * @Route("/change_locale/{_locale}" , name="app_change_locale")
      */

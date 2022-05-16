@@ -149,6 +149,6 @@
 {% block javascripts %}
 
     {{ parent()}}
-   <script src="{{ asset('js/projects.js')}}"></script>
+    {{encore_entry_script_tags('projects')}}
 
 {% endblock %}

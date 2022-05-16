@@ -5,7 +5,7 @@
 
 
 {% block body %}
-
+        
         <div class="bg-main bg-main-music">
         <div class="container overlay">
             <div class="block-title">
@@ -26,37 +26,33 @@
             <div class="block-text">
                 <p class="mb-1 line-height-l font-size-l">
                 {% trans %}
-                    Music comes from urgency and a vital necessity to share one's voice, one's soul, one's presence.
-                    <strong>A tool to develop a critical sense of our experience in the society in which we live.</strong> <br>
-                    Making music focuses on the person who creates, who speaks and the person who listens; it is the beginning and the end of a cyclical path towards self-determination.
-                    It is a medium for touching people's hearts, for communicating an image, an idea, a concept, for giving meaning to the perception of reality.
+                    Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.
+                    <strong>A means of learning to think critically about what we see and do in the environment in which we live.</strong> <br>
+                    Making music focuses on the person who creates, who speaks, and listens; it is the beginning and end of a cyclical path toward self-determination.
+                    It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality. 
                 {% endtrans %}
                 </p>
                 <p class="mb-1 line-height-l font-size-l">
                 {% trans %}
-                    <strong>Music creates bridges between the inner world and the outer world. It allows us to translate the secrets of the soul into a sensitive form, 
-                    those secrets that we cannot explain but that sometimes succeed in escaping through the notes and rhythm.</strong>
+                    <strong>Music builds connections between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.</strong>
                 {% endtrans %}
                 </p>
                 
                 <p class="mb-1 line-height-l font-size-l">
                 {% trans %}    
-                    <em>"I experience music almost maniacally, I have been doing it since I was a kid.
-                    Through music, and particularly through singing, I am able to<strong>undertake a path of research and reflection on issues that are central to me, such as identity, </strong>, 
-                    or rather, our identities, which are fluid, changeable, 
-                    never identical to themselves, in a movement that destroys any idea of a physical or imaginary border between 'Us' and 'Them'".</em> 
+                    <em>"When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.
+                    Through music, and particularly through singing, I can<strong>investigate and reflect on topics that are important to me, such as identity, or rather, our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between "us" and "them.</em> 
                 {% endtrans %}
                 <p class="mb-1 line-height-l font-size-l">
                 {% trans %}
-                    <em>"Music has been, and still is, a fundamental element of my existence.
-                    There is no musical genre, I start with my two instruments, the voice and the guitar. And from there I start to work, to build, to tell a story.
-                    <strong>I try to give shape to an aesthetic, the framework of a journey through my musical universes such as soul, jazz, reggae, electronic music...
-                    I let myself be crossed by this baggage and then give birth to deeply hybrid songs."</strong></em>
+                    <em>"Music has been and still is, a fundamental element of my existence.
+                    There is no musical genre. I start with two instruments, my voice, and the guitar. And then begin developing, creating, and telling stories. 
+                    <strong>The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music"</strong></em>
                 {% endtrans %}
                 </p>
                 
             </div>
-            {# <div class="block1 reveal-width"></div> #}
+            
         </div>
         
     </div>
@@ -66,16 +62,8 @@
     
         <div class="ep-infos-container mb-1">
 
-        
-            {# <div class="img-ep reveal">
-                
-                <img class="image-fluid" src="{{ asset('images/pochette-ep.jpg')}}" alt="" width="350">
-                
-            </div> #}
             <div class="reveal-up">
                 <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2701316906/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zamua.bandcamp.com/album/litanie-ep">Litanie [EP] by Zamua</a></iframe>
-                {# <iframe style="border: 0; width: 300px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=2701316906/size=large/bgcol=ffffff/linkcol=e99708/transparent=true/" seamless><a href="https://zamua.bandcamp.com/album/litanie-ep">Litanie [EP] by Zamua</a></iframe> #}
-                {# <iframe style="border: 0; width: 100%; height: 344px;" src="https://bandcamp.com/EmbeddedPlayer/album=2701316906/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://zamua.bandcamp.com/album/litanie-ep">Litanie [EP] by Zamua</a></iframe> #}
             </div>
             
 
@@ -157,11 +145,12 @@
         </div>
     </div>
 
+    
 {%  endblock %}
 {% block javascripts %}
 
     {{ parent()}}
-   <script src="{{ asset('js/music.js')}}"></script>
+    {{encore_entry_script_tags('music') }}
 
 {% endblock %}
 
