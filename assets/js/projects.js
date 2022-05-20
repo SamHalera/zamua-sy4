@@ -15,6 +15,7 @@ projectsCard.forEach(function(oneProjectCard,index)  {
    
     oneProjectCard.addEventListener('click', function(e){
 
+
         let scrollToPosition = oneProjectCard.offsetTop + 400;
         console.log(scrollToPosition);
         let oneProjectCardId = oneProjectCard.id;
@@ -22,7 +23,6 @@ projectsCard.forEach(function(oneProjectCard,index)  {
         let projectPictureToDisplay = document.getElementById(oneProjectCardId + '-to-display');
         let oneProjectContent = document.querySelector('#' + oneProjectCardId + '-container .one-project-content')
         let closeProject = document.querySelector('.close-container');
-
         containerProjectsCards.style.opacity ="0";
         containerProjectsCards.style.display ="none";
         sectionAllProjects.style.marginBottom = "20rem";

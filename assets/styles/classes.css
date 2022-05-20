@@ -28,7 +28,7 @@
     font-size: 4rem;
     line-height: 4rem;
     position: fixed;
-    bottom: 189px;
+    bottom: 12rem;
     right: 3rem;
     z-index: 24;
 }
@@ -76,7 +76,7 @@
 }
 .btn-logout a
 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #000;
     transition: all .4s ease-in-out;
 }

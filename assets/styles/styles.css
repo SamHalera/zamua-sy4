@@ -181,6 +181,7 @@ form ul li{
     z-index: 1000;
     padding-top: 7rem;
     transition: all .4s ease-in-out;
+    justify-content: end;
 }
 .navigation-panel #icon-container{
     font-size: 6rem;
@@ -188,23 +189,29 @@ form ul li{
     text-align: right;
     top: 3rem;
     position: absolute;
-    right: 6rem;
+    right: 3rem;
     cursor: pointer;
     opacity: 0;
     transition: all .4s ease-in-out;
 }
+
 .navigation-panel ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* justify-content: center; */
+    align-items: end;
+    /* text-align: center; */
     transition: all .4s ease-in-out;
     opacity: 1;
+    position: relative;
+    top: 5rem;
+    right: 4.5rem;
 }
+
+
 .navigation-panel-item{
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 6rem;
     /* -webkit-animation: 1 .8s cubic-bezier(.1,.8,.9,1) navigationAppears;
     animation: 1 .8s cubic-bezier(.1,.8,.9,1) navigationAppears; */
     /* -webkit-transition: all .8s cubic-bezier(.1,.8,.9,1);
@@ -212,17 +219,23 @@ form ul li{
     transform: translateY(0px);
     opacity: 0; */
 }
+.user-items .navigation-panel-item{
+    font-size: 4rem;
+}
 .navigation-panel-item::after{
     content: "";
     display: block;
-    height: 0.1rem;
+    height: 0.4rem;
     background: var(--color-primary);
     width: 0;
     transition: .45s all cubic-bezier(.645,.045,.355,1);
+    top: -9%;
+    position: relative;
 }
 .navigation-panel-item:hover::after,
 .navigation-panel-item.active-link::after{
     width: 100%;
+    
 }
 @keyframes navigationAppears{
 
@@ -519,15 +532,13 @@ ON LOAD HOMEPAGE
     background-position: 50% -45%;
     background-size: cover;
     background-attachment: fixed;
-    height: 75vh;
+    height: auto;
     background-color: #000;
 }
 
 .four-section-projects .container{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 10rem 0;
 }
 .four-section-projects .overlay{
     background: rgb(0 0 0 / 65%);
@@ -536,7 +547,7 @@ ON LOAD HOMEPAGE
     color: var(--color-primary);
     text-align: center;
     font-size: 8rem;
-    
+    font-weight: 400;    
 }
 .four-section-projects .container .content{
     color: #fff;
@@ -546,6 +557,7 @@ ON LOAD HOMEPAGE
     font-size: 3rem;
     transition: all .6s ease-in-out;
     transition-delay: .2s;
+    line-height: 4rem;
 }
 .four-section-projects h3{
     font-size: 4rem;
@@ -1623,7 +1635,7 @@ form textarea:focus{
 }
 .project-presentation .images img{
     margin: 2rem;
-    width: 25rem;
+    width: 35rem;
 }
 .wrapper-img{
     position: relative;
@@ -1632,7 +1644,7 @@ form textarea:focus{
     position: absolute;
     bottom: -1.6rem;
     left: 3rem;
-    background: #f7f7f7f7;
+    background: #000000ea;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     opacity: 0;
@@ -1640,6 +1652,7 @@ form textarea:focus{
     max-width: 70rem;
     height: auto;
     line-height: 2.5rem;
+    color: #fff;
 }
 .images .wrapper-img:hover .tooltip{
     opacity: 1;
@@ -1807,6 +1820,25 @@ footer{
         font-size: 34rem;
         opacity: 0.1;
     }
+    .navigation-panel{
+        justify-content: end;
+    }
+    .navigation-panel ul{
+        top: 5.6rem;
+        right: 3.6rem;
+    }
+    .navigation-panel-item {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    .navigation-panel ul.user-items{
+        top: 6rem;
+        right: 1.8rem;
+    }
+    .user-items .navigation-panel-item {
+        font-size: 2.5rem;
+    }
+
     .img-ep .tooltip{
         opacity: 0;
         position: absolute;
@@ -2009,7 +2041,7 @@ footer{
     }
 
     .four-section-projects{
-        height: 100vh;
+        height: auto;
         background-attachment: scroll;
         background-position: -54rem;
     }
@@ -2406,6 +2438,9 @@ footer{
     .project-presentation .images{
         flex-direction: column;
     }
+    .project-presentation .images img{
+        width: 32rem;
+    }
 
     /* PAGE CONTATTI*/
     .bg-main-contact{
@@ -2497,6 +2532,10 @@ footer{
         left: -0.2rem;
     }
 
+    .navigation-panel-item {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+    }
     .container-img .image .tooltip,
     .video-second-section .container .tooltip{
         top: 49rem;

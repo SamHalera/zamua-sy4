@@ -4,6 +4,7 @@
 {% endblock %}
 
 
+
 {% block body %}
 
     <div class="bg-main bg-main-projects">
@@ -106,31 +107,29 @@
                                         {% endfor %}
                                     {% endif %}
                                     
-                                    
                                 </p>
                             </div>
 
-                            <div class="images">
+                            
                             
                             {% if project.zamuaFiles|length > 0 %}
-                            
+                            <div class="images">    
                                 {% for zamuaFile in project.zamuaFiles %}
+                                    
                                     <div class="wrapper-img">
-                                        <img class="image-fluid" src="{{ asset(zamuaFile.getFilePath)}}" {% if zamuaFile.alt is defined %} alt="{{zamuaFile.alt}}" {% endif %}
-                                        >
+                                        <img class="image-fluid" src="{{ asset(zamuaFile.getFilePath)}}" {% if zamuaFile.alt is defined %} alt="{{zamuaFile.alt}}" {% endif %}>
+                                    
                                         {% if zamuaFile.credit is not null %}
                                         
-                                         <div class="tooltip">
-                                            <span> {{ zamuaFile.credit|raw}} </span>
-                                        </div>
+                                            <div class="tooltip">
+                                                <span>photo by {{ zamuaFile.credit|raw}} </span>
+                                            </div>
                                         {% endif %}
-                                        
-                                       
-                                    </div>
+                                     </div>
                                 {% endfor %}
-                            
-                            {% endif %}
                             </div>
+                            {% endif %}
+                            
                         </div>
                     </div>
                 </div>
@@ -150,5 +149,7 @@
 
     {{ parent()}}
     {{encore_entry_script_tags('projects')}}
+    
+   
 
 {% endblock %}

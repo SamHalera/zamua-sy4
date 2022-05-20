@@ -81,8 +81,8 @@
         <source>it is bound to leave an indelible mark</source>
         <target>elle laisse une marque à jamais</target>
       </trans-unit>
-      <trans-unit id="WXzjeDu" resname="Zamua is a singer, guitarist, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.">
-        <source>Zamua is a singer, guitarist, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.</source>
+      <trans-unit id="7ghLN_4" resname="Zamua is a singer, guitarist, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.">
+        <source>Zamua is a singer, guitarist, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.</source>
         <target>Zamua est un chanteur, guitariste et auteur-compositeur né en Sardaigne de mère sarde et de père burundais.</target>
       </trans-unit>
       <trans-unit id="JpzB__d" resname="His dream was to become a footballer, but he found himself bedridden after an accident on the football field. &#10;                    During his convalescence, his friend Deodatus Nduwimana taught him how to play the guitar. &#10;                    &lt;strong&gt;&lt;em&gt;&quot;I just wanted to learn the Redemption Song, Bob Marley was my hero.&quot;&lt;/em&gt;&lt;/strong&gt;">
@@ -140,8 +140,8 @@
         <source>&lt;span class="title1"&gt;BIO&lt;/span&gt;&lt;span class="title2"&gt;GRAPHY&lt;/span&gt;</source>
         <target><![CDATA[<span class="title1">BIO</span><span class="title2">GRAPHIE</span>]]></target>
       </trans-unit>
-      <trans-unit id="xaDIor3" resname="&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
+      <trans-unit id="WCyMsqH" resname="&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>Zamua est un chanteur, guitariste et auteur-compositeur né en Sardaigne de mère sarde et de père burundais.</strong>]]></target>
       </trans-unit>
       <trans-unit id="rslNpV7" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    itar began almost by chance, during a long period of convalescence that saw him bedridden. Since then, Zamua has devoted himself to music and literature, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, on a boundary between analog and electronica. &#10;                     A hybrid outcome in which storytelling and the effectiveness of language are key.&lt;/strong&gt;">
@@ -397,8 +397,8 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
       <trans-unit id="zFw1UQo" resname="In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;. &quot;ElephantAndCastle&quot; consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).&#10;                            &lt;strong&gt;An afro-jazz project, whose real &quot;raison d'être&quot; is the fusion of genres.&lt;/strong&gt;">
         <source>In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;. "ElephantAndCastle" consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).
                             &lt;strong&gt;An afro-jazz project, whose real "raison d'être" is the fusion of genres.&lt;/strong&gt;</source>
-        <target><![CDATA[__In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): <strong>ElephantAndCastle</strong>. "ElephantAndCastle" consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).
-                            <strong>An afro-jazz project, whose real "raison d'être" is the fusion of genres.</strong>]]></target>
+        <target><![CDATA[En 2003, Zamua commence à travailler sur un nouveau projet cofondé avec le clavier et producteur Alessandro Capasso (Collettivo Cerchi e Xhu) : <strong>ElephantAndCastle</strong> (A. Capasso aux claviers, à la programmation D. Sorrentino à la basse, C. D'Avino à la batterie, R. Crispino aux percussions et Zamua à la guitare et au chant).
+          <strong>Un projet afro-jazz dont la véritable raison d'être est la fusion des genres.</strong>]]></target>
       </trans-unit>
       <trans-unit id="QyWie0W" resname="CREDITS">
         <source>CREDITS</source>
@@ -436,7 +436,7 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
         <source>Zamua's projects</source>
         <target>Les projets de Zamua</target>
       </trans-unit>
-      <trans-unit id="opnFRyh" resname="Zamua is involved in different musical projects and he collaborates with many artists and performers.">
+      <trans-unit id="NDjPLvz" resname="Zamua is involved in different musical projects and he collaborates with many artists and performers.">
         <source>Zamua is involved in different musical projects and he collaborates with many artists and performers.</source>
         <target>Zamua est investi dans differents projets musicaux, il collabore avec de nombreux artistes et performers.</target>
       </trans-unit>
@@ -447,6 +447,10 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
       <trans-unit id="pvOxkde" resname="Let find out more!">
         <source>Let find out more!</source>
         <target>Nous allons en savoir plus !</target>
+      </trans-unit>
+      <trans-unit id="Xw.EB.c" resname="Currently, Zamua lives between France and Italy and he is working on his first album.">
+        <source>Currently, Zamua lives between France and Italy and he is working on his first album.</source>
+        <target>Actuellement, Zamua vit entre la France et l’Italie et écrit son premier album.</target>
       </trans-unit>
     </body>
   </file>

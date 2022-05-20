@@ -81,8 +81,8 @@
         <source>it is bound to leave an indelible mark</source>
         <target>è destinata a lasciare un segno indelebile</target>
       </trans-unit>
-      <trans-unit id="xLAuA2j" resname="Zamua was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father. He is a singer, guitarist, and songwriter.">
-        <source>Zamua was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father. He is a singer, guitarist, and songwriter.</source>
+      <trans-unit id="F4uR8Qu" resname="Zamua was born in Sardinia to a Sardinian mother and a Burundian father. He is a singer, guitarist, and songwriter.">
+        <source>Zamua was born in Sardinia to a Sardinian mother and a Burundian father. He is a singer, guitarist, and songwriter.</source>
         <target>Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.</target>
       </trans-unit>
       <trans-unit id="JpzB__d" resname="His dream was to become a footballer, but he found himself bedridden after an accident on the football field. &#10;                    During his convalescence, his friend Deodatus Nduwimana taught him how to play the guitar. &#10;                    &lt;strong&gt;&lt;em&gt;&quot;I just wanted to learn the Redemption Song, Bob Marley was my hero.&quot;&lt;/em&gt;&lt;/strong&gt;">
@@ -136,8 +136,8 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
         <source>&lt;span class="title1"&gt;BIO&lt;/span&gt;&lt;span class="title2"&gt;GRAPHY&lt;/span&gt;</source>
         <target><![CDATA[<span class="title1">BIO</span><span class="title2">GRAFIA</span>]]></target>
       </trans-unit>
-      <trans-unit id="xaDIor3" resname="&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
+      <trans-unit id="WCyMsqH" resname="&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.</strong>]]></target>
       </trans-unit>
       <trans-unit id="rslNpV7" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    itar began almost by chance, during a long period of convalescence that saw him bedridden. Since then, Zamua has devoted himself to music and literature, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, on a boundary between analog and electronica. &#10;                     A hybrid outcome in which storytelling and the effectiveness of language are key.&lt;/strong&gt;">
@@ -372,8 +372,8 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>Credits</source>
         <target>Crediti</target>
       </trans-unit>
-      <trans-unit id="WXzjeDu" resname="Zamua is a singer, guitarist, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.">
-        <source>Zamua is a singer, guitarist, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.</source>
+      <trans-unit id="7ghLN_4" resname="Zamua is a singer, guitarist, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.">
+        <source>Zamua is a singer, guitarist, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.</source>
         <target>Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.</target>
       </trans-unit>
       <trans-unit id="QyWie0W" resname="CREDITS">
@@ -412,7 +412,7 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>Zamua's projects</source>
         <target>I progetti di Zamua</target>
       </trans-unit>
-      <trans-unit id="opnFRyh" resname="Zamua is involved in different musical projects and he collaborates with many artists and performers.">
+      <trans-unit id="NDjPLvz" resname="Zamua is involved in different musical projects and he collaborates with many artists and performers.">
         <source>Zamua is involved in different musical projects and he collaborates with many artists and performers.</source>
         <target>Zamua è impegnato in diversi progetti musicali e collabora con molti artisti e performers.</target>
       </trans-unit>
@@ -423,6 +423,10 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
       <trans-unit id="pvOxkde" resname="Let find out more!">
         <source>Let find out more!</source>
         <target>Scopritelo!</target>
+      </trans-unit>
+      <trans-unit id="Xw.EB.c" resname="Currently, Zamua lives between France and Italy and he is working on his first album.">
+        <source>Currently, Zamua lives between France and Italy and he is working on his first album.</source>
+        <target>Attualmente, Zamua vive tra la Francia e l'Italia e sta scrivendo il suo primo album.</target>
       </trans-unit>
     </body>
   </file>

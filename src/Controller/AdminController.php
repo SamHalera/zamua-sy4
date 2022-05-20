@@ -131,7 +131,7 @@ class AdminController extends AbstractController
     }
 
 
-    #[Route('/admin/showList', name:'app_admin_show_list')]
+    //#[Route('/admin/showList', name:'app_admin_show_list')]
     /**
     * @Route("/admin/showList", name="app_admin_show_list")
     */

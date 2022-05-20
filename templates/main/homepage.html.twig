@@ -34,7 +34,7 @@
                    
                 <p class="mb-2 line-height-l reveal-up font-size-l">
                 
-                    {% trans %}Zamua is a singer, guitarist, and songwriter. He was born on the Italian island of Sardinia to a Sardinian mother and a Burundian father.{% endtrans %}
+                    {% trans %}Zamua is a singer, guitarist, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.{% endtrans %}
                     
                 </p>
                 <p class="mb-2 line-height-l reveal-up font-size-l">
@@ -137,24 +137,13 @@
                 <p class="reveal-up mb-2 font-weight-bold">
                     {% trans %}Zamua is involved in different musical projects and he collaborates with many artists and performers.{% endtrans %}
                 </p>
-                <p class="reveal-p mb-2 reveal-up">
+                <p class="reveal-pp mb-2 reveal-up">
                     {% trans %}Who are they? What these projects and featuring are about?{% endtrans %}
                 </p>
-                <p class="reveal-p reveal-up">
+                <p class="reveal-up reveal-up">
                     {% trans %}Let find out more!{% endtrans %}
                 </p>
-                {# {% for project in projects %}
-                <a  class="project-link" href="{{path('app_projects')}}/#zamua-{{project.secondTitle|lower|replace({" " : "-"})}}">
-                    <div class="image-project project-zamua-{{project.secondTitle|lower|replace({" " : "-"})}} reveal-up">
-                        <div class="project-content">
-                            <div class="project-details">
-                                <h2 class="">{{project.mainTitle}}</h2>
-                            </div>
-                        </div>
-                    </div>  
-                </a>
-                {% endfor %}
-                    #}
+                
 
             </div>
             <a href="{{path('app_projects')}}" class="btn-custom mx-auto">{% trans %} PROJECTS {% endtrans %}</a>

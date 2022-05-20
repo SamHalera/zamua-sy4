@@ -45,8 +45,9 @@
             <div id="icon-container">
                 <i class="el-icon-circle-close"></i>
             </div>
+           
             <ul>
-                <div class="switch-language reveal-up mb-2 mobile-view">
+                <div class="switch-language reveal-up mb-1 mobile-view">
                 {% for locale in locales %}
                     {% if locale != app.request.locale %}
                 
@@ -56,42 +57,36 @@
                 {% endfor %}
                 </div> 
                 {% if app.user %}
-                <li class="btn-logout ">
-                    <a href="{{ path('app_logout')}}">LOGOUT</a>
-                </li>
-                {% endif %}
-                {% if is_granted("ROLE_ADMIN") %}
-                
-                <li class="navigation-panel-item reveal-up">
-                    <a href="{{ path('app_admin')}}"><i class="el-icon-setting"></i> Admin</a>
-                </li>
+                    <li class="btn-logout reveal-up ">
+                        <a href="{{ path('app_logout')}}">LOGOUT</a>
+                    </li>
                 {% endif %}
                 
-                <li class="navigation-panel-item reveal-up">
+                <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_home' %}active-link{% endif %}">
                     <a href="{{ path('app_home')}}">HOME</a>
                 </li>
-                <li class="navigation-panel-item  reveal-up">
+                <li class="navigation-panel-item  reveal-up {% if app.request.attributes.get('_route') == 'app_bio' %}active-link{% endif %}">
                     <a href="{{ path('app_bio')}}">BIO</a>
                 </li>
-                <li class="navigation-panel-item reveal-up">
+                <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_music' %}active-link{% endif %}">
                     <a href="{{ path('app_music')}}">{% trans %} MUSIC {% endtrans %}</a>
                 </li>
-                <li class="navigation-panel-item  reveal-up">
+                <li class="navigation-panel-item  reveal-up {% if app.request.attributes.get('_route') == 'app_shows' %}active-link{% endif %}">
                     <a href="{{ path('app_shows')}}">SHOWS</a>
                 </li>
-                {# <li class="navigation-panel-item reveal-up">
+                {# <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_listenings' %}active-link{% endif %}">
                     <a href="{{ path('app_listenings')}}">I MIEI ASCOLTI</a>
                 </li> #}
-                <li class="navigation-panel-item reveal-up">
+                <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_gallery' %}active-link{% endif %}">
                     <a href="{{ path('app_gallery')}}">{% trans %} PHOTOS {% endtrans %}</a>
                 </li>
-                <li class="navigation-panel-item reveal-up">
+                <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_videos' %}active-link{% endif %}">
                     <a href="{{ path('app_video')}}">{% trans %} VIDEOS {% endtrans %}</a>
                 </li>
-                <li class="navigation-panel-item reveal-up">
+                <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_projects' %}active-link{% endif %}">
                     <a href="{{ path('app_projects')}}">{% trans %} PROJECTS {% endtrans %}</a>
                 </li>
-                <li class="navigation-panel-item reveal-up">
+                <li class="navigation-panel-item reveal-up {% if app.request.attributes.get('_route') == 'app_contact' %}active-link{% endif %}">
                     <a href="{{ path('app_contact')}}">{% trans %} CONTACT {% endtrans %}</a>
                 </li>
                 

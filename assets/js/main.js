@@ -65,7 +65,7 @@ let closeIconElement = document.getElementById('icon-container');
 
 burgerElement.addEventListener('click', function () {
     setTimeout(function () {
-        navPanelElement.style.display = "block";
+        navPanelElement.style.display = "flex";
     }, 100);
 
     navPanelElement.style.opacity = "1";
