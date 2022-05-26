@@ -135,6 +135,7 @@ form ul li{
     margin-right: 3rem;
 }
 
+
 .switch-language a{
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -180,7 +181,7 @@ form ul li{
     width: 100%;
     z-index: 1000;
     padding-top: 7rem;
-    transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out;
     justify-content: end;
 }
 .navigation-panel #icon-container{
@@ -198,9 +199,7 @@ form ul li{
 .navigation-panel ul{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: end;
-    /* text-align: center; */
     transition: all .4s ease-in-out;
     opacity: 1;
     position: relative;
@@ -210,14 +209,11 @@ form ul li{
 
 
 .navigation-panel-item{
+    opacity: 0;
+    transform: translateY(4rem);
     margin-bottom: 2.5rem;
     font-size: 6rem;
-    /* -webkit-animation: 1 .8s cubic-bezier(.1,.8,.9,1) navigationAppears;
-    animation: 1 .8s cubic-bezier(.1,.8,.9,1) navigationAppears; */
-    /* -webkit-transition: all .8s cubic-bezier(.1,.8,.9,1);
-    transition: all .8s cubic-bezier(.1,.8,.9,1);
-    transform: translateY(0px);
-    opacity: 0; */
+    transition: all .5s ease-out;
 }
 .user-items .navigation-panel-item{
     font-size: 4rem;
@@ -261,13 +257,9 @@ header{
     z-index: 20;
     transition: all .3s ease-in-out;
 }
-/* #brand-logo img.first{
-    opacity: 1;
-    transform: translate(1rem, 1rem);
-    transition: all .4s ease-in-out;
-} */
+
 #brand-logo img.second{
-    /* transform: translate(-18rem, -12.6rem); */
+
     transition: all .4s ease-out;
 }
 header .menu{
@@ -421,7 +413,8 @@ ON LOAD HOMEPAGE
     position: relative;
 }
 .first-section-text .container div.para{
-    margin: 12rem 12rem 0rem 12rem;
+    width: 80%;
+    margin: 12rem 0;
     color: #000;
 }
 
@@ -538,7 +531,7 @@ ON LOAD HOMEPAGE
 
 .four-section-projects .container{
     flex-direction: column;
-    padding: 10rem 0;
+    padding: 16rem 0;
 }
 .four-section-projects .overlay{
     background: rgb(0 0 0 / 65%);
@@ -550,6 +543,7 @@ ON LOAD HOMEPAGE
     font-weight: 400;    
 }
 .four-section-projects .container .content{
+    width: 80%;
     color: #fff;
     text-align: center;
 }
@@ -1307,7 +1301,7 @@ form textarea:focus{
 #lightgallery a img{
     cursor: pointer;
     transition: all 1.5s ease-out;
-    width: 100%;
+    max-width: 100%;
 }
 #lightgallery a:hover img{
     opacity: 0.8;
@@ -1810,6 +1804,12 @@ footer{
     .mobile-view{
         display: block;
     }
+    .switch-language.mobile-view{
+        opacity: 0;
+        -webkit-transition: all .4s cubic-bezier(.42,0,.58,1);
+        transition: all .4s cubic-bezier(.42,0,.58,1);
+        
+    }
 
     .active-page{
         margin: 2rem 0;
@@ -1958,7 +1958,7 @@ footer{
         max-width: 30rem;
     }
     .first-section-text .container div.para{
-        width: 100%;
+        width: 90%;
         position: initial;
         margin: 4rem 0rem;
     }
@@ -2049,11 +2049,11 @@ footer{
         padding: 4rem 1rem;
     }
     .four-section-projects h2{
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     .four-section-projects p{
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
     }
 
     /*CONTACT*/
@@ -2250,7 +2250,7 @@ footer{
         font-size: 5rem;
     }
     #lightgallery a img{
-        width: 28rem;
+        max-width: 100%;
     }
 
     .container-img .image .tooltip,
@@ -2305,7 +2305,7 @@ footer{
         position: initial;
     }
     .music-first-section .block-text{
-        width: auto;
+        width: 90%;
         position: initial;
         padding: 8rem 2rem;
     }
@@ -2881,7 +2881,7 @@ footer{
         position: initial;
     }
     .music-first-section .block-text{
-        width: auto;
+        width: 80%;
         position: initial;
         padding: 8rem 4rem;
     }
@@ -3087,6 +3087,10 @@ footer{
         display: none;
     }
 
+    .navigation-panel-item {
+        font-size: 4.5rem;
+    }
+
     .back-opacity{
         font-size: 35rem;
         opacity: 0.1;
@@ -3148,7 +3152,7 @@ footer{
     .bg-home .block-logo-text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
     }
     .bg-home .block-text{
@@ -3156,6 +3160,9 @@ footer{
         margin-left: 4rem;
     }
     
+    .bg-home .block-text h1 {
+        font-size: 5rem;
+    }
     
      /*FIRST SECTION*/
      .first-section-text{
@@ -3188,7 +3195,7 @@ footer{
         margin: 2rem;
     }
     .first-section-text .container div.para{
-        width: 100%;
+        width: 80%;
         margin: 0;
         position: initial;
     }

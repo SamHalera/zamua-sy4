@@ -60,36 +60,40 @@ let navLiElements = document.querySelectorAll('.navigation-panel-item');
 let burgerElement = document.getElementById('burger-panel');
 let bodyElement = document.getElementById('body');
 let closeIconElement = document.getElementById('icon-container');
+let switchLanguageMobile = document.querySelector('.switch-language.mobile-view');
 
 
 
 burgerElement.addEventListener('click', function () {
-    setTimeout(function () {
-        navPanelElement.style.display = "flex";
-    }, 100);
-
+    
+    navPanelElement.style.display = "flex";
     navPanelElement.style.opacity = "1";
     closeIconElement.style.opacity = "1";
-    navUlElement.style.opacity = "1";
+    switchLanguageMobile.style.opacity = "1";
     navLiElements.forEach(function(navLi, index){
+        
         navLi.style.transitionDelay = "." + (index + 1) + "s";
+        setTimeout(() => {
+            navLi.style.opacity = "1";
+            navLi.style.transform = "translateY(0)";
+        },100);
+        
     });
 
 });
 closeIconElement.addEventListener('click', function () {
-
-    setTimeout(function () {
-        navPanelElement.style.display = "none";
-    }, 300);
-    navUlElement.style.opacity = "0";
+    this.style.opacity = "0";
+    switchLanguageMobile.style.opacity = "0";
+    navLiElements.forEach(function(navLi, index){
+        navLi.style.transitionDelay = "." + (index + 1) + "s";
+        navLi.style.transform = "translateY(4rem)";
+        navLi.style.opacity = "0";
+    });
     navPanelElement.style.opacity = "0";
-
-
+    navPanelElement.style.display = "none";
+    
 });
 
-navLiElements.forEach(function(navLi, index){
-    navLi.style.transitionDelay = "." + (index + 1) + "s";
-});
 scroolToTopElement.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
