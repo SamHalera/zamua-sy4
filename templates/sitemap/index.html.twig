@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    {% for itemUrl in urls %}
+        <url>
+
+            <loc>{{hostName}}{{itemUrl.loc}}</loc>
+            
+            {% if itemUrl.lastmod is defined %}
+                <lastmod></lastmod>
+            {% endif %}
+            
+        </url>
+    {% endfor %}
+   
+
+</urlset> 
