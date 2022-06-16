@@ -96,6 +96,10 @@
 .width-50{
     width: 50%;
 }
+.width-75{
+    width: 75%;
+}
+
 .vertical-align{
     vertical-align: middle !important;
 }

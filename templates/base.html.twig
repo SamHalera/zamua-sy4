@@ -80,7 +80,7 @@
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_gallery' %} active-link{% endif %}">
                     <a href="{{ path('app_gallery')}}">{% trans %} PHOTOS {% endtrans %}</a>
                 </li>
-                <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_videos' %} active-link{% endif %}">
+                <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_video' %} active-link{% endif %}">
                     <a href="{{ path('app_video')}}">{% trans %} VIDEOS {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_projects' %} active-link{% endif %}">
@@ -96,7 +96,7 @@
             <div id="brand-logo">
                 <a href="{{ path('app_home')}}">
                     {# <img class="ml-2 first" src="{{asset('images/logo.png')}}" alt="" width="180"> #}
-                    <img class="ml-2" src="{{asset('images/logo.png')}}" alt="" width="120">
+                    <img class="" src="{{asset('images/logo.png')}}" alt="" width="120">
                 </a>
             </div>
 

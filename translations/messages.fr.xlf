@@ -63,7 +63,7 @@
       </trans-unit>
       <trans-unit id="B2K5ioG" resname="&lt;h1&gt;&lt;span class=&quot;title1&quot;&gt;&lt;/span&gt;&lt;span class=&quot;title2&quot;&gt;Music&lt;/span&gt;&lt;span class=&quot;title3&quot;&gt; is&lt;/span&gt;&lt;span class=&quot;title-dots&quot;&gt;...&lt;/span&gt;&lt;/h1&gt;">
         <source>&lt;h1&gt;&lt;span class="title1"&gt;&lt;/span&gt;&lt;span class="title2"&gt;Music&lt;/span&gt;&lt;span class="title3"&gt; is&lt;/span&gt;&lt;span class="title-dots"&gt;...&lt;/span&gt;&lt;/h1&gt;</source>
-        <target><![CDATA[<h1><span class="title1"></span><span class="title2">Music</span><span class="title3"> is</span><span class="title-dots">...</span></h1>]]></target>
+        <target><![CDATA[<h1><span class="title1">La</span><span class="title2"> Musique</span><span class="title3"> c'est</span><span class="title-dots">...</span></h1>]]></target>
       </trans-unit>
       <trans-unit id="BOKpcor" resname="Projects">
         <source>Projects</source>
@@ -144,11 +144,11 @@
         <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>Zamua est un chanteur, guitariste et auteur-compositeur né en Sardaigne de mère sarde et de père burundais.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="rslNpV7" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    itar began almost by chance, during a long period of convalescence that saw him bedridden. Since then, Zamua has devoted himself to music and literature, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, on a boundary between analog and electronica. &#10;                     A hybrid outcome in which storytelling and the effectiveness of language are key.&lt;/strong&gt;">
+      <trans-unit id="rslNpV7" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    Since then Zamua has devoted himself to music and literature, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. &#10;                     A hybrid outcome in which words'power are crucial.&lt;/strong&gt;">
         <source>His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. 
-                    itar began almost by chance, during a long period of convalescence that saw him bedridden. Since then, Zamua has devoted himself to music and literature, establishing 
-                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, on a boundary between analog and electronica. 
-                     A hybrid outcome in which storytelling and the effectiveness of language are key.&lt;/strong&gt;</source>
+                    Since then Zamua has devoted himself to music and literature, establishing 
+                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. 
+                     A hybrid outcome in which words'power are crucial.&lt;/strong&gt;</source>
         <target><![CDATA[Il s'est rapproché du chant et de la guitare presque par hasard, à l'adolescence, 
                 pendant une longue période de convalescence qui l'a vu cloué au lit. 
                 Depuis lors, Zamua se consacre à la musique et à l'écriture, développant <strong>un mélange personnel et passionnant de folk et de soul-jazz, 
@@ -159,15 +159,15 @@
         <source>Continuous exploration of his various musical styles, including soul, blues, folk, jazz, and reggae.</source>
         <target>Une exploration permanente de ses différentes identités musicales, entre soul, blues, folk, jazz et vibrations reggae.</target>
       </trans-unit>
-      <trans-unit id="JjrQvPF" resname="In his hometown, in 1996, he formed &lt;strong&gt;his first group Cant'nde Reggae&lt;/strong&gt; with his friend Mastrone &#10;                   (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, &#10;                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion and Zamua (guitar and vocals). &#10;                   Cant'ndeReggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various &#10;                   groups and musical realities reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad ...).&lt;/strong&gt; &#10;                   All were underground realities that expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.">
-        <source>In his hometown, in 1996, he formed &lt;strong&gt;his first group Cant'nde Reggae&lt;/strong&gt; with his friend Mastrone 
+      <trans-unit id="JjrQvPF" resname="He formed &lt;strong&gt;his first band in 1996, in his hometown, Canta'nde Reggae&lt;/strong&gt; with friends Mastrone &#10;                   (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, &#10;                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion. Zamua himself played guitar and vocals. &#10;                   Canta'nde Reggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various &#10;                   groups and musical realities reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad ...).&lt;/strong&gt; &#10;                   All were underground realities which expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.">
+        <source>He formed &lt;strong&gt;his first band in 1996, in his hometown, Canta'nde Reggae&lt;/strong&gt; with friends Mastrone 
                    (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, 
-                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion and Zamua (guitar and vocals). 
-                   Cant'ndeReggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various 
+                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion. Zamua himself played guitar and vocals. 
+                   Canta'nde Reggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various 
                    groups and musical realities reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad ...).&lt;/strong&gt; 
-                   All were underground realities that expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.</source>
+                   All were underground realities which expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.</source>
         <target>
-          En 1996, il a formé avec Mastrone (S. Piras) son premier groupe Cant'nde Reggae (F. Ortu à la batterie, M.Masala aux claviers, 
+          En 1996, il a formé avec Mastrone (S. Piras) son premier groupe Canta'nde Reggae (F. Ortu à la batterie, M.Masala aux claviers, 
           L.Devito à la flûte, G.Demontis à la basse, M.Barubiriza, M. Carroni, P.. Musina (chœurs), AbuMar (percussions), 
           Mastrone (voix) et Zamua (guitare et voix), à Nuoro, entre caves et garages, 
           dans un contexte de bouillonnement artistique et créatif qui a vu la formation de divers groupes et 
@@ -176,8 +176,8 @@
           Le surnom de Zamua est né à cette époque.
         </target>
       </trans-unit>
-      <trans-unit id="EDODBjP" resname="&lt;strong&gt;Music became part of his life almost as a necessity, the need to build a bridge between his different roots.&lt;/strong&gt; &#10;                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.">
-        <source>&lt;strong&gt;Music became part of his life almost as a necessity, the need to build a bridge between his different roots.&lt;/strong&gt; 
+      <trans-unit id="EDODBjP" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; &#10;                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.">
+        <source>&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; 
                     Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.</source>
         <target>La musique entre dans sa vie presque comme une nécessité, le besoin de construire un pont entre ses différentes racines. 
           Toujours en quête, Zamua part en voyage en compagnie de sa guitare et de sa voix.</target>
@@ -186,23 +186,23 @@
         <source>A unique combination &lt;br&gt;of folk and soul-jazz</source>
         <target><![CDATA[Un mélange personnel <br>entre folk et soul-jazz]]></target>
       </trans-unit>
-      <trans-unit id="NjQJa24" resname="He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical group called Metisse.&lt;/strong&gt;&#10;                            Zamua continues his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). &#10;                            &quot;Metisse,&quot; indicates and foreshadows &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;">
-        <source>He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical group called Metisse.&lt;/strong&gt;
-                            Zamua continues his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). 
-                            "Metisse," indicates and foreshadows &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;</source>
+      <trans-unit id="NjQJa24" resname="He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical band called Metisse.&lt;/strong&gt;&#10;                            Zamua continued his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). &#10;                            &quot;Metisse,&quot; indicated and foreshadowed &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;">
+        <source>He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical band called Metisse.&lt;/strong&gt;
+                            Zamua continued his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). 
+                            "Metisse," indicated and foreshadowed &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;</source>
         <target><![CDATA[
           Quelques années plus tard il atterrit à Naples, où il commence ses études universitaires et fonde, en parallèle, <strong>"Metisse", un projet musical à l'empreinte reggae roots.</strong>
           Avec "Metisse" (A. Rubano à la basse, V. Ciorra à la guitare, M. Barubiriza et N. Rubano aux chœurs, D. Leone à la batterie, E. Capasso aux claviers, R. Crispino aux percussions et Zamua à la guitare et au chant), Zamua poursuit ses expériences sonores avec "Metisse".
           Le nom même du projet, "Metisse", explique et anticipe <strong>l'importance de la fusion dans son esthétique et la nécessité d'une recherche constante de mélanges musicaux et de contaminations multiformes.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="hIfrH4X" resname="In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;&quot;ElephantAndCastle&quot; consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).&#10;                            &lt;strong&gt;An afro-jazz project, whose real &quot;raison d'être&quot; is the fusion of genres.&lt;/strong&gt;">
+      <trans-unit id="hIfrH4X" resname="In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;&quot;ElephantAndCastle&quot; consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).&#10;                            &lt;strong&gt;An afro-jazz project, whose real &quot;raison d'être&quot; was the fusion of genres.&lt;/strong&gt;">
         <source>In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;"ElephantAndCastle" consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).
-                            &lt;strong&gt;An afro-jazz project, whose real "raison d'être" is the fusion of genres.&lt;/strong&gt;</source>
+                            &lt;strong&gt;An afro-jazz project, whose real "raison d'être" was the fusion of genres.&lt;/strong&gt;</source>
         <target><![CDATA[En 2003, Zamua commence à travailler sur un nouveau projet cofondé avec le clavier et producteur Alessandro Capasso (Collettivo Cerchi e Xhu) : ElephantAndCastle (A. Capasso aux claviers, à la programmation D. Sorrentino à la basse, C. D'Avino à la batterie, R. Crispino aux percussions et Zamua à la guitare et au chant).
           <strong>Un projet afro-jazz dont la véritable raison d'être est la fusion des genres.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="RlaWNoH" resname="Zamua's passion for experimentation takes more and more shape and space within his creative and writing process.">
-        <source>Zamua's passion for experimentation takes more and more shape and space within his creative and writing process.</source>
+      <trans-unit id="RlaWNoH" resname="Zamua's passion for experimentation took more and more shape and space within his creative and writing process.">
+        <source>Zamua's passion for experimentation took more and more shape and space within his creative and writing process.</source>
         <target>Le goût de Zamua pour l'expérimentation prend de plus en plus forme et espace dans son processus de création et d'écriture.</target>
       </trans-unit>
       <trans-unit id="OqQdfxG" resname="After a &quot;brief&quot; interlude of six months each in both Tanzania and Egypt, in 2006 &#10;                            &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; &#10;                           He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.">
@@ -227,16 +227,16 @@
           <strong>Pendant cette période, la rencontre et la collaboration artistique avec l'artiste et producteur Shay Mané, 
           l'ingénieur du son Fabrice Ho-Shui-Ling et la photographe/directrice artistique Chloé Dupeyrat (Acidulée Production) ont été significatives dans son parcours.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="FipmKck" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central issues in his music and source of inspiration, and an essential matter for his work and reflection.&lt;br&gt;&#10;                            The concept of a spiritual trip, which encompasses the bulk of his compositions, signifies a separation from what is steady and dependable. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central issues in his music and source of inspiration, and an essential matter for his work and reflection.&lt;br&gt;
-                            The concept of a spiritual trip, which encompasses the bulk of his compositions, signifies a separation from what is steady and dependable. 
+      <trans-unit id="FipmKck" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;&#10;                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;
+                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. 
                             Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>L'identité, la migration, le racisme, le voyage physique et spirituel</strong>  sont des thèmes qui trouvent un large espace dans sa musique, 
           comme source d'inspiration et matériau sur lequel travailler et réfléchir. L'éloignement de ce qui est stable et ferme, le parfum du voyage enveloppent la plupart de ses chansons.
           Ses textes, sans jamais faire ouvertement référence à l'autobiographie, racontent  <strong>une histoire complexe de relations humaines et de liens émotionnels entre les choses et les expériences.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="Ub0jxDF" resname="As a result, Zamua has met and collaborated with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.">
-        <source>As a result, Zamua has met and collaborated with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.</source>
+      <trans-unit id="Ub0jxDF" resname="The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.">
+        <source>The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.</source>
         <target>Il en résulte une musique faite de mélanges et d'ouvertures qui conduisent Zamua à rencontrer et à collaborer 
           avec d'autres artistes de la scène jazz nationale et internationale tels que Raffaele Casarano, Flavio Boltro et Paolo Fresu.</target>
       </trans-unit>
@@ -244,9 +244,9 @@
         <source>Shay Mané and Fabrice Ho-Shui-Ling, who work for the OD MusicLab record label, assisted him in creating his debut EP, Litanie.</source>
         <target>Le label OD MusicLab (Shay Mané et Fabrice Ho-Shui-Ling) l'a accompagné dans la production de son premier EP intitulé Litanie.</target>
       </trans-unit>
-      <trans-unit id="OKcOvSm" resname="A borderline &lt;br&gt;between analogue and electronica.">
-        <source>A borderline &lt;br&gt;between analogue and electronica.</source>
-        <target><![CDATA[Une frontière subtile<br> entre l'analogique et l'électronique.]]></target>
+      <trans-unit id="OKcOvSm" resname="A borderline &lt;br&gt;between analogue and electronica">
+        <source>A borderline &lt;br&gt;between analogue and electronica</source>
+        <target><![CDATA[Une frontière subtile<br> entre l'analogique et l'électronique]]></target>
       </trans-unit>
       <trans-unit id="I8JCd1m" resname="TICKETS">
         <source>TICKETS</source>
@@ -260,9 +260,9 @@
         <source>Cookies</source>
         <target>Cookies</target>
       </trans-unit>
-      <trans-unit id="d9X_q1D" resname="Our website uses &lt;strong&gt;cookies &lt;/strong&gt;:some small text files that are sent to your terminal during your visit.">
-        <source>Our website uses &lt;strong&gt;cookies &lt;/strong&gt;:some small text files that are sent to your terminal during your visit.</source>
-        <target><![CDATA[Notre site utilise les<strong>cookies </strong>: de petits fichiers texte qui sont envoyés à votre terminal lors de votre visite.]]></target>
+      <trans-unit id="d9X_q1D" resname="Our website uses &lt;strong&gt;cookies&lt;/strong&gt;: some small text files that are sent to your terminal during your visit.">
+        <source>Our website uses &lt;strong&gt;cookies&lt;/strong&gt;: some small text files that are sent to your terminal during your visit.</source>
+        <target><![CDATA[Notre site utilise les<strong> cookies </strong>: de petits fichiers texte qui sont envoyés à votre terminal lors de votre visite.]]></target>
       </trans-unit>
       <trans-unit id="uZfOQ.z" resname="These text files are used to make your browsing experience on the site more efficient.">
         <source>These text files are used to make your browsing experience on the site more efficient.</source>
@@ -369,21 +369,21 @@
                     c'est le début et la fin d'un cycle, un chemin vers l'autodétermination.
 C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée, un concept, de donner un sens à la perception de la réalité.]]></target>
       </trans-unit>
-      <trans-unit id="4xVNkUc" resname="&lt;strong&gt;Music builds connections between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Music builds connections between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;</source>
+      <trans-unit id="4xVNkUc" resname="&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>La musique crée un pont entre le monde intérieur et le monde extérieur. Elle nous permet de traduire sous une forme sensible les secrets de l'âme, des secrets que nous-mêmes ne pouvons expliquer mais qui parviennent parfois à s'échapper à travers les notes.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="tBE2Ez_" resname="&lt;em&gt;&quot;When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.&#10;                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me, such as identity,&lt;/strong&gt; or rather, our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between &quot;us&quot; and &quot;them.&lt;/em&gt;">
+      <trans-unit id="tBE2Ez_" resname="&lt;em&gt;&quot;When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.&#10;                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity&lt;/strong&gt;, or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between &quot;us&quot; and &quot;them.&lt;/em&gt;">
         <source>&lt;em&gt;"When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.
-                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me, such as identity,&lt;/strong&gt; or rather, our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between "us" and "them.&lt;/em&gt;</source>
+                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity,&lt;/strong&gt; or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between "us" and "them.&lt;/em&gt;</source>
         <target><![CDATA[<em>"Je vis la musique de manière presque obsessionnelle, je le fais depuis que je suis enfant.
                     À travers la musique, et surtout à travers le chant, je peux <strong>entreprendre un parcours de recherche et de 
                     réflexion sur des questions qui sont centrales pour moi, comme l'identité</strong>, ou plutôt nos identités, qui sont fluides, 
                     changeantes, jamais identiques à elles-mêmes, dans un mouvement qui détruit toute idée et forme de frontière physique et imaginaire entre "Nous" et "Eux".</em>]]></target>
       </trans-unit>
-      <trans-unit id="hCUyYNo" resname="&lt;em&gt;&quot;Music has been and still is, a fundamental element of my existence.&#10;                    There is no musical genre. I start with two instruments, my voice, and the guitar. And then begin developing, creating, and telling stories. &#10;                    &lt;strong&gt;The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music&quot;&lt;/strong&gt;&lt;/em&gt;">
+      <trans-unit id="hCUyYNo" resname="&lt;em&gt;&quot;Music has been and still is, a fundamental element of my existence.&#10;                    There is no predefined musical genre. I start with two instruments, voice and guitar. And then begin developing, creating, and telling stories. &#10;                    &lt;strong&gt;The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music&quot;&lt;/strong&gt;&lt;/em&gt;">
         <source>&lt;em&gt;"Music has been and still is, a fundamental element of my existence.
-                    There is no musical genre. I start with two instruments, my voice, and the guitar. And then begin developing, creating, and telling stories. 
+                    There is no predefined musical genre. I start with two instruments, voice and guitar. And then begin developing, creating, and telling stories. 
                     &lt;strong&gt;The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music"&lt;/strong&gt;&lt;/em&gt;</source>
         <target><![CDATA[<em>"La musique a été, et est toujours, un élément fondamental de mon existence.
                   Je n'ai pas de genre musical, j’ai mes deux instruments, la voix et la guitare. Et à partir de là, je commence à travailler, à construire, à raconter une histoire.

@@ -109,6 +109,13 @@ label,
 input,
 textarea{
     font-size: 1.8rem;
+    
+}
+label{
+    margin-bottom: 2rem;
+}
+form input:focus, form textarea:focus{
+    background-color: #ffffff1c
 }
 
 .block-left{
@@ -119,22 +126,41 @@ form ul li{
     color: var(--color-danger);
     font-weight: 600;
 }
-.mobile-view{
+.display-lg,
+.no-mobile-view{
     display: none;
 }
-.no-mobile-view{
-    display: flex;
-    align-items: center;
+.display-sm,
+.mobile-view{
+    display: block;
 }
-.switch-language{
-    padding: 1.5rem;
-    border: 1px solid var(--color-primary);
+.active-page{
+    margin: 2rem 0;
+    color: #fff;
+    position: relative;
+}
+.back-opacity{
+    left: -3.6rem;
+    top: -8.1rem;
+    font-size: 34rem;
+    opacity: 0.1;
+}
+.line-scroll a {
+    bottom: 15.5rem;
+}
+.line-scroll .line {
+    height: 15rem;
+}
+.switch-language.mobile-view{
+    opacity: 0;
+    -webkit-transition: all .4s cubic-bezier(.42,0,.58,1);
+    transition: all .4s cubic-bezier(.42,0,.58,1);
     
 }
-.switch-language.no-mobile-view{
-    margin-right: 3rem;
+.switch-language {
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
 }
-
 
 .switch-language a{
     font-size: 1.5rem;
@@ -149,7 +175,6 @@ form ul li{
     list-style-type: disc;
     margin-left: 4rem;
 }
-
 /*PAGE ERRORS*/
 .bg-error-page .container{
     flex-direction: column;
@@ -169,9 +194,6 @@ form ul li{
 .bg-error-page p{
     font-size: 3rem;
 }
-
-/*SECTIONS*/
-
 .navigation-panel{
     display: none;
     opacity: 0;
@@ -179,23 +201,23 @@ form ul li{
     height: 100vh;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
     padding-top: 7rem;
     transition: all .5s ease-in-out;
     justify-content: end;
 }
-.navigation-panel #icon-container{
-    font-size: 6rem;
+
+.navigation-panel #icon-container {
+    font-size: 4rem;
     color: var(--color-primary);
     text-align: right;
-    top: 3rem;
+    top: 3.6rem;
     position: absolute;
     right: 3rem;
     cursor: pointer;
     opacity: 0;
     transition: all .4s ease-in-out;
 }
-
 .navigation-panel ul{
     display: flex;
     flex-direction: column;
@@ -203,25 +225,20 @@ form ul li{
     transition: all .4s ease-in-out;
     opacity: 1;
     position: relative;
-    top: 5rem;
-    right: 4.5rem;
+    top: 5.6rem;
+    right: 3.6rem;
 }
-
-
-.navigation-panel-item{
+.navigation-panel-item {
     opacity: 0;
     transform: translateY(4rem);
-    margin-bottom: 2.5rem;
-    font-size: 6rem;
     transition: all .5s ease-out;
-}
-.user-items .navigation-panel-item{
-    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 .navigation-panel-item::after{
     content: "";
     display: block;
-    height: 0.4rem;
+    height: 0.2rem;
     background: var(--color-primary);
     width: 0;
     transition: .45s all cubic-bezier(.645,.045,.355,1);
@@ -233,18 +250,14 @@ form ul li{
     width: 100%;
     
 }
-@keyframes navigationAppears{
-
-    0% {
-        transform: translateY(15px);
-        opacity: 0;
-    }
-    
-    100% {
-        opacity: 1;
-    }
-
+.navigation-panel ul.user-items{
+    top: 6rem;
+    right: 1.8rem;
 }
+.user-items .navigation-panel-item {
+    font-size: 2.5rem;
+}
+
 /*Header*****************/
 header{
     width: 100%;
@@ -257,7 +270,9 @@ header{
     z-index: 20;
     transition: all .3s ease-in-out;
 }
-
+#brand-logo{
+    margin-right: 1.5rem;
+}
 #brand-logo img.second{
 
     transition: all .4s ease-out;
@@ -278,12 +293,6 @@ header .menu{
     margin: 0.8rem;
     width: 3rem;
     
-}
-
-.active-page{
-    margin: 2rem 2rem 2rem 4rem;
-    color: #fff;
-    position: relative;
 }
 .active-block{
     background: var(--color-primary);
@@ -322,16 +331,80 @@ nav ul li a:hover{
     border-bottom: 0.2rem solid var(--color-primary);
 }
 
+.main-cookies-container {
+    padding: 16rem 4rem;
+}
+
+/*SECTIONS*/
+
+
+/*BASE*/
+#brand-logo img.first{
+    width: 11rem !important;
+    margin-left: 2rem;
+}
+#brand-logo img.second{
+    transform: translate(-1.6rem, -12.6rem);
+    transition: all .4s ease-out;
+}
+.scroll-to-top{
+    right: 2rem;
+}
+.scroll-to-top i{
+    display: block;
+    font-size: 2.5rem;
+    margin: 1.2rem auto;
+}
+.scroll-to-top:hover{
+    background: transparent;
+    border: 0.2rem solid var(--color-primary);
+    color: var(--color-primary);
+}
+.bg-error-page{
+    background-image: url(/public/images/bg-contacts.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.separateur{
+    margin: 8rem auto;
+    text-align: center;
+}
+/*FOOTER*/
+footer{
+    background: #000;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.social-media .social-icon{
+    margin: 2rem;
+    font-size: 3rem;
+}
+/*HOME*/
 .bg-main{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative; 
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background-color: #000;
 }
 .bg-main .container{
     display: flex;
+    align-items: center;
+}
+.bg-home{
+    background-image: url(/public/images/bg-contacts.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: scroll;
+    margin-bottom: 0rem;
+}
+.bg-home .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .bg-home .overlay,
@@ -349,35 +422,41 @@ nav ul li a:hover{
     bottom: -6.9rem;
     left: 50%;
 }
-
-/*HOME*************************/
-
-.bg-home,
-.bg-error-page{
-    /* background-image: url(/public/images/portrait-zamua.jpg); */
-    background-image: url(/public/images/bg-contacts.jpg);
-    height: 100vh;
-    background-size: cover;
+    /*
+    ON LOAD HOMEPAGE
+    */
+.bg-home{
+    background-position: -24rem 0rem;
 }
-.bg-home .container{
-    justify-content: end;
+.bg-home .block-logo-text .logo{
+    width: 60%;
+    height: auto;    
 }
-
-
-/*
-ON LOAD HOMEPAGE
-*/
-
-
-.block-text h1 span{
+.block-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bg-home .block-text{
+    display: flex;
+    color: #000;
+    width: 80%;
+    margin-left: 0rem;
+}
+.bg-home .block-text h1{
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 400;
+}
+.block-text h1 span {
     display: block;
     opacity: 0;
     transition: all .6s cubic-bezier(.1,.8,.9,1);
 }
-.block-text h1 span.show-span{
-    
-    transform: translateY(2rem);
+.block-text h1 span.show-span {
     opacity: 1;
+    transform: translateY(2rem);
 }
 .text2.show-span{
     transition-delay: .2s;
@@ -385,41 +464,54 @@ ON LOAD HOMEPAGE
 .text3.show-span{
     transition-delay: .4s;
 }
-.bg-home .block-text{
-    display: flex;
-    color: #000;
-    margin-right: 4rem;
-    
-}
 
-.bg-home .block-text h1{
-    font-size: 6.5rem;
-    line-height: 1.5;
-    font-weight: normal;
-}
 /*FIRST SECTION*/
 .first-section-text{
-    height: auto;
-    width: 100%;
-    padding: 10rem 10rem 5rem 10rem;
+    height: 100%;
+    padding: 4rem 0rem;
 }
 .first-section-text .container{
-    width: auto;
-    margin: 0;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 0 4rem 0;
+    width: 100%;
     justify-content: center;
-    align-items: start;
-    padding: 5rem 18rem;
-    position: relative;
+}
+.first-section-text h2{
+    font-size: 5rem;
+    text-align: center;
+}
+.images-for-bio{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0rem;
+}
+.images-for-bio img:first-child,
+.images-for-bio img:nth-child(2){
+    margin: 2rem 0;
+    position: initial;
+    max-width: 30rem;
 }
 .first-section-text .container div.para{
-    width: 80%;
-    margin: 12rem 0;
-    color: #000;
+    width: 90%;
+    position: initial;
+    margin: 4rem 0rem;
+}
+.first-section-text .block-left{
+    background: var(--color-primary);
+    height: 17rem;
+    width: 1.5rem;
+    margin: 1rem;
+    transition: all .4s ease-in-out;
+}
+.first-section-text .block-text {
+    width: 100%;
+    margin: 2rem;
+    line-height: 1.5;
 }
 
-
 /*SECOND SECTION*/
+
 .second-section{
     height: auto;
     margin-bottom: 3rem;
@@ -427,34 +519,49 @@ ON LOAD HOMEPAGE
     justify-content: center;
 }
 
+.box-prez-ep{
+    top: 50rem;
+    width: 100%;
+    position: initial;
+}
 .box-prez-ep .block-text{
     text-align: center;
-    padding: 5.2rem;
+    padding: 0;
     margin: 2rem;
     line-height: 1.5;
     font-size: 2rem;
     color: var(--bg-dark);
 }
 .box-prez-ep .block-text .title{
-    font-size: 14rem;
+    font-size: 7rem;
     font-weight: 400;
     color: #000
 }
 .box-prez-ep .block-text .title-2{
+    margin: auto;
     font-size: 10rem;
     font-weight: 500;
     color: #000;
-    margin-left: 0rem;
 }
+.second-section .ep-section{
+    width: auto;
+    margin: 0 auto;
+    position: initial;
+}
+.second-section .ep-infos-container{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+}
+
 .box-prez-ep .block-text .title-2::before,
 .box-prez-ep .block-text .title-2::after{
     content: "";
     display: inline-block;
     height: 0.2rem;
-    width: 8rem;
+    width: 4rem;
     background: #000;
     vertical-align: middle;
-    
 }
 .box-prez-ep .block-text .title-2::before{
     margin-right: 2rem;
@@ -462,44 +569,38 @@ ON LOAD HOMEPAGE
 .box-prez-ep .block-text .title-2::after{
     margin-left: 2rem;
 }
-
-.second-section .ep-infos-container{
-    padding: 4rem 6rem 0;
-    display: flex;
-    flex-direction: row;
-}
 .img-ep img{
-    max-width: 35rem;
+    max-width: 100%;
 }
 .img-ep .tooltip{
     opacity: 0;
     position: absolute;
     z-index: 10;
-    background: #ddddddf8;
-    padding: 2rem;
+    background: #dddddd96;
+    padding: 1rem;
     border-radius: 0.5rem;
-    top: 30rem;
-    left: -8rem;
+    top: 34rem;
+    left: 0rem;
     transition: all .8s ease-in-out;
     font-style: italic;
-    width: 40rem;
+    max-width: 30rem;
 }
 .img-ep:hover .tooltip{
     opacity: 1;
-    top: 25rem;
+    top: 16rem;
+    left: 0;
 }
-
 /*SECTION MUSIC*/
 .section-music{
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
 }
 .section-music .block-text{
-    width: 50%;
-    padding: 5.2rem;
-    margin: 2rem;
+    width: 100%;
+    padding: 0rem;
     line-height: 1.8;
     font-size: 2.5rem;
     color: var(--bg-dark);
@@ -508,39 +609,42 @@ ON LOAD HOMEPAGE
     transition-delay: .3s;
 }
 
-
-/*FOUR SECTION PROJECTS **************/
-
-
-/* .four-section-projects{
-   
-    position: relative;
-    height: auto;
-    width: 100%;
-    padding: 10rem 0;
-} */
-
-.four-section-projects{
-    background: url(/public/images/bg-cta.jpg) no-repeat;
-    background-position: 50% -45%;
-    background-size: cover;
-    background-attachment: fixed;
-    height: auto;
-    background-color: #000;
+/*SECTION PROJECTS*/
+.image-project{
+    width: 35rem;
+    height: 35rem;
+    margin: 2rem;
+}
+.project-content{
+    width: 35rem;
 }
 
+.ep-section .display-sm iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.four-section-projects{
+    height: auto;
+    background: url(/public/images/bg-cta.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: -81rem;
+    background-color: #000;
+}
 .four-section-projects .container{
     flex-direction: column;
     padding: 16rem 0;
 }
 .four-section-projects .overlay{
     background: rgb(0 0 0 / 65%);
+    padding: 4rem 1rem;
 }
 .four-section-projects h2{
     color: var(--color-primary);
     text-align: center;
-    font-size: 8rem;
-    font-weight: 400;    
+    font-size: 4.5rem;
+    font-weight: 400; 
 }
 .four-section-projects .container .content{
     width: 80%;
@@ -548,124 +652,11 @@ ON LOAD HOMEPAGE
     text-align: center;
 }
 .four-section-projects p{
-    font-size: 3rem;
     transition: all .6s ease-in-out;
     transition-delay: .2s;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
 }
-.four-section-projects h3{
-    font-size: 4rem;
-}
-/* .image-project{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 40rem;
-    height: 40rem;
-    margin: 5rem;
-    box-shadow: .2rem .2rem 1.2rem rgba(0, 0, 0, 0.445);
-    position: relative;
-}
-.image-project:nth-child(2){
-    transition-delay: .2s;
-}
-.image-project:nth-child(3){
-    transition-delay: .3s;
-}
-.image-project:nth-child(4){
-    transition-delay: .4s;
-}
-.image-project:nth-child(5){
-    transition-delay: .5s;
-}
-.image-project:nth-child(6){
-    transition-delay: .6s;
-}
-.project-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    
-}
-.project-details h2{
-    font-size: 2rem;
-    text-align: left;
-    color: var(--color-primary);
-    position: absolute;
-    top: 30rem;
-    left: 3rem;
-    transition: all .8s ease-in-out;
-}
-.project-details h2::after{
-    content: '';
-    background-color: var(--color-primary);
-    display: block;
-    height: 0.2rem;
-    width: 0%;
-    transition: all .8s ease-in-out;
-}
-.project-link:hover .project-details h2::after{
-    width: 100%;
-}
-.project-link:hover .image-project{
-    opacity: 0.8;
-}
-.project-link:hover .project-details h2{
-    top: 28rem;
-}
-.project-details h3{
-    font-weight: normal;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-.project-zamua-solo{
-    background: url(/public/images/zamua-solo.jpg) no-repeat;
-    background-size: cover;
-}
-.project-zamua-band{
-    background: url(/public/images/zamua-band.jpg) no-repeat;
-    background-size: cover;
-}
-.project-zamua-raffaele-casarano{
-    background: url(/public/images/zamua-casarano.jpg) no-repeat;
-    background-size: cover;
-}
-.project-zamua-flavio-boltro{
-    background: url(/public/images/zamua-boltro.jpg) no-repeat;
-    background-size: cover;
-}
-.project-zamua-laviko-ensemble{
-    background: url(/public/images/zamua-laviko.jpg) no-repeat;
-    background-size: cover;
-}
-.project-zamua-memoria-decoloniale{
-    background: url(/public/images/bg-bio.jpg) no-repeat;
-    background-size: cover;
-} */
-
-/*EPK*/
-
-
-/* .epk-video{
-    background-color: #000;
-    padding: 8rem;
-} */
-
-
-/**/
-
-/* .bg-music{
-    background-image: url(/public/images/bg-zamua-guitare.jpg);
-    background-position: 50% -23%;
-    height: 60vh;
-}
-.bg-music .block-text{
-    color: #fff;
-    width: 70rem;
-    padding: 10rem 5rem 10rem 8rem;
-} */
-/**/
 
 /*CONTACT*/
 .section-contact-home{
@@ -674,8 +665,9 @@ ON LOAD HOMEPAGE
     position: relative;
     width: 100%;
     background-color: #000;
-    background-attachment: fixed;
-    
+    background-attachment: scroll;
+    background-position: -40rem -1rem;
+    background-size: cover;
 }
 .section-contact-home .container{
     display: flex;
@@ -683,45 +675,36 @@ ON LOAD HOMEPAGE
     align-items: center;
 }
 .section-contact-home .container.overlay{
-    background: rgba(0, 0, 0, 0.486);
+    background: rgba(0, 0, 0, 0.40);
+    padding: 2rem;
 }
+
 .section-contact-home .main-form-container{
     color: var(--color-primary);
-    width: 70rem;
-    padding: 7rem 14rem 0 0;
+    padding: 4rem 0rem;
+    width: 100%;
 }
 .main-form-container .contact-container{
-    margin-bottom: 12rem;
+    margin: 6rem 0rem;
+    padding: 2rem;
 }
-.contact-container h2{
-    font-size: 8rem;
+.main-form-container .contact-container h2{
+    font-size: 5rem;
+    text-align: center;
 }
 .section-contact-home .infos{
-    margin: 6rem 0rem;
-    padding: 0 2rem;
+    margin: 10rem 0rem;
+    padding: 0rem;
     color: var(--color-primary);
-    border-left: 0.4rem solid;
+    border-left: transparent
+}
+.section-contact-home .infos h3{
+    font-size: 3rem;
 }
 .section-contact-home .infos a{
     display: block;
     font-size: 2.1rem;
 }
-
-.section-contact{
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-}
-.img-container{
-    flex-grow: 1;
-    overflow: hidden;
-}
-.section-contact .main-form-container{
-    margin: 60rem 15rem 0 0;
-    color: var(--color-primary);
-    flex-grow: 2;
-}
-
 form label{
     display: block;
     color: var(--color-primary);
@@ -737,34 +720,20 @@ form textarea{
     width: 100%;
     padding: 1rem;
     transition: all .6s ease-in-out;
+    font-family: 'Montserrat';
 }
 form input:focus,
 form textarea:focus{
-    background-color:#ffffff1c;
-}
-
-.section-contact .infos{
-    margin: 6rem 0rem;
-    padding: 0 2rem;
-    color: var(--color-primary);
-    border-left: 0.4rem solid;
-}
-.section-contact .infos a{
-    display: block;
-}
-/**/
-.separateur{
-    margin: 8rem auto;
-    text-align: center;
+    background-color:#ffffff73;
 }
 
 /*PAGE BIO*/
-
 .bg-bio{
     background-image: url(/public/images/bg-bio.jpg);
     background-size: cover;
-    background-position: 0rem -40rem;
-    margin-bottom: 5rem;
+    background-attachment: scroll;
+    background-position: -10rem 0rem;
+    margin-bottom: 8rem;
 }
 .bg-bio .container{
     justify-content: flex-start;
@@ -775,59 +744,61 @@ form textarea:focus{
 }
 
 .bg-bio .block-title{
-    margin-left: 10rem;
+    margin-left: 2rem;
 }
 .bg-bio .block-title h1{
     transition: all .4s ease-in-out;
 }
-.bg-bio .block-title span.title1{
-    font-size: 8rem;
+
+.bg-bio .block-title span.title1,
+.bg-bio .block-title span.title2{
+    font-size: 4rem;
     font-weight: bold;
     opacity: 0;
+    
+}
+.bg-bio .block-title span.title1{
     color: var(--color-primary);
     transition: all .7s ease-in-out;
 }
 .bg-bio .block-title span.title2{
     color: #fff;
-    font-size: 8rem;
-    font-weight: bold;
-    opacity: 0;
-    transition: all 1.5s ease-in-out;
     position: relative;
-    bottom: 5rem;
-    left: 15.7rem;   
+    bottom: 3rem;
     display: block;
+    left: 8rem;
+    transition: all 1.5s ease-in-out;
 }
 .bg-bio .block-title-after{
     background-color: var(--color-primary);
-    height: 1rem;
+    height: 0.5rem;
     width: 0rem;
     transition: all .9s ease-in-out;
     position: relative;
-    bottom: 9.3rem;
+    bottom: 7rem;
 }
-
 .biography.first-section-text{
-    margin-bottom: 5rem;
-    padding: 10rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.biography.first-section-text h1{
-    margin-bottom: 4rem;
-}
+
 .biography.first-section-text .container-text{
     margin-bottom: 20rem;
-    padding: 2rem 20rem;
+    padding: 0rem;
     display: flex;
     flex-direction: column;
     flex-basis: fit-content;
 }
-
-.container-text .block-text-first{
-    /* width: 60%; */
+.biography.first-section-text .container-text{
+    padding: 0rem;
+    margin-bottom: 5rem;
+}
+.container-text .block-text-first,
+.container-text .block-text-second{
+    width: 100%;
     margin-bottom: 5rem;
     line-height: 2.5rem;
 }
@@ -850,188 +821,151 @@ form textarea:focus{
     position: relative;
 }
 .container-img .image h2{
-    font-size: 4.5rem;
-    z-index: 6;
-    position: absolute;
-    top: -147px;
-    right: -4rem;
+    font-size: 3.5rem;
+    position: initial;
+    text-align: center;
 }
 .container-img .image img{
-    position: relative;
-    z-index: 5;
-}
-.container-img .image .tooltip,
-.video-second-section .container .tooltip{
-    opacity: 0;
-    position: absolute;
-    z-index: 10;
-    background: #dddddd94;
-    padding: 3rem 2rem;
-    border-radius: 0.5rem;
-    top: 50rem;
-    right: 39px;
-    transition: all .8s ease-in-out;
-}
-.container-img .image:hover .tooltip,
-.video-second-section .container:hover .tooltip{
-    opacity: 1;
-    top: 42rem;
-    font-weight: 500;
-}
-.container-img .block-1{
-    background: var(--color-primary);
-    position: absolute;
-    top: -8.9rem;
-    left: 26rem;
-    width: 36rem;
-    z-index: 4;
-    transition-delay: .2s;
-}
-.container-img .block-2{
-    background: #e3a540;
-    position: absolute;
-    bottom: -10.8rem;
-    left: -13rem;
-    /* width: 60rem; */
-    height: 39rem;
-    z-index: 3;
-    transition-delay: .4s;
+    position: initial;
+    max-width: 100%;
 }
 
+.container-img .block-1,
+.container-img .block-2{
+    display: none;
+}
 .second-section-bio{
-    margin-bottom: -15rem;
-    padding: 10rem;
+    padding: 2rem;
 }
 .second-section-bio .container{
+    padding: 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 20rem;
 }
 .second-section-bio .first-block{
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
+}
+.second-section-bio .first-block img{
+    position: initial;
+}
+.second-section-bio .first-block .block-1{
+    display: none;
 }
 .second-section-bio .first-block .para-1 p:nth-child(2){
     transition-delay: .3s;
 }
-.second-section-bio .second-block img{
-    position: relative;
-    z-index: 2;   
-}
-.second-section-bio .second-block .block-1{
-    
-    background: #2f3d4a;
-    position: absolute;
-    top: 5.6rem;
-    left: 12rem;
-    width: 44rem;
-    transition-delay: .4s;
-}
-.second-section-bio .second-block {
-    position: relative;
-}
 
 .fourth-section-bio{
-    margin-bottom: 20rem;
-    padding: 20rem 0rem;
+    padding: 6rem 0;
     position: relative;
 }
 .fourth-section-bio .wrapper-position{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    left: 0rem;
 }
 .fourth-section-bio .container{
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
 .fourth-section-bio .block-title{
-    position: absolute;
-    top: -28.6rem;
-    left: 9rem;
-    color: var(--bg-dark);
-    z-index: 6;
+    max-width: 35rem;
+    position: initial;
+    margin-bottom: 3rem;
+    padding: 2rem;
 }
 .fourth-section-bio h3{
-    font-size: 4.5rem;
-    position: absolute;
-    right: -790px;
-    top: 120px;
-    margin-left: 2rem;
+    font-size: 3.5rem;
+    margin: 0;
+    position: initial;
+    text-align: center;
     transition-delay: .3s;
-    color: var(--color-primary);
 }
-
 .fourth-section-bio .block-1{
-    background: #000;
-    width: 62rem;
-    position: absolute;
-    top: -18rem;
-    left: 26.5rem;
+    display: none;
 }
 .fourth-section-bio .block-2{
-    background: #e3a540;
-    width: 60rem;
-    position: absolute;
-    top: 15rem;
-    left: -18.2rem;
-    z-index: 4;
-    
+    display: none;
 }
-.fourth-section-bio img{
-    position: relative;
-    z-index: 5;
+.fourth-section-bio .container img{
+    max-width: 100%;
+    position: initial;
+    margin-bottom: 4rem;
 }
 .fourth-section-bio .block-btn{
-    position: absolute;
-    bottom: 50rem;
-    /* right: -10.8rem; */
-    right: -24rem;
-    z-index: 7;
+    position: initial;
+    margin-bottom: 5rem;
 }
-
 .section-gallery{
-    padding: 8rem 0;
+    margin: 3rem 1rem;
     position: relative;
 }
 .section-gallery h1{
-    font-size: 8rem;
-    margin-bottom: 11rem;
+    font-size: 5rem;
+    margin-bottom: 6rem;
 }
 .section-gallery .block-btn{
     text-align: center;
     margin: 6rem 0;
 }
+#lightgallery a img{
+    max-width: 100%;
+}
 
+.container-img .image .tooltip,
+.video-second-section .container .tooltip{
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    background: #dddddd96;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    top: 50rem;
+    right: -0rem;
+    transition: all .8s ease-in-out;
+}
+.container-img .image:hover .tooltip,
+.video-second-section .container:hover .tooltip{
+    opacity: 1;
+    top: 40rem;
+    right: 0rem;
+    font-weight: 500;
+}
 
-
-/*PAGE MUSIC*/
+/* MUSICA*/
 
 .bg-main-music{
     background-image: url(/public/images/zamua-pr.jpg);
     background-size: cover;
-    background-position: 0rem 0rem;
-    margin-bottom: 8rem;
+    background-position: -20rem 9rem;
+    background-color: #000;
+    background-attachment: scroll;
+    margin-bottom: 0rem;
 }
 .bg-main-music .container{
-    justify-content: flex-end;
+    justify-content: start;
 }
 .bg-main-music .overlay{
-    background: rgba(0, 0, 0, 60%);
+    background: rgba(0, 0, 0, 30%);
     transition: all .2s ease-in-out;
+    padding: 0 1rem;
+}
+
+.bg-main-music .container .block-title{
+    margin: 0;
 }
 .bg-main-music .container .block-title h1{
     text-transform: uppercase;
-    font-size: 8rem;
-    margin-right: 25rem;
     font-weight: bold;
+    margin-right: 0rem;
+    font-size: 6rem;
 }
-
 .bg-main-music .container .block-title span.title1{
     opacity: 0;
     transition: all .4s ease-in-out;
@@ -1055,19 +989,16 @@ form textarea:focus{
     transition-delay: .5s;
     color: #fff;
 }
-
 .music-first-section{
-    display: flex;
-    margin: 0;
+    margin-bottom: 3rem;
+}
+.music-first-section .container{
+    position: initial;
 }
 .music-first-section .block-text{
-    width: 80%;
-    color: var(--text-color);
-    padding: 8rem 20rem;
-
-}
-.music-first-section h2{
-    font-size: 4rem;
+    width: 100%;
+    position: initial;
+    padding: 8rem 2rem;
 }
 
 .music-second-section{
@@ -1076,18 +1007,16 @@ form textarea:focus{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 2rem;
 }
-.music-second-section .ep-infos-container {
-    justify-content: flex-start;
+.music-second-section .ep-infos-container{
     padding: 0;
-    margin: 2rem;
+    margin-bottom: 5rem;
 }
-
 .audio-container{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin-bottom: 8rem;
 }
 .audio-container:nth-child(2){
     transition-delay: .2s;
@@ -1104,7 +1033,6 @@ form textarea:focus{
 .player i{
     font-size: 2.2rem;
 }
-
 .track-container{
     margin-top: 2rem;
 }
@@ -1118,14 +1046,18 @@ form textarea:focus{
 .track-container .player i{
     margin-right: 2rem;
 }
+.cover-album{
+    margin: 0rem;
+}
 
-/*PAGE VIDEO*/
-
+/*VIDEO*/
 .bg-main-video{
     background-image: url(/public/images/picture-video.jpg);
     background-size: cover;
-    background-position: 0rem 0rem;
-    margin-bottom: 15rem;
+    background-attachment: scroll;
+    background-position: -22rem 2.2rem;
+    height: 70vh;
+    margin-bottom: 8rem;
 }
 .bg-main-video .container{
     display: flex;
@@ -1133,18 +1065,17 @@ form textarea:focus{
     align-items: center;
 }
 .bg-main-video .overlay{
-    background: rgba(0, 0, 0, 0) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     transition: all .2s ease-in-out;
 }
-
 .bg-main-video .container .block-title{
     text-transform: uppercase;
-    font-size: 5rem;
-    margin-left: 25rem;
     font-weight: bold;
     color: var(--color-primary)
 }
 .bg-main-video .container .block-title h1{
+    margin-left: 4rem;
+    font-size: 5rem;
     opacity: 0;
     transition: all .5s ease-in-out;
 }
@@ -1152,11 +1083,15 @@ form textarea:focus{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
 }
-
 .video-first-section .container .video-container{
-    margin: 5rem 2rem;
-    position: relative;
+    margin-bottom: 10rem;
+    position: relative
+}
+.video-first-section .container .video-container iframe{
+    max-width: 100%;
 }
 .video-container .edit-action{
     background: var(--color-primary);
@@ -1174,76 +1109,56 @@ form textarea:focus{
 .video-container .edit-action a{
     color: #000;
 }
+
+
 .video-second-section{
-    margin-top: 15rem;
-    margin-bottom: 77rem;
-    padding: 6rem;
-    position: relative;
-}
-.video-second-section .wrapper-position{
-    position: absolute;
-    top: 10rem;
-    left: 36rem;
+    margin: 10rem 0;
+    padding: 2rem;
 }
 .video-second-section .container{
     position: relative;
 }
+.video-second-section .wrapper-position{
+    position: initial;
+}
 .video-second-section .block-title{
-    position: absolute;
-    color: var(--color-primary);
-    z-index: 6;
-    width: 78rem;
-    top: -11rem;
-    left: 65rem;
+    position: initial;
+    width: auto;
+    color: var(--text-color);
+    margin-bottom: 3rem;
 }
 .video-second-section h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .video-second-section h3{
     font-size: 3rem;
     transition-delay: .3s;
 }
-
 .video-second-section .block-1{
-    background: #000;
-    height: 50rem;
-    width: 62rem;
-    top: -15.5rem;
-    left: 30.8rem;
-    position: absolute;
-    z-index: 4;
+    display: none;
+
 }
 .video-second-section .block-2{
-    background: #fe005a;
-    height: 39rem;
-    width: 51rem;
-    top: 21.9rem;
-    left: 11.8rem;
-    position: absolute;
-    transition-delay: .5s;
+    display: none;
+
 }
 .video-second-section .container img{
-    width: 55rem;
-    position: absolute;
-    top: 8rem;
-    left: 20rem;
-    z-index: 5;
+    max-width: 100%;
+    position: initial;
+    margin-bottom: 5rem;
 }
 .video-second-section .block-btn{
-    position: absolute;
-    top: 7rem;
-    left: 105rem;
-    z-index: 7;
+    position: initial;
 }
 
-/*PAGE GALLERY*/
-
+/*PAGE GALLERIA*/
 .bg-main-gallery{
     background-image: url(/public/images/banner-photos.jpg);
     background-size: cover;
-    background-position: 0rem -25rem;
-    margin-bottom: 10rem;
+    background-attachment: scroll;
+    background-position: 58% 50%;
     height: 70vh;
+    margin-bottom: 8rem;
 }
 .bg-main-gallery .container{
     justify-content: flex-start;
@@ -1252,52 +1167,26 @@ form textarea:focus{
     background: rgba(0, 0, 0, 0.445);
     transition: all .2s ease-in-out;
 }
-.bg-main-gallery .block-title{
-    margin-left: 10rem;
-}
-.bg-main-gallery .block-title h1{
-    
-    transition: all .8s ease-in-out;
-}
-.bg-main-gallery .block-title h1{
-    font-size: 8rem;
+
+.bg-main-gallery .block-title h1 {
+    font-size: 5rem;
     font-weight: bold;
     opacity: 0;
     color: var(--color-primary);
     transition: all .7s ease-in-out;
+    margin-left: 4rem;
 }
 
-/*Replaced by masonry style below*/
-/* #lightgallery{
-    display: flex;
-    padding: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 #lightgallery{
-    columns: 4;
+    columns: 1;
     column-gap: 0.1rem;
     text-align: center;
 }
-
 #lightgallery a {
     overflow: hidden;
     margin: 0.4rem;
     display: block;
 }
-/* #lightgallery a:nth-child(1),
-#lightgallery a:nth-child(2),
-#lightgallery a:nth-child(3),
-#lightgallery a:nth-child(4),
-#lightgallery a:nth-child(5),
-#lightgallery a:nth-child(6),
-#lightgallery a:nth-child(7),
-#lightgallery a:nth-child(8){
-    display: block;
-}
-.gallery-item{
-    display: none;
-} */
 #lightgallery a img{
     cursor: pointer;
     transition: all 1.5s ease-out;
@@ -1325,16 +1214,16 @@ form textarea:focus{
     background: rgba(0, 0, 0, 0.9);
     padding: 2rem 0;
 }
-/*PAGE CONTACT*/
-
+/* PAGE CONTATTI*/
 .bg-main-contact{
     background-image: url(/public/images/bg-contacts-2.jpeg);
     background-size: cover;
-    background-position: 0rem 0rem;
+    background-attachment: scroll;
+    background-position: -11.5rem 0;
     height: auto;
 }
 .bg-main-contact .container{
-    flex-flow: column;
+    flex-direction: column;
 }
 .bg-main-contact .overlay{
     background: rgba(0, 0, 0, 0.445) !important;
@@ -1346,36 +1235,43 @@ form textarea:focus{
 }
 .bg-main-contact .block-title h1{
     opacity: 1;
-    font-size: 8rem;
+    font-size: 5.5rem;
     color: #fff;
     transition: all .8s ease-in-out;
 }
-
 .contact-section{
-    margin-left: 0;
+    margin-left: 0rem;
     margin-bottom: 15rem;
 }
 .contact-section .form-container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
 }
 .contact-section .form-container form{
-    margin-right: 6rem;
-    border-right: 0.2rem solid var(--color-primary);
-    width: 56rem;
-    padding-right: 8rem;
-
+    width: auto;
+    padding: 1rem;
+    margin: 2rem 2rem 7rem 2rem;
+    border: none;
 }
+.contact-section .infos{
+    padding: 1rem;
+}
+
 .contact-section .infos a{
     display: block;
     font-size: 2.1rem;
 }
-/*PAGE PROJECTS*/
-
+/* PROGETTI*/
 .bg-main-projects{
     background-image: url(/public/images/bg-projects-2.jpeg);
     background-size: cover;
-    background-position: 0rem -25rem;
-    margin-bottom: 12rem;
+    background-attachment: scroll;
+    background-position: -6rem 0;
+    height: 70vh;
+    margin-bottom: 8rem;
 }
 .bg-main-projects .container{
     justify-content: flex-start;
@@ -1388,14 +1284,16 @@ form textarea:focus{
     opacity: 0;
     transition: all .8s ease-in-out;
     text-transform: uppercase;
-    font-size: 8rem;
-    margin-left: 25rem;
+    font-size: 5rem;
+    margin-left: 2rem;
     font-weight: bold;
     color: var(--color-primary)
 }
+
 .sections-all-projects{
+    margin-bottom: 20rem;
+    padding-bottom: 25rem;
     position: relative;
-    margin-bottom: 80rem;
 }
 .container-projects-cards{
     display: flex;
@@ -1407,13 +1305,14 @@ form textarea:focus{
     opacity: 1;
     transition: all .3s ease-in-out;
 }
-
 .project-card{
     margin: 2.5rem;
     overflow: hidden;
     cursor: pointer;
     z-index: 10;
     display: block;
+    width: 30rem;
+    height: 30rem;
 }
 .project-card .overlay{
     display: flex;
@@ -1424,54 +1323,40 @@ form textarea:focus{
     overflow: hidden;
     
 }
-
-.wrapper{
-    width: 35rem;
-    height: 35rem;
+.wrapper {
+    width: 23rem;
+    height: 25rem;
     border: 0.1rem solid var(--color-primary);
     position: relative;
 }
 #zamua-solo{
-    
     background: url(/public/images/zamua-solo.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-band{
     background: url(/public/images/zamua-band.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-raffaele-casarano{
     background: url(/public/images/zamua-casarano.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-flavio-boltro{
     background: url(/public/images/zamua-boltro.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-laviko-ensemble{
     background: url(/public/images/zamua-laviko.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-memoria-decoloniale{
     background: url(/public/images/bg-bio.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
-.title-project{
+.title-project {
     position: absolute;
-    top: 20rem;
-    left: 19rem;
+    top: 14rem;
+    left: 11rem;
     color: var(--color-primary);
 }
 .title-project .block-title{
@@ -1515,9 +1400,24 @@ form textarea:focus{
 .container-project{
     transition: all .4s ease-in-out;
 }
+.container-projects-to-display .close-container{
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 115rem;
+    right: 3.6rem;
+    z-index: 20;
+}
+.container-projects-to-display .close-container i{
+    font-size: 4rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
 .show.container-project{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .show.container-project .overlay{
     display: flex;
@@ -1538,7 +1438,7 @@ form textarea:focus{
 .show.container-project .title-project .block-title .title-artist,
 .show.container-project .title-project .block-title .title-partner{
     position: initial;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .one-project-content{
     padding: 7rem;
@@ -1548,61 +1448,35 @@ form textarea:focus{
     transition: all .6s ease-in;
 }
 .container-project .head-picture{
-    margin-right: 3rem;
-    position: relative;
-    left: 43rem;
-    transition: all .4s cubic-bezier(.645,.045,.355,1);
-    opacity: 0;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    width: 28rem;
+    height: 28rem;
+    left: 1.5rem;
 }
 #zamua-solo-to-display{
     background: url(/public/images/zamua-solo.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-band-to-display{
     background: url(/public/images/zamua-band.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-raffaele-casarano-to-display{
     background: url(/public/images/zamua-casarano.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-flavio-boltro-to-display{
     background: url(/public/images/zamua-boltro.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-laviko-ensemble-to-display{
     background: url(/public/images/zamua-laviko.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
 }
 #zamua-memoria-decoloniale-to-display{
     background: url(/public/images/bg-bio.jpg) no-repeat;
-    width: 40rem;
-    height: 40rem;
     background-size: cover;
-}
-
-.container-projects-to-display .close-container{
-    transition: all .3s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    right: 39.4rem;
-    top: 2rem;
-    z-index: 20;
-}
-.container-projects-to-display .close-container i{
-    font-size: 5rem;
-    color: var(--text-color);
-    cursor: pointer;
 }
 .project-elements{
     border-left: 0.4rem solid var(--color-primary);
@@ -1613,9 +1487,12 @@ form textarea:focus{
     margin-bottom: 1rem;
     
 }
-
+.one-project-content{
+    padding: 8rem 2rem;
+    margin: 0 2rem;
+}
 .project-presentation{
-    width: 80rem;
+    width: auto;
 }
 .project-presentation .text{
     line-height: 3.5rem;
@@ -1626,10 +1503,10 @@ form textarea:focus{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
 }
 .project-presentation .images img{
-    margin: 2rem;
-    width: 35rem;
+    margin: 2rem 0;
 }
 .wrapper-img{
     position: relative;
@@ -1637,7 +1514,7 @@ form textarea:focus{
 .project-presentation .wrapper-img .tooltip{
     position: absolute;
     bottom: -1.6rem;
-    left: 3rem;
+    left: 0rem;
     background: #000000ea;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
@@ -1652,11 +1529,17 @@ form textarea:focus{
     opacity: 1;
     bottom: 0.1rem;
 }
-/* PAGE SHOWS*/
+
+
+/*PAGE SHOWS*/
+
 .bg-main-shows{
+    background-attachment: scroll;
+    background-position: -6rem 0rem;
     background-image: url(/public/images/zamua-vayulive2.jpg);
     background-size: cover;
-    background-position: 0rem -48rem;
+    height: 70vh;
+    margin-bottom: 8rem;
 }
 .bg-main-shows .container{
     justify-content: flex-start;
@@ -1669,8 +1552,8 @@ form textarea:focus{
     opacity: 0;
     transition: all .8s ease-in-out;
     text-transform: uppercase;
-    font-size: 8rem;
-    margin-left: 25rem;
+    margin-left: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: var(--color-primary)
 }
@@ -1685,1652 +1568,998 @@ form textarea:focus{
     padding: 6rem 0;
     background: rgba(255, 255, 255, 1);
 }
-
 .container-shows{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8rem;
+    padding: 4rem;
 }
 .one-show-item{
-    margin: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 4rem;
+    margin: 2rem 0rem;
     align-items: center;
     background: #000;
-    padding: 4rem;
     font-size: 2rem;
     width: 100%;
 }
 .one-show-infos{
     display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    text-align: center;
 }
 .one-show-date{
     color: #fff;
-    margin: 0 2rem;
+    margin-bottom: 2rem;
 }
 .one-show-venu-location{
     display: flex;
     margin: 0 4rem;
+    flex-direction: column;
 }
 .one-show-venu-location .venu{
-    margin: 0 6rem 0 0;
+    margin: 2rem auto;
+    padding: 0 2rem;
     font-weight: 600;
 }
+.one-show-venu-location .location{
+    margin: auto;
+}
 .one-show-actions{
-    margin-left: 5rem;
+    margin-left: 0;
 }
 .venu span,
 .location span,
 .one-show-actions span{
     color: var(--color-primary);
 }
-
-
-/* PAGE IN MY EARS*/
-.bg-in-my-ears{
-    background-image: url(/public/images/bg-projects-3.jpeg);
-    background-size: cover;
-    background-position: 0rem -25rem;
-    height: 80vh;
-    margin-bottom: 25rem;
-}
-.bg-in-my-ears .container{
-    justify-content: flex-start;
-}
-.bg-in-my-ears .overlay{
-    background: rgba(0, 0, 0, 0.445);
-    transition: all .2s ease-in-out;
-}
-.bg-in-my-ears .container .block-title h1{
-    opacity: 0;
-    transition: all .8s ease-in-out;
-    text-transform: uppercase;
-    font-size: 8rem;
-    margin-left: 25rem;
-    font-weight: bold;
-    color: var(--color-primary)
+/*******/
+.main-cookies-container, .main-credits-container {
+   padding: 17rem 2rem;
 }
 
+/*PRIVACY*/
 
-/*COOKIES POLICY*/
-
-.main-cookies-container,
-.main-credits-container{
-    padding: 16rem 10rem;
+.main-cookies-container, .main-credits-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
 }
-
-.main-cookies-container p,
-.main-credits-container p{
-    font-size: 2rem;
-    line-height: 3.5rem;
+.cookies-container,
+.privacy-container,
+.credits-container{
+    line-height: 3rem;
 }
-.main-cookies-container h1,
-.main-credits-container h1{
-    font-size: 5rem;
-}
-.main-cookies-container h2{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-.main-cookies-container .sub-section,
-.main-credits-container .sub-section{
+.main-cookies-container .sub-section{
     margin-bottom: 3rem;
 }
-.credits-container .section-content{
- font-size: 2rem;
- line-height: 3rem;
+.main-cookies-container p,
+.privacy-container .sub-section ul{
+    font-size: 1.6rem;
 }
-/*FOOTER*/
-footer{
-    background: #000;
-    color: #fff;
-    padding: 5rem 2rem;
-    text-align: center;
-}
+@media screen and (min-width: 375px) {
 
-.social-media .social-icon{
-    margin: 2rem;
-    font-size: 3rem;
-}
-
-@media screen and (max-width: 600px) {
-    
-    .display-lg,
-    .no-mobile-view{
-        display: none;
-    }
-    .display-sm,
-    .mobile-view{
-        display: block;
-    }
-    .switch-language.mobile-view{
-        opacity: 0;
-        -webkit-transition: all .4s cubic-bezier(.42,0,.58,1);
-        transition: all .4s cubic-bezier(.42,0,.58,1);
-        
-    }
-
-    .active-page{
-        margin: 2rem 0;
-    }
-    .back-opacity{
-        left: -3.6rem;
-        top: -8.1rem;
-        font-size: 34rem;
-        opacity: 0.1;
-    }
-    .navigation-panel{
-        justify-content: end;
-    }
-    .navigation-panel ul{
-        top: 5.6rem;
-        right: 3.6rem;
-    }
     .navigation-panel-item {
         margin-bottom: 2rem;
         font-size: 3rem;
     }
-    .navigation-panel ul.user-items{
-        top: 6rem;
-        right: 1.8rem;
-    }
-    .user-items .navigation-panel-item {
-        font-size: 2.5rem;
-    }
 
-    .img-ep .tooltip{
-        opacity: 0;
-        position: absolute;
-        z-index: 10;
-        background: #dddddd96;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        top: 34rem;
-        left: 0rem;
-        transition: all .8s ease-in-out;
-        font-style: italic;
-        max-width: 30rem;
+    /*PAGE HOME*/
+    .bg-home .block-text h1 {
+        font-size: 4rem;
+        line-height: 5.5rem;
     }
-    .img-ep:hover .tooltip{
-        opacity: 1;
-        top: 22rem;
-        left: 0;
-        
-    }
-    .main-cookies-container {
-        padding: 16rem 4rem;
-    }
-
-/*SECTIONS*/
-
-
-    /*BASE*/
-    #brand-logo img.first{
-        width: 11rem !important;
-        margin-left: 2rem;
-    }
-    #brand-logo img.second{
-        transform: translate(-1.6rem, -12.6rem);
-        transition: all .4s ease-out;
-    }
-    .scroll-to-top{
-        right: 3rem;
-    }
-    .scroll-to-top i{
-        display: block;
-        
-        font-size: 2.5rem;
-        margin: 1.2rem auto;
-    }
-    .scroll-to-top:hover{
-        background: transparent;
-        border: 0.2rem solid var(--color-primary);
-        color: var(--color-primary);
-    }
-
-    /*HOME*/
-
-    .bg-home{
-        background-attachment: scroll;
-        margin-bottom: 7rem;
-    }
-    .bg-home .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .bg-home .overlay{
-        background: rgba(0, 0, 0, 0);
-    }
-        /*
-        ON LOAD HOMEPAGE
-        */
-    .bg-home{
-        background-position: -24rem 0rem;
-    }
-    .bg-home .block-logo-text .logo{
-        width: 60%;
-        height: auto;    
-    }
-    .block-logo-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .bg-home .block-text{
-        display: flex;
-        /* color: #fff; */
-        width: 80%;
-        margin-left: 0rem;
-    }
-    .bg-home .block-text h1{
-        font-size: 3.5rem;
-    }
-    
-    /*FIRST SECTION*/
-    .first-section-text{
-        height: 100%;
-        padding: 4rem 2rem;
-    }
-    .first-section-text .container{
-        flex-direction: column;
-        align-items: center;
-        padding: 9rem 0 4rem 0;
-        width: 100%;
-        justify-content: center;
-    }
-    .first-section-text h2{
-        font-size: 5rem;
-        text-align: center;
-    }
-    .images-for-bio{
-        text-align: center;
-        padding: 2rem;
-        margin: 2rem 0rem;
-    }
-    .images-for-bio img:first-child,
-    .images-for-bio img:nth-child(2){
-        margin: 2rem 0;
-        position: initial;
-        max-width: 30rem;
-    }
-    .first-section-text .container div.para{
-        width: 90%;
-        position: initial;
-        margin: 4rem 0rem;
-    }
-    .first-section-text .block-left{
-        background: var(--color-primary);
-        height: 17rem;
-        width: 1.5rem;
-        margin: 1rem;
-        transition: all .4s ease-in-out;
-    }
-    .first-section-text .block-text {
-        width: 100%;
-        margin: 2rem;
-        line-height: 1.5;
-    }
-
-    /*SECOND SECTION*/
-    /* .second-section{
-        margin-bottom: 30rem;
-    } */
-    .box-bg-ep{
-        height: 55vh;
-        margin: 0;
-        background-position: -5rem 0rem;
-        background-size: cover;
-    }
-    .box-prez-ep{
-        top: 50rem;
-        width: 100%;
-        position: initial;
-    }
-    .box-prez-ep .block-text{
-        padding: 0;
-    }
-    .box-prez-ep .block-text .title{
-        font-size: 7rem;
-    }
-    .box-prez-ep .block-text .title-2{
-        margin: auto;
-    }
-    .second-section .ep-section{
-        width: auto;
-        margin: 0 auto;
-        position: initial;
-    }
-    .second-section .ep-infos-container{
-        padding: 0;
-        display: block;
-    }
-
-    .box-prez-ep .block-text .title-2::before,
-    .box-prez-ep .block-text .title-2::after{
-        width: 4rem;
-    }
-    .img-ep img{
-        max-width: 30rem;
-    }
-    /*SECTION MUSIC*/
-    .section-music{
-        padding: 2rem;
-    }
-    .section-music .block-text{
-        width: 100%;
-        padding: 0rem;
-    }
-
     /*SECTION PROJECTS*/
-    .image-project{
-        width: 35rem;
-        height: 35rem;
-        margin: 2rem;
-    }
-    .project-content{
-        width: 35rem;
-    }
-    
-    .ep-section .display-sm iframe{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
     .four-section-projects{
-        height: auto;
-        background-attachment: scroll;
-        background-position: -54rem;
-    }
-    .four-section-projects .overlay{
-        padding: 4rem 1rem;
-    }
-    .four-section-projects h2{
-        font-size: 4.5rem;
-    }
-    .four-section-projects p{
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        background-position: -63rem;
     }
 
-    /*CONTACT*/
-    .section-contact-home{
-        background-attachment: scroll;
-        background-position: -40rem -1rem;
-    }
-    .section-contact-home .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-contact-home .container.overlay{
-        background: rgba(0, 0, 0, 0.40);
-        padding: 2rem;
-    }
-    
-    .section-contact-home .main-form-container{
-        padding: 4rem 0rem;
-        width: 100%;
-    }
-    .main-form-container .contact-container{
-        margin: 6rem 0rem;
-        padding: 2rem;
-    }
-    .main-form-container .contact-container h2{
-        font-size: 5rem;
-        text-align: center;
-    }
-    .section-contact-home .infos{
-        margin: 10rem 0rem;
-        padding: 0rem;
-        color: var(--color-primary);
-        border-left: transparent
-    }
-    .section-contact-home .infos a{
-        display: block;
-    }
-    .section-contact{
-        
-        background-color: #000;
-        display: flex;
-        flex-direction: column;
-    }
-    .section-contact .main-form-container{
-        margin: 2rem 3rem;
-        color: var(--color-primary);
-        flex-grow: 2;
-    }
-
-   
-
-    .section-contact .infos{
-        margin: 8rem 0rem;
-        padding: 0 2rem;
-        color: var(--color-primary);
-        border-left: 0.4rem solid;
-    } 
-
-    /*PAGE GALLERIA*/
-    .bg-main-gallery{
-        background-attachment: scroll;
-        background-position: 50% 50%;
-        height: 70vh;
-    }
-    .bg-main-gallery .block-title {
-        margin: auto;
-    }
-    .bg-main-gallery .block-title h1 {
-        font-size: 6rem;
-    }
-
-    #lightgallery{
-        columns: 1;
-    }
 
     /*PAGE BIO*/
-    .bg-bio{
-        background-attachment: scroll;
-        background-position: -18rem 0rem;
-        margin-bottom: 8rem;
+  
+    .bg-bio .block-title span.title1, 
+    .bg-bio .block-title span.title2{
+        font-size: 5rem;
     }
-    .bg-bio .block-title{
-        margin-left: 2rem;
+    .bg-bio .block-title span.title2{
+        left: 10rem;
     }
     .bg-bio .block-title-after{
-        height: 0.5rem;
-        bottom: 8.3rem;
-    }
-    .bg-bio .block-title span.title1,
-    .bg-bio .block-title span.title2{
-        font-size: 5rem;
-    }
-    .bg-bio .block-title span.title2{
-        left: 9.8rem;
-    }
-    .biography.first-section-text{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .biography.first-section-text .container-text{
-        padding: 0rem;
-    }
-    .biography.first-section-text .container-text{
-        padding: 0rem;
-        margin-bottom: 5rem;
-    }
-    .container-text .block-text-first,
-    .container-text .block-text-second{
-        width: 100%;
-    }
-    .container-img .image h2{
-        font-size: 3.5rem;
-        position: initial;
-        text-align: center;
-    }
-    .container-img .image img{
-        position: initial;
-        max-width: 100%;
+        bottom: 8rem;
     }
     
-    .container-img .block-1,
-    .container-img .block-2{
-        display: none;
-    }
-    .second-section-bio{
-        padding: 2rem;
-        margin-bottom: 3rem;
-    }
-    .second-section-bio .container{
-        padding: 0rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .second-section-bio .first-block{
-        margin-bottom: 0rem;
-    }
-    .second-section-bio .first-block img{
-        position: initial;
-    }
-    .second-section-bio .first-block .block-1{
-        display: none;
-    }
-    .second-section-bio .second-block{
-        margin: 0rem;
-    }
-    .second-section-bio .second-block .block-1{
-        display: none;
-    }
-    .fourth-section-bio{
-        padding: 6rem 0;
-        margin-bottom: 2rem;
-    }
-    .fourth-section-bio .wrapper-position{
-        left: 0rem;
-    }
-    .fourth-section-bio .block-title{
-        left: 0rem;
-        max-width: 35rem;
-        position: initial;
-        margin-bottom: 3rem;
-        padding: 2rem;
-    }
-    .fourth-section-bio h3{
-        font-size: 3.5rem;
-        margin: 0;
-        position: initial;
-        text-align: center;
-    }
-    .fourth-section-bio .block-1{
-        left: 0;
-        max-width: 50rem;
-        display: none;
-    }
-    .fourth-section-bio .block-2{
-        left: 0;
-        max-width: 50rem;
-        display: none;
-    }
-    .fourth-section-bio .container img{
-        left: 0rem;
-        max-width: 100%;
-        position: initial;
-        margin-bottom: 4rem;
-    }
-    .fourth-section-bio .block-btn{
-        /* left: 0; */
-        position: initial;
-        margin-bottom: 5rem;
-    }
-
-    .section-gallery h1{
-        font-size: 5rem;
-    }
-    #lightgallery a img{
-        max-width: 100%;
-    }
-
-    .container-img .image .tooltip,
-    .video-second-section .container .tooltip{
-        opacity: 0;
-        position: absolute;
-        z-index: 10;
-        background: #dddddd96;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        top: 50rem;
-        right: -0rem;
-        transition: all .8s ease-in-out;
-    }
-    .container-img .image:hover .tooltip,
-    .video-second-section .container:hover .tooltip{
-        opacity: 1;
-        top: 45rem;
-        right: 0rem;
-        font-weight: 500;
-    }
-  
-    /* MUSICA*/
+    /*PAGE MUSIC*/
 
     .bg-main-music{
-        background-position: -20rem 9rem;
-        background-color: #000;
-        background-attachment: scroll;
-        margin-bottom: 0rem;
-    }
-    .bg-main-music .container{
-        justify-content: start;
-    }
-    .bg-main-music .overlay{
-        padding: 0 1rem;
-    }
-    .bg-main-music .container .block-title{
-        font-size: 6.5rem;
-        margin-right: 0;
-    }
-    .bg-main-music .container .block-title{
-        margin: 0;
-    }
-    .bg-main-music .container .block-title h1{
-        margin-right: 0rem;
-        font-size: 6rem;
-    }
-    .music-first-section{
-        margin-bottom: 3rem;
-    }
-    .music-first-section .container{
-        position: initial;
-    }
-    .music-first-section .block-text{
-        width: 90%;
-        position: initial;
-        padding: 8rem 2rem;
-    }
-    .music-first-section .block1{
-        display: none;
-    }
-    .music-second-section{
-        padding: 2rem;
-    }
-    .music-second-section .ep-infos-container{
-        flex-direction: column;
-        margin-bottom: 5rem;
-    }
-    .audio-container{
-        flex-direction: column;
-        margin-bottom: 8rem;
-    }
-    .cover-album{
-        margin: 0rem;
-    }
-    
-    /*VIDEO*/
-    .bg-main-video{
-        background-attachment: scroll;
-        background-position: -22rem 2.2rem;
-    }
-    .bg-main-video .container .block-title{
-        margin-left: 3rem;
-    }
-    .bg-main-video .container .block-title h1{
-        font-size: 6.5rem;
-    }
-    .video-first-section .container{
-        flex-direction: column;
-        padding: 2rem;
-    }
-    .video-first-section .container .video-container{
-        margin-bottom: 10rem;
-    }
-    .video-first-section .container .video-container iframe{
-        max-width: 35.8rem;
+        margin-bottom: 6rem;
     }
 
-    .video-second-section{
-        margin: 10rem 0;
-        padding: 2rem;
+    /*PAGE SHOWS*/
+    .bg-main-shows{
+        margin-bottom: 2rem;
     }
-    .video-second-section .wrapper-position{
-        position: initial;
-    }
-    .video-second-section .block-title{
-        position: initial;
-        width: auto;
-        color: var(--text-color);
-        margin-bottom: 9rem;
-    }
-    .video-second-section .block-1{
-        display: none;
+    /*PAGE GALLERY*/
 
-    }
-    .video-second-section .block-2{
-        display: none;
+    /*PAGE VIDEOS*/
 
-    }
-    .video-second-section .container img{
-        max-width: 100%;
-        position: initial;
-        margin-bottom: 5rem;
-    }
-    .video-second-section .block-btn{
-        position: initial;
-    }
-
-    /* PROGETTI*/
-    .bg-main-projects{
-        background-attachment: scroll;
-        background-position: -6rem 0;
-        margin-bottom: 10rem;
-    }
-
+    /*PAGE PROJECTS*/
     .bg-main-projects .container .block-title h1{
-        font-size: 6rem;
-        margin-left: 5rem;
-    }
-
-    .sections-all-projects{
-        margin-bottom: 20rem;
-        padding-bottom: 25rem;
-    }
-
-    .wrapper {
-        width: 30rem;
-        height: 30rem;
-        border: 0.1rem solid var(--color-primary);
-        position: relative;
-    }
-    .title-project {
-        position: absolute;
-        top: 20rem;
-        left: 17rem;
-        color: var(--color-primary);
+        font-size: 5rem;
     }
     .container-projects-to-display .close-container{
-        top: 42rem;
-        right: 4.6rem;
+        right: 3.6rem;
+        top: 104rem;
     }
-    .show.container-project{
-        flex-direction: column;
-        align-items: center;
+    .project-card{
+        width: 35rem;
+        height: 35rem;
     }
-    
+    .wrapper{
+        width: 28rem;
+        height: 28rem;
+    }
+    .title-project{
+        left: 14rem;
+    }
     .container-project .head-picture{
-        margin-right: 0;
-        margin-bottom: 3rem;
+        width: 30rem;
+        height: 30rem;
     }
-    #solo-to-display,
-    #band-to-display,
-    #zamua-casarano-to-display,
-    #zamua-boltro-to-display,
-    #zamua-laviko-to-display{
-        left: 1.5rem;
-    }
-    .one-project-content{
-        padding: 8rem 2rem;
-        margin: 0 2rem;
-    }
-    .project-presentation{
-        width: auto;
-    }
-    .project-presentation .images{
-        flex-direction: column;
-    }
-    .project-presentation .images img{
-        width: 32rem;
-    }
-
-    /* PAGE CONTATTI*/
-    .bg-main-contact{
-        background-attachment: scroll;
-        background-position: -11.5rem 0;
-        height: 100%;
-    }
-    .bg-main-contact .block-title h1{
-        font-size: 6.35rem;
-    }
-    .contact-section{
-        margin-left: 0rem;
-    }
-    .contact-section .form-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 4rem;
-    }
+   
+    /*PAGE CONTACT*/
     .contact-section .form-container form{
-        width: auto;
-        padding: 4rem;
-        margin: 2rem 2rem 7rem 2rem;
-        border: none;
-    }
-    /*PAGE SHOWS*/
-
-    .bg-main-shows{
-        background-attachment: scroll;
-        background-position: -26rem 0rem;
-    }
-    .bg-main-shows .container .block-title h1{
-        margin-left: 2rem;
-        font-size: 6rem;
-    }
-    .container-shows{
-        padding: 4rem;
-    }
-    .one-show-item{
-        flex-direction: column;
-        padding: 3rem;
-        margin: 2rem 0rem;
-    }
-    .one-show-infos{
-        margin-bottom: 2rem;
-        flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: center; */
-        text-align: center;
-    }
-    .one-show-date{
-        margin-bottom: 2rem;
-    }
-    .one-show-venu-location{
-        flex-direction: column;
-    }
-    .one-show-venu-location .venu{
-        margin: 2rem auto;
-        padding: 0 2rem;
-    }
-    .one-show-venu-location .location{
-        margin: auto;
-    }
-    .one-show-actions{
-        margin-left: 0;
-    }
-
-    /*******/
-    .main-cookies-container, .main-credits-container {
-       padding: 17rem 2rem;
+        margin: 2rem 0rem 7rem 0rem;
+        padding: 0;
     }
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px){
-    
-    .display-lg,
-    .no-mobile-view{
-        display: none;
-    }
-    .display-sm,
-    .mobile-view{
-        display: block;
-    }
-    .back-opacity{
-        font-size: 35rem;
-        opacity: 0.1;
-        top: -8.6rem;
-        left: -0.2rem;
-    }
 
-    .navigation-panel-item {
-        margin-bottom: 2rem;
-        font-size: 3.5rem;
-    }
-    .container-img .image .tooltip,
-    .video-second-section .container .tooltip{
-        top: 49rem;
-        right: 41px;
-    }
-    .container-img .image:hover .tooltip,
-    .video-second-section .container:hover .tooltip{
-        top: 42rem;
-        right: 41px;
-    }
-    .main-cookies-container, .main-credits-container {
-        padding: 17rem 4rem;
-    }
-/*SECTIONS*/
+@media screen and (min-width: 480px) and (max-width: 640px){
 
-    /*HOME*/
-    .bg-home{
-        background-attachment: fixed;
-        background-position: -2rem 0rem;
-    }
-    .bg-home .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .scroll-to-top{
-        right: 5.6rem;
-    }
-    .scroll-to-top i{
-        display: block;
-        
-        font-size: 2.5rem;
-        margin: 1.2rem auto;
-    }
-    .scroll-to-top:hover{
-        background: transparent;
-        border: 0.2rem solid var(--color-primary);
-        color: var(--color-primary);
-    }
-    /*
-    ON LOAD HOMEPAGE
-    */
-
-    .bg-home .block-logo-text .logo{
-        width: 60%;
-        height: auto;    
-    }
-
-    .block-logo-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .bg-home .block-text{
-        display: flex;
-        width: 80%;
-        margin-left: 2rem;
-    }
+    /*PAGE HOME*/
     .bg-home .block-text h1{
         font-size: 5rem;
-    }
-     /*FIRST SECTION*/
-     .first-section-text{
-        height: 100%;
-        padding: 0;
+        line-height: 7rem;
+        font-weight: 300;
     }
     .first-section-text .container{
-        flex-direction: column;
-        align-items: center;
-        padding: 5rem 3rem;
-        width: 100%;
-        justify-content: center;
-        padding: 10rem 7rem;
-        margin-top: 9rem;
+        padding: 9rem 2rem 4rem 2rem;
     }
-    .first-section-text h2{
+    .second-section .ep-infos-container{
+        width: 35rem;
+    }
+
+    .section-music{
+        padding: 6rem 4rem;
+    }
+    .four-section-projects {
+        background-position: -52rem;
+    }
+    .four-section-projects .overlay{
+        padding: 4rem;
+    }
+
+    /*PAGE BIO*/
+    .biography.first-section-text{
+        padding: 4rem;
+    }
+
+    /*PAGE MUSIC*/
+    .bg-main-music .container .block-title h1{
+        margin-left: 2rem;
+    }
+    .music-first-section .block-text{
+        padding: 8rem 4rem;
+    }
+
+    /*PAGE SHOWS*/
+
+    /*PAGE GALLERY*/
+
+    /*PAGE VIDEOS*/
+    .bg-main-projects .container .block-title h1{
+        margin-left: 4rem;
+    }
+
+    /*PAGE PROJECT*/
+   
+
+    
+    .container-project .head-picture{
+        width: 35rem;
+        height: 35rem;
+    }
+    .container-projects-to-display .close-container{
+        top: 110rem;
+    }
+    .wrapper-img{
+        width: 40rem;
+    }
+
+    /*PAGE CONTACT*/
+
+    .contact-section .form-container form{
+        min-width: 100%;
+    }
+
+
+}
+@media screen and (min-width: 540px) and (max-width: 640px){
+    /*PAGE PROJECTS*/
+    .four-section-projects {
+        background-position: -38rem;
+    }
+
+    /*PAGE BIO*/
+    #lightgallery a{
+        margin: 0.4rem auto;
+        width: 45rem;
+    }
+    /*PAGE MUSIC*/
+
+    /*PAGE SHOWS*/
+
+}
+@media screen and (min-width: 641px) {
+    
+    .navigation-panel-item{
+        font-size: 4rem;
+    }
+    .navigation-panel #icon-container{
         font-size: 5rem;
-        text-align: center;
-        position: initial;
-        margin-bottom: 7rem;
     }
-    .images-for-bio{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .switch-language a{
+        font-size: 2.5rem;
     }
-    .images-for-bio img:first-child,
-    .images-for-bio img:nth-child(2){
-        position: initial;
-        max-width: 45rem;
-        margin: 2rem;
+    .bg-main .container .block-title h1{
+        font-size: 8rem;
+    }
+    
+    /*PAGE HOME*/
+    .bg-main.bg-home .container .block-text h1{
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 8.5rem;
     }
     .first-section-text .container div.para{
-        width: 100%;
-        margin: 0;
-        position: initial;
-    }
-    /*SECOND SECTION*/
-    .second-section{
-        margin-bottom: 5rem;
-    }
-    .box-bg-ep{
-        margin: 0;
-        background-position: -27rem 0rem;
-        background-size: cover;
-    }
-    .box-prez-ep{
-        top: 72rem;
-    }
-    .box-prez-ep .block-text{
-        padding: 0;
+        padding: 0rem 4rem;
     }
     .box-prez-ep .block-text .title{
         font-size: 9rem;
     }
-    .box-prez-ep .block-text .title-2{
-        margin-left: 3rem;
-    }
     .second-section .ep-section{
-        width: 100%;
+        padding: 0 4rem;
+    }
+    .second-section .ep-infos-container .img-ep{
+        width: 75%;
         margin: 0 auto;
-        position: initial;
-    }
-    .second-section .ep-section iframe{
-        max-width: 100% !important;
-    }
-    .second-section .ep-infos-container{
-        padding: 0;
-        display: block;
-    }
-
-    /*SECTION MUSIC*/
-    .section-music .block-text{
-        width: 100%;
-    }
-
-    /*SECTION PROJECTS*/
-    .image-project{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        width: 40rem;
-        height: 40rem;
-        margin: 2rem;
-    }
-
-    /*FOUR SECTION*/
-
-    .four-section-projects{
-        height: auto;
-    }
-    .fourth-section-bio h3{
-        position: initial;
-        text-align: center;
-        margin-left: 0;
-    }
-    .project-details h2{
-        font-size: 2rem;
-    }
-
-
-    /*CONTACT*/
-
-    .section-contact-home {
-        background-attachment: scroll;
-        background-position: -32rem -2rem;
-    }
-    .section-contact-home .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-contact-home .container.overlay{
-        background: rgba(0, 0, 0, 0.70);
     }
     
-    .section-contact-home .main-form-container{
-        padding: 4rem 2em;
-        width: 100%;
-    }
-    .main-form-container .contact-container{
-        margin: 6rem;
-    }
-    .main-form-container .contact-container h2{
-        font-size: 6rem;
-    }
-    .section-contact-home .infos{
-        margin: 10rem 15rem;
-        padding: 0 2rem;
-        color: var(--color-primary);
-        border-left: 0.4rem solid;
-    }
-    .section-contact-home .infos a{
-        display: block;
-    }
-    .section-contact{
-        
-        background-color: #000;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-container{
-        flex-grow: 1;
-        overflow: hidden;
-        text-align: right;
-    }
-    .img-container img{
-        width: 70%;
-    }
-    .section-contact .main-form-container{
-        margin: 2rem 3rem;
-        color: var(--color-primary);
-        flex-grow: 2;
-    }
-
-   
-
-    .section-contact .infos{
-        margin: 8rem 0rem;
-        padding: 0 2rem;
-        color: var(--color-primary);
-        border-left: 0.4rem solid;
-    }  
-
-
-    /*
-    PAGE BIO
-    */
-    .bg-bio{
-        background-position: -18rem -23rem;
-    }
-
-    .bg-bio .block-title{
-        margin-left: 2rem;
-    }
-    .biography.first-section-text{
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .biography.first-section-text .container-text{
-        padding: 0rem;
-    }
-    .biography.first-section-text .container-text{
-        padding: 0rem;
-        margin-bottom: 20rem;
-    }
-    .container-text .block-text-first,
-    .container-text .block-text-second{
-        width: 100%;
-    }
-    
-    .container-img .image img{
-        position: initial;
-    }
-    .container-img .block-1,
-    .container-img .block-2{
-        display: none;
-    }
-    .second-section-bio{
-        padding: 4rem;
-        margin-bottom: 0;
-    }
-    .second-section-bio .container{
-        padding: 0rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .second-section-bio .first-block img{
-        position: initial;
-    }
-    .second-section-bio .first-block .block-1{
-        display: none;
-    }
-    .second-section-bio .second-block{
-        margin: 0rem;
-    }
-    .second-section-bio .second-block .block-1{
-        left: 8rem;
-        width: 35rem;
-    }
-    .second-section-bio .second-block img{
-        max-width: 75%;
-    }
-    .fourth-section-bio{
-        padding: 6rem 0;
-        margin-bottom: 10rem;
-    }
-    .fourth-section-bio .wrapper-position{
-        left: 0rem;
-    }
-    .fourth-section-bio .block-title{
-        position: initial;
-        margin-bottom: 4rem;
-    }
-    .fourth-section-bio .block-1{
-        display: none;
-        /* left: 5rem;
-        width: 50rem; */
-    }
-    .fourth-section-bio .block-2{
-        display: none;
-        /* left: 5rem;
-        width: 50rem;
-        top: 15rem; */
-    }
-    .fourth-section-bio .container img{
-        left: 0rem;
-    }
-    .fourth-section-bio .block-btn{
-        position: initial;
-        margin-bottom: 5rem;
-    }
-
-    /* MUSICA*/
-
-    .bg-main-music{
-        background-position: -2rem 0rem;
-        background-color: #000;
-        background-attachment: scroll;
-        margin-bottom: 0rem;
-    }
-    .bg-main-music .container{
-        justify-content: start;
-    }
-    .bg-main-music .overlay{
-        padding: 0 1rem;
-    }
-    .bg-main-music .container .block-title{
-        font-size: 6.5rem;
-        margin-right: 0;
-        margin-left: 2rem;
-    }
-    .music-first-section{
-        margin-bottom: 15rem;
-    }
-    .music-first-section .container{
-        position: initial;
-    }
-    .music-first-section .block-text{
-        width: 80%;
-        position: initial;
-        padding: 8rem 4rem;
-    }
-    .music-first-section .block1{
-        display: none;
-    }
-    .music-second-section{
-        padding: 2rem;
-    }
-    .music-second-section .ep-infos-container{
-        flex-direction: column;
-    }
-    .audio-container{
-        flex-direction: row;
-        margin-bottom: 6rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .cover-album{
-        margin: 3rem;
-    }
-
-    /*PAGE GALLERIA*/
-    .bg-main-gallery{
-        background-position: -52rem -22rem;
-    }
-    .bg-main-gallery .block-title {
-        margin-left: 4rem;
-    }
-    .bg-main-gallery .block-title h1 {
-        font-size: 6rem;
-    }
-
-    #lightgallery{
-        columns: 2;
-    }
-
-
-    /*VIDEO*/
-    .bg-main-video{
-        background-attachment: scroll;
-        background-position: -286px 64px;
-    }
-    .bg-main-video .container .block-title{
-        margin-left: 3rem;
-    }
-    .video-first-section .container{
-        flex-direction: column;
-        padding: 2rem;
-    }
-    .video-first-section .container .video-container{
-        margin-bottom: 10rem;
-    }
-    .video-first-section .container .video-container iframe{
+    .img-ep .tooltip{
+        top: 50rem;
         max-width: 100%;
     }
-
-    .video-second-section{
-        margin: 10rem 0;
-        padding: 2rem;
+    
+    .section-music{
+        padding: 2rem 6rem;
     }
-    .video-second-section .wrapper-position{
-        position: initial;
+    .four-section-projects{
+        background-position: -24rem 0rem;
     }
-    .video-second-section .block-title{
-        position: initial;
-        width: auto;
-        color: var(--text-color);
-        margin-bottom: 9rem;
+    .four-section-projects .container{
+        padding: 8rem 1rem;
     }
-    .video-second-section .block-1{
-        display: none;
-
+    .section-contact-home .main-form-container{
+        width: 80%;
     }
-    .video-second-section .block-2{
-        display: none;
-
+    .main-form-container .contact-container{
+        padding: 4rem;
     }
-    .video-second-section .container img{
-        position: initial;
-        margin-bottom: 5rem;
+    /*PAGE BIO*/
+    .bg-bio .block-title span.title1,
+    .bg-bio .block-title span.title2{
+        font-size: 8rem;
     }
-    .video-second-section .block-btn{
-        position: initial;
+    .bg-bio .block-title span.title2{
+        bottom: 4.7rem;
+        left: 16rem;
     }
-
-    /* PROGETTI*/
+    .bg-bio .block-title-after{
+        bottom: 12rem;
+    }
+    .biography.first-section-text{
+        padding: 4rem 6rem;
+    }
+    .second-section-bio{
+        padding: 2rem 6rem;
+    }
+    #lightgallery a{
+        width: 55rem;
+        margin: 1rem auto;
+    }
+    /*PAGE MUSIC*/
+    
+    .music-first-section .block-text{
+        padding: 8rem 6rem 4rem 6rem;
+    }
+    .music-second-section .ep-infos-container,
+    .audio-container{
+        margin: 3rem 2rem;
+    }
+    
+    /*PAGE SHOWS*/
+    
+    /*PAGE GALLERY*/
+    .bg-main-gallery{
+        margin-bottom: 12rem;
+    }
+    
+    /*PAGE VIDEOS*/
+    
+    /*PAGE PROJECTS*/
     .bg-main-projects{
-        background-attachment: scroll;
-        background-position: 0;
-        margin-bottom: 15rem;
-    }
-
-    .bg-main-projects .container .block-title h1{
-        font-size: 6rem;
-        margin-left: 1rem;
-    }
-    .sections-all-projects{
-        margin-bottom: 20rem;
-        padding-bottom: 25rem;
+        margin-bottom: 14rem;
     }
     .container-projects-to-display .close-container{
-        top: 42.7rem;
-        right: 4.6rem;
-    }
-
-    .show.container-project{
-        flex-direction: column;
-        align-items: center;
+        top: 116rem;
+        right: 6.6rem;
     }
     .container-project .head-picture{
-        margin-right: 0;
-        margin-bottom: 3rem;
-    }
-    #solo-to-display,
-    #band-to-display,
-    #zamua-casarano-to-display,
-    #zamua-boltro-to-display,
-    #zamua-laviko-to-display{
-        left: 1.5rem;
+        width: 35rem;
+        height: 35rem;
     }
     .one-project-content{
-        margin: 0 2rem;
-        padding: 8rem 2rem;
+        padding: 8rem 5rem;
+        margin: 0 4rem;
     }
-    .project-presentation{
-        width: auto;
+    .wrapper-img{
+        width: 40rem;
     }
-    .project-presentation .images{
-        flex-direction: column;
-    }
-
-    /* PAGE CONTATTI*/
-    .bg-main-contact{
-        background-attachment: scroll;
-        background-position: -11.5rem 0;
-        height: 100%;
-    }
-    .bg-main-contact .block-title h1{
-        font-size: 6.35rem;
-    }
-    .contact-section{
-        margin-left: 0rem;
-    }
-    .contact-section .form-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 4rem;
-    }
+    /*PAGE CONTACT*/
     .contact-section .form-container form{
-        width: auto;
-        padding: 4rem;
-        margin: 2rem 2rem 7rem 2rem;
-        border: none;
-    }
-
-    /*PAGE SHOWS*/
-    .bg-main-shows{
-        background-position: -10rem -20rem;
-    }
-
-    .bg-main-shows .container .block-title h1{
-        margin-left: 2rem;
-    }
-    .container-shows{
-        padding: 4rem;
-    }
-    .one-show-item{
-        flex-direction: column;
-        padding: 6rem;
-        margin: 2rem 0rem;
-    }
-    .one-show-infos{
-        margin-bottom: 2rem;
-        flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: center; */
-        text-align: center;
-    }
-    .one-show-date{
-        margin-bottom: 2rem;
-    }
-    .one-show-venu-location{
-        flex-direction: column;
-    }
-    .one-show-venu-location .venu{
-        margin: 2rem auto;
-        padding: 0 2rem;
-    }
-    .one-show-venu-location .location{
-        margin: auto;
-    }
-    .one-show-actions{
-        margin-left: 0;
+        min-width: 100%;
     }
 }
-@media screen and (min-width:1025px) and (max-width: 1400px){
-    .display-lg{
-        display: block;
+
+@media screen and (min-width: 755px){
+    .container-iframe{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    #brand-logo{
+        margin-left: 4rem;
+    }
+    .bg-main .container .block-title h1{
+        font-size: 7rem;
+    }
+    /*PAGE HOME*/
+    .bg-home {
+        background-position: 0rem 0rem;
+    }
+    
+    .first-section-text .container div.para{
+        padding: 0 6rem;
+    }
+    .img-ep img{
+        width: 40rem;
+    }
+    .container-iframe{
+        width: 75%;
+    }
+    .section-music{
+        padding: 2rem 8rem;
+    }
+    /*PAGE BIO*/
+    .bg-bio .block-title{
+        margin-left: 6rem;
+    }
+    #lightgallery{
+        column-count: 2;
+    }
+    #lightgallery a{
+        width: auto;
+        margin: 0.4rem;
+    }
+    /*PAGE MUSIC*/
+    .bg-main-music .container .block-title{
+        margin-left: 2rem;
+    }
+    /*PAGE SHOWS*/
+    .one-show-item{
+        flex-direction: row;
+    }
+    .one-show-infos{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .one-show-date{
+        margin: 0;
+    }
+    .one-show-venu-location{
+        flex-direction: row;
+    }
+
+    /*PAGE PHOTOS*/
+    /*PAGE VIDEOS*/
+    .video-second-section .container{
+        flex-direction: column;
+    }
+    .video-second-section .container img{
+        width: 55rem;
+    }  
+
+    /*PAGE PROJECTS*/
+    .project-card{
+        width: 40rem;
+        height: 40rem;
+    }
+    .wrapper{
+        width: 33rem;
+        height: 33rem;
+    }
+
+    /*PRIVACY*/
+    .main-cookies-container{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .mobile-view{
+        display: none;
+    }
+    .no-mobile-view{
+        display: flex;
+        align-items: center;
+        margin-right: 3rem;
+    }
+    .switch-language a{
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        text-transform: uppercase;
+    }
+    .active-page{
+        color: #fff;
+        margin: 2rem 2rem 2rem 4rem;
+        position: relative;
     }
     .display-sm{
         display: none;
     }
-
-    .navigation-panel-item {
-        font-size: 4.5rem;
+    .display-lg{
+        display: block;
+    }
+    .bg-main .container .block-title h1{
+        font-size: 8rem;
+    }
+    .btn-custom{
+        font-size: 1.8rem;
+        padding: 1.8rem 0;
+        width: 18rem;
     }
 
-    .back-opacity{
-        font-size: 35rem;
-        opacity: 0.1;
-        top: -8.6rem;
-        left: -0.2rem;
+    /*PAGE HOME*/
+    .first-section-text .container div.para,
+    .second-section .ep-section{
+        padding: 0 8rem;
+    }
+    
+    .second-section .ep-infos-container{
+        display: flex;
+        flex-direction: row;
+        transition: all .4s ease-in-out;
+    }
+    .second-section .ep-infos-container .img-ep{
+        width: auto;
+        transition: all .4s ease-in-out;
+    }
+    .img-ep img{
+        max-width: 35rem;
+        transition: all .4s ease-in-out;
+    }
+    .section-music{
+        padding: 2rem 10rem;
+    }
+
+    .four-section-projects h2{
+        font-size: 8rem;
+    }
+    .four-section-projects p{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    
+
+    .main-form-container .contact-container{
+        width: 60rem;
+        margin: 6rem auto;
+    }
+    .section-contact-home .infos{
+        margin: 10rem 12rem;
+    }
+    /*PAGE BIO*/
+    .biography.first-section-text,
+    .second-section-bio{
+        padding: 4rem 10rem;
+    }
+    .fourth-section-bio .block-title{
+        max-width: 100%;
+    }
+    .container-img .image h2,
+    .fourth-section-bio h3{
+        font-size: 4.5rem;
+    }
+    .section-gallery h1{
+        font-size: 8rem;
     }
     .container-img .image .tooltip,
     .video-second-section .container .tooltip{
-        top: 49rem;
-        right: 41px;
+        right: 6rem;
     }
-    .container-img .image:hover .tooltip,
-    .video-second-section .container:hover .tooltip{
-        top: 42rem;
-        right: 41px;
-    }
-    
-/*SECTIONS*/
-
-    /*HOME*/
-    .bg-home {
-        background-attachment: fixed;
-        background-position: 0rem 0rem;
-    }
-    .bg-home .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .bg-home .overlay{
-        background: rgba(0, 0, 0, 0);
-        transition: all .5s ease-in-out;
-    }
-  
-    .scroll-to-top{
-        right: 50px;
-    }
-    .scroll-to-top i{
-        display: block;
-        
-        font-size: 2.5rem;
-        margin: 1.2rem auto;
-    }
-    .scroll-to-top:hover{
-        background: transparent;
-        border: 2px solid var(--color-primary);
-        color: var(--color-primary);
-    }
-    /*
-    ON LOAD HOMEPAGE
-    */
-
-    .bg-home .block-logo-text .logo{
-        width: 40%;
-        height: auto;    
-    }
-
-    .bg-home .block-logo-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-    }
-    .bg-home .block-text{
-        display: flex;
-        margin-left: 4rem;
+    .container-img .image:hover .tooltip, 
+    .video-second-section .container:hover .tooltip {
+        opacity: 1;
+        top: 40rem;
+        right: 6rem;
+        font-weight: 500;
     }
     
-    .bg-home .block-text h1 {
-        font-size: 5rem;
+    /*PAGE MUSIC*/
+    .music-first-section .block-text {
+        padding: 8rem 12rem 4rem 12rem;
     }
-    
-     /*FIRST SECTION*/
-     .first-section-text{
-        height: 100%;
-        padding: 0;
+
+    /*PAGE SHOWS*/
+
+    /*PAGE VIDEOS*/
+    .video-second-section h2{
+        font-size: 4.5rem;
     }
-    .first-section-text .container{
-        flex-direction: column;
-        align-items: center;
-        padding: 10rem 12rem;
-        width: 100%;
-        justify-content: center;
-        padding: 10rem 7rem;
-        margin-top: 9rem;
+    /*PAGE PROJECTS*/
+    .bg-main-projects{
+        margin-bottom: 10rem;
     }
-    .first-section-text h2{
-        font-size: 5rem;
-        text-align: center;
+    .bg-main-projects .container .block-title h1{
+        margin-left: 6rem;
     }
-    .images-for-bio{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .project-presentation .images{
+        flex-direction: row;
     }
-    .images-for-bio img:first-child,
-    .images-for-bio img:nth-child(2){
-        position: initial;
-        max-width: 45rem;
+    .project-presentation .images img{
+        width: 35rem;
         margin: 2rem;
     }
-    .first-section-text .container div.para{
-        width: 80%;
-        margin: 0;
-        position: initial;
+    .project-presentation .wrapper-img .tooltip{
+        left: 4rem;
     }
-    /*SECOND SECTION*/
-    .second-section{
-        margin-bottom: 5rem;
+    .container-project .head-picture {
+        left: 43rem;
+        margin-right: 3rem;
+        opacity: 0;
+        position: relative;
+        transition: all .4s cubic-bezier(.645,.045,.355,1);
     }
-    .box-bg-ep{
-        height: 44rem;
-        background-position-y: 2rem;
-        margin: 0;
-        background-position: 0rem;
-        background-size: cover;
+    
+    /*PAGE CONTACT*/
+    .contact-section .form-container form{
+        width: 55rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .line-scroll .line{
+        height: 19rem;
+        width: 0.3rem;
+        background-color: var(--color-primary);
+    }
+    .line-scroll a{
+        bottom: 19.5rem;
+        font-size: 2rem;
+        left: -0.9rem;
+    }
+    /*PAGE HOME*/
+    .bg-home{
         background-attachment: fixed;
     }
-    .box-prez-ep{
-        width: 67vw;
-        top: 29rem;
-        left: 15rem;
+    .first-section-text .container div.para, 
+    .second-section .ep-section {
+        padding: 0 14rem;
     }
-    .box-prez-ep .block-text{
-        padding: 0;
-    }
-    .box-prez-ep .block-text .title{
-        font-size: 9rem;
-    }
-    .box-prez-ep .block-text .title-2{
-        margin-left: 3rem;
-    }
+
     .second-section .ep-section{
-        width: 100%;
-        margin: 0 auto;
-        position: initial;
+        width: 75%;
     }
-    .second-section .ep-section iframe{
-        max-width: 100% !important;
+    .section-music{
+        padding: 2rem 20rem;
     }
-    .second-section .ep-infos-container{
-        padding: 0;
-        display: flex;
-    }
-
-    /*SECTION MUSIC*/
-    .section-music .block-text{
-        width: 100%;
-        padding: 0rem 15rem;
-    }
-    /*THIRD SECTION*/
-    
-    .third-section-text .container{
-        align-items: center;
-    }
-
-
-    /*CONTACT*/
-    
-    .section-contact-home .container.overlay{
-        justify-content: center;
-    }
-    .section-contact-home .main-form-container{
-        padding: 7rem;
-    }
-
 
     /*PAGE BIO*/
     .bg-bio{
-        background-position: 0 -21rem;
+        background-position: 0rem 0rem;
+        background-attachment: fixed;
     }
-    .biography.first-section-text .container-text,
-    .second-section-bio .container{
-        padding: 2rem 5rem;
+    .biography.first-section-text, .second-section-bio {
+        padding: 4rem 20rem;
+        margin-bottom: 20rem;
+    }
+    .biography.first-section-text .container-text{
+        margin-bottom: 20rem;
+    }
+    .container-img{
+        position: relative;
+    }
+    .container-img .image{
+        position: relative;
+    }
+    .container-img .image h2{
+        font-size: 4.5rem;
+        z-index: 6;
+        position: absolute;
+        top: -161px;
+        right: -4rem;
+    }
+    .container-img .image img{
+        position: relative;
+        z-index: 5;
+    }
+    .container-img .block-1{
+        display: block;
+        background: var(--color-primary);
+        position: absolute;
+        top: -8.9rem;
+        left: 26rem;
+        width: 36rem;
+        z-index: 4;
+        transition-delay: .2s;
+    }
+    .container-img .block-2{
+        display: block;
+        background: #e3a540;
+        position: absolute;
+        bottom: -10.8rem;
+        left: -13rem;
+        /* width: 60rem; */
+        height: 39rem;
+        z-index: 3;
+        transition-delay: .4s;
     }
     .fourth-section-bio{
-        margin-bottom: 6rem;
+        margin-bottom: 28rem;
+    }
+    .fourth-section-bio .wrapper-position{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .fourth-section-bio .block-title{
-        left: -12rem;
+        position: absolute;
+        top: -26.6rem;
+        left: -100px;
+        z-index: 6;
     }
-    .fourth-section-bio .block-1{
-        left: 10rem;
-    }
-    .fourth-section-bio .block-2{
-        top: 15rem;
+    .fourth-section-bio .block-title h3{
+        text-align: initial;
+        position: absolute;
+        right: -82rem;
+        margin-left: 2rem;
+        top: 12rem;
+        color: var(--color-primary);
     }
     .fourth-section-bio .block-btn{
-        right: -3rem;
+        position: absolute;
+        bottom: 53rem;
+        right: -21rem;
+        z-index: 7;
+    }
+    .fourth-section-bio .block-1{
+        background: #000;
+        width: 62rem;
+        position: absolute;
+        top: -18rem;
+        left: 15.5rem;
+        display: block;
+    }
+    .fourth-section-bio .block-2{
+        background: #e3a540;
+        width: 60rem;
+        position: absolute;
+        top: 15rem;
+        left: -18.2rem;
+        z-index: 4;
+        display: block;
+    }
+    .fourth-section-bio .container img{
+        position: relative;
+        z-index: 5;
+        width: 60rem;
+    }
+    #lightgallery{
+        column-count: 3;
     }
 
-    /*PAGE MUSICA*/
+    /*PAGE MUSIC*/
+    .bg-main-music{
+        background-attachment: fixed;
+    }
+    .bg-main-music .container{
+        justify-content: flex-end;
+    }
+    .bg-main-music .container .block-title h1{
+        margin-right: 8rem;
+    }
     .music-first-section .block-text{
-        padding: 8rem;
+        padding: 8rem 20rem;
     }
     /*PAGE SHOWS*/
     .bg-main-shows{
-        background-position: 0rem -24rem;
+        background-position: 0rem -21rem;
+        background-attachment: fixed;
+    }
+    .bg-main-shows .container .block-title h1{
+        margin-left: 25rem;
+    }
+    /*PAGE GALLERY*/
+    .bg-main-gallery{
+        margin-bottom: 8rem;
+        background-attachment: fixed;
+    }
+    .bg-main-gallery .container .block-title h1{
+        margin-left: 25rem;
+    }
+    .section-gallery{
+        margin-bottom: 18rem;
+    }
+    /*PAGE VIDEOS*/
+    .bg-main-video{
+        background-attachment: fixed;
+    }
+    .bg-main-video .container .block-title h1{
+        margin-left: 25rem;
+    }
+    .video-first-section .container{
+        flex-direction: row;
+    }
+    .video-first-section .container .video-container{
+        margin: 5rem 1rem;
+    }
+    .video-second-section{
+        margin-bottom: 77rem;
+        margin-top: 15rem;
+        position: relative;
+        padding: 6rem;
+    }
+    .video-second-section .wrapper-position{
+        position: absolute;
+        top: 10rem;
+        left: 0;
+    }
+    .video-second-section .block-title{
+        position: absolute;
+        color: var(--color-primary);
+        z-index: 6;
+        width: 78rem;
+        top: -11rem;
+        left: 19rem;
+    }
+    .video-second-section .block-1{
+        background: #000;
+        height: 50rem;
+        width: 62rem;
+        top: -15.5rem;
+        left: 30.8rem;
+        position: absolute;
+        z-index: 4;
+        display: block;
+    }
+    .video-second-section .block-2{
+        background: #fe005a;
+        height: 39rem;
+        width: 51rem;
+        top: 21.9rem;
+        left: 11.8rem;
+        position: absolute;
+        transition-delay: .5s;
+        display: block;
+    }
+    .video-second-section .container img{
+        position: absolute;
+        top: 8rem;
+        left: 20rem;
+        z-index: 5;
+        max-width: none;
+    }
+    .video-second-section .block-btn{
+        position: absolute;
+        top: 7rem;
+        left: 79rem;
+        z-index: 7;
+    }
+    .video-second-section .container .tooltip{
+        right: -67rem;
+    }
+    .video-second-section .container:hover .tooltip{
+        opacity: 1;
+        right: -67rem;
+    }
+    /*PAGE PROJECTS*/
+    .bg-main-projects{
+        background-position: 0rem;
+        background-attachment: fixed;
+    }
+    .bg-main-projects .container .block-title h1{
+        margin-left: 25rem;
+    }
+    .one-project-content {
+        padding: 8rem 9rem;
+        margin: 0 12rem;
+    }
+    .wrapper-img{
+        width: 38rem;
+    }
+    .project-presentation .images img{
+        margin: 2rem 1rem;
+    }
+
+    /*PAGE CONTACT*/
+    .bg-main-contact{
+        background-position: 0 0;
+        background-attachment: fixed;
+    }
+    .contact-section .form-container{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .contact-section .form-container form{
+        width: 56rem;
+        border-right: 0.2rem solid var(--color-primary);
+        margin-right: 6rem;
+        padding-right: 6rem;
+        min-width: initial;
+    }
+    /*PRIVACY*/
+    .main-cookies-container{
+        width: 70%;
+    }
+}
+@media screen and (min-width : 1400px) {
+
+    .navigation-panel-item{
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    /*PAGE HOME*/
+
+    .bg-home .container{
+        align-items: flex-end;
+    }
+    .bg-home .block-text{
+        margin-right: 4rem;
+        width: initial;
+    }
+    .bg-main.bg-home .container .block-text h1{
+        font-size: 8rem;
+    }
+    .first-section-text .container div.para{
+        width: 70%;
+    }
+    .second-section .ep-infos-container{
+        width: 80%;
+        justify-content: center;
+    }
+    .section-music{
+        width: 70%;
+        margin: 6rem auto 14rem;
+    }
+    .four-section-projects{
+        background-position: 0rem 3rem;
+        background-attachment: fixed;
+    }
+    .four-section-projects .container{
+        padding: 16rem 2rem;
+    }
+    .section-contact-home{
+        background-position: 0rem 0rem;
+        background-attachment: fixed;
+    }
+    .section-contact-home .container.overlay{
+        padding: 0rem;
+    }
+    .section-contact-home .main-form-container{
+        width: 70rem;
+        padding: 7rem;
+    }
+    .main-form-container .contact-container{
+        width: unset;
+        margin: 12rem 0;
+        padding: 0;
+    }
+    .section-contact-home .infos{
+        border-left: 0.4rem solid;
+        color: var(--color-primary);
+        margin: 6rem 0;
+        padding: 0 2rem;
+    }
+
+    .main-form-container .contact-container h2{
+        font-size: 8rem;
+    }
+    /*PAGE BIO*/
+    .container-text .block-text-first, .container-text .block-text-second{
+        width: 70%;
+        margin: 5rem auto;
+    }
+    .second-section-bio .first-block{
+        width: 70%;
+    }
+    #lightgallery{
+        column-count: 4;
+    }
+
+    /*PAGE MUSIC*/
+    .music-first-section .block-text{
+        width: 80%;
+    }
+
+    /*PAGE SHOWS*/
+    .container-shows{
+        padding: 6rem 0;
+    }
+    .one-show-venu-location .venu{
+        margin: 0rem 6rem 0 0;
+    }
+    .one-show-actions{
+        margin-left: 5rem;
     }
 
     /*PAGE GALLERY*/
     .bg-main-gallery{
-        background-position: 0 -13rem;
-    }
-    #lightgallery{
-        columns: 4;
+        margin-bottom: 15rem;
     }
 
-    /*PAGE VIDEOS*/
+    /*PAGE VIDEO*/
     .video-second-section .wrapper-position{
-        left: 0;
-    }
-    .video-second-section .block-title{
-        left: 19rem;
-        width: 67rem;
+        left: 50rem;
     }
     .video-second-section .block-btn{
-        top: 7rem;
-        left: 79rem;
+        top: 4rem;
     }
 
-    /*PAGE PROGETTI*/
-
-    .container-projects-to-display .close-container{
-        top: 44rem;
-        right: 8.4rem;
-    }
+    /*PAGE PROJECTS*/
     .show.container-project{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 3rem;
+    }
+    .container-projects-to-display .close-container{
+        top: 12rem;
+        right: 16.6rem;
     }
     .container-project .head-picture{
-        margin-right: 0;
-        margin-bottom: 3rem;
+        width: 40rem;
+        height: 40rem;
+    }
+    .show.container-project .title-project .block-title .title-artist,
+    .show.container-project .title-project .block-title .title-partner{
+        font-size: 3rem;
     }
     .one-project-content{
-        margin: 0 3rem;
+        margin: 0;
+        padding: 7rem;
+        width: 70%;
     }
-    
-}
 
+}

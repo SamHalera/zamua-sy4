@@ -9,104 +9,106 @@
 
         <div class="cookies-container mb-4">
         
-        <div class="block-title">
-            <h1>COOKIES POLICY</h1>
+            <div class="block-title">
+                <h1>COOKIES POLICY</h1>
+
+            </div>
+            <div class="section-content">
+                <div class="sub-section">
+                    <h2>{% trans %}Cookies{% endtrans %}</h2>
+                    <p>
+                    {% trans %}
+                        Our website uses <strong>cookies</strong>: some small text files that are sent to your terminal during your visit.
+                    {% endtrans %}
+                    </p>
+                    <p>
+                        {% trans %}These text files are used to make your browsing experience on the site more efficient.{% endtrans %}
+                    </p>
+                    <p>
+                    {% trans %}
+                        The cookies used are "technical cookies", i.e. they are strictly necessary for the operation of this site. 
+            Users' prior consent is not required for the installation and use of technical cookies, 
+            as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
+            the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website. 
+                    {% endtrans %}
+                    </p>
+                </div>
+                <div class="sub-section">
+                    <h2>{% trans %}Deactivate cookies{% endtrans %}</h2>
+                    <p>
+                    {% trans %}
+                        The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
+            through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
+            You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer). 
+                    {% endtrans %}
+                    </p>
+                </div>
+                
+            </div>
+       
 
         </div>
-        <div class="section-content">
-            <div class="sub-section">
-                <h2>{% trans %}Cookies{% endtrans %}</h2>
-                <p>
-                {% trans %}
-                    Our website uses <strong>cookies </strong>:some small text files that are sent to your terminal during your visit.
-                {% endtrans %}
-                </p>
-                <p>
-                    {% trans %}These text files are used to make your browsing experience on the site more efficient.{% endtrans %}
-                </p>
-                <p>
-                {% trans %}
-                    The cookies used are "technical cookies", i.e. they are strictly necessary for the operation of this site. 
-          Users' prior consent is not required for the installation and use of technical cookies, 
-          as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
-          the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website. 
-                {% endtrans %}
-                </p>
+        <div class="privacy-container mb-3">
+        
+            <div class="">
+                <h1>{% trans %}Privacy POLICY{% endtrans %}</h1>
+
             </div>
-            <div class="sub-section">
-                <h2>{% trans %}Deactivate cookies{% endtrans %}</h2>
-                <p>
-                {% trans %}
-                    The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
-          through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
-          You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer). 
-                {% endtrans %}
-                </p>
-            </div>
+            <div class="section-content">
+                <div class="sub-section">
+                    <h2>{% trans %}Introduction{% endtrans %}</h2>
             
+                    <p>
+                    {% trans %}
+                        We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
+                        of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.
+                    {% endtrans %}
+                    </p>
+                </div>
+                <div class="sub-section">
+                    <h2>{% trans %}Personal data{% endtrans %}</h2>
+                    <p>
+                    {% trans %}
+                        We are committed to collecting only the data that are necessary in relation to the purpose for which they are collected (see next part):
+                    {% endtrans %}
+                    </p>
+                        <ul class="font-size-l mt-1 mb-2">
+                            <li>{% trans %}Firstname{% endtrans %}</li>
+                            <li>{% trans %}Lastname{% endtrans %}</li>
+                            <li>{% trans %}E-mail address{% endtrans %}</li>
+                            <li>{% trans %}Messagge sent by Contact form{% endtrans %}</li>
+                        </ul>
+                    
+                    <p>
+                        {% trans %}The data the are collected will not be subject to any communication to third party services.{% endtrans %}
+                    </p>
+                </div>
+
+                <div class="sub-section">
+                    <h2>{% trans %}The purpose of data collection{% endtrans %}</h2>
+                    <p>
+                    
+                    {% trans %}The only purpose of the collection and use of data is the Communication with users via the {% endtrans %} <a class="font-weight-bold" href="{{path('app_contact')}}">{% trans %} Contact form{% endtrans %}</a>
+                    
+                    </p>
+                </div>
+
+                <div class="sub-section">
+                    <h2>{% trans %}User's rights {% endtrans %}</h2>
+                    <p>
+                    {% trans %}
+                        According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
+                        <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>
+                    {% endtrans %}    
+                    </p>
+                </div>
+            </div>
         </div>
-       
     </div>
 
-    <div class="privacy-container mb-3">
-        
-        <div class="">
-            <h1>{% trans %}Privacy POLICY{% endtrans %}</h1>
-
-        </div>
-        <div class="section-content">
-            <div class="sub-section">
-                <h2>{% trans %}Introduction{% endtrans %}</h2>
-        
-                <p>
-                {% trans %}
-                    We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
-                    of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.
-                {% endtrans %}
-                </p>
-            </div>
-            <div class="sub-section">
-                <h2>{% trans %}Personal data{% endtrans %}</h2>
-                <p>
-                {% trans %}
-                    We are committed to collecting only the data that are necessary in relation to the purpose for which they are collected (see next part):
-                {% endtrans %}
-                </p>
-                    <ul class="font-size-l mt-1 mb-2">
-                        <li>{% trans %}Firstname{% endtrans %}</li>
-                        <li>{% trans %}Lastname{% endtrans %}</li>
-                        <li>{% trans %}E-mail address{% endtrans %}</li>
-                        <li>{% trans %}Messagge sent by Contact form{% endtrans %}</li>
-                    </ul>
-                
-                <p>
-                    {% trans %}The data the are collected will not be subject to any communication to third party services.{% endtrans %}
-                </p>
-            </div>
-
-             <div class="sub-section">
-                <h2>{% trans %}The purpose of data collection{% endtrans %}</h2>
-                <p>
-                
-                {% trans %}The only purpose of the collection and use of data is the Communication with users via the {% endtrans %} <a class="font-weight-bold" href="{{path('app_contact')}}">{% trans %} Contact form{% endtrans %}</a>
-                
-                </p>
-            </div>
-
-            <div class="sub-section">
-                <h2>{% trans %}User's rights {% endtrans %}</h2>
-                <p>
-                {% trans %}
-                    According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
-                    <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>
-                {% endtrans %}    
-                </p>
-            </div>
-        </div>
-       
-    </div>
     
-    </div>
+    
+
     
 {%  endblock %}
 

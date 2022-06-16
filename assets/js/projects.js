@@ -43,25 +43,37 @@ projectsCard.forEach(function(oneProjectCard,index)  {
         
         closeProject.style.display = 'block';
         
-        if(window.screen.width < 601){
+        if(window.screen.width < 375){
+            closeProject.style.top = "98rem";
+        }
+        else if(window.screen.width >= 375 && window.screen.width < 480){
+            closeProject.style.top = "100rem";
+        }
+        else if(window.screen.width >= 480 && window.screen.width < 640){
             
-            closeProject.style.top = "45.3rem";
+            closeProject.style.top = "105rem";
             projectPictureToDisplay.style.left = "1rem";
             
-        } else if(window.screen.width > 600 && window.screen.width < 1024){
+        } else if(window.screen.width >= 641 && window.screen.width < 991){
             
-            closeProject.style.top = "44.7rem";    
+            closeProject.style.top = "112rem";    
 
-        } else if(window.screen.width <= 1025 && window.screen.width < 1400){
+        } 
+        else if(window.screen.width >= 992 && window.screen.width < 1400){
 
-            closeProject.style.top = "47rem";    
+            closeProject.style.top = "108rem";    
+
+        } 
+        else if(window.screen.width >= 1400){
+
+            closeProject.style.top = "6rem";    
         } 
 
-        else {
+        // else {
             
-            closeProject.style.top = "4rem";
+        //     closeProject.style.top = "4rem";
             
-        }
+        // }
         
 
         closeProject.addEventListener('click', function(){
@@ -81,17 +93,31 @@ projectsCard.forEach(function(oneProjectCard,index)  {
             projectPictureToDisplay.style.left = "43rem";
             
 
-            if(window.screen.width < 601){
+            if(window.screen.width < 375){
+                closeProject.style.top = "102rem";
+            }
+            else if(window.screen.width >= 375 && window.screen.width < 480){
+                closeProject.style.top = "104rem";
+            }
+            else if(window.screen.width >= 480 && window.screen.width < 640){
+            
+                closeProject.style.top = "110rem";
+                projectPictureToDisplay.style.left = "1rem";
                 
-                closeProject.style.top = "42rem";
+            } 
+            else if(window.screen.width >= 641 && window.screen.width < 991){
                 
-            } else if(window.screen.width > 600 && window.screen.width < 1024){
+                closeProject.style.top = "116rem";    
+    
+            } 
+            else if(window.screen.width >= 992){
                 
-                closeProject.style.top = "42.7rem";
-                
-            }  else if(window.screen.width <= 1025 && window.screen.width < 1400){
+                closeProject.style.top = "116rem";    
+    
+            } 
+            else if(window.screen.width >= 1400){
 
-                closeProject.style.top = "40rem";    
+                closeProject.style.top = "6rem";    
             } else {
                 
                 closeProject.style.top = "2rem";

@@ -233,7 +233,7 @@ class MainController extends BaseController
     {
         $shows = $showRepository->findAll();
         return $this->render('main/shows.html.twig', [
-            'activeName' => $translator->trans('active.name.shows'),
+            'activeName' => 'Shows',
             'shows' => $shows
         ]);
     }
