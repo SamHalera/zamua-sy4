@@ -286,15 +286,34 @@ class MainController extends BaseController
 
         //$credits = $zamuaFilesRepository->findZamuaFilesCredits();
 
-        $zamuaFiles = $zamuaFilesRepository->findAll();
-        $credits = [];
-        foreach ($zamuaFiles as $file) {
-        $credits[] = $file->getCredit();
-        }
-        $credits = array_unique($credits);
+        $zamuaFiles = $zamuaFilesRepository->findBy(
+            [
+                'isGalleryItem' => true
+            ],
+            [
+            'credit' => 'ASC'
+            ]
+        );
         
+        $credits = [];
+
+        foreach ($zamuaFiles as $file) {
+            if(!is_null($file->getCredit()) && !is_null($file->getCreditLink())){
+                $credits[] = [
+                    'credit' => $file->getCredit(),
+                    'link' => $file->getCreditLink()
+                ]; 
+            } elseif(!is_null($file->getCredit()) && is_null($file->getCreditLink())){
+                $credits[] = [
+                    'credit' => $file->getCredit()
+                ]; 
+            }
+            
+        }
+        $allCredits = array_unique($credits, SORT_REGULAR);
+        //dd($allCredits);
         return $this->render("main/credits.html.twig", [
-            'credits' => $credits,
+            'zamuaFiles' => $allCredits,
             'activeName' => $translator->trans('active.name.credits')
         ]);
     }

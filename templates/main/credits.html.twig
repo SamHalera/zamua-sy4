@@ -26,8 +26,19 @@
 
             <p class="mb-2 font-weight-bold"> {% trans %}The photographers are (in alphabetical order): {% endtrans %}</p>
             <ul>
-            {% for item in credits|sort %}
-                <li class="mb-1">{{item|raw}}</li>  
+            {% for item in zamuaFiles %}
+               
+                   
+                <li class="mb-1">{{item.credit}} 
+                    {% if item.link is defined %}
+                        <a href="{{item.link}}" target="_blank" class=""><i class="el-icon-link font-size-l"></i></a>
+                    {% endif %}
+                </li> 
+                    
+                
+                {# <pre>
+                {{ dump(credits) }}
+               </pre> #}
             {% endfor %}
             </ul>
         </div>

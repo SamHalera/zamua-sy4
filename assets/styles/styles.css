@@ -145,12 +145,16 @@ form ul li{
     font-size: 34rem;
     opacity: 0.1;
 }
-.line-scroll a {
-    bottom: 15.5rem;
+.bg-main .line-scroll a{
+    bottom: 10.5rem;
 }
 .line-scroll .line {
-    height: 15rem;
+    height: 10rem;
 }
+.bg-main .line-scroll{
+    bottom: -7.9rem;
+}
+
 .switch-language.mobile-view{
     opacity: 0;
     -webkit-transition: all .4s cubic-bezier(.42,0,.58,1);
@@ -163,7 +167,7 @@ form ul li{
 }
 
 .switch-language a{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     padding: 0 1rem;
 
@@ -196,24 +200,29 @@ form ul li{
 }
 .navigation-panel{
     display: none;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    justify-content: flex-start;
+    align-items: flex-end;
     opacity: 0;
     background: rgb(0, 0, 0);
     height: 100vh;
     position: fixed;
     width: 100%;
     z-index: 2000;
-    padding-top: 7rem;
     transition: all .5s ease-in-out;
-    justify-content: end;
+    
 }
 
 .navigation-panel #icon-container {
     font-size: 4rem;
     color: var(--color-primary);
     text-align: right;
-    top: 3.6rem;
+    /* top: 3.6rem;
     position: absolute;
-    right: 3rem;
+    right: 3rem; */
+    margin-bottom: 3rem;
     cursor: pointer;
     opacity: 0;
     transition: all .4s ease-in-out;
@@ -224,16 +233,16 @@ form ul li{
     align-items: end;
     transition: all .4s ease-in-out;
     opacity: 1;
-    position: relative;
+    /* position: relative;
     top: 5.6rem;
-    right: 3.6rem;
+    right: 3.6rem; */
 }
 .navigation-panel-item {
     opacity: 0;
     transform: translateY(4rem);
     transition: all .5s ease-out;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
 }
 .navigation-panel-item::after{
     content: "";
@@ -349,7 +358,10 @@ nav ul li a:hover{
 }
 .scroll-to-top{
     right: 2rem;
+    bottom: 3rem;
 }
+
+
 .scroll-to-top i{
     display: block;
     font-size: 2.5rem;
@@ -448,6 +460,7 @@ footer{
     font-size: 3rem;
     line-height: 4.5rem;
     font-weight: 400;
+    margin-bottom: 0;
 }
 .block-text h1 span {
     display: block;
@@ -919,11 +932,11 @@ form textarea:focus{
 }
 
 .container-img .image .tooltip,
-.video-second-section .container .tooltip{
+.video-second-section .container-image .tooltip{
     opacity: 0;
     position: absolute;
     z-index: 10;
-    background: #dddddd96;
+    background: #ddddddc2;
     padding: 2rem;
     border-radius: 0.5rem;
     top: 50rem;
@@ -931,7 +944,7 @@ form textarea:focus{
     transition: all .8s ease-in-out;
 }
 .container-img .image:hover .tooltip,
-.video-second-section .container:hover .tooltip{
+.video-second-section .container-image:hover .tooltip{
     opacity: 1;
     top: 40rem;
     right: 0rem;
@@ -952,7 +965,7 @@ form textarea:focus{
     justify-content: start;
 }
 .bg-main-music .overlay{
-    background: rgba(0, 0, 0, 30%);
+    background: rgba(0, 0, 0, 60%);
     transition: all .2s ease-in-out;
     padding: 0 1rem;
 }
@@ -1115,8 +1128,12 @@ form textarea:focus{
     margin: 10rem 0;
     padding: 2rem;
 }
-.video-second-section .container{
+.video-second-section .container-image{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .video-second-section .wrapper-position{
     position: initial;
@@ -1126,6 +1143,7 @@ form textarea:focus{
     width: auto;
     color: var(--text-color);
     margin-bottom: 3rem;
+    text-align: center;
 }
 .video-second-section h2{
     font-size: 3rem;
@@ -1142,7 +1160,7 @@ form textarea:focus{
     display: none;
 
 }
-.video-second-section .container img{
+.video-second-section .container-image img{
     max-width: 100%;
     position: initial;
     margin-bottom: 5rem;
@@ -1401,10 +1419,10 @@ form textarea:focus{
     transition: all .4s ease-in-out;
 }
 .container-projects-to-display .close-container{
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
     opacity: 0;
     position: absolute;
-    top: 115rem;
+    top: 38rem;
     right: 3.6rem;
     z-index: 20;
 }
@@ -1572,7 +1590,7 @@ form textarea:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
 }
 .one-show-item{
     display: flex;
@@ -1642,11 +1660,12 @@ form textarea:focus{
 .privacy-container .sub-section ul{
     font-size: 1.6rem;
 }
-@media screen and (min-width: 375px) {
+
+@media screen and (min-width: 375px){
 
     .navigation-panel-item {
         margin-bottom: 2rem;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /*PAGE HOME*/
@@ -1687,13 +1706,15 @@ form textarea:focus{
 
     /*PAGE VIDEOS*/
 
+    
+
     /*PAGE PROJECTS*/
     .bg-main-projects .container .block-title h1{
         font-size: 5rem;
     }
     .container-projects-to-display .close-container{
         right: 3.6rem;
-        top: 104rem;
+        top: 40rem;
     }
     .project-card{
         width: 35rem;
@@ -1763,7 +1784,7 @@ form textarea:focus{
     /*PAGE GALLERY*/
 
     /*PAGE VIDEOS*/
-    .bg-main-projects .container .block-title h1{
+    .bg-main-projects .container-image .block-title h1{
         margin-left: 4rem;
     }
 
@@ -1776,7 +1797,7 @@ form textarea:focus{
         height: 35rem;
     }
     .container-projects-to-display .close-container{
-        top: 110rem;
+        top: 45rem;
     }
     .wrapper-img{
         width: 40rem;
@@ -1907,7 +1928,7 @@ form textarea:focus{
         margin-bottom: 14rem;
     }
     .container-projects-to-display .close-container{
-        top: 116rem;
+        top: 45rem;
         right: 6.6rem;
     }
     .container-project .head-picture{
@@ -1991,12 +2012,13 @@ form textarea:focus{
     }
 
     /*PAGE PHOTOS*/
+
     /*PAGE VIDEOS*/
-    .video-second-section .container{
+    .video-second-section .container-image{
         flex-direction: column;
     }
-    .video-second-section .container img{
-        width: 55rem;
+    .video-second-section .container-image img{
+        width: 50rem;
     }  
 
     /*PAGE PROJECTS*/
@@ -2105,13 +2127,13 @@ form textarea:focus{
         font-size: 8rem;
     }
     .container-img .image .tooltip,
-    .video-second-section .container .tooltip{
+    .video-second-section .container-image .tooltip{
         right: 6rem;
     }
     .container-img .image:hover .tooltip, 
-    .video-second-section .container:hover .tooltip {
+    .video-second-section .container-image:hover .tooltip {
         opacity: 1;
-        top: 40rem;
+        top: 37rem;
         right: 6rem;
         font-weight: 500;
     }
@@ -2151,21 +2173,24 @@ form textarea:focus{
         position: relative;
         transition: all .4s cubic-bezier(.645,.045,.355,1);
     }
-    
+    .container-projects-to-display .close-container{
+        top: 45rem;
+        right: 6.6rem;
+    }
     /*PAGE CONTACT*/
     .contact-section .form-container form{
         width: 55rem;
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
-    .line-scroll .line{
+    .bg-main .line-scroll .line{
         height: 19rem;
         width: 0.3rem;
         background-color: var(--color-primary);
     }
-    .line-scroll a{
+    .bg-main .line-scroll a{
         bottom: 19.5rem;
         font-size: 2rem;
         left: -0.9rem;
@@ -2337,61 +2362,64 @@ form textarea:focus{
         margin: 5rem 1rem;
     }
     .video-second-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 77rem;
         margin-top: 15rem;
         position: relative;
         padding: 6rem;
     }
     .video-second-section .wrapper-position{
-        position: absolute;
-        top: 10rem;
-        left: 0;
+        position: relative;
     }
     .video-second-section .block-title{
         position: absolute;
         color: var(--color-primary);
         z-index: 6;
         width: 78rem;
-        top: -11rem;
-        left: 19rem;
+        top: -9rem;
+        left: -27rem;
+        text-align: initial;
     }
     .video-second-section .block-1{
         background: #000;
-        height: 50rem;
-        width: 62rem;
-        top: -15.5rem;
-        left: 30.8rem;
+        height: 39rem;
+        width: 57rem;
+        top: -11.5rem;
+        left: -12rem;
         position: absolute;
         z-index: 4;
         display: block;
     }
     .video-second-section .block-2{
         background: #fe005a;
-        height: 39rem;
-        width: 51rem;
+        height: 35rem;
+        width: 50rem;
         top: 21.9rem;
-        left: 11.8rem;
+        left: -40rem;
         position: absolute;
         transition-delay: .5s;
         display: block;
     }
-    .video-second-section .container img{
+    .video-second-section .container-image img{
         position: absolute;
         top: 8rem;
-        left: 20rem;
+        left: -22rem;
         z-index: 5;
         max-width: none;
     }
     .video-second-section .block-btn{
         position: absolute;
-        top: 7rem;
-        left: 79rem;
+        top: 4rem;
+        left: 20rem;
         z-index: 7;
     }
-    .video-second-section .container .tooltip{
-        right: -67rem;
+    .video-second-section .container-image .tooltip{
+        right: -35rem;
     }
-    .video-second-section .container:hover .tooltip{
+    .video-second-section .container-image:hover .tooltip{
         opacity: 1;
         right: -67rem;
     }
@@ -2412,6 +2440,10 @@ form textarea:focus{
     }
     .project-presentation .images img{
         margin: 2rem 1rem;
+    }
+    .container-projects-to-display .close-container {
+        top: 40rem;
+        right: 14.6rem;
     }
 
     /*PAGE CONTACT*/
@@ -2438,8 +2470,8 @@ form textarea:focus{
 @media screen and (min-width : 1400px) {
 
     .navigation-panel-item{
-        font-size: 5rem;
-        margin-bottom: 3rem;
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
     }
     /*PAGE HOME*/
 
@@ -2452,6 +2484,7 @@ form textarea:focus{
     }
     .bg-main.bg-home .container .block-text h1{
         font-size: 8rem;
+        margin-left: 8rem;
     }
     .first-section-text .container div.para{
         width: 70%;
@@ -2532,10 +2565,10 @@ form textarea:focus{
 
     /*PAGE VIDEO*/
     .video-second-section .wrapper-position{
-        left: 50rem;
+        
     }
     .video-second-section .block-btn{
-        top: 4rem;
+        top: 5rem;
     }
 
     /*PAGE PROJECTS*/
@@ -2546,11 +2579,12 @@ form textarea:focus{
     }
     .container-projects-to-display .close-container{
         top: 12rem;
-        right: 16.6rem;
+        right: 16rem;
     }
     .container-project .head-picture{
         width: 40rem;
         height: 40rem;
+        margin-right: 2rem;
     }
     .show.container-project .title-project .block-title .title-artist,
     .show.container-project .title-project .block-title .title-partner{
@@ -2560,6 +2594,15 @@ form textarea:focus{
         margin: 0;
         padding: 7rem;
         width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 2350px) {
+
+    .container-projects-to-display .close-container {
+        top: 12rem;
+        right: 20rem;
     }
 
 }

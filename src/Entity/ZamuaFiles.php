@@ -58,6 +58,11 @@ class ZamuaFiles
      */
     private $caption;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $creditLink;
+
     public function __construct()
     {
         $this->projects = new ArrayCollection();
@@ -168,5 +173,21 @@ class ZamuaFiles
         $this->caption = $caption;
 
         return $this;
+    }
+
+    public function getCreditLink(): ?string
+    {
+        return $this->creditLink;
+    }
+
+    public function setCreditLink(?string $creditLink): self
+    {
+        $this->creditLink = $creditLink;
+
+        return $this;
+    }
+    public function __toString()
+    {
+        return $this->getCredit();
     }
 }

@@ -23,7 +23,7 @@ class ContactFormType extends AbstractType
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Il nome é obbligatorio!'
+                        'message' => 'This field is mandatory!'
                     ])
                 ]
 
@@ -35,7 +35,7 @@ class ContactFormType extends AbstractType
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'L\'indirizzo email é obbligatorio!'
+                        'message' => 'This field is mandatory!'
                     ])
                 ]
             ])
@@ -46,7 +46,7 @@ class ContactFormType extends AbstractType
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Non dimenticare di scrivere il tuo messaggio!'
+                        'message' => 'This field is mandatory!'
                     ])
                 ]
             ])

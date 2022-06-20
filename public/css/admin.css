@@ -159,6 +159,7 @@ body.admin .project-title{
 
 .media-section .block-image img{
     max-width: 100%;
+    width: 60rem;
 }
 .contact-item{
     background: #fff;
