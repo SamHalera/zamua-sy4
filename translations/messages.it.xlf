@@ -114,10 +114,12 @@
         <source>LITANIE</source>
         <target>LITANIE</target>
       </trans-unit>
-      <trans-unit id="dma9Qxa" resname="&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab. &#10;                His debut mini-album is &lt;strong&gt; a unique blend of ecstatic feelings and litanies,&lt;/strong&gt;making it hard to categorize his art form yet essential to know about.">
-        <source>&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab. 
+      <trans-unit id="dma9Qxa" resname="&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab, founded by producer and sound designer Shay Mané, sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production). &#10;                His debut mini-album is &lt;strong&gt; a unique blend of ecstatic feelings and litanies,&lt;/strong&gt;making it hard to categorize his art form yet essential to know about.">
+        <source>&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab, founded by producer and sound designer Shay Mané, 
+                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production). 
                 His debut mini-album is &lt;strong&gt; a unique blend of ecstatic feelings and litanies,&lt;/strong&gt;making it hard to categorize his art form yet essential to know about.</source>
-        <target><![CDATA[<strong>LITANIE</strong> é il primo EP di Zamua, prodotto dalla giovane etichetta indipendente OD MusicLab.
+        <target><![CDATA[<strong>LITANIE</strong> é il primo EP di Zamua, prodotto dalla giovane etichetta indipendente OD MusicLab, fondata dall’artista e produttore Shay Mané, 
+        l'ingegnere del suono Fabrice Ho-Shui-Ling e la fotografa-direttrice artistica Chloé Dupeyrat (Acidulée Production).
 Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie e litanie, e fa di questo artista un elemento inclassificabile ma indispensabile.]]></target>
       </trans-unit>
       <trans-unit id="Ko6qyu3" resname="SEND">
@@ -201,14 +203,14 @@ Il nome stesso del progetto, Metisse, spiega e anticipa <strong>l’importanza c
         <source>It was in Paris that Zamua's solo project took form.</source>
         <target>Qui prende forma il progetto solista di Zamua. </target>
       </trans-unit>
-      <trans-unit id="R6IQwDo" resname="He continued writing and performing live in various cultural spaces, Bars, etc in the French capital. &#10;                            His initiative is fueled by encounters and friendships, which contribute to its development.  &#10;                            &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with producer and sound designer Shay Mané, &#10;                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production) during this period.&lt;/strong&gt;">
+      <trans-unit id="R6IQwDo" resname="He continued writing and performing live in various cultural spaces, Bars, etc in the French capital. &#10;                            His initiative is fueled by encounters and friendships, which contribute to its development.  &#10;                            &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with OD MusicLab record label, founded by producer and sound designer Shay Mané, &#10;                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production), during this period.&lt;/strong&gt;">
         <source>He continued writing and performing live in various cultural spaces, Bars, etc in the French capital. 
                             His initiative is fueled by encounters and friendships, which contribute to its development.  
-                            &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with producer and sound designer Shay Mané, 
-                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production) during this period.&lt;/strong&gt;</source>
+                            &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with OD MusicLab record label, founded by producer and sound designer Shay Mané, 
+                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production), during this period.&lt;/strong&gt;</source>
         <target><![CDATA[Continua la scrittura e le performance live nei club della capitale francese. Gli incontri e le amicizie danno slancio e contribuiscono a far maturare il suo progetto. 
-        <strong>In questo periodo, l'incontro e la collaborazione artistica con l’artista e produttore Shay Mané, 
-        l'ingegnere del suono Fabrice Ho-Shui-Ling e la fotografa-direttrice artistica Chloé Dupeyrat (Acidulée Production) è stato significativo nel suo percorso.</strong>]]></target>
+        <strong>In questo periodo, l'incontro e la collaborazione artistica con l'etichetta discografica OD MUsicLab, fondata dall’artista e produttore Shay Mané, 
+        l'ingegnere del suono Fabrice Ho-Shui-Ling e la fotografa-direttrice artistica Chloé Dupeyrat (Acidulée Production), è stato significativo nel suo percorso.</strong>]]></target>
       </trans-unit>
       <trans-unit id="FipmKck" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;&#10;                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
         <source>&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;
@@ -222,9 +224,9 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.</source>
         <target>Nasce una musica fatta di commistioni e di aperture che portano Zamua a incontrare e a collaborare con altri artisti della scena jazz nazionale e internazionale come Raffaele Casarano, Flavio Boltro e Paolo Fresu.</target>
       </trans-unit>
-      <trans-unit id="S8WDKMF" resname="Shay Mané and Fabrice Ho-Shui-Ling, who work for the OD MusicLab record label, assisted him in creating his debut EP, Litanie.">
-        <source>Shay Mané and Fabrice Ho-Shui-Ling, who work for the OD MusicLab record label, assisted him in creating his debut EP, Litanie.</source>
-        <target>L’etichetta OD MusicLab (Shay Mané e Fabrice Ho-Shui-Ling) lo accompagna nella produzione del suo primo EP dal titolo Litanie.</target>
+      <trans-unit id="S8WDKMF" resname="OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
+        <source>OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
+        <target>L’etichetta OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling, Chloé Dupeyrat) lo ha accompagnato nella produzione del suo primo EP dal titolo Litanie.</target>
       </trans-unit>
       <trans-unit id="OKcOvSm" resname="A borderline &lt;br&gt;between analogue and electronica">
         <source>A borderline &lt;br&gt;between analogue and electronica</source>

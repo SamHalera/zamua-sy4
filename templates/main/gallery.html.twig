@@ -32,7 +32,10 @@
                 
                 <div id="lightgallery">
                     {% for item in itemsGallery %}
-                        <a href="{{asset(item.getFilePath)}}" class="reveal gallery-item" data-sub-html="{% if item.caption is defined %}<div class='gallery-caption'> {{item.caption}} </div>{% endif %}<br>{% if item.credit %}<span class='credit'>Photo by <strong>{{ item.credit }}</strong></span> {% endif %}">
+                        <a 
+                            href="{{asset(item.getFilePath)}}" 
+                            class="reveal gallery-item" 
+                            data-sub-html="{% if item.caption is defined %}<div class='gallery-caption'> {{item.caption}} </div>{% endif %}<br>{% if item.credit %}<span class='credit'>Photo by <strong>{{ item.credit }}</strong></span> {% endif %} {% if item.creditLink %} <a href='{{ item.creditLink }}' target='_blank' class='vertical-align font-weight-bold'>(see the website)</a> {% endif %}">
                             
                             <img class="fluid-image" src="{{asset(item.getFilePath)}}" {% if item.alt is defined %} alt="{{item.alt}}" {% endif %}>
                             

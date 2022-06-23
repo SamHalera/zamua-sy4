@@ -1740,7 +1740,11 @@ form textarea:focus{
 
 }
 
-
+@media screen and (min-width: 412px) {
+    .bg-main .line-scroll{
+        bottom: 0rem;
+    }
+}
 @media screen and (min-width: 480px) and (max-width: 640px){
 
     /*PAGE HOME*/
@@ -1812,6 +1816,7 @@ form textarea:focus{
 
 }
 @media screen and (min-width: 540px) and (max-width: 640px){
+    
     /*PAGE PROJECTS*/
     .four-section-projects {
         background-position: -38rem;
@@ -2185,6 +2190,9 @@ form textarea:focus{
 
 @media screen and (min-width: 1200px) {
 
+    .bg-main .line-scroll{
+        bottom: -7.9rem;
+    }
     .bg-main .line-scroll .line{
         height: 19rem;
         width: 0.3rem;
