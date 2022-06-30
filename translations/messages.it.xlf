@@ -390,8 +390,8 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>It is important to mention them all because they do a remarkable job.</source>
         <target>È importante citare tutti i loro nomi perché hanno svolto e svolgono un lavoro notevole.</target>
       </trans-unit>
-      <trans-unit id="n9jnbh8" resname="So thank you to them for giving me permission to use their work, especially in the">
-        <source>So thank you to them for giving me permission to use their work, especially in the</source>
+      <trans-unit id="n9jnbh8" resname="So thanks to them for giving me permission to use their works, especially in the">
+        <source>So thanks to them for giving me permission to use their works, especially in the</source>
         <target>Li/le ringrazio quindi per avermi dato l'autorizzazione a utilizzare le loro foto, in particolare nella</target>
       </trans-unit>
       <trans-unit id="OjVSCuS" resname="Photos section">
@@ -404,7 +404,7 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
       </trans-unit>
       <trans-unit id="UMqOyhp" resname="their name appears below the image, after clicking on it. On the other pages of the site, their name appears when you hover the mouse.">
         <source>their name appears below the image, after clicking on it. On the other pages of the site, their name appears when you hover the mouse.</source>
-        <target>Nella sezione Foto, il loro nome appare sotto l'immagine. Nelle altre pagine del sito, il loro nome appare al passaggio del mouse.</target>
+        <target>il loro nome appare sotto l'immagine. Nelle altre pagine del sito, il loro nome appare al passaggio del mouse.</target>
       </trans-unit>
       <trans-unit id="Qi_gUiW" resname="The photographers are (in alphabetical order):">
         <source>The photographers are (in alphabetical order):</source>

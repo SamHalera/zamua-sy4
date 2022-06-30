@@ -1,4 +1,4 @@
-let loaderWrapper = document.querySelector('.loader-wrapper');
+let loaderWrapper = document.querySelector('.loader');
 let loaderWrapperImg = document.querySelector('.loader-wrapper img');
 
 let headerElement = document.querySelector('header');
@@ -12,6 +12,7 @@ let title = document.querySelector('.block-title h1');
 let menuElement = document.querySelector('.menu');
 let activeBlock = document.querySelector('.active-block');
 
+
 function scrollerFadeIn(scrollElt){
     return setTimeout(function(){
         
@@ -20,25 +21,39 @@ function scrollerFadeIn(scrollElt){
     }, 300);
 }
 
-window.addEventListener("load", function () {
+if(document.querySelector('.line-scroll')){
+    let scroller = document.querySelector('.line-scroll');
+    scrollerFadeIn(scroller);
+}
+title.style.opacity = '1'; 
+menuElement.classList.add('fade-in');
+activeBlock.style.opacity = '1';
+activeBlock.style.left = '-6px';
 
-    logoContainer.style.display = "block";
-    loaderWrapperImg.style.display = "none";
-    loaderWrapper.style.height = "0vh";
+// window.addEventListener("load", function () {
+
+//     logoContainer.style.display = "block";
+//     loaderWrapperImg.style.display = "none";
+//     loaderWrapper.style.height = "0vh";
     
-    setTimeout(function(){
+//     title.style.opacity = '1'; 
+//         menuElement.classList.add('fade-in');
+//         activeBlock.style.opacity = '1';
+//         activeBlock.style.left = '-6px';
+
+//     setTimeout(function(){
        
-        if(document.querySelector('.line-scroll')){
-            let scroller = document.querySelector('.line-scroll');
-            scrollerFadeIn(scroller);
-        }
-        title.style.opacity = '1'; 
-        menuElement.classList.add('fade-in');
-        activeBlock.style.opacity = '1';
-        activeBlock.style.left = '-6px';
+//         if(document.querySelector('.line-scroll')){
+//             let scroller = document.querySelector('.line-scroll');
+//             scrollerFadeIn(scroller);
+//         }
+//         title.style.opacity = '1'; 
+//         menuElement.classList.add('fade-in');
+//         activeBlock.style.opacity = '1';
+//         activeBlock.style.left = '-6px';
         
-    }, 300);
-});
+//     }, 0);
+// });
 
 window.addEventListener("scroll", function () {
 

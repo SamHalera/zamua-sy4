@@ -23,6 +23,9 @@
 html { 
     scroll-behavior: smooth; 
 }
+/* .loader{
+    display: none;
+}
 .loader-wrapper{
     background: #000;
     height: 100vh;
@@ -76,7 +79,7 @@ html {
         border: 0rem solid transparent;
     }
 
-}
+} */
 html,
 body{
     font-size: 1.6rem;
@@ -393,12 +396,11 @@ footer{
     margin: 2rem;
     font-size: 3rem;
 }
-/*HOME*/
 .bg-main{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative; 
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-color: #000;
 }
@@ -406,6 +408,19 @@ footer{
     display: flex;
     align-items: center;
 }
+.bg-main .block-title{
+    margin-top: 6rem;
+}
+.bg-main .line-scroll{
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    bottom: -6.9rem;
+    left: 50%;
+}
+
+/*HOME*/
+
 .bg-home{
     background-image: url(/public/images/bg-contacts.jpg);
     height: 100vh;
@@ -424,16 +439,13 @@ footer{
     transition: all .2s ease-in-out;
     background: rgba(0, 0, 0, 0);
 }
+.bg-main.bg-home .block-title{
+    margin-top: 0rem;
+}
 .bg-home .line-scroll a {
     color: #000;
 }
-.bg-main .line-scroll{
-    opacity: 0;
-    transition: all .4s ease-in-out;
-    position: absolute;
-    bottom: -6.9rem;
-    left: 50%;
-}
+
     /*
     ON LOAD HOMEPAGE
     */
@@ -465,17 +477,17 @@ footer{
 .block-text h1 span {
     display: block;
     opacity: 0;
-    transition: all .6s cubic-bezier(.1,.8,.9,1);
+    transition: all .4s cubic-bezier(.1,.8,.9,1);
 }
 .block-text h1 span.show-span {
     opacity: 1;
     transform: translateY(2rem);
 }
 .text2.show-span{
-    transition-delay: .2s;
+    transition-delay: .1s;
 }
 .text3.show-span{
-    transition-delay: .4s;
+    transition-delay: .3s;
 }
 
 /*FIRST SECTION*/
@@ -772,7 +784,7 @@ form textarea:focus{
 }
 .bg-bio .block-title span.title1{
     color: var(--color-primary);
-    transition: all .7s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 .bg-bio .block-title span.title2{
     color: #fff;
@@ -780,7 +792,7 @@ form textarea:focus{
     bottom: 3rem;
     display: block;
     left: 8rem;
-    transition: all 1.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .bg-bio .block-title-after{
     background-color: var(--color-primary);
@@ -971,7 +983,7 @@ form textarea:focus{
 }
 
 .bg-main-music .container .block-title{
-    margin: 0;
+    margin: 6rem 0 0 0;
 }
 .bg-main-music .container .block-title h1{
     text-transform: uppercase;
@@ -986,20 +998,20 @@ form textarea:focus{
 }
 .bg-main-music .container .block-title span.title2{
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all .6s ease-in-out;
     transition-delay: .1s;
     color: var(--color-primary);
 }
 .bg-main-music .container .block-title span.title3{
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all .6s ease-in-out;
     transition-delay: .3s;
     color: #fff;
 }
 .bg-main-music .container .block-title span.title-dots{
     opacity: 0;
-    transition: all 1s ease-in-out;
-    transition-delay: .5s;
+    transition: all .6s ease-in-out;
+    transition-delay: .4s;
     color: #fff;
 }
 .music-first-section{
@@ -1289,7 +1301,7 @@ form textarea:focus{
     background-attachment: scroll;
     background-position: -6rem 0;
     height: 70vh;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 .bg-main-projects .container{
     justify-content: flex-start;
@@ -1557,7 +1569,7 @@ form textarea:focus{
     background-image: url(/public/images/zamua-vayulive2.jpg);
     background-size: cover;
     height: 70vh;
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
 }
 .bg-main-shows .container{
     justify-content: flex-start;
@@ -1985,6 +1997,9 @@ form textarea:focus{
         padding: 2rem 8rem;
     }
     /*PAGE BIO*/
+    .bg-bio{
+        background-position: 0rem 0rem;
+    }
     .bg-bio .block-title{
         margin-left: 6rem;
     }
@@ -2221,7 +2236,7 @@ form textarea:focus{
 
     /*PAGE BIO*/
     .bg-bio{
-        background-position: 0rem 0rem;
+        background-position: 0rem -30rem;
         background-attachment: fixed;
     }
     .biography.first-section-text, .second-section-bio {
