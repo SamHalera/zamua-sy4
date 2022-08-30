@@ -231,7 +231,12 @@ class MainController extends BaseController
      */
     public function shows(ShowRepository $showRepository, TranslationTranslatorInterface $translator): Response
     {
-        $shows = $showRepository->findAll();
+        $shows = $showRepository->findBy(
+            [
+                'isPassed' => true,
+                'isCancelled' => true
+            ]
+        );
         return $this->render('main/shows.html.twig', [
             'activeName' => 'Shows',
             'shows' => $shows

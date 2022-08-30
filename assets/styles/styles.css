@@ -1186,7 +1186,7 @@ form textarea:focus{
     background-image: url(/public/images/banner-photos.jpg);
     background-size: cover;
     background-attachment: scroll;
-    background-position: 58% 50%;
+    background-position: 58% 185%;
     height: 70vh;
     margin-bottom: 8rem;
 }
@@ -2236,7 +2236,7 @@ form textarea:focus{
 
     /*PAGE BIO*/
     .bg-bio{
-        background-position: 0rem -30rem;
+        background-position: 0rem -52rem;
         background-attachment: fixed;
     }
     .biography.first-section-text, .second-section-bio {
@@ -2354,7 +2354,7 @@ form textarea:focus{
     }
     /*PAGE SHOWS*/
     .bg-main-shows{
-        background-position: 0rem -21rem;
+        background-position: 0rem -50rem;
         background-attachment: fixed;
     }
     .bg-main-shows .container .block-title h1{

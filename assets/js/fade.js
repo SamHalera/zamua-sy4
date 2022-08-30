@@ -1,4 +1,3 @@
-console.log('fade here');
 //Intersection Observer
 const ratio = .1;
 
