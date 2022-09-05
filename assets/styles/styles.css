@@ -2239,7 +2239,7 @@ form textarea:focus{
 
     /*PAGE BIO*/
     .bg-bio{
-        background-position: 0rem -48rem;
+        background-position: 0rem -42rem;
         background-attachment: fixed;
     }
     .biography.first-section-text, .second-section-bio {
