@@ -966,9 +966,9 @@ form textarea:focus{
 /* MUSICA*/
 
 .bg-main-music{
-    background-image: url(/public/images/zamua-pr.jpg);
+    background-image: url(/public/images/zamua-timeaftertime-2.jpg);
     background-size: cover;
-    background-position: -20rem 9rem;
+    background-position: -16rem 0rem;
     background-color: #000;
     background-attachment: scroll;
     margin-bottom: 0rem;
@@ -977,7 +977,7 @@ form textarea:focus{
     justify-content: start;
 }
 .bg-main-music .overlay{
-    background: rgba(0, 0, 0, 60%);
+    background: rgba(0, 0, 0, 30%);
     transition: all .2s ease-in-out;
     padding: 0 1rem;
 }
@@ -1296,10 +1296,10 @@ form textarea:focus{
 }
 /* PROGETTI*/
 .bg-main-projects{
-    background-image: url(/public/images/bg-projects-2.jpeg);
+    background-image: url(/public/images/zamua-pr.jpg);
     background-size: cover;
     background-attachment: scroll;
-    background-position: -6rem 0;
+    background-position: -20rem -9rem;
     height: 70vh;
     margin-bottom: 6rem;
 }
@@ -1922,7 +1922,9 @@ form textarea:focus{
         margin: 1rem auto;
     }
     /*PAGE MUSIC*/
-    
+    .bg-main-music{
+        background-position: 0rem 5rem;
+    }
     .music-first-section .block-text{
         padding: 8rem 6rem 4rem 6rem;
     }
@@ -1943,6 +1945,7 @@ form textarea:focus{
     /*PAGE PROJECTS*/
     .bg-main-projects{
         margin-bottom: 14rem;
+        background-position: 11rem 9rem;
     }
     .container-projects-to-display .close-container{
         top: 45rem;
@@ -2236,7 +2239,7 @@ form textarea:focus{
 
     /*PAGE BIO*/
     .bg-bio{
-        background-position: 0rem -52rem;
+        background-position: 0rem -48rem;
         background-attachment: fixed;
     }
     .biography.first-section-text, .second-section-bio {
@@ -2342,6 +2345,7 @@ form textarea:focus{
     /*PAGE MUSIC*/
     .bg-main-music{
         background-attachment: fixed;
+        background-position: -6rem -11rem;
     }
     .bg-main-music .container{
         justify-content: flex-end;
@@ -2448,7 +2452,7 @@ form textarea:focus{
     }
     /*PAGE PROJECTS*/
     .bg-main-projects{
-        background-position: 0rem;
+        background-position: 11rem 9rem;
         background-attachment: fixed;
     }
     .bg-main-projects .container .block-title h1{
@@ -2566,6 +2570,9 @@ form textarea:focus{
     }
 
     /*PAGE MUSIC*/
+    .bg-main-music{
+        background-position: 0rem -29.8rem;
+    }
     .music-first-section .block-text{
         width: 80%;
     }
