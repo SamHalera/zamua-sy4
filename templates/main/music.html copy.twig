@@ -1,0 +1,160 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | {% trans %}MUSIC{% endtrans %}
+{% endblock %}
+
+
+{% block body %}
+        
+        <div class="bg-main bg-main-music">
+        <div class="container overlay">
+            <div class="block-title">
+                {% trans %}<h1><span class="title1"></span><span class="title2">Music</span><span class="title3"> is</span><span class="title-dots">...</span></h1>{% endtrans %}
+                
+            </div>
+        </div>
+        <div class="line-scroll">
+            <a href="#toScroll">scroll</a>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div id="toScroll"></div>
+    <div class="music-first-section">
+        
+        <div class="container">
+            <div class="block-text">
+                <p class="mb-1 line-height-l font-size-l">
+                {% trans %}
+                    Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.
+                    <strong>A means of learning to think critically about what we see and do in the environment in which we live; </strong>
+                    the beginning and end of a cyclical path toward self-determination.
+                    It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality. 
+                {% endtrans %}
+                </p>
+
+                <p class="mb-1 line-height-l font-size-l">
+                {% trans %}
+                    <strong>Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.</strong>
+                {% endtrans %}
+                </p>
+                
+                <p class="mb-1 line-height-l font-size-l">
+                {% trans %}    
+                    <em>"When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.
+                    Through music, and particularly through singing, I can <strong>investigate and reflect on topics that are important to me such as identity</strong>, or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between "us" and "them.</em> 
+                {% endtrans %}
+                <p class="mb-1 line-height-l font-size-l">
+                {% trans %}
+                    <em>"Music has been and still is, a fundamental element of my existence.
+                    There is no predefined musical genre. I start with two instruments, voice and guitar. And then begin developing, creating, and telling stories. 
+                    <strong>The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music"</strong></em>
+                {% endtrans %}
+                </p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+    <div class="music-second-section">
+    
+        <div class="ep-infos-container mb-1">
+
+            <div class="reveal-up">
+        
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/49xV7avbfOOiy1b3EWVvIV?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <h3 class="title">LITANIE - EP</h3>
+            </div>
+            
+
+        </div>
+        <div class="audio-container reveal-up">
+            <div class="cover-album">
+                <img class="image-fluid" src="{{ asset('images/ibelieve.jpg')}}" alt="" width="300">
+            </div>
+            <div class="track-container">
+                <figure>
+                    <figcaption>
+                        <h3 class="title">I believe (single)</h3>
+                    </figcaption>
+                    <audio
+                        controls
+                        src="{{asset('audio/i-believe-zamua.mp3')}}">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure>
+            </div>
+        </div>
+     
+        <div class="audio-container reveal-up">
+            <div class="cover-album">
+                <img class="image-fluid" src="{{ asset('images/distance.jpg') }}" alt="" width="300">
+            </div>
+            <div class="track-container">
+                <figure>
+                    <figcaption>
+                        <h3 class="title">Distance (single)</h3>
+                    </figcaption>
+                    <audio
+                        controls
+                        src="{{asset('audio/distance-zamua.mp3')}}">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure>
+            </div>
+        </div>
+        <div class="audio-container reveal-up">
+            <div class="cover-album">
+                <img class="image-fluid" src="{{ asset('images/portrait-thumbnail.jpg')}}" alt="" width="300">
+            </div>
+            <div class="track-container">
+                <figure>
+                    <figcaption>
+                        <h3 class="title">I hope u r right (single)</h3>
+                    </figcaption>
+                    <audio
+                        controls
+                        src="{{asset('audio/hope-u-r-right-zamua.mp3')}}">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure>
+            </div>
+        </div>
+        <div class="audio-container reveal-up">
+            <div class="cover-album">
+                <img class="image-fluid" src="{{ asset('images/brazilian-funk.jpg')}}" alt="" width="300">
+            </div>
+            <div class="track-container">
+                <figure>
+                    <figcaption>
+                        <h3 class="title">Estate (B. Martino's cover)</h3>
+                        <h4 class="title">from "Brazilian Funk Affair" album<h4>
+                    </figcaption>
+                    <audio
+                        controls
+                        src="{{asset('audio/estate-zamua.mp3')}}">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure>
+                
+            </div>
+        </div>
+    </div>
+
+    
+{%  endblock %}
+{% block javascripts %}
+
+    {{ parent()}}
+    {{encore_entry_script_tags('music') }}
+
+{% endblock %}
+
+
