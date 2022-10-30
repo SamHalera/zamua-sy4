@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Contact;
 use App\Entity\ContentEntity;
+use App\Entity\Playlist;
 use App\Entity\Project;
 use App\Entity\ProjectMember;
 use App\Entity\ProjectTranslation;
@@ -14,6 +15,7 @@ use App\Entity\ZamuaFiles;
 use App\Form\ContentFormType;
 use App\Form\EditMediaFormType;
 use App\Form\FileFormType;
+use App\Form\PlaylistFormType;
 use App\Form\ProjectFormType;
 use App\Form\ProjectMembersFormType;
 use App\Form\ProjectTranslationFormType;
@@ -22,6 +24,7 @@ use App\Form\TextFieldFormType;
 use App\Form\VideoFormType;
 use App\Repository\ContactRepository;
 use App\Repository\ContentEntityRepository;
+use App\Repository\PlaylistRepository;
 use App\Repository\ProjectMemberRepository;
 use App\Repository\ProjectRepository;
 use App\Repository\ShowRepository;
@@ -735,6 +738,80 @@ class AdminController extends AbstractController
         $em->persist($contact);
         $em->flush();
         return $this->redirectToRoute('app_admin_contact_manager');
+
+    }
+
+    /**
+     * @Route("/admin/playlist/new", name="app_admin_playlist_new")
+     */
+    public function newPlaylist(Request $request, EntityManagerInterface $em)
+    {
+        $form = $this->createForm(PlaylistFormType::class);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+            $data = $form->getData();
+
+            $playlist = new Playlist();
+            $uploadedFile = $form->get('coverImage')->getData();
+            
+            if($uploadedFile){
+            /**
+            * @var UploadedFile $uploadedFile
+             */
+
+            $destination = $this->getParameter('kernel.project_dir').'/public/uploads/' . $playlist::UPLOADS_FILES_FOLDER;
+
+            $originalFileName = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
+
+            $newFileName =  bin2hex(random_bytes(8)). '-' .uniqid().'.'.$uploadedFile->guessExtension();
+
+            //dd($uploadedFile->move($destination));
+            try {
+                $uploadedFile->move(
+                    $destination,
+                    $newFileName,
+                    $playlist
+                );
+            } catch (FileException $e) {
+                
+                $e->getMessage();
+            }
+            }
+
+            $playlist
+                ->setTitle($data->getTitle())
+                ->setDescription($data->getDescription())
+                ->setUrl($data->getUrl())
+                ->setIframe($data->getIframe())
+                ->setCover($newFileName ?? '')
+                ;
+            $em->persist($playlist);
+            $em->flush();
+
+            $this->addFlash('success', 'The playlist has been created');
+            return $this->redirectToRoute('app_admin_playlist_list');
+
+        }
+
+        return $this->render('admin/new-playlist.html.twig', [
+            'form' => $form->createView()
+        ]);
+
+    }
+
+
+    /**
+     * @Route("/admin/playlistList", name="app_admin_playlist_list")
+     */
+    public function playlistList(PlaylistRepository $playlistRepo)
+    {
+        $playlistAll = $playlistRepo->findBy([], ['createdAt' => 'DESC']);
+
+        return $this->render('admin/playlist-list.html.twig', [
+            'playlists' => $playlistAll
+        ]);
 
     }
 

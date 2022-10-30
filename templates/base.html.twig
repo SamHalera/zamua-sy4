@@ -96,6 +96,9 @@
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_projects' %} active-link{% endif %}">
                     <a href="{{ path('app_projects')}}">{% trans %} PROJECTS {% endtrans %}</a>
                 </li>
+                <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_playlists' %} active-link{% endif %}">
+                    <a href="{{ path('app_playlists')}}">{% trans %} PLAYLISTS {% endtrans %}</a>
+                </li>
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_contact' %} active-link{% endif %}">
                     <a href="{{ path('app_contact')}}">{% trans %} CONTACT {% endtrans %}</a>
                 </li>

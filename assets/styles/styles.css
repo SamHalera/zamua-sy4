@@ -1040,6 +1040,7 @@ form textarea:focus{
     margin-bottom: 5rem;
 }
 .ep-infos-container h3{
+    color: #fff;
     margin-bottom: 5rem;
     font-size: 5rem;
     font-weight: 400;
@@ -1682,6 +1683,15 @@ form textarea:focus{
 .main-cookies-container p,
 .privacy-container .sub-section ul{
     font-size: 1.6rem;
+}
+
+/* PAGE PLAYLIST */
+
+.bg-playlists{
+    background-color: transparent;
+}
+.bg-playlists .block-title{
+    margin-top: 25rem;
 }
 
 @media screen and (min-width: 375px){

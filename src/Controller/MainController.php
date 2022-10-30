@@ -266,6 +266,20 @@ class MainController extends BaseController
 
     /**
      * @Route({
+     *          "it": "/playlists",
+     *          "fr": "/playlists",
+     *          "en": "/playlists"
+     *      }, name="app_playlists")
+     */
+    public function playlists(TranslationTranslatorInterface $translator)
+    {
+        return $this->render('main/playlists.html.twig', [
+            'activeName' => $translator->trans('active.name.playlists'),
+        ]);
+    }
+
+    /**
+     * @Route({
      *          "it": "/cookies",
      *          "fr": "/cookies",
      *          "en": "/cookies"

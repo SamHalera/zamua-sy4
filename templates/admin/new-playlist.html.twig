@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | MEDIA MANAGER{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+    
+{% endblock %}
+
+{% block body %}
+<div class="bg-admin mb-4">
+    <div class="container overlay">
+        <div class="block-title">
+            <h1 class="mb-2">NEW PLAYLIST</h1>
+            <div class="add-section align-center">
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                <a class="btn-admin" href="{{ path('app_admin')}}">back to playlist list</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  mb-4">
+
+{{ form_start(form, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+      
+    {{form_row(form.title)}}
+
+    
+    {{form_row(form.description)}}
+
+    
+    {{form_row(form.url)}}
+
+    {{form_row(form.iframe)}}
+    
+    
+    {{form_row(form.coverImage)}}
+
+    <button class="btn-admin" type="submit">
+        Validate
+    </button>
+{{ form_end(form)}}
+    
+    
+    
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+{{ parent() }}
+
+
+<script src="{{asset('js/plalists.js')}}"></script>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

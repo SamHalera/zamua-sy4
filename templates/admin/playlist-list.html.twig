@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ADMIN | PLAYLIST LIST {% endblock %}
+{% block stylesheets %}
+    {{parent()}}
+
+    <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock %}
+
+{% block body %}
+    <div class="bg-admin">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1 class="mb-4">PLAYLIST LIST</h1>
+                <div class="add-section align-center">
+                    <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
+                    <a class="btn-admin" href="{{ path('app_admin_playlist_new')}}">add a playlist</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="mt-4 container container">
+
+        {% if playlists|length > 0 %}
+        
+            
+            {% for aPlaylist in playlists %}
+                <div class="align-center admin-card">
+                    
+
+                    <div class="url-container">
+                        <h3>{{aPlaylist.title}}</h3>
+                        <p>{{aPlaylist.description}}</p>  
+                        {{aPlaylist.iframe|raw}}  
+
+                        <a class="btn-admin" href="{{aPlaylist.url}}">listen into spotify</a>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                   
+
+                    {# <a class="btn-admin mb-1" href="{{path('app_admin_video_edit', { id : aPlaylist.id})}}">EDIT</a>
+                    <a class="btn-admin alert-danger mb-1" href="{{path('app_admin_video_delete', { id : aPlaylist.id})}}">DELETE</a>
+                    <a class="d-block mb-2" href="{{path('app_video')}}/#{{aPlaylist.id}}"><i class="el-icon-view"></i> public view</a> #}
+
+                </div>    
+            {% endfor %}
+                
+            
+        {% else %}
+            <h3>You don't have any playlist yet!</h3>
+        {% endif %}
+        
+
+    </div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

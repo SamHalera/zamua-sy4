@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    ZAMUA | PLAYLISTS
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="bg-main bg-playlists">
+        <div class="container">
+            <div class="block-title">
+                <h1>PLAYLISTS</h1>
+            </div>
+        </div>
+       
+    </div>
+    
+    
+
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+    {{ encore_entry_script_tags('playlists')}}
+
+{% endblock %}
