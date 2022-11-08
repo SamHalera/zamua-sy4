@@ -641,6 +641,32 @@ footer{
     transition-delay: .3s;
 }
 
+/*SECTION PLAY-THE-TAPE*/
+.section-play-the-tape{
+    height: auto;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+}
+.section-play-the-tape h2{
+    font-size: 6rem;
+}
+.section-play-the-tape h3{
+    font-size: 4rem;
+    color: var(--color-primary);
+}
+.section-play-the-tape p{
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+.section-play-the-tape .btn-custom{
+    margin: 4rem;
+    width: 20rem;
+}
 /*SECTION PROJECTS*/
 .image-project{
     width: 35rem;
@@ -2085,6 +2111,11 @@ form textarea:focus{
     .section-music{
         padding: 2rem 8rem;
     }
+
+    .section-play-the-tape{
+        height: 70vh;
+        padding: 10rem;
+    }
     /*PAGE BIO*/
     .bg-bio{
         background-position: 0rem 0rem;
@@ -2631,6 +2662,9 @@ form textarea:focus{
     .section-music{
         width: 70%;
         margin: 6rem auto 14rem;
+    }
+    .section-play-the-tape{
+        padding: 10rem 35rem;
     }
     .four-section-projects{
         background-position: 0rem 3rem;
