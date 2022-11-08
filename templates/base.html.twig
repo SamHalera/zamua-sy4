@@ -97,7 +97,10 @@
                     <a href="{{ path('app_projects')}}">{% trans %} PROJECTS {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_playlists' %} active-link{% endif %}">
-                    <a href="{{ path('app_playlists')}}">{% trans %} PLAYLISTS {% endtrans %}</a>
+                    {# <img class="logo-spoty" src="{{asset('images/Spotify_Icon_CMYK_White.png')}}" width="40"> #}
+                    {# <img class="logo-playlist" src="{{asset('images/playlist.png')}}" width="40"> #}
+                    {# <ion-icon name="musical-notes-outline"  class="logo-playlist"></ion-icon> #}
+                    <a href="{{ path('app_playlists')}}">{% trans %} PLAY-THE-TAPE {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_contact' %} active-link{% endif %}">
                     <a href="{{ path('app_contact')}}">{% trans %} CONTACT {% endtrans %}</a>

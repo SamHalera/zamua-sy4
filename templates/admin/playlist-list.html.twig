@@ -30,22 +30,21 @@
                 <div class="align-center admin-card">
                     
 
-                    <div class="url-container">
-                        <h3>{{aPlaylist.title}}</h3>
-                        <p>{{aPlaylist.description}}</p>  
-                        {{aPlaylist.iframe|raw}}  
+                    <div class="url-container mb-3">
+                        <h3 class="mb-2">{{aPlaylist.title}}</h3>
+                        <p class="mb-1">>{{aPlaylist.description}}</p>  
+                        <div class="mb-2">{{aPlaylist.iframe|raw}}  </div>
 
                         <a class="btn-admin" href="{{aPlaylist.url}}">listen into spotify</a>
                     </div>
 
                     <div>
-                        
+                        <a class="btn-admin mb-1" href="{{path('app_admin_playlist_edit', { id : aPlaylist.id})}}">EDIT</a>
+                        <a class="btn-admin alert-danger mb-1" href="{{path('app_admin_playlist_delete', { id : aPlaylist.id})}}">DELETE</a>
                     </div>
                    
 
-                    {# <a class="btn-admin mb-1" href="{{path('app_admin_video_edit', { id : aPlaylist.id})}}">EDIT</a>
-                    <a class="btn-admin alert-danger mb-1" href="{{path('app_admin_video_delete', { id : aPlaylist.id})}}">DELETE</a>
-                    <a class="d-block mb-2" href="{{path('app_video')}}/#{{aPlaylist.id}}"><i class="el-icon-view"></i> public view</a> #}
+                    
 
                 </div>    
             {% endfor %}

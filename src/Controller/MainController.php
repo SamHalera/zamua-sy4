@@ -10,6 +10,7 @@ use App\Entity\Show;
 use App\Entity\User;
 use App\Form\ContactFormType;
 use App\Repository\ContentEntityRepository;
+use App\Repository\PlaylistRepository;
 use App\Repository\ProjectRepository;
 use App\Repository\ShowRepository;
 use App\Repository\VideoRepository;
@@ -271,10 +272,14 @@ class MainController extends BaseController
      *          "en": "/playlists"
      *      }, name="app_playlists")
      */
-    public function playlists(TranslationTranslatorInterface $translator)
+    public function playlists(TranslationTranslatorInterface $translator, PlaylistRepository $playlistRepository)
     {
+
+        $allPlaylists = $playlistRepository->findBy([], ['createdAt' => 'DESC']);
+
         return $this->render('main/playlists.html.twig', [
             'activeName' => $translator->trans('active.name.playlists'),
+            'allPlaylists'=> $allPlaylists
         ]);
     }
 

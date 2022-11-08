@@ -1,0 +1,23 @@
+{{ form_start(form, {
+        'attr' : {
+            'class' : 'admin-form'
+        }
+    })}}
+      
+    {{form_row(form.title)}}
+
+    
+    {{form_row(form.description)}}
+
+    
+    {{form_row(form.url)}}
+
+    {{form_row(form.iframe)}}
+    
+    
+    {{form_row(form.coverImage)}}
+
+    <button class="btn-admin" type="submit">
+        {{button_text}}
+    </button>
+{{ form_end(form)}}

@@ -815,4 +815,53 @@ class AdminController extends AbstractController
 
     }
 
+
+    /**
+     * @Route("/admin/playlist/{id}/edit", name="app_admin_playlist_edit")
+     */
+    public function playlistEdit(Playlist $playlist, EntityManagerInterface $em, Request $request)
+    {
+        
+        $form = $this->createForm(PlaylistFormType::class, $playlist);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+
+            /**
+             * @var Playlist $playlist
+             */
+
+            $playlist = $form->getData();
+
+            $em->persist($playlist);
+            $em->flush();
+
+            $this->addFlash('success', 'The playlist has been updated');
+            return $this->redirectToRoute('app_admin_playlist_list');
+        
+        }
+        return $this->render('admin/edit-playlist.html.twig', [
+            'activeName' => 'ADMIN',
+            'id' => $playlist->getId(),
+            'form' => $form->createView()
+        ]);
+    }
+
+    /**
+     * @Route("/admin/playlist/{id}/delete", name="app_admin_playlist_delete")
+     */
+    public function playlistDelete(Playlist $playlist, EntityManagerInterface $em)
+    {
+        $em->remove($playlist);
+        $em->flush();
+
+        $this->addFlash('success', 'The playlist has been deleted');
+        
+        return $this->redirectToRoute('app_admin_playlist_list');
+
+    }
+
+
+
 }

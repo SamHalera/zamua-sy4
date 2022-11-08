@@ -47,18 +47,18 @@ class PlaylistFormType extends AbstractType
                 'mapped' => false,
                 'required' => false,
                 'constraints' => [
-                    new All([
-                        new File(
-                            [
-                                'maxSize' => '1M',
-                                'mimeTypes' => [
-                                    'image/jpeg',
-                                    'image/png',
-                                ],
-                                'mimeTypesMessage' => 'Invalid file. Only JPEG, JPG or PNG are accepted!'
+                    
+                    new File(
+                        [
+                            'maxSize' => '1M',
+                            'mimeTypes' => [
+                                'image/jpeg',
+                                'image/png',
                             ],
-                        ),
-                    ]),
+                            'mimeTypesMessage' => 'Invalid file. Only JPEG, JPG or PNG are accepted!'
+                        ],
+                    ),
+                    
                     
                 ],
             ])

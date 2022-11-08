@@ -336,12 +336,12 @@ input[type=checkbox]{
     text-align: center;
     display: block;
     font-weight: 600;
-    color: #fff;
+    color: #000;
     background-image: linear-gradient(40deg, var(--color-primary) 50%, transparent 0%);
     background-size: 50rem;
     background-repeat: no-repeat;
     background-position: 0%;
-    transition: background .6s cubic-bezier(.645,.045,.355,1);
+    transition: background .3s cubic-bezier(.645,.045,.355,1);
     font-size: 1.8rem;
     cursor: pointer;
 }

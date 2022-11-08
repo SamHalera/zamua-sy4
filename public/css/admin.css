@@ -119,6 +119,7 @@ option{
     justify-content: center;
     align-items: center;
     margin: 1.5rem;
+    max-width: 50rem;
 }
 .admin-card span{
     margin-bottom: 1.5rem;

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}ADMIN | NEW PLAYLIST {% endblock %}
+{% block title %}ADMIN | EDIT PLAYLIST{% endblock %}
 
 {% block stylesheets %}
     {{parent()}}
@@ -13,7 +13,7 @@
 <div class="bg-admin mb-4">
     <div class="container overlay">
         <div class="block-title">
-            <h1 class="mb-2">NEW PLAYLIST</h1>
+            <h1 class="mb-2">EDIT PLAYLIST</h1>
             <div class="add-section align-center">
                 <a class="btn-admin" href="{{ path('app_admin')}}">back to admin</a>
                 <a class="btn-admin" href="{{ path('app_admin')}}">back to playlist list</a>
@@ -25,7 +25,7 @@
 <div class="container  mb-4">
 
  {{ include('admin/_playlist-form.html.twig', {
-        button_text : 'Create'
+        button_text : 'Update'
     })}}
     
     

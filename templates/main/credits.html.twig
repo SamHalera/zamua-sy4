@@ -13,7 +13,7 @@
             <h1>{% trans %} CREDITS {% endtrans %}</h1>
 
         </div>
-        <div class="section-content">
+        <div class="section-content mb-4">
             <p class="mb-4">
                  {% trans %}The site displays images taken by professional and dedicated photographers.{% endtrans %}<br>
 
@@ -32,6 +32,7 @@
                 <li class="mb-1">{{item.credit}} 
                     {% if item.link is defined %}
                         <a href="{{item.link}}" target="_blank" class=""><i class="el-icon-link font-size-l vertical-align"></i></a>
+                        
                     {% endif %}
                 </li> 
                     
@@ -41,6 +42,10 @@
                </pre> #}
             {% endfor %}
             </ul>
+        </div>
+
+        <div>
+            <p><a href="https://iconscout.com/icons/playlist" target="_blank">Playlist Icon</a> by <a href="https://iconscout.com/contributors/zafara">zafarastudios</a> on <a href="https://iconscout.com">IconScout</a></p>
         </div>
        
     </div>

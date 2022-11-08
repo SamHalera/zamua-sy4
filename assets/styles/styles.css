@@ -182,6 +182,13 @@ form ul li{
     list-style-type: disc;
     margin-left: 4rem;
 }
+
+.logo-playlist{
+    position: absolute;
+    bottom: 27px;
+    right: 359px;
+    color: var(--color-primary);
+}
 /*PAGE ERRORS*/
 .bg-error-page .container{
     flex-direction: column;
@@ -1688,10 +1695,59 @@ form textarea:focus{
 /* PAGE PLAYLIST */
 
 .bg-playlists{
-    background-color: transparent;
+    background-color: #000;
+    height: 60vh;
+}
+.bg-playlists .container{
+    justify-content: start;
 }
 .bg-playlists .block-title{
-    margin-top: 25rem;
+    /* margin-top: 25rem;
+    margin-left: 4rem; */
+    padding: 0 2rem;
+    margin: 25rem auto;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+}
+.playlist-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10rem 10rem; */
+    padding: 10rem 2rem;
+}
+
+.playlists-section{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    /* max-width: 80%; */
+    margin: 0 auto;
+}
+.playlist-item {
+    /* padding: 10rem 5rem;
+    margin-bottom: 10rem;
+    flex-direction: row; */
+    padding: 5rem 2rem;
+    margin-bottom: 0rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    
+    color: #fff;
+}
+.playlist-features,
+.playlist-iframe{
+    /* width: 50%;
+    padding: 10rem; */
+    width: auto;
+    padding: 2rem;
+}
+.playlist-iframe .btn-custom{
+    margin: 10rem auto;
 }
 
 @media screen and (min-width: 375px){
@@ -1850,6 +1906,11 @@ form textarea:focus{
 }
 @media screen and (min-width: 540px) and (max-width: 640px){
     
+    .logo-playlist{
+        right: 16rem;
+        bottom: 1rem;
+        width: 3rem;
+    }
     /*PAGE PROJECTS*/
     .four-section-projects {
         background-position: -38rem;
@@ -1875,6 +1936,10 @@ form textarea:focus{
     }
     .switch-language a{
         font-size: 2.5rem;
+    }
+    .logo-playlist{
+        right: 32rem;
+        bottom: 2rem;
     }
     .bg-main .container .block-title h1{
         font-size: 8rem;
@@ -2116,6 +2181,10 @@ form textarea:focus{
         width: 18rem;
     }
 
+    .logo-playlist{
+        bottom: 2.4rem;
+        right: 32rem;
+    }
     /*PAGE HOME*/
     .first-section-text .container div.para,
     .second-section .ep-section{
@@ -2187,6 +2256,14 @@ form textarea:focus{
         padding: 8rem 12rem 4rem 12rem;
     }
 
+    /*PAGE PLAYLIST*/
+
+    .playlist-content{
+        padding: 10rem 30rem 30rem;
+    }
+    .playlist-item{
+        padding: 10rem 15rem 0rem;
+    }
     /*PAGE SHOWS*/
 
     /*PAGE VIDEOS*/
@@ -2494,6 +2571,12 @@ form textarea:focus{
         right: 14.6rem;
     }
 
+    /*PAGE PLAYLIST*/
+    
+
+    .playlist-item iframe{
+        height: 60rem;
+    }
     /*PAGE CONTACT*/
     .bg-main-contact{
         background-position: 0 0;
@@ -2520,6 +2603,10 @@ form textarea:focus{
     .navigation-panel-item{
         font-size: 4.5rem;
         margin-bottom: 2rem;
+    }
+    .logo-playlist{
+        right: 36rem;
+        bottom: 3rem;
     }
     /*PAGE HOME*/
 
@@ -2622,6 +2709,14 @@ form textarea:focus{
         top: 5rem;
     }
 
+    /*PAGE PLAYLIST*/
+    .playlist-item{
+        flex-direction: row;
+    }
+    .playlist-features,
+    .playlist-iframe{
+        width: 50%;
+    }
     /*PAGE PROJECTS*/
     .show.container-project{
         flex-direction: row;
