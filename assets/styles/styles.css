@@ -1622,8 +1622,8 @@ form textarea:focus{
 
 .bg-main-shows{
     background-attachment: scroll;
-    background-position: -6rem 0rem;
-    background-image: url(/public/images/zamua-vayulive2.jpg);
+    background-position: -30rem 0rem;
+    background-image: url(/public/images/zamua-timeaftertime-2.jpg);
     background-size: cover;
     height: 70vh;
     margin-bottom: 0rem;
@@ -1967,6 +1967,9 @@ form textarea:focus{
     /*PAGE MUSIC*/
 
     /*PAGE SHOWS*/
+    .bg-main-shows{
+        background-position: 0rem  9rem;
+    }
 
 }
 @media screen and (min-width: 641px) {
@@ -2063,7 +2066,9 @@ form textarea:focus{
     }
     
     /*PAGE SHOWS*/
-    
+    .bg-main-shows {
+        background-position: 0rem 9rem;
+    }
     /*PAGE GALLERY*/
     .bg-main-gallery{
         margin-bottom: 12rem;
@@ -2095,6 +2100,7 @@ form textarea:focus{
     .contact-section .form-container form{
         min-width: 100%;
     }
+
 }
 
 @media screen and (min-width: 755px){
@@ -2504,7 +2510,7 @@ form textarea:focus{
     }
     /*PAGE SHOWS*/
     .bg-main-shows{
-        background-position: 0rem -50rem;
+        background-position: 0rem -14rem;
         background-attachment: fixed;
     }
     .bg-main-shows .container .block-title h1{
