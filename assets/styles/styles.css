@@ -999,9 +999,9 @@ form textarea:focus{
 /* MUSICA*/
 
 .bg-main-music{
-    background-image: url(/public/images/zamua-timeaftertime-2.jpg);
+    background-image: url(/public/images/header-spotify.jpg);
     background-size: cover;
-    background-position: -16rem 0rem;
+    background-position: -33rem 0rem;
     background-color: #000;
     background-attachment: scroll;
     margin-bottom: 0rem;
@@ -1010,7 +1010,7 @@ form textarea:focus{
     justify-content: start;
 }
 .bg-main-music .overlay{
-    background: rgba(0, 0, 0, 30%);
+    background: rgba(0, 0, 0, 40%);
     transition: all .2s ease-in-out;
     padding: 0 1rem;
 }
@@ -1072,16 +1072,28 @@ form textarea:focus{
     padding: 0;
     margin-bottom: 5rem;
 }
-.ep-infos-container h3{
+.album-infos-container h3{
     color: #fff;
     margin-bottom: 5rem;
     font-size: 5rem;
     font-weight: 400;
     text-align: center;
 }
-.ep-infos-container img{
-    margin-bottom: 3rem;
+.album-infos-container img{
+    cursor: pointer;
+    margin-bottom: 0rem;
     width: 50rem;
+}
+.iframe-js{
+    transition: all .4s ease-in-out;
+    position: absolute;
+    bottom: 102px;
+    height: 0;
+    opacity: 0;
+}
+.iframe-js-show{
+    height: 20rem;
+    opacity: 0.9;
 }
 .audio-container{
     display: flex;
@@ -1760,10 +1772,15 @@ form textarea:focus{
     margin-bottom: 0rem;
     flex-direction: column;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+}
+.bg-black{
     background-color: #000;
-    
     color: #fff;
+}
+.bg-white{
+    background: #fff;
+    color: #000;
 }
 .playlist-features,
 .playlist-iframe{
@@ -1986,7 +2003,7 @@ form textarea:focus{
     .second-section .ep-section{
         padding: 0 4rem;
     }
-    .second-section .ep-infos-container .img-ep{
+    .second-section .album-infos-container .img-ep{
         width: 75%;
         margin: 0 auto;
     }
@@ -2224,15 +2241,15 @@ form textarea:focus{
     
     .second-section .ep-infos-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         transition: all .4s ease-in-out;
     }
-    .second-section .ep-infos-container .img-ep{
+    .second-section .album-infos-container .img-ep{
         width: auto;
         transition: all .4s ease-in-out;
     }
     .img-ep img{
-        max-width: 35rem;
+        max-width: 60rem;
         transition: all .4s ease-in-out;
     }
     .section-music{
@@ -2713,7 +2730,7 @@ form textarea:focus{
 
     /*PAGE MUSIC*/
     .bg-main-music{
-        background-position: 0rem -29.8rem;
+        background-position: 0rem -17rem;
     }
     .music-first-section .block-text{
         width: 80%;
@@ -2750,6 +2767,9 @@ form textarea:focus{
     .playlist-features,
     .playlist-iframe{
         width: 50%;
+    }
+    .playlist-features{
+        margin-top: 10rem;
     }
     /*PAGE PROJECTS*/
     .show.container-project{

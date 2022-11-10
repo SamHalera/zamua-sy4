@@ -61,19 +61,25 @@
     
     <div class="music-second-section">
     
-        <div class="ep-infos-container mb-1">
+        <div class="album-infos-container m-2">
 
-            <div class="reveal-up">
+            <div class="reveal-up d-flex flex-direction-column flex-align-center position-relative">
                 
                 <h3 class="title">LITANIE - EP</h3>
-                <img class="image-fluid"src="{{asset('images/pochette-ep.jpg')}}">
-                <a href="https://ditto.fm/litanie-zamua" target="_blank" class="btn-custom mx-auto">{% trans %} LISTEN / BUY {% endtrans %}</a>
+                <img class="image-fluid ep-js"src="{{asset('images/pochette-ep.jpg')}}">
+                <iframe class="iframe-js" style="border-radius:0px" src="https://open.spotify.com/embed/album/49xV7avbfOOiy1b3EWVvIV?utm_source=generator&theme=0" width="100%"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <a href="https://ditto.fm/litanie-zamua" target="_blank" class="btn-custom mt-2">{% trans %} LISTEN / BUY {% endtrans %}</a>
                 
             </div>
             
 
         </div>
-        
+        <div class="album-infos-container m-2 reveal-up d-flex flex-direction-column flex-align-center">
+            <h3 class="title">ESTATE - single</h3>
+            <iframe class="w-100 display-lg" style="border: 0; width: 500px; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/track=4000258349/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="https://zamua.bandcamp.com/track/estate">Estate by Zamua</a></iframe>
+            <iframe class="w-100 display-sm" style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=4000258349/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="https://zamua.bandcamp.com/track/estate">Estate by Zamua</a></iframe>
+            <a href="https://zamua.bandcamp.com/track/estate" target="_blank" class="btn-custom mt-2">{% trans %} LISTEN / BUY {% endtrans %}</a>
+        </div>
     </div>
 
     

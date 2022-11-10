@@ -239,6 +239,18 @@
 .d-block {
     display: block;
 }
+.d-flex {
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+.flex-align-center{
+    align-items: center;
+}
 .divider{
     margin: 8rem auto;
 }
@@ -317,6 +329,9 @@ input[type=checkbox]{
     display: none;
 }
 
+.position-relative{
+    position: relative;
+}
 .show-is-passed{
     background: #0006 !important;
 }

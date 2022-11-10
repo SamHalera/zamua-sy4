@@ -17,46 +17,48 @@
     </div>
     <div class="playlist-content">
     
-        <h2 class="size-l mb-3">ZAMUA's Playlists</h2>
-        <p class="mb-2 line-height-l mb-3">
-            In this section I will regulary create and publish playlists of music and podcasts that I listen to, that inspire me every day and influence my creativity.
-            I am fascinated by the idea of researching, selecting and mixing different styles of music and moods into a single, organic stream that I can share with as many people as possible. 
-            Each playlist will have a theme, a title and a short topic.
-            The songs in each playlist are linked by a secret and subjective thread that gives meaning and inspiration to the title and subject as well.
-
-            You can check my artist profile on Spotify where you can find all the playlists and listen to them.
+        <h2 class="size-l mb-3">MY PLAYLISTS</h2>
+        <p class="line-height-l mb-1">
+            PLAY-THE-TAPE is a section dedicated to the music and artists I listen to, who inspire me every day and influence my creativity. I am fascinated by the idea of researching, selecting, mixing different musical styles and finally bringing them together in one stream. That is why I have decided to publish playlists on a regular basis, each collecting different moods and thoughts on a specific theme.
+        </p>
+        <p class="line-height-l">
+            I see all these playlists as an organic flow that I would like to share with as many people as possible, in the hope that it will inspire other people too.  <strong>You can check out my artist profile on <a href="https://open.spotify.com/artist/5iS72vWRLJkMAcR4HkKJid?si=g4WyKyyjQLqZvsDH3gmC5A" target="_blank">Spotify</a>, where you can find all the playlists and listen to them.</strong>
+            
         </p>
     </div>
     <div class="playlists-section">
     
         {% if allPlaylists|length > 0 %}
             {% for playlist in allPlaylists %}
-                
-                <div id="playlist-{{playlist.id}}" class="playlist-item">
-                    {% if loop.index is odd %}
-                        <div class="playlist-features">
-                            <h2 class="size-l">{{ playlist.title}}</h2>
-                            <p class="mb-2 line-height-l"> {{playlist.description }}</p>
-                        </div>
-                        <div class="playlist-iframe">
-                            {{ playlist.iframe|raw}}
-                            <a href="{{playlist.url}}" target="_blank" class="btn-custom mx-auto mt-2">SPOTIFY</a>
-                        </div>
-                    {% else %}
-                        <div class="playlist-iframe">
-                            {{ playlist.iframe|raw}}
-                            <a href="{{playlist.url}}" target="_blank" class="btn-custom mx-auto mt-2">SPOTIFY</a>
-                        </div>
-                        <div class="playlist-features">
-                            <h2 class="size-l">{{ playlist.title}}</h2>
-                            <p class="mb-2 line-height-l"> {{playlist.description }}</p>
-                        </div>
-                        
-                    {% endif %}
+                {% if loop.index is odd %}
+                <div id="playlist-{{playlist.id}}" class="playlist-item bg-black">
                     
-                    
+                    <div class="reveal-up playlist-features">
+                        <h2 class="size-l">{{ playlist.title}}</h2>
+                        <p class="mb-2 line-height-l"> {{playlist.description }}</p>
+                    </div>
+                    <div class="playlist-iframe">
+                        {{ playlist.iframe|raw}}
+                        <a href="{{playlist.url}}" target="_blank" class="btn-custom mx-auto mt-2">SPOTIFY</a>
+                    </div>
                     
                 </div>
+                {% else %}
+                <div id="playlist-{{playlist.id}}" class="playlist-item bg-white">
+                    <div class="playlist-iframe">
+                        {{ playlist.iframe|raw}}
+                        <a href="{{playlist.url}}" target="_blank" class="btn-custom mx-auto mt-2">SPOTIFY</a>
+                    </div>
+                    <div class="reveal-up playlist-features">
+                        <h2 class="size-l">{{ playlist.title}}</h2>
+                        <p class="mb-2 line-height-l"> {{playlist.description }}</p>
+                    </div>  
+                </div>
+                {% endif %}
+                    
+                    
+                    
+                
             {% endfor %}
         {% else %}
             Playlists will be published very soon!
