@@ -34,7 +34,8 @@
                 <div id="playlist-{{playlist.id}}" class="playlist-item bg-black">
                     
                     <div class="reveal-up playlist-features">
-                        <h2 class="size-l">{{ playlist.title}}</h2>
+                    <h2 class="size-l"></h2>
+                        <h2 class="size-l">#{{loop.index0}} - {{ playlist.title}}</h2>
                         <p class="mb-2 line-height-l"> {{playlist.description }}</p>
                     </div>
                     <div class="playlist-iframe">
