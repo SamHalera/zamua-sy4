@@ -88,6 +88,13 @@
                     <a href="{{ path('app_bio')}}">BIO</a>
                 </li>
                 <li class="navigation-panel-item{% if app.request.attributes.get('_route') == 'app_music' %} active-link{% endif %}">
+                    
+                   
+                        <span class="volume one"></span>
+                        <span class="volume two"></span>
+                        <span class="volume three"></span>
+                        <span class="volume four"></span>
+                   
                     <a href="{{ path('app_music')}}">{% trans %} MUSIC {% endtrans %}</a>
                 </li>
                 <li class="navigation-panel-item {% if app.request.attributes.get('_route') == 'app_shows' %} active-link{% endif %}">
