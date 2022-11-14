@@ -1,3 +1,7 @@
+RewriteEngine On
+
+    RewriteCond %{ENV:HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
 # mod_rewrite). Additionally, this reduces the matching process for the
@@ -19,6 +23,7 @@ DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
 
     # RewriteCond %{HTTP:Accept-Language} ^it.*$ [NC]
     # RewriteRule ^$ /it [L,R=302]
