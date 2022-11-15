@@ -30,8 +30,32 @@ class PlaylistFormType extends AbstractType
                 ]
 
             ])
+            ->add('titleFR', TextType::class, [
+                'label' => 'Title (FR)',
+                'required' => false,
+                'label_attr' => [
+                    'class' => 'font-size-l'
+                ],
+                
+            ])
+            ->add('titleIT', TextType::class, [
+                'label' => 'Title (IT)',
+                'required' => false,
+                'label_attr' => [
+                    'class' => 'font-size-l'
+                ],
+                
+            ])
             ->add('description', TextareaType::class, [
                 'label' => 'Description'
+            ])
+            ->add('descriptionFR', TextareaType::class, [
+                'label' => 'Description (FR)',
+                'required' => false,
+            ])
+            ->add('descriptionIT', TextareaType::class, [
+                'label' => 'Description (IT)',
+                'required' => false,
             ])
             ->add('url', TextType::class)
             ->add('iframe', TextareaType::class, [

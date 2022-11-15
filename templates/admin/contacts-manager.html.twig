@@ -22,7 +22,7 @@
 </div>
 
 <div class="container contact-manager-section mb-4">
-
+    
     {% if contacts|length > 0 %}
     
         {% for contact in contacts %}
@@ -41,7 +41,8 @@
                 <div class="content-message font-size-l mb-2"><i class="el-icon-chat-line-square"></i>: "{{ contact.content|u.truncate(50, '...')}}"</div>
                 
                 <div class="align-center">
-                    <a class="btn-admin mb-1" href="{{ path('app_admin_contact_ui', {id : contact.id})}}">see</a>
+                    <a class="btn-admin mb-1 mr-1" href="{{ path('app_admin_contact_ui', {id : contact.id})}}">see</a>
+                    <a class="btn-admin mb-1" href="{{ path('app_admin_contact_delete', { id : contact.id })}}"><ion-icon name="trash-outline"></ion-icon></a>
                 </div>
                 
             </div>

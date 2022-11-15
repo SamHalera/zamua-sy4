@@ -37,6 +37,10 @@
         <source>active.name.credits</source>
         <target>Crediti</target>
       </trans-unit>
+      <trans-unit id="dm5I6ho" resname="active.name.playlists">
+        <source>active.name.playlists</source>
+        <target>Playlists</target>
+      </trans-unit>
       <trans-unit id="CNX5LKn" resname="MUSIC">
         <source>MUSIC</source>
         <target>MUSICA</target>
@@ -114,9 +118,8 @@
         <source>LITANIE</source>
         <target>LITANIE</target>
       </trans-unit>
-      <trans-unit id="dma9Qxa" resname="&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab, founded by producer and sound designer Shay Mané, sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production). &#10;                His debut mini-album is &lt;strong&gt; a unique blend of ecstatic feelings and litanies,&lt;/strong&gt;making it hard to categorize his art form yet essential to know about.">
-        <source>&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab, founded by producer and sound designer Shay Mané, 
-                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production). 
+      <trans-unit id="QepUvIC" resname="&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab, founded by producer and sound designer Shay Mané, sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production). &#10;                His debut mini-album is &lt;strong&gt; a unique blend of ecstatic feelings and litanies,&lt;/strong&gt;making it hard to categorize his art form yet essential to know about.">
+        <source>&lt;strong&gt;LITANIE&lt;/strong&gt;  is Zamua's first EP, produced by the young independent label OD MusicLab, founded by producer and sound designer Shay Mané, sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production). 
                 His debut mini-album is &lt;strong&gt; a unique blend of ecstatic feelings and litanies,&lt;/strong&gt;making it hard to categorize his art form yet essential to know about.</source>
         <target><![CDATA[<strong>LITANIE</strong> é il primo EP di Zamua, prodotto dalla giovane etichetta indipendente OD MusicLab, fondata dall’artista e produttore Shay Mané, 
         l'ingegnere del suono Fabrice Ho-Shui-Ling e la fotografa-direttrice artistica Chloé Dupeyrat (Acidulée Production).
@@ -142,7 +145,7 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
         <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>Zamua è un cantante, chitarrista e songwriter nato in Sardegna da madre sarda e da padre burundese.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="rslNpV7" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    Since then Zamua has devoted himself to music and writing, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. &#10;                     A hybrid outcome in which words'power are crucial.&lt;/strong&gt;">
+      <trans-unit id="sh2qKD3" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    Since then Zamua has devoted himself to music and writing, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. &#10;                     A hybrid outcome in which words'power are crucial.&lt;/strong&gt;">
         <source>His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. 
                     Since then Zamua has devoted himself to music and writing, establishing 
                      &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. 
@@ -154,7 +157,7 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
         <source>Continuous exploration of his various musical styles, including soul, blues, folk, jazz, and reggae.</source>
         <target>Un continuo percorso esplorativo delle sue diverse identità musicali, tra vibrazioni soul, blues, folk, jazz, reggae.</target>
       </trans-unit>
-      <trans-unit id="JjrQvPF" resname="He formed &lt;strong&gt;his first band in 1996, in his hometown Nuoro, Canta'nde Reggae&lt;/strong&gt; with friends Mastrone &#10;                   (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, &#10;                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion. Zamua himself played guitar and vocals. &#10;                   Canta'nde Reggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various &#10;                   groups and musical realities reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad ...).&lt;/strong&gt; &#10;                   All were underground realities which expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.">
+      <trans-unit id="50vmEOm" resname="He formed &lt;strong&gt;his first band in 1996, in his hometown Nuoro, Canta'nde Reggae&lt;/strong&gt; with friends Mastrone &#10;                   (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, &#10;                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion. Zamua himself played guitar and vocals. &#10;                   Canta'nde Reggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various &#10;                   groups and musical realities reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad ...).&lt;/strong&gt; &#10;                   All were underground realities which expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.">
         <source>He formed &lt;strong&gt;his first band in 1996, in his hometown Nuoro, Canta'nde Reggae&lt;/strong&gt; with friends Mastrone 
                    (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, 
                    M. Carroni and P. Musina on backing vocals, AbuMar on percussion. Zamua himself played guitar and vocals. 
@@ -165,7 +168,7 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
         G.Demontis al basso, M.Barubiriza, M. Carroni, P.Musina ai cori, AbuMar alle Percussioni, Mastrone alla voce e Zamua alla chitarra e voce), a Nuoro, tra cantine e garage, 
         <strong>in un contesto di fermento artistico e creativo che vedeva il formarsi di diversi gruppi e realtà musicali reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad…). Tutte realtà underground che crescevano comunicando tra loro, alimentandosi e stimolandosi a vicenda.</strong> In questo periodo nasce il soprannome Zamua.]]></target>
       </trans-unit>
-      <trans-unit id="EDODBjP" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; &#10;                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.">
+      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; &#10;                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.">
         <source>&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; 
                     Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.</source>
         <target><![CDATA[<strong>La musica entra a far parte della sua vita quasi come una necessità, il bisogno di costruire un ponte tra le sue diverse radici.</strong> Sempre alla ricerca di sé, Zamua parte in viaggio in compagnia della sua chitarra e della sua voce.]]></target>
@@ -174,7 +177,7 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
         <source>A unique combination &lt;br&gt;of folk and soul-jazz</source>
         <target><![CDATA[Un intreccio personale <br>tra folk e soul-jazz]]></target>
       </trans-unit>
-      <trans-unit id="NjQJa24" resname="He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical band called Metisse.&lt;/strong&gt;&#10;                            Zamua continued his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). &#10;                            &quot;Metisse,&quot; indicated and foreshadowed &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;">
+      <trans-unit id="cwfzpX3" resname="He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical band called Metisse.&lt;/strong&gt;&#10;                            Zamua continued his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). &#10;                            &quot;Metisse,&quot; indicated and foreshadowed &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;">
         <source>He relocated to Naples, enrolled in university, and simultaneously launched &lt;strong&gt;the reggae-influenced musical band called Metisse.&lt;/strong&gt;
                             Zamua continued his melting sound explorations with Metisse (A. Rubano on bass, V. Ciorra on guitar, M. Barubiriza and N. Rubano on backing vocals, D. Leone on drums, E. Capasso on keyboards, R. Crispino on percussion, and Zamua on guitar and vocals). 
                             "Metisse," indicated and foreshadowed &lt;strong&gt;the significance of fusion to his style, as well as the significance of always seeking new methods to combine music and various aesthetic inspirations.&lt;/strong&gt;</source>
@@ -182,28 +185,28 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
 Con Metisse (A.Rubano al basso, V.Ciorra alla chitarra, M.Barubiriza e N.Rubano ai cori, D.Leone alla batteria, E.Capasso alle tastiere, R.Crispino alle percussioni e Zamua alla chitarra e voce) , Zamua continua le sue esperienze sonore meticce. 
 Il nome stesso del progetto, Metisse, spiega e anticipa <strong>l’importanza che la fusione ricopre nella sua estetica e il bisogno di una ricerca costante di commistioni musicali e contaminazioni multiformi.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="zFw1UQo" resname="In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;. &quot;ElephantAndCastle&quot; consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).&#10;                            &lt;strong&gt;An afro-jazz project, whose real &quot;raison d'être&quot; was the fusion of genres.&lt;/strong&gt;">
-        <source>In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with a keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu): &lt;strong&gt;ElephantAndCastle&lt;/strong&gt;. "ElephantAndCastle" consists of the following members; (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).
+      <trans-unit id="KmYTAGj" resname="In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with the keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu). &quot;ElephantAndCastle&quot; consists of the following members: (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).&#10;                            &lt;strong&gt;An afro-jazz project, whose real &quot;raison d'être&quot; was the fusion of genres.&lt;/strong&gt;">
+        <source>In 2003, Zamua began working on a new project called ElephantAndCastle, co-founded with the keyboard player and producer Alessandro Capasso (Collettivo Cerchi e Xhu). "ElephantAndCastle" consists of the following members: (A. Capasso on keyboards, programming and vocals, D. Sorrentino on bass, C. D'Avino on drums, R. Crispino on percussion and Zamua on guitar and vocals).
                             &lt;strong&gt;An afro-jazz project, whose real "raison d'être" was the fusion of genres.&lt;/strong&gt;</source>
         <target><![CDATA[Nel 2003, Zamua inizia a lavorare a un nuovo progetto co-fondato con il tastierista e produttore Alessandro Capasso (Collettivo Cerchi e Xhu) : <strong>ElephantAndCastle</strong>
          (A.Capasso alle tastiere, programming e voce, D.Sorrentino al basso, C.D’Avino alla batteria, R.Crispino alle percussioni e Zamua alla chitarra e voce). 
          <strong>Un progetto d’impronta afro-jazz, la cui vera ragione d'essere è la fusione di generi.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="RlaWNoH" resname="Zamua's passion for experimentation took more and more shape and space within his creative and writing process.">
+      <trans-unit id="ORGLSt." resname="Zamua's passion for experimentation took more and more shape and space within his creative and writing process.">
         <source>Zamua's passion for experimentation took more and more shape and space within his creative and writing process.</source>
         <target>La passione per la sperimentazione prende sempre più forma e spazio nel processo creativo e di scrittura di Zamua.</target>
       </trans-unit>
-      <trans-unit id="OqQdfxG" resname="After a &quot;brief&quot; interlude of six months each in both Tanzania and Egypt, in 2006 &#10;                            &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; &#10;                           He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.">
-        <source>After a "brief" interlude of six months each in both Tanzania and Egypt, in 2006 
+      <trans-unit id="OqQdfxG" resname="After an interlude of six months each in both Tanzania and Egypt, in 2006 &#10;                            &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; &#10;                           He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.">
+        <source>After an interlude of six months each in both Tanzania and Egypt, in 2006 
                             &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; 
                            He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.</source>
-        <target><![CDATA[Dopo una “breve” parentesi di 6 mesi in Tanzania e di 6 mesi in Egitto, nel 2006, <strong>Zamua approda in Francia, a Parigi, dove prosegue i suoi studi di Sociologia delle migrazioni.</strong> Si interessa al diritto degli stranieri e al diritto d’asilo e inizia a lavorare con associazioni che accompagnano i richiedenti asilo nelle difficili procedure giuridiche e amministrative volte al riconoscimento dello status di rifugiato.]]></target>
+        <target><![CDATA[Dopo una parentesi di 6 mesi in Tanzania e di 6 mesi in Egitto, nel 2006, <strong>Zamua approda in Francia, a Parigi, dove prosegue i suoi studi di Sociologia delle migrazioni.</strong> Si interessa al diritto degli stranieri e al diritto d’asilo e inizia a lavorare con associazioni che accompagnano i richiedenti asilo nelle difficili procedure giuridiche e amministrative volte al riconoscimento dello status di rifugiato.]]></target>
       </trans-unit>
       <trans-unit id="WUzmqJG" resname="It was in Paris that Zamua's solo project took form.">
         <source>It was in Paris that Zamua's solo project took form.</source>
         <target>Qui prende forma il progetto solista di Zamua. </target>
       </trans-unit>
-      <trans-unit id="R6IQwDo" resname="He continued writing and performing live in various cultural spaces, Bars, etc in the French capital. &#10;                            His initiative is fueled by encounters and friendships, which contribute to its development.  &#10;                            &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with OD MusicLab record label, founded by producer and sound designer Shay Mané, &#10;                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production), during this period.&lt;/strong&gt;">
+      <trans-unit id="h.Gli.5" resname="He continued writing and performing live in various cultural spaces, Bars, etc in the French capital. &#10;                            His initiative is fueled by encounters and friendships, which contribute to its development.  &#10;                            &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with OD MusicLab record label, founded by producer and sound designer Shay Mané, &#10;                            sound engineer Fabrice Ho-Shui-Ling, and photographer and artistic director Chloé Dupeyrat (Acidulée Production), during this period.&lt;/strong&gt;">
         <source>He continued writing and performing live in various cultural spaces, Bars, etc in the French capital. 
                             His initiative is fueled by encounters and friendships, which contribute to its development.  
                             &lt;strong&gt;It was crucial to his journey that he met and collaborated artistically with OD MusicLab record label, founded by producer and sound designer Shay Mané, 
@@ -212,7 +215,7 @@ Il nome stesso del progetto, Metisse, spiega e anticipa <strong>l’importanza c
         <strong>In questo periodo, l'incontro e la collaborazione artistica con l'etichetta discografica OD MUsicLab, fondata dall’artista e produttore Shay Mané, 
         l'ingegnere del suono Fabrice Ho-Shui-Ling e la fotografa-direttrice artistica Chloé Dupeyrat (Acidulée Production), è stato significativo nel suo percorso.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="FipmKck" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;&#10;                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
+      <trans-unit id="mqEGNNU" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;&#10;                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
         <source>&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;
                             The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. 
                             Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;</source>
@@ -220,15 +223,15 @@ Il nome stesso del progetto, Metisse, spiega e anticipa <strong>l’importanza c
                <strong>L’allontanamento da ciò che è stabile e fermo,</strong> il profumo del viaggio avvolgono la maggior parte delle sue canzoni. 
 I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <strong> una complessa trama di relazioni umane e connessioni emotive tra le cose ed il vissuto.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="Ub0jxDF" resname="The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.">
+      <trans-unit id=".RqDGQe" resname="The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.">
         <source>The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.</source>
         <target>Nasce una musica fatta di commistioni e di aperture che portano Zamua a incontrare e a collaborare con altri artisti della scena jazz nazionale e internazionale come Raffaele Casarano, Flavio Boltro e Paolo Fresu.</target>
       </trans-unit>
-      <trans-unit id="S8WDKMF" resname="OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
+      <trans-unit id="2PMBnp0" resname="OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
         <source>OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
         <target>L’etichetta OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling, Chloé Dupeyrat) lo ha accompagnato nella produzione del suo primo EP dal titolo Litanie.</target>
       </trans-unit>
-      <trans-unit id="OKcOvSm" resname="A borderline &lt;br&gt;between analogue and electronica">
+      <trans-unit id="0ckMBDl" resname="A borderline &lt;br&gt;between analogue and electronica">
         <source>A borderline &lt;br&gt;between analogue and electronica</source>
         <target><![CDATA[Una linea di confine<br> tra l'analogico e l'elettronico]]></target>
       </trans-unit>
@@ -244,7 +247,7 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>Cookies</source>
         <target>Cookies</target>
       </trans-unit>
-      <trans-unit id="d9X_q1D" resname="Our website uses &lt;strong&gt;cookies&lt;/strong&gt;: some small text files that are sent to your terminal during your visit.">
+      <trans-unit id="0CVW7cT" resname="Our website uses &lt;strong&gt;cookies&lt;/strong&gt;: some small text files that are sent to your terminal during your visit.">
         <source>Our website uses &lt;strong&gt;cookies&lt;/strong&gt;: some small text files that are sent to your terminal during your visit.</source>
         <target><![CDATA[Il nostro sito utlizza <strong>i cookies </strong>: dei piccoli file testo che vengono 
                     inviati al vostro terminale durante la vostra visita.]]></target>
@@ -340,9 +343,9 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <target><![CDATA[Secondo la legislazione vigente, ogni utente ha il diritto di accesso, di aggiornamento, di retifica, di cancellazione e il diritto di limitare l'uso dei suoi dati personali. L'utente puo esercitare il proprio diritto contattando il nostro servizio: 
                     <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>]]></target>
       </trans-unit>
-      <trans-unit id="h6v8V2j" resname="Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.&#10;                    &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt;&#10;                    the beginning and end of a cyclical path toward self-determination.&#10;                    It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality.">
+      <trans-unit id="1ISG1.R" resname="Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.&#10;                    &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt;&#10;                    the beginning and end of a cyclical path toward self-determination.&#10;                    It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality.">
         <source>Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.
-                    &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt; 
+                    &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt;
                     the beginning and end of a cyclical path toward self-determination.
                     It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality.</source>
         <target><![CDATA[La musica è urgenza e necessità impellente di condivisione della propria voce, della propria anima, della propria presenza.
@@ -350,19 +353,19 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
                     è il principio e la fine di un percorso ciclico verso l’autodeterminazione.
                     Un mezzo per toccare il cuore delle persone, per comunicare un’immagine, un’idea, un concetto, per dare un senso alla percezione della realtà.]]></target>
       </trans-unit>
-      <trans-unit id="4xVNkUc" resname="&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;">
+      <trans-unit id="Uul3Hpj" resname="&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;">
         <source>&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>La musica crea un ponte tra il mondo interiore e il mondo esteriore. Permette di tradurre in forma sensibile, i segreti dell’anima, segreti che neanche noi stessi sappiamo spiegare ma che a volte riescono a fuoriuscire attraverso le note.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="tBE2Ez_" resname="&lt;em&gt;&quot;When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.&#10;                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity&lt;/strong&gt;, or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between &quot;us&quot; and &quot;them.&lt;/em&gt;">
+      <trans-unit id="gW4uRu4" resname="&lt;em&gt;&quot;When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.&#10;                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity&lt;/strong&gt;, or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between &quot;us&quot; and &quot;them.&lt;/em&gt;">
         <source>&lt;em&gt;"When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.
-                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity,&lt;/strong&gt; or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between "us" and "them.&lt;/em&gt;</source>
+                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity&lt;/strong&gt;, or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between "us" and "them.&lt;/em&gt;</source>
         <target><![CDATA[<em>“Vivo la musica in modo quasi maniacale, la faccio da quando ero ragazzino.
                 Attraverso la musica, e in modo particolare attraverso il canto, riesco a 
                 <strong>intraprendere un percorso di ricerca e di riflessione su questioni per me centrali come l’identità,</strong> 
                 o meglio, le nostre identità, fluide, mutevoli, mai identiche a se stesse, in un movimento che annienta ogni idea di confine fisico e immaginario tra il “Noi” e il “Loro”.</em>]]></target>
       </trans-unit>
-      <trans-unit id="hCUyYNo" resname="&lt;em&gt;&quot;Music has been and still is, a fundamental element of my existence.&#10;                    There is no predefined musical genre. I start with two instruments, voice and guitar. And then begin developing, creating, and telling stories. &#10;                    &lt;strong&gt;The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music&quot;&lt;/strong&gt;&lt;/em&gt;">
+      <trans-unit id="K71rRP7" resname="&lt;em&gt;&quot;Music has been and still is, a fundamental element of my existence.&#10;                    There is no predefined musical genre. I start with two instruments, voice and guitar. And then begin developing, creating, and telling stories. &#10;                    &lt;strong&gt;The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music&quot;&lt;/strong&gt;&lt;/em&gt;">
         <source>&lt;em&gt;"Music has been and still is, a fundamental element of my existence.
                     There is no predefined musical genre. I start with two instruments, voice and guitar. And then begin developing, creating, and telling stories. 
                     &lt;strong&gt;The foundation of my musical universes, such as soul, jazz, reggae, and electronic music are all incorporated into my work. I allowed myself to be burdened by this baggage, and as a result, I produced extremely hybrid music"&lt;/strong&gt;&lt;/em&gt;</source>
@@ -390,7 +393,7 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>It is important to mention them all because they do a remarkable job.</source>
         <target>È importante citare tutti i loro nomi perché hanno svolto e svolgono un lavoro notevole.</target>
       </trans-unit>
-      <trans-unit id="n9jnbh8" resname="So thanks to them for giving me permission to use their works, especially in the">
+      <trans-unit id="e2Aopc2" resname="So thanks to them for giving me permission to use their works, especially in the">
         <source>So thanks to them for giving me permission to use their works, especially in the</source>
         <target>Li/le ringrazio quindi per avermi dato l'autorizzazione a utilizzare le loro foto, in particolare nella</target>
       </trans-unit>
@@ -426,9 +429,75 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>Let find out more!</source>
         <target>Scopritelo!</target>
       </trans-unit>
-      <trans-unit id="Xw.EB.c" resname="Currently, Zamua lives between France and Italy and he is working on his first album.">
+      <trans-unit id="LGMbrqF" resname="Currently, Zamua lives between France and Italy and he is working on his first album.">
         <source>Currently, Zamua lives between France and Italy and he is working on his first album.</source>
         <target>Attualmente, Zamua vive tra la Francia e l'Italia e sta scrivendo il suo primo album.</target>
+      </trans-unit>
+      <trans-unit id=".X7SqKZ" resname="PLAY-THE-TAPE">
+        <source>PLAY-THE-TAPE</source>
+        <target>PLAY-THE-TAPE</target>
+      </trans-unit>
+      <trans-unit id="Oj6vKT2" resname="LISTEN">
+        <source>LISTEN</source>
+        <target>ASCOLTA</target>
+      </trans-unit>
+      <trans-unit id="rfVAsRL" resname="MY PLAYLISTS">
+        <source>MY PLAYLISTS</source>
+        <target>MY PLAYLISTS</target>
+      </trans-unit>
+      <trans-unit id="2aQT9s." resname="PLAY-THE-TAPE is a section dedicated to the music and artists I listen to, who inspire me every day and influence my creativity.">
+        <source>PLAY-THE-TAPE is a section dedicated to the music and artists I listen to, who inspire me every day and influence my creativity.</source>
+        <target>PLAY-THE-TAPE è una sezione dedicata alla musica e agli artisti che ascolto, che mi ispirano ogni giorno e influenzano la mia creatività.</target>
+      </trans-unit>
+      <trans-unit id="bWRmePE" resname="I am fascinated by the idea of researching, selecting, mixing different musical styles and finally bringing them together in one stream.">
+        <source>I am fascinated by the idea of researching, selecting, mixing different musical styles and finally bringing them together in one stream.</source>
+        <target>Mi affascina l'idea di ricercare, selezionare, mescolare diversi stili musicali e infine riunirli in un unico flusso.</target>
+      </trans-unit>
+      <trans-unit id="GP6hm2n" resname="That is why I have decided to publish playlists on a regular basis, each collecting different moods and thoughts on a specific theme.">
+        <source>That is why I have decided to publish playlists on a regular basis, each collecting different moods and thoughts on a specific theme.</source>
+        <target>Per questo motivo ho deciso di pubblicare regolarmente delle playlist, ognuna delle quali raccoglie diversi stati d'animo e pensieri su un tema specifico.</target>
+      </trans-unit>
+      <trans-unit id="BeeTB.X" resname="I see all these playlists as an organic flow that I would like to share with as many people as possible, in the hope that it will inspire other people too.">
+        <source>I see all these playlists as an organic flow that I would like to share with as many people as possible, in the hope that it will inspire other people too.</source>
+        <target>Considero tutte queste playlist come un flusso organico che vorrei condividere con il maggior numero di persone possibile, nella speranza che possa ispirare anche altre persone.</target>
+      </trans-unit>
+      <trans-unit id="pjZ7iT." resname="You can check out my artist profile on">
+        <source>You can check out my artist profile on</source>
+        <target>Potete consultare il mio profilo artista su</target>
+      </trans-unit>
+      <trans-unit id="zxkis5S" resname="where you can find all the playlists and listen to them.">
+        <source>where you can find all the playlists and listen to them.</source>
+        <target>dove potrete trovare tutte le playlist e ascoltarle.</target>
+      </trans-unit>
+      <trans-unit id="fOIi0ch" resname="The cookies used are &quot;technical cookies&quot;, i.e. they are strictly necessary for the operation of this site. &#10;            Users' prior consent is not required for the installation and use of technical cookies, &#10;            as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing &#10;            the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website.">
+        <source>The cookies used are "technical cookies", i.e. they are strictly necessary for the operation of this site. 
+            Users' prior consent is not required for the installation and use of technical cookies, 
+            as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
+            the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website.</source>
+        <target>__The cookies used are "technical cookies", i.e. they are strictly necessary for the operation of this site. 
+            Users' prior consent is not required for the installation and use of technical cookies, 
+            as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
+            the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website.</target>
+      </trans-unit>
+      <trans-unit id="OCRNhf." resname="The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, &#10;            through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. &#10;            You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).">
+        <source>The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
+            through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
+            You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).</source>
+        <target>__The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
+            through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
+            You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).</target>
+      </trans-unit>
+      <trans-unit id="gU7uT6B" resname="We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality &#10;                        of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.">
+        <source>We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
+                        of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.</source>
+        <target>__We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
+                        of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.</target>
+      </trans-unit>
+      <trans-unit id="H8MxsHb" resname="According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: &#10;                        &lt;a class=&quot;font-weight-bold&quot; mailto=&quot;personal.data@zamuamusic.com&quot;&gt;personal.data@zamuamusic.com&lt;/a&gt;">
+        <source>According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
+                        &lt;a class="font-weight-bold" mailto="personal.data@zamuamusic.com"&gt;personal.data@zamuamusic.com&lt;/a&gt;</source>
+        <target><![CDATA[__According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
+                        <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>]]></target>
       </trans-unit>
     </body>
   </file>

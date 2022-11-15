@@ -58,6 +58,28 @@ class Playlist
      */
     private $iframe;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $titleFR;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $titleIT;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $descriptionFR;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $descriptionIT;
+
+   
+
     public function getId(): ?int
     {
         return $this->id;
@@ -147,4 +169,56 @@ class Playlist
 
         return $this;
     }
+
+    public function getTitleFR(): ?string
+    {
+        return $this->titleFR;
+    }
+
+    public function setTitleFR(string $titleFR): self
+    {
+        $this->titleFR = $titleFR;
+
+        return $this;
+    }
+
+    public function getTitleIT(): ?string
+    {
+        return $this->titleIT;
+    }
+
+    public function setTitleIT(string $titleIT): self
+    {
+        $this->titleIT = $titleIT;
+
+        return $this;
+    }
+
+    public function getDescriptionFR(): ?string
+    {
+        return $this->descriptionFR;
+    }
+
+    public function setDescriptionFR(string $descriptionFR): self
+    {
+        $this->descriptionFR = $descriptionFR;
+
+        return $this;
+    }
+
+    public function getDescriptionIT(): ?string
+    {
+        return $this->descriptionIT;
+    }
+
+    public function setDescriptionIT(string $descriptionIT): self
+    {
+        $this->descriptionIT = $descriptionIT;
+
+        return $this;
+    }
+
+    
+
+    
 }

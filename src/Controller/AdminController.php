@@ -780,9 +780,18 @@ class AdminController extends AbstractController
             }
             }
 
+            $titleFR = $data->getTitleFR() ?? '';
+            $titleIT = $data->getTitleIT() ?? '';
+            $descriptionFR = $data->getDescriptionFR ?? '';
+            $descriptionIT = $data->getDescriptionIT ?? '';
+
             $playlist
                 ->setTitle($data->getTitle())
+                ->setTitleFR($titleFR)
+                ->setTitleIT($titleIT)
                 ->setDescription($data->getDescription())
+                ->setDescriptionFR($descriptionFR)
+                ->setDescriptionIT($descriptionIT)
                 ->setUrl($data->getUrl())
                 ->setIframe($data->getIframe())
                 ->setCover($newFileName ?? '')

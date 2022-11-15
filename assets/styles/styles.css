@@ -1661,7 +1661,7 @@ form textarea:focus{
 .bg-main-shows{
     background-attachment: scroll;
     background-position: -23rem 9rem;
-    background-image: url(/public/images/gdt.jpg);
+    background-image: url(/public/images/guitare.jpg);
     background-size: cover;
     height: 70vh;
     margin-bottom: 0rem;
@@ -2358,7 +2358,7 @@ form textarea:focus{
     /*PAGE PLAYLIST*/
 
     .playlist-content{
-        padding: 10rem 30rem 30rem;
+        padding: 4rem 30rem 30rem;
     }
     .playlist-item{
         padding: 10rem 15rem 0rem;
@@ -2557,7 +2557,7 @@ form textarea:focus{
     }
     /*PAGE SHOWS*/
     .bg-main-shows{
-        background-position: 0rem 5rem;
+        background-position: 0rem -22rem;
         background-attachment: fixed;
     }
     .bg-main-shows .container .block-title h1{
@@ -2674,7 +2674,9 @@ form textarea:focus{
 
     /*PAGE PLAYLIST*/
     
-
+    .bg-playlists .block-title{
+        margin-left: 12rem;
+    }
     .playlist-item iframe{
         height: 60rem;
     }
