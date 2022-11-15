@@ -4,7 +4,8 @@ namespace App\Entity;
 
 use App\Repository\ContactRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Gedmo\Timestampable\Traits\Timestampable;
+// use Gedmo\Timestampable\Traits\Timestampable;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass=ContactRepository::class)
@@ -12,7 +13,7 @@ use Gedmo\Timestampable\Traits\Timestampable;
 class Contact
 {
 
-    use Timestampable;
+    // use Timestampable;
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -49,6 +50,12 @@ class Contact
      * @ORM\Column(type="boolean")
      */
     private $isSent;
+
+    /**
+     * @ORM\Column(type="datetime_immutable")
+     * @Gedmo\Timestampable(on="create")
+     */
+    private $createdAt;
 
     public function getId(): ?int
     {
@@ -123,6 +130,18 @@ class Contact
     public function setIsSent(bool $isSent): self
     {
         $this->isSent = $isSent;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeImmutable $createdAt): self
+    {
+        $this->createdAt = $createdAt;
 
         return $this;
     }

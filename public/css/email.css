@@ -1,0 +1,28 @@
+:root {
+    font-size: 62.5%;
+}
+body{
+    background-color: black;
+    color: #FFBC20;
+    font-size: 1.6rem;
+    padding: 4rem;
+}
+p,
+h1{
+    color: #FFBC20;
+}
+
+img{
+    width: 10rem;
+    max-width: 100%;
+}
+a.social-media img{
+    width: 3.5rem;
+    margin: 1rem;
+}
+h1{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}

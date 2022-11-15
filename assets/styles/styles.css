@@ -1660,8 +1660,8 @@ form textarea:focus{
 
 .bg-main-shows{
     background-attachment: scroll;
-    background-position: -30rem 0rem;
-    background-image: url(/public/images/zamua-timeaftertime-2.jpg);
+    background-position: -23rem 9rem;
+    background-image: url(/public/images/gdt.jpg);
     background-size: cover;
     height: 70vh;
     margin-bottom: 0rem;
@@ -1670,7 +1670,7 @@ form textarea:focus{
     justify-content: flex-start;
 }
 .bg-main-shows .overlay{
-    background: rgba(0, 0, 0, 0.1) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     transition: all .2s ease-in-out;
 }
 .bg-main-shows .container .block-title h1{
@@ -1781,7 +1781,7 @@ form textarea:focus{
     /* margin-top: 25rem;
     margin-left: 4rem; */
     padding: 0 2rem;
-    margin: 25rem auto;
+    margin: 25rem 0 auto;
     color: var(--color-primary);
     font-size: 2.5rem;
 }
@@ -1791,7 +1791,7 @@ form textarea:focus{
     justify-content: center;
     align-items: center;
     /* padding: 10rem 10rem; */
-    padding: 10rem 2rem;
+    padding: 2rem 2rem 10rem 2rem;
 }
 
 .playlists-section{
@@ -2107,10 +2107,17 @@ form textarea:focus{
     .bg-main-shows {
         background-position: 0rem 9rem;
     }
+    .bg-main-shows .container{
+        justify-content: end;
+    }
+    .bg-main .block-title{
+        margin-right: 6rem;
+    }
     /*PAGE GALLERY*/
     .bg-main-gallery{
         margin-bottom: 12rem;
     }
+
     
     /*PAGE VIDEOS*/
     
@@ -2357,7 +2364,9 @@ form textarea:focus{
         padding: 10rem 15rem 0rem;
     }
     /*PAGE SHOWS*/
-
+    .bg-main .block-title{
+        margin-right: 12rem;
+    }
     /*PAGE VIDEOS*/
     .video-second-section h2{
         font-size: 4.5rem;
@@ -2429,7 +2438,7 @@ form textarea:focus{
 
     /*PAGE BIO*/
     .bg-bio{
-        background-position: 0rem -42rem;
+        background-position: 0rem -28rem;
         background-attachment: fixed;
     }
     .biography.first-section-text, .second-section-bio {
@@ -2548,7 +2557,7 @@ form textarea:focus{
     }
     /*PAGE SHOWS*/
     .bg-main-shows{
-        background-position: 0rem -14rem;
+        background-position: 0rem 5rem;
         background-attachment: fixed;
     }
     .bg-main-shows .container .block-title h1{

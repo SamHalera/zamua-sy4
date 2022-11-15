@@ -15,13 +15,16 @@ use App\Repository\ProjectRepository;
 use App\Repository\ShowRepository;
 use App\Repository\VideoRepository;
 use App\Repository\ZamuaFilesRepository;
+use App\Service\MailGenerator;
 use Knp\Component\Pager\PaginatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\CssSelector\XPath\TranslatorInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
+use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Email;
@@ -43,14 +46,8 @@ class MainController extends BaseController
      *          "en": "/"
      *      }, name="app_home")
      */
-    public function index(ProjectRepository $projectRepository,  Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator): Response
+    public function index(Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator, MailGenerator $mailGenerator): Response
     {
-
-        // $projects= $projectRepository->findBy([],
-        //     [
-        //         'priority' => 'ASC'
-        //     ]
-        // );
 
         //Contact form
         $contact = new Contact();
@@ -69,6 +66,11 @@ class MainController extends BaseController
             
             $em->persist($contact);
             $em->flush();
+
+            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
+            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
+            
+
 
             $this->addFlash('successMessage', $translator->trans('message.send.success'));
             
@@ -116,7 +118,7 @@ class MainController extends BaseController
      *          "en": "/contact"
      *      }, name="app_contact")
      */
-    public function contact(Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator): Response
+    public function contact(Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator, MailGenerator $mailGenerator): Response
     {
 
         $contact = new Contact();
@@ -138,6 +140,9 @@ class MainController extends BaseController
             $em->persist($contact);
             $em->flush();
 
+            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
+            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
+            
             $this->addFlash('successMessage', $translator->trans('message.send.success'));
 
             return $this->redirectToRoute('app_contact');

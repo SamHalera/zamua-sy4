@@ -22,7 +22,7 @@ class SitemapController extends AbstractController
         $urls[] = ['loc' => $this->generateUrl('app_gallery')];
         $urls[] = ['loc' => $this->generateUrl('app_shows')];
         $urls[] = ['loc' => $this->generateUrl('app_contact')];
-        $urls[] = ['loc' => $this->generateUrl('app_listenings')];
+        $urls[] = ['loc' => $this->generateUrl('app_playlists')];
         $urls[] = ['loc' => $this->generateUrl('app_video')];
         $urls[] = ['loc' => $this->generateUrl('app_cookies')];
         $urls[] = ['loc' => $this->generateUrl('app_projects')];

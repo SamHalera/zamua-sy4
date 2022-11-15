@@ -7,3 +7,10 @@ twig:
     globals:
         locales: '%app.locales%'
         defaultLocale: '%locale%'
+
+    paths:
+        # images directory for email templates
+        '%kernel.project_dir%/public/images': images
+        # css directory for email templates
+        '%kernel.project_dir%/public/css': css
+

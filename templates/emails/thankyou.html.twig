@@ -1,0 +1,30 @@
+{% apply inline_css(source('@css/email.css')) %}
+<img src="{{ email.image('@images/logo.png') }}" alt="Logo">
+<h1>Hi {{ userName }}!</h1>
+<p>
+    Thank you for contacting me!
+</p>
+<p>
+    I will get back to you very as quickly as possible! 
+</p>
+<p>Meanwhile, if you didn't do it yet, you can subscribe to my social media channels. <br>Keep in touch!</p>
+<table>
+    <tr>
+        <td>
+            <a href="https://open.spotify.com/artist/5iS72vWRLJkMAcR4HkKJid?si=Lzq_IHjmRBK9QBs_WWZ2Zw" class="social-media" target="_blank">
+                <img src="{{ email.image('@images/spotify.png')}}" alt="Spotify">
+            </a>
+        </td>
+        <td>
+            <a href="https://www.instagram.com/zamua_haleri/" class="social-media" target="_blank">
+                <img src="{{ email.image('@images/instagram.png')}}" alt="Instagram">
+            </a>
+        </td>
+        <td>
+            <a href="https://www.facebook.com/zamua.haleri/" class="social-media" target="_blank">
+                <img src="{{ email.image('@images/facebook.png')}}" alt="Facebook">
+            </a>
+        </td>
+    </tr>
+</table>
+{% endapply %}
