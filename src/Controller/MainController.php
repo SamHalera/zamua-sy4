@@ -133,13 +133,11 @@ class MainController extends BaseController
                 ->setIsActive(true)
                 ->setIsDone(false)
                 ->setIsSent(false)
-            ;
-
-           
+            ;           
             
             $em->persist($contact);
             $em->flush();
-
+            
             $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
             $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
             

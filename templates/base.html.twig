@@ -13,7 +13,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="title" content="Zamua soul and folk song-writer">
-        <meta name="description" content="Zamua is an italian and burundian song-writer, singer and guitarist based in Paris. His music is a fusion between pop-folk and soul-jazz.">
+        {% if app.request.attributes.get('_route') == 'app_shows' %}
+            <meta name="description" content="Zamua's upcoming concerts. Zamua is an italian and burundian song-writer, singer and guitarist based in Paris. His music is a fusion between pop-folk and soul-jazz.">
+        {% else %}
+            <meta name="description" content="Zamua is an italian and burundian song-writer, singer and guitarist based in Paris. His music is a fusion between pop-folk and soul-jazz.">
+        {% endif %}
+        
         <meta name="keywords" content="Soul, jazz, folk, black  music">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% block opengraph %}
@@ -23,7 +28,7 @@
         <meta property="og:title"         content="Zamua - soul and folk song-writer" />
         <meta property="og:description"   content="Zamua is an italian and burundian song-writer, singer and guitarist based in Paris. His music is a fusion between pop-folk and soul-jazz." />
         {% if app.request.attributes.get('_route') == 'app_shows' %}
-            <meta property="og:image"         content="https://zamuamusic.com/images/zamua-vayulive2.jpg" />
+            <meta property="og:image"         content="https://zamuamusic.com/images/gdt.jpg" />
         
         {% else %}
             <meta property="og:image"         content="https://zamuamusic.com/images/bg-contacts.jpg" />    

@@ -1,5 +1,7 @@
 {% apply inline_css(source('@css/email.css')) %}
-<img src="{{ email.image('@images/logo.png') }}" alt="Logo">
+<a href="https://zamuamusic.com" target="_blank">
+    <img src="{{ email.image('@images/logo.png') }}" alt="Logo">
+</a>
 <h1>Hi {{ userName }}!</h1>
 <p>
     Thank you for contacting me!

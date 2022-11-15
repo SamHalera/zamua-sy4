@@ -5,7 +5,7 @@ body{
     background-color: black;
     color: #FFBC20;
     font-size: 1.6rem;
-    padding: 4rem;
+    padding: 4rem 2rem;
 }
 p,
 h1{
@@ -18,11 +18,12 @@ img{
 }
 a.social-media img{
     width: 3.5rem;
-    margin: 1rem;
+    margin: 0.8rem;
 }
 h1{
     font-size: 2rem;
 }
 a{
     text-decoration: none;
+    font-size: 1.3rem;
 }
