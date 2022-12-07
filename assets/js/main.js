@@ -13,6 +13,7 @@ let menuElement = document.querySelector('.menu');
 let activeBlock = document.querySelector('.active-block');
 
 
+
 function scrollerFadeIn(scrollElt){
     return setTimeout(function(){
         
@@ -30,32 +31,10 @@ menuElement.classList.add('fade-in');
 activeBlock.style.opacity = '1';
 activeBlock.style.left = '-6px';
 
-// window.addEventListener("load", function () {
 
-//     logoContainer.style.display = "block";
-//     loaderWrapperImg.style.display = "none";
-//     loaderWrapper.style.height = "0vh";
-    
-//     title.style.opacity = '1'; 
-//         menuElement.classList.add('fade-in');
-//         activeBlock.style.opacity = '1';
-//         activeBlock.style.left = '-6px';
+window.addEventListener("wheel", function () {
 
-//     setTimeout(function(){
-       
-//         if(document.querySelector('.line-scroll')){
-//             let scroller = document.querySelector('.line-scroll');
-//             scrollerFadeIn(scroller);
-//         }
-//         title.style.opacity = '1'; 
-//         menuElement.classList.add('fade-in');
-//         activeBlock.style.opacity = '1';
-//         activeBlock.style.left = '-6px';
-        
-//     }, 0);
-// });
 
-window.addEventListener("scroll", function () {
 
     if (this.scrollY >= 300) {
         headerElement.style.backgroundColor = "rgb(0 0 0 / 89%)";
@@ -67,6 +46,8 @@ window.addEventListener("scroll", function () {
         scroolToTopElement.style.display = "none";
         headerElement.style.backgroundColor = "rgb(0 0 0 / 70%)";
     }
+
+
 });
 
 let navPanelElement = document.getElementById('main-panel');
