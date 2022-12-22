@@ -48,6 +48,7 @@ class MainController extends BaseController
      */
     public function index(Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator, MailGenerator $mailGenerator): Response
     {
+        dd($request->request->get());
 
         //Contact form
         $contact = new Contact();

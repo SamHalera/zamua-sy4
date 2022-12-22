@@ -475,6 +475,7 @@ footer{
     margin-bottom: 0rem;
 }
 .bg-home .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -492,6 +493,23 @@ footer{
     color: #000;
 }
 
+.ep-presentation{
+    position: absolute;
+    left: 16rem;
+    bottom: 9rem;
+}
+.ep-presentation img{
+    
+    max-width: 100%;
+}
+.wrapper-stream-platforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-stream-platforms img{
+    margin: 2rem 1rem;
+}
     /*
     ON LOAD HOMEPAGE
     */
@@ -2720,6 +2738,7 @@ form textarea:focus{
     .bg-home .block-text{
         margin-right: 4rem;
         width: initial;
+        width: 60%;
     }
     .bg-main.bg-home .container .block-text h1{
         font-size: 8rem;
