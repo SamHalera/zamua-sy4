@@ -168,10 +168,10 @@ Il suo mini-album d’esordio offre un’immersione musicale atipica tra euforie
         G.Demontis al basso, M.Barubiriza, M. Carroni, P.Musina ai cori, AbuMar alle Percussioni, Mastrone alla voce e Zamua alla chitarra e voce), a Nuoro, tra cantine e garage, 
         <strong>in un contesto di fermento artistico e creativo che vedeva il formarsi di diversi gruppi e realtà musicali reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad…). Tutte realtà underground che crescevano comunicando tra loro, alimentandosi e stimolandosi a vicenda.</strong> In questo periodo nasce il soprannome Zamua.]]></target>
       </trans-unit>
-      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; &#10;                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.">
+      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt;">
         <source>&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; 
-                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.</source>
-        <target><![CDATA[<strong>La musica entra a far parte della sua vita quasi come una necessità, il bisogno di costruire un ponte tra le sue diverse radici.</strong> Sempre alla ricerca di sé, Zamua parte in viaggio in compagnia della sua chitarra e della sua voce.]]></target>
+                    </source>
+        <target><![CDATA[<strong>La musica entra a far parte della sua vita quasi come una necessità, il bisogno di costruire un ponte tra le sue diverse radici.</strong>]]></target>
       </trans-unit>
       <trans-unit id="4a94GkH" resname="A unique combination &lt;br&gt;of folk and soul-jazz">
         <source>A unique combination &lt;br&gt;of folk and soul-jazz</source>
@@ -192,9 +192,9 @@ Il nome stesso del progetto, Metisse, spiega e anticipa <strong>l’importanza c
          (A.Capasso alle tastiere, programming e voce, D.Sorrentino al basso, C.D’Avino alla batteria, R.Crispino alle percussioni e Zamua alla chitarra e voce). 
          <strong>Un progetto d’impronta afro-jazz, la cui vera ragione d'essere è la fusione di generi.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="ORGLSt." resname="Zamua's passion for experimentation took more and more shape and space within his creative and writing process.">
-        <source>Zamua's passion for experimentation took more and more shape and space within his creative and writing process.</source>
-        <target>La passione per la sperimentazione prende sempre più forma e spazio nel processo creativo e di scrittura di Zamua.</target>
+      <trans-unit id="ORGLSt." resname="Zamua's passion for experimentation plays a central role his creative and writing process.">
+        <source>Zamua's passion for experimentation plays a central role his creative and writing process.</source>
+        <target>La passione per la sperimentazione occupa un ruolo centrale nel processo creativo e di scrittura di Zamua.</target>
       </trans-unit>
       <trans-unit id="OqQdfxG" resname="After an interlude of six months each in both Tanzania and Egypt, in 2006 &#10;                            &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; &#10;                           He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.">
         <source>After an interlude of six months each in both Tanzania and Egypt, in 2006 
@@ -227,9 +227,9 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>The result is music made of mixtures and connections, which led Zamua to meet and collaborate with Raffaele Casarano, Flavio Boltro, and Paolo Fresu, among others from the national and international jazz scene.</source>
         <target>Nasce una musica fatta di commistioni e di aperture che portano Zamua a incontrare e a collaborare con altri artisti della scena jazz nazionale e internazionale come Raffaele Casarano, Flavio Boltro e Paolo Fresu.</target>
       </trans-unit>
-      <trans-unit id="2PMBnp0" resname="OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
-        <source>OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
-        <target>L’etichetta OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling, Chloé Dupeyrat) lo ha accompagnato nella produzione del suo primo EP dal titolo Litanie.</target>
+      <trans-unit id="2PMBnp0" resname="In 2013 OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
+        <source>In 2013 OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
+        <target>Nel 2013, l’etichetta OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling, Chloé Dupeyrat) lo ha accompagnato nella produzione del suo primo EP dal titolo Litanie.</target>
       </trans-unit>
       <trans-unit id="0ckMBDl" resname="A borderline &lt;br&gt;between analogue and electronica">
         <source>A borderline &lt;br&gt;between analogue and electronica</source>
@@ -239,9 +239,9 @@ I suoi testi, senza mai rifarsi apertamente all’autobiografia, raccontano <str
         <source>TICKETS</source>
         <target>TICKETS</target>
       </trans-unit>
-      <trans-unit id="o1q39kT" resname="New show are coming soon. Stay in touch!">
-        <source>New show are coming soon. Stay in touch!</source>
-        <target>Nuovi video in arrivo! Restiamo in contatto</target>
+      <trans-unit id="o1q39kT" resname="New shows are coming soon. Stay in touch!">
+        <source>New shows are coming soon. Stay in touch!</source>
+        <target>Nuovi concerti in arrivo! Teniamoci in contatto</target>
       </trans-unit>
       <trans-unit id="FBOV6zV" resname="Cookies">
         <source>Cookies</source>

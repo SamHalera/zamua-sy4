@@ -14,27 +14,9 @@
             </div>
             <div class="contact-section">
                 <div class="form-container">
-                    
-                    
-                    {# <form action="">
-                        <div class="mb-3">
-                            <label class="mb-1"  for="name">Nome</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div class="mb-3">
-                            <label class="mb-1"  for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="mb-2">
-                            <label class="mb-1"  for="message">Messaggio</label>
-                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                        </div>
-                        <div class="">
-                            <a href="" class="btn-custom font-weight">INVIA</a>
-                        </div>
-                    </form> #}
+                
 
-                   {% if app.request.locale == 'fr' %}
+                   {# {% if app.request.locale == 'fr' %}
                         {% set name = 'Nom' %}
                         {% set messageContent = 'Message' %}
                     {% elseif app.request.locale == 'en' %}
@@ -81,14 +63,26 @@
                             <button type="submit" class="btn-custom font-weight">{% trans %} SEND {% endtrans %}</a>
                         </div>
 
-                    {{ form_end(form)}}
+                    {{ form_end(form)}} #}
                     
                     
-                    <div class="infos">
-                        <h2 class="mb-3 white">{% trans %}Booking and Management{% endtrans %} </h2>
-                        <a class="mb-1" href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
+                    <div class="infos align-center mb-2">
+                        <h2 class="mb-2 white">{% trans %}Booking and Management{% endtrans %} </h2>
+                        <a class="mb-1 size-m" href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
                         
                     </div>
+                    <section class="social-media mb-1">
+                        <a href="https://www.facebook.com/zamua.haleri">
+                            <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+                        </a>
+                        <a href="https://www.instagram.com/zamua_haleri/">
+                            <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+                        </a>
+                        
+                        {# <a href="https://www.youtube.com/user/ZamuaMusic">
+                            <ion-icon name="logo-youtube" class="social-icon"></ion-icon>
+                        </a> #}
+                    </section>
                 </div>
             </div>
             

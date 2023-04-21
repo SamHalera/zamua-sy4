@@ -15,7 +15,9 @@
 .uppercase{
     text-transform: uppercase;
 }
-
+.size-m{
+    font-size: 3rem;
+}
 .size-l{
     font-size: 5rem;
 }
@@ -37,6 +39,9 @@
     bottom: 12rem;
     right: 3rem;
     z-index: 24;
+}
+.main-color{
+    color: var(--color-primary);
 }
 .btn{
     padding: 2rem 5rem 2rem 1rem;

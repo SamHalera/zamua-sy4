@@ -181,11 +181,11 @@
           Le surnom de Zamua est né à cette époque.
         </target>
       </trans-unit>
-      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; &#10;                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.">
+      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt;">
         <source>&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; 
-                    Zamua, always driven by a deep and intimate search, embarks on a trip with his guitar and his voice.</source>
+                   </source>
         <target>La musique entre dans sa vie presque comme une nécessité, le besoin de construire un pont entre ses différentes racines. 
-          Toujours en quête, Zamua part en voyage en compagnie de sa guitare et de sa voix.</target>
+          </target>
       </trans-unit>
       <trans-unit id="4a94GkH" resname="A unique combination &lt;br&gt;of folk and soul-jazz">
         <source>A unique combination &lt;br&gt;of folk and soul-jazz</source>
@@ -206,9 +206,9 @@
         <target><![CDATA[En 2003, Zamua commence à travailler sur un nouveau projet cofondé avec le clavier et producteur Alessandro Capasso (Collettivo Cerchi e Xhu) : ElephantAndCastle (A. Capasso aux claviers, à la programmation D. Sorrentino à la basse, C. D'Avino à la batterie, R. Crispino aux percussions et Zamua à la guitare et au chant).
           <strong>Un projet afro-jazz dont la véritable raison d'être est la fusion des genres.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="ORGLSt." resname="Zamua's passion for experimentation took more and more shape and space within his creative and writing process.">
-        <source>Zamua's passion for experimentation took more and more shape and space within his creative and writing process.</source>
-        <target>Le goût de Zamua pour l'expérimentation prend de plus en plus forme et d'espace dans son processus de création et d'écriture.</target>
+      <trans-unit id="ORGLSt." resname="Zamua's passion for experimentation plays a central role his creative and writing process.">
+        <source>Zamua's passion for experimentation plays a central role his creative and writing process.</source>
+        <target>La passion de l'expérimentation joue un rôle central dans le processus de création et d'écriture de Zamua.</target>
       </trans-unit>
       <trans-unit id="OqQdfxG" resname="After an interlude of six months each in both Tanzania and Egypt, in 2006 &#10;                            &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; &#10;                           He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.">
         <source>After an interlude of six months each in both Tanzania and Egypt, in 2006 
@@ -245,9 +245,9 @@
         <target>Il en résulte une musique faite de mélanges et d'ouvertures qui conduisent Zamua à rencontrer et à collaborer 
           avec d'autres artistes de la scène jazz nationale et internationale tels que Raffaele Casarano, Flavio Boltro et Paolo Fresu.</target>
       </trans-unit>
-      <trans-unit id="2PMBnp0" resname="OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
-        <source>OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
-        <target>Le label OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling et Chloé Dupeyrat) l'a accompagné dans la production de son premier EP intitulé Litanie.</target>
+      <trans-unit id="2PMBnp0" resname="In 2013 OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
+        <source>In 2013 OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
+        <target>En 2013, le label OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling et Chloé Dupeyrat) l'a accompagné dans la production de son premier EP intitulé Litanie.</target>
       </trans-unit>
       <trans-unit id="0ckMBDl" resname="A borderline &lt;br&gt;between analogue and electronica">
         <source>A borderline &lt;br&gt;between analogue and electronica</source>
@@ -257,8 +257,8 @@
         <source>TICKETS</source>
         <target>TICKETS</target>
       </trans-unit>
-      <trans-unit id="o1q39kT" resname="New show are coming soon. Stay in touch!">
-        <source>New show are coming soon. Stay in touch!</source>
+      <trans-unit id="o1q39kT" resname="New shows are coming soon. Stay in touch!">
+        <source>New shows are coming soon. Stay in touch!</source>
         <target>Des nouveaux concerts seront publiés prochainement. Restons en contact !</target>
       </trans-unit>
       <trans-unit id="FBOV6zV" resname="Cookies">
