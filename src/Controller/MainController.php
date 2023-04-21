@@ -46,41 +46,41 @@ class MainController extends BaseController
      *          "en": "/"
      *      }, name="app_home")
      */
-    public function index(Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator, MailGenerator $mailGenerator): Response
+    public function index(): Response
     {
         //dd($request->request->get());
 
         //Contact form
-        $contact = new Contact();
-        $form = $this->createForm(ContactFormType::class, $contact);
+        // $contact = new Contact();
+        // $form = $this->createForm(ContactFormType::class, $contact);
 
-        $form->handleRequest($request);
+        // $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()){
+        // if($form->isSubmitted() && $form->isValid()){
 
-            $contact = $form->getData();
-            $contact
-                ->setIsActive(true)
-                ->setIsDone(false)
-                ->setIsSent(false)
-            ;
+        //     $contact = $form->getData();
+        //     $contact
+        //         ->setIsActive(true)
+        //         ->setIsDone(false)
+        //         ->setIsSent(false)
+        //     ;
             
-            $em->persist($contact);
-            $em->flush();
+        //     $em->persist($contact);
+        //     $em->flush();
 
-            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
-            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
+        //     $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
+        //     $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
             
 
 
-            $this->addFlash('successMessage', $translator->trans('message.send.success'));
+        //     $this->addFlash('successMessage', $translator->trans('message.send.success'));
             
-            return $this->redirectToRoute('app_home', ['_fragment' => 'contact-frame']);
-        }
+        //     return $this->redirectToRoute('app_home', ['_fragment' => 'contact-frame']);
+        // }
         return $this->render('main/homepage.html.twig', [
             'activeName' => 'Home',
             // 'projects' => $projects,
-            'form' => $form->createView()
+            //'form' => $form->createView()
         ]);
     }
 
@@ -119,37 +119,37 @@ class MainController extends BaseController
      *          "en": "/contact"
      *      }, name="app_contact")
      */
-    public function contact(Request $request, EntityManagerInterface $em, TranslationTranslatorInterface $translator, MailGenerator $mailGenerator): Response
+    public function contact(TranslationTranslatorInterface $translator): Response
     {
 
-        $contact = new Contact();
-        $form = $this->createForm(ContactFormType::class, $contact);
+        // $contact = new Contact();
+        // $form = $this->createForm(ContactFormType::class, $contact);
 
-        $form->handleRequest($request);
+        // $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()){
+        // if($form->isSubmitted() && $form->isValid()){
 
-            $contact = $form->getData();
-            $contact
-                ->setIsActive(true)
-                ->setIsDone(false)
-                ->setIsSent(false)
-            ;           
+        //     $contact = $form->getData();
+        //     $contact
+        //         ->setIsActive(true)
+        //         ->setIsDone(false)
+        //         ->setIsSent(false)
+        //     ;           
             
-            $em->persist($contact);
-            $em->flush();
+        //     $em->persist($contact);
+        //     $em->flush();
             
-            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
-            $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
+        //     $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/thankyou.html.twig',false);
+        //     $mailGenerator->sendMail($contact->getSenderName(), $contact->getSenderEmail(), $contact->getContent(), 'emails/message.html.twig',true);
             
-            $this->addFlash('successMessage', $translator->trans('message.send.success'));
+        //     $this->addFlash('successMessage', $translator->trans('message.send.success'));
 
-            return $this->redirectToRoute('app_contact');
+        //     return $this->redirectToRoute('app_contact');
 
-        }
+        // }
         return $this->render('main/contact.html.twig', [
             'activeName' => $translator->trans('active.name.contact'),
-            'form' => $form->createView()
+            //'form' => $form->createView()
         ]);
     }
     

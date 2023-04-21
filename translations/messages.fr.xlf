@@ -504,29 +504,23 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
             Users' prior consent is not required for the installation and use of technical cookies, 
             as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
             the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website.</source>
-        <target>__The cookies used are "technical cookies", i.e. they are strictly necessary for the operation of this site. 
-            Users' prior consent is not required for the installation and use of technical cookies, 
-            as the data managed by the session or navigation cookies are used for the sole purpose of checking and guaranteeing 
-            the correct functioning of the service offered or to obtain anonymous statistical information on the use of the website.</target>
+        <target>Les cookies utilisés sont des "cookies techniques", c'est-à-dire qu'ils sont strictement nécessaires au fonctionnement de ce site. Le consentement préalable de l'utilisateur n'est pas requis pour l'installation et l'utilisation des cookies techniques, les données gérées par les cookies de session ou de navigation étant utilisées dans le seul but de vérifier et de garantir le bon fonctionnement du service offert ou d'obtenir des informations statistiques anonymes sur l'utilisation du site.</target>
       </trans-unit>
       <trans-unit id="OCRNhf." resname="The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, &#10;            through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. &#10;            You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).">
         <source>The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
             through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
             You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).</source>
-        <target>__The User can control his or her choices regarding the use of cookies generally through the settings on his or her browser, 
-            through which he or she can decide to make the installation of any type of cookie subject to his or her prior consent or to prevent its installation completely. 
-            You are invited to visit the section on cookie settings provided by your browser (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).</target>
+        <target>L'Utilisateur peut contrôler ses choix concernant l'utilisation des cookies généralement par le biais des paramètres de son navigateur, grâce auxquels il peut décider de soumettre l'installation de tout type de cookie à son consentement préalable ou d'en empêcher complètement l'installation. Nous vous invitons à consulter la rubrique relative au paramétrage des cookies de votre navigateur (Google Chrome, Safari, Mozilla Firefox, Internet Explorer).</target>
       </trans-unit>
       <trans-unit id="gU7uT6B" resname="We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality &#10;                        of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.">
         <source>We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
                         of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.</source>
-        <target>__We consider the protection and respect of your privacy to be of paramount importance. We are therefore committed to respecting the confidentiality 
-                        of your personal data and to ensuring that they are processed ethically and in full compliance with the regulations in force.</target>
+        <target>Nous considérons que la protection et le respect de votre vie privée sont d'une importance capitale. Nous nous engageons donc à respecter la confidentialité de vos données personnelles et à veiller à ce qu'elles soient traitées de manière éthique et dans le respect de la réglementation en vigueur.</target>
       </trans-unit>
       <trans-unit id="H8MxsHb" resname="According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: &#10;                        &lt;a class=&quot;font-weight-bold&quot; mailto=&quot;personal.data@zamuamusic.com&quot;&gt;personal.data@zamuamusic.com&lt;/a&gt;">
         <source>According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
                         &lt;a class="font-weight-bold" mailto="personal.data@zamuamusic.com"&gt;personal.data@zamuamusic.com&lt;/a&gt;</source>
-        <target><![CDATA[__According to current legislation, each user has the right to access, update, rectify, delete and limit the use of their personal data. The user can exercise this right by contacting our service: 
+        <target><![CDATA[Conformément à la législation en vigueur, chaque utilisateur dispose d'un droit d'accès, de mise à jour, de rectification, de suppression et de limitation de l'utilisation de ses données personnelles. L'utilisateur peut exercer ce droit en contactant notre service : 
                         <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>]]></target>
       </trans-unit>
     </body>

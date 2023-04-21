@@ -14,57 +14,6 @@
             </div>
             <div class="contact-section">
                 <div class="form-container">
-                
-
-                   {# {% if app.request.locale == 'fr' %}
-                        {% set name = 'Nom' %}
-                        {% set messageContent = 'Message' %}
-                    {% elseif app.request.locale == 'en' %}
-                        {% set name = 'Name' %}
-                        {% set messageContent = 'Message' %}
-                    {% else %}
-                        {% set name = 'Nome' %}
-                        {% set messageContent = 'Messaggio' %}
-                   {% endif %}
-                   
-
-                    {{ form_start(form)}}
-                     {% for message  in app.flashes('successMessage')%}
-                        <div class="alert alert-success mb-4">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-
-                        <div class="mb-3">
-                            {{ form_errors(form.senderName)}}
-                            {{ form_label(form.senderName, name)}}
-                            {{ form_widget(form.senderName)}}
-                            
-                        </div>
-                          <div class="mb-3">
-                            {{ form_errors(form.senderEmail)}}
-                            {{ form_label(form.senderEmail)}}
-                            {{ form_widget(form.senderEmail)}}
-                            
-
-                        </div>
-                          <div class="mb-3">
-                            {{ form_errors(form.content)}}
-                            {{ form_label(form.content, messageContent)}}
-                            {{ form_widget(form.content, {
-                                'attr' : {
-                                    'rows' : 8
-                                }
-                            } )}}
-                           
-                        </div>
-
-                        <div class="">
-                            <button type="submit" class="btn-custom font-weight">{% trans %} SEND {% endtrans %}</a>
-                        </div>
-
-                    {{ form_end(form)}} #}
-                    
                     
                     <div class="infos align-center mb-2">
                         <h2 class="mb-2 white">{% trans %}Booking and Management{% endtrans %} </h2>
@@ -79,9 +28,6 @@
                             <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
                         </a>
                         
-                        {# <a href="https://www.youtube.com/user/ZamuaMusic">
-                            <ion-icon name="logo-youtube" class="social-icon"></ion-icon>
-                        </a> #}
                     </section>
                 </div>
             </div>

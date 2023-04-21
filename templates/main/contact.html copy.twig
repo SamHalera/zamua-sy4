@@ -1,0 +1,99 @@
+{% extends "base.html.twig" %}
+{% block title %}
+
+{% trans %}CONTACT{% endtrans %}
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="bg-main bg-main-contact">
+        <div class="container overlay">
+            <div class="block-title">
+                <h1>{% trans %}CONTACT{% endtrans %}</h1>
+            </div>
+            <div class="contact-section">
+                <div class="form-container">
+                
+
+                   {# {% if app.request.locale == 'fr' %}
+                        {% set name = 'Nom' %}
+                        {% set messageContent = 'Message' %}
+                    {% elseif app.request.locale == 'en' %}
+                        {% set name = 'Name' %}
+                        {% set messageContent = 'Message' %}
+                    {% else %}
+                        {% set name = 'Nome' %}
+                        {% set messageContent = 'Messaggio' %}
+                   {% endif %}
+                   
+
+                    {{ form_start(form)}}
+                     {% for message  in app.flashes('successMessage')%}
+                        <div class="alert alert-success mb-4">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+
+                        <div class="mb-3">
+                            {{ form_errors(form.senderName)}}
+                            {{ form_label(form.senderName, name)}}
+                            {{ form_widget(form.senderName)}}
+                            
+                        </div>
+                          <div class="mb-3">
+                            {{ form_errors(form.senderEmail)}}
+                            {{ form_label(form.senderEmail)}}
+                            {{ form_widget(form.senderEmail)}}
+                            
+
+                        </div>
+                          <div class="mb-3">
+                            {{ form_errors(form.content)}}
+                            {{ form_label(form.content, messageContent)}}
+                            {{ form_widget(form.content, {
+                                'attr' : {
+                                    'rows' : 8
+                                }
+                            } )}}
+                           
+                        </div>
+
+                        <div class="">
+                            <button type="submit" class="btn-custom font-weight">{% trans %} SEND {% endtrans %}</a>
+                        </div>
+
+                    {{ form_end(form)}} #}
+                    
+                    
+                    <div class="infos align-center mb-2">
+                        <h2 class="mb-2 white">{% trans %}Booking and Management{% endtrans %} </h2>
+                        <a class="mb-1 size-m" href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
+                        
+                    </div>
+                    <section class="social-media mb-1">
+                        <a href="https://www.facebook.com/zamua.haleri">
+                            <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+                        </a>
+                        <a href="https://www.instagram.com/zamua_haleri/">
+                            <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+                        </a>
+                        
+                        {# <a href="https://www.youtube.com/user/ZamuaMusic">
+                            <ion-icon name="logo-youtube" class="social-icon"></ion-icon>
+                        </a> #}
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+{%  endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent()}}
+   <script src="{{ asset('js/contact.js')}}"></script>
+
+{% endblock %}

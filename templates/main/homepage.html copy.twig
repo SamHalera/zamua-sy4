@@ -160,7 +160,68 @@
     </div>
     
 
-    
+    {# <div class="section-contact-home" id="contact-frame">
+        <div class="container overlay">
+            <div class="main-form-container">
+                <div class="contact-container">
+                    <h2 class="mb-3 white">{% trans %} CONTACT {% endtrans %}</h2>
+                    
+                    {% if app.request.locale == 'fr' %}
+                        {% set name = 'Nom' %}
+                        {% set messageContent = 'Message' %}
+                    {% elseif app.request.locale == 'en' %}
+                        {% set name = 'Name' %}
+                        {% set messageContent = 'Message' %}
+                    {% else %}
+                        {% set name = 'Nome' %}
+                        {% set messageContent = 'Messaggio' %}
+                   {% endif %}
+                    
+                    {{ form_start(form)}}
+                        {% for message  in app.flashes('successMessage')%}
+                        <div class="alert alert-success mb-4">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+
+                        <div class="mb-3">
+                            {{ form_errors(form.senderName)}}
+                            {{ form_label(form.senderName, name)}}
+                            {{ form_widget(form.senderName)}}
+                            
+                        </div>
+                          <div class="mb-3">
+                            {{ form_errors(form.senderEmail)}}
+                            {{ form_label(form.senderEmail)}}
+                            {{ form_widget(form.senderEmail)}}
+                            
+
+                        </div>
+                          <div class="mb-3">
+                            {{ form_errors(form.content)}}
+                            {{ form_label(form.content, messageContent)}}
+                            {{ form_widget(form.content)}}
+                           
+                        </div>
+
+                        <div class="">
+                            <button type="submit" class="btn-custom font-weight">{% trans %} SEND {% endtrans %}</a>
+                        </div>
+
+                    {{ form_end(form)}}
+                   
+                </div>
+                
+                <div class="infos">
+                    <h3 class="mb-3 white">{% trans %} Booking and Management {% endtrans %}</h3>
+                    <a href="mailto:contact@zamuamusic.com">contact@zamuamusic.com</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div> #}
     
 
 {% endblock %}
