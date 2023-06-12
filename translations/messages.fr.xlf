@@ -149,19 +149,19 @@
         <source>&lt;strong&gt;Zamua is a guitarist, singer, and songwriter. He was born in Sardinia to a Sardinian mother and a Burundian father.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>Zamua est un chanteur, guitariste et auteur-compositeur né en Sardaigne de mère sarde et de père burundais.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="sh2qKD3" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    Since then Zamua has devoted himself to music and writing, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. &#10;                     A hybrid outcome in which words'power are crucial.&lt;/strong&gt;">
+      <trans-unit id="sh2qKD3" resname="His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. &#10;                    Since then Zamua has devoted himself to music and writing, establishing &#10;                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz that crosses over between analog and electronic music. &#10;                     The hybrid outcome is one in which the power of words is crucial.&lt;/strong&gt;">
         <source>His interest in singing and playing the guitar began almost by chance, during a long period of convalescence that saw him bedridden. 
                     Since then Zamua has devoted himself to music and writing, establishing 
-                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz, crossing over between analog and electronic music. 
-                     A hybrid outcome in which words'power are crucial.&lt;/strong&gt;</source>
+                     &lt;strong&gt;a unique and thrilling combination of folk and soul-jazz that crosses over between analog and electronic music. 
+                     The hybrid outcome is one in which the power of words is crucial.&lt;/strong&gt;</source>
         <target><![CDATA[Il s'est rapproché du chant et de la guitare presque par hasard, à l'adolescence, 
                 pendant une longue période de convalescence qui l'a vu cloué au lit. 
                 Depuis lors, Zamua se consacre à la musique et à l'écriture, développant <strong>un mélange personnel et passionnant de folk et de soul-jazz, 
                 à la frontière entre analogique et électronique. Un résultat métissé dans lequel la narration et le pouvoir des mots sont essentiels.</strong>
         ]]></target>
       </trans-unit>
-      <trans-unit id="m60LQQc" resname="A continuous exploration of his various musical styles, including soul, blues, folk, jazz, and reggae.">
-        <source>A continuous exploration of his various musical styles, including soul, blues, folk, jazz, and reggae.</source>
+      <trans-unit id="m60LQQc" resname="His music continuously explores various musical styles, including soul, blues, folk, jazz, and reggae.">
+        <source>His music continuously explores various musical styles, including soul, blues, folk, jazz, and reggae.</source>
         <target>Une exploration permanente de ses différentes identités musicales, entre soul, blues, folk, jazz et vibrations reggae.</target>
       </trans-unit>
       <trans-unit id="50vmEOm" resname="He formed &lt;strong&gt;his first band in 1996, in his hometown Nuoro, Canta'nde Reggae&lt;/strong&gt; with friends Mastrone &#10;                   (S. Piras) on vocal and F. Ortu on drums, M.Masala on keyboards, L.Devito on transverse flute, G.Demontis on bass, M.Barubiriza, &#10;                   M. Carroni and P. Musina on backing vocals, AbuMar on percussion. Zamua himself played guitar and vocals. &#10;                   Canta'nde Reggae lived between cellars and garages, &lt;strong&gt;in a context of artistic and creative ferment that gave birth to various &#10;                   groups and musical realities reggae, jazz, rock, punk, ska, rap (Vok Rebelde, Seditio Plebeia, SMP, Menarka, Cosca Smeralda Quartet, Reggae Realidad ...).&lt;/strong&gt; &#10;                   All were underground realities which expanded through communication, feeding, and stimulating one another. During this time, the nickname Zamua was derived.">
@@ -181,8 +181,8 @@
           Le surnom de Zamua est né à cette époque.
         </target>
       </trans-unit>
-      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Music became part of his life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; 
+      <trans-unit id="QBBZntf" resname="&lt;strong&gt;Music became a part of Zamua's life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Music became a part of Zamua's life almost as a necessity, enabling him to build a bridge between his different roots.&lt;/strong&gt; 
                    </source>
         <target>La musique entre dans sa vie presque comme une nécessité, le besoin de construire un pont entre ses différentes racines. 
           </target>
@@ -206,8 +206,8 @@
         <target><![CDATA[En 2003, Zamua commence à travailler sur un nouveau projet cofondé avec le clavier et producteur Alessandro Capasso (Collettivo Cerchi e Xhu) : ElephantAndCastle (A. Capasso aux claviers, à la programmation D. Sorrentino à la basse, C. D'Avino à la batterie, R. Crispino aux percussions et Zamua à la guitare et au chant).
           <strong>Un projet afro-jazz dont la véritable raison d'être est la fusion des genres.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="ORGLSt." resname="Zamua's passion for experimentation plays a central role his creative and writing process.">
-        <source>Zamua's passion for experimentation plays a central role his creative and writing process.</source>
+      <trans-unit id="ORGLSt." resname="His passion for experimentation plays a central role in his creative and writing process.">
+        <source>His passion for experimentation plays a central role in his creative and writing process.</source>
         <target>La passion de l'expérimentation joue un rôle central dans le processus de création et d'écriture de Zamua.</target>
       </trans-unit>
       <trans-unit id="OqQdfxG" resname="After an interlude of six months each in both Tanzania and Egypt, in 2006 &#10;                            &lt;strong&gt;Zamua relocated to Paris, France where he pursued his studies in Sociology of Migration&lt;/strong&gt; &#10;                           He became interested in international laws related to foreign rights and asylum protection, therefore he began working with organizations that assist asylum seekers in navigating the complex legal and bureaucratic procedures required to obtain refugee status.">
@@ -232,8 +232,8 @@
           <strong>Pendant cette période, la rencontre et la collaboration artistique avec le label OD MusicLab, fondé par l'artiste et producteur Shay Mané, 
           l'ingénieur du son Fabrice Ho-Shui-Ling et la photographe/directrice artistique Chloé Dupeyrat (Acidulée Production), ont été significatives dans son parcours.</strong>]]></target>
       </trans-unit>
-      <trans-unit id="mqEGNNU" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;&#10;                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music being a source of inspiration, and an essential matter for his work and inner reflection.&lt;br&gt;
+      <trans-unit id="mqEGNNU" resname="&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music, a source of inspiration and essential matter for his work and inner reflection.&lt;br&gt;&#10;                            The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. &#10;                            Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Identity, migration, racism, the physical and spiritual journey&lt;/strong&gt;  are central topics in his music, a source of inspiration and essential matter for his work and inner reflection.&lt;br&gt;
                             The distancing from what is stable and firm, the idea of a sacred journey envelops most of his songs. 
                             Without ever stating it explicitly, his songs reveal  &lt;strong&gt;a complex tale about how people relate to one another and how events impact their emotions and experiences.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>L'identité, la migration, le racisme, le voyage physique et spirituel</strong>  sont des thèmes qui trouvent un large espace dans sa musique, 
@@ -245,8 +245,8 @@
         <target>Il en résulte une musique faite de mélanges et d'ouvertures qui conduisent Zamua à rencontrer et à collaborer 
           avec d'autres artistes de la scène jazz nationale et internationale tels que Raffaele Casarano, Flavio Boltro et Paolo Fresu.</target>
       </trans-unit>
-      <trans-unit id="2PMBnp0" resname="In 2013 OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.">
-        <source>In 2013 OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling and Chloé Dupeyrat), assisted him in creating his debut EP, Litanie.</source>
+      <trans-unit id="2PMBnp0" resname="In 2013, Zamua collaborated with OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling, and Chloé Dupeyrat) to create his debut EP, LITANIE.">
+        <source>In 2013, Zamua collaborated with OD MusicLab record label (Shay Mané, Fabrice Ho-Shui-Ling, and Chloé Dupeyrat) to create his debut EP, LITANIE.</source>
         <target>En 2013, le label OD MusicLab (Shay Mané, Fabrice Ho-Shui-Ling et Chloé Dupeyrat) l'a accompagné dans la production de son premier EP intitulé Litanie.</target>
       </trans-unit>
       <trans-unit id="0ckMBDl" resname="A borderline &lt;br&gt;between analogue and electronica">
@@ -364,18 +364,18 @@
           de suppression et de limitation de l'utilisation de ses données personnelles. 
           L'utilisateur peut exercer ce droit en s'adressant à notre service : <a class="font-weight-bold" mailto="personal.data@zamuamusic.com">personal.data@zamuamusic.com</a>]]></target>
       </trans-unit>
-      <trans-unit id="1ISG1.R" resname="Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.&#10;                    &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt;&#10;                    the beginning and end of a cyclical path toward self-determination.&#10;                    It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality.">
-        <source>Music comes from a sense of urgency, from a need to share one's voice, soul, and presence.
+      <trans-unit id="1ISG1.R" resname="Music emanates from a profound sense of urgency, a compelling need to share one's voice, soul, and presence.&#10;                    &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt;&#10;                    the beginning and end of a cyclical path toward self-determination.&#10;                    It serves as a powerful medium to touch people's emotions, depicting images, ideas, and concepts, while imbuing meaning into our perception of reality.">
+        <source>Music emanates from a profound sense of urgency, a compelling need to share one's voice, soul, and presence.
                     &lt;strong&gt;A means of learning to think critically about what we see and do in the environment in which we live; &lt;/strong&gt;
                     the beginning and end of a cyclical path toward self-determination.
-                    It is a means of reaching people's emotions, conveying a picture, an idea, or a concept, and giving meaning to the perception of reality.</source>
+                    It serves as a powerful medium to touch people's emotions, depicting images, ideas, and concepts, while imbuing meaning into our perception of reality.</source>
         <target><![CDATA[La musique vient d’une urgence et d’un besoin pressant de partager sa propre voix,  son âme, sa propre présence.
                     <strong>Un outil pour développer un sens et un regard critique sur notre expérience dans la société dans laquelle nous vivons ; </strong> 
                     c'est le début et la fin d'un cycle, un chemin vers l'autodétermination.
 C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée, un concept, de donner un sens à la perception de la réalité.]]></target>
       </trans-unit>
-      <trans-unit id="Uul3Hpj" resname="&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;">
-        <source>&lt;strong&gt;Music builds bridges between the inner and outer worlds. It allows us to put into a delicate shape the inexplicable inner secrets that occasionally manage to escape via the melodies and rhythm.&lt;/strong&gt;</source>
+      <trans-unit id="Uul3Hpj" resname="&lt;strong&gt;Music acts as a bridge, connecting the inner realms of our being with the external world. It delicately molds the enigmatic secrets that sometimes elude expression, giving them form through melodies and rhythms.&lt;/strong&gt;">
+        <source>&lt;strong&gt;Music acts as a bridge, connecting the inner realms of our being with the external world. It delicately molds the enigmatic secrets that sometimes elude expression, giving them form through melodies and rhythms.&lt;/strong&gt;</source>
         <target><![CDATA[<strong>La musique crée un pont entre le monde intérieur et le monde extérieur. Elle nous permet de traduire sous une forme sensible les secrets de l'âme, des secrets que nous-mêmes ne pouvons expliquer mais qui parviennent parfois à s'échapper à travers les notes.</strong>]]></target>
       </trans-unit>
       <trans-unit id="gW4uRu4" resname="&lt;em&gt;&quot;When it comes to music, I go into a tizzy. It's something I've done since I was a youngster.&#10;                    Through music, and particularly through singing, I can &lt;strong&gt;investigate and reflect on topics that are important to me such as identity&lt;/strong&gt;, or rather our identities, which are fluid, changing, and never the same, in a way that dismantles any concept of a real or imagined line between &quot;us&quot; and &quot;them.&lt;/em&gt;">
@@ -453,8 +453,8 @@ C'est un moyen de toucher le cœur des gens, de communiquer une image, une idée
         <source>Let find out more!</source>
         <target>Nous allons en savoir plus !</target>
       </trans-unit>
-      <trans-unit id="LGMbrqF" resname="Currently, Zamua lives between France and Italy and he is working on his first album.">
-        <source>Currently, Zamua lives between France and Italy and he is working on his first album.</source>
+      <trans-unit id="LGMbrqF" resname="Currently, Zamua resides between France and Italy while working on the creation of his first album.">
+        <source>Currently, Zamua resides between France and Italy while working on the creation of his first album.</source>
         <target>Actuellement, Zamua vit entre la France et l’Italie et écrit son premier album.</target>
       </trans-unit>
       <trans-unit id=".X7SqKZ" resname="PLAY-THE-TAPE">
