@@ -129,7 +129,32 @@
             {% trans %} MUSIC {% endtrans %}
         </a>
     </div>
-
+    {% if showList|length > 0 %}
+    
+   
+        <div class="section-shows-home">
+            <div class="container overlay">
+                <div class="shows-wrapper">
+                    <h2 class="uppercase">Shows</h2>
+                    <div class="list-shows-container">
+                        {% for show in showList %}
+                            <div class="mb-1 show-item-home">
+                                <span class="mr-1">{{show.date|date("d/m/Y")}}</span>
+                                <span class="">{{show.venue}}</span>
+                                <span class="mr-1">({{show.location}})</span> 
+                                <span class="mr-1">{{show.name}}</span>
+                            </div>
+                            
+                            
+                        {% endfor %}
+                    </div>
+                    <a href="{{path('app_shows')}}" class="btn-custom">{% trans %} SHOWS {% endtrans %}</a>
+                </div>
+            </div>
+        
+        </div>
+     {% endif %}
+{# 
     <div class="section-play-the-tape">
         <h2>PLAY-THE-TAPE</h2>
         <h3>Check out Zamua's playlists!</h3>
@@ -137,7 +162,7 @@
         
         <a href="{{path('app_playlists')}}" class="btn-custom mx-auto mt-3">PLAY-THE-TAPE</a>
     </div>
-
+ #}
 
     <div class="four-section-projects">
         <div class="container overlay">

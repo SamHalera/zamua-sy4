@@ -720,6 +720,47 @@ footer {
   margin: 4rem;
   width: 20rem;
 }
+
+/*SECTION SHOWS*/
+
+.section-shows-home {
+  background: url(/public/images/bg-guit.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position-x: -19rem;
+  background-color: #000;
+  height: auto;
+}
+.section-shows-home .overlay {
+  background: rgb(0 0 0 / 80%);
+  padding: 5rem 0;
+}
+.section-shows-home .container {
+  justify-content: center;
+}
+.shows-wrapper {
+  margin: 2rem;
+}
+
+.shows-wrapper h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--color-primary);
+  margin-bottom: 4rem;
+}
+.shows-wrapper .btn-custom {
+  margin: 0 auto;
+}
+.list-shows-container {
+  font-size: 1.8rem;
+  color: wheat;
+  margin-bottom: 10rem;
+}
+.list-shows-container .show-item-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*SECTION PROJECTS*/
 .image-project {
   width: 35rem;
@@ -2314,6 +2355,27 @@ form textarea:focus {
     padding: 2rem 10rem;
   }
 
+  .section-shows-home {
+    background-attachment: fixed;
+  }
+  .section-shows-home .container {
+    justify-content: end;
+  }
+  .shows-wrapper {
+    margin: 4rem;
+  }
+  .shows-wrapper h2 {
+    text-align: inherit;
+  }
+  .shows-wrapper .btn-custom {
+    margin: inherit;
+  }
+  .list-shows-container .show-item-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
   .four-section-projects h2 {
     font-size: 8rem;
   }

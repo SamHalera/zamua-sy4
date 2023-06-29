@@ -46,7 +46,7 @@ class MainController extends BaseController
      *          "en": "/"
      *      }, name="app_home")
      */
-    public function index(): Response
+    public function index(ShowRepository $showRepository): Response
     {
         //dd($request->request->get());
 
@@ -77,8 +77,18 @@ class MainController extends BaseController
             
         //     return $this->redirectToRoute('app_home', ['_fragment' => 'contact-frame']);
         // }
+
+        $showList = $showRepository->findBy(
+            [
+                'isPassed' => false,
+                'isCancelled' => false
+            ],
+            [],
+            5
+        );
         return $this->render('main/homepage.html.twig', [
             'activeName' => 'Home',
+            'showList' => $showList
             // 'projects' => $projects,
             //'form' => $form->createView()
         ]);
@@ -238,8 +248,8 @@ class MainController extends BaseController
     {
         $shows = $showRepository->findBy(
             [
-                'isPassed' => true,
-                'isCancelled' => true
+                'isPassed' => false,
+                'isCancelled' => false
             ]
         );
         return $this->render('main/shows.html.twig', [
@@ -403,7 +413,7 @@ class MainController extends BaseController
     public function encodePass(UserPasswordEncoderInterface $passwordEncoderInterface)
     {
         $user = new User();
-        $pass = 'Mwaramutse!$';
+        $pass = 'xxx';
         $hashed = $passwordEncoderInterface->encodePassword($user, $pass );
         dd($hashed);
 
