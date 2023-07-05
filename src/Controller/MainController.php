@@ -83,7 +83,9 @@ class MainController extends BaseController
                 'isPassed' => false,
                 'isCancelled' => false
             ],
-            [],
+            [
+                'date' => 'ASC'
+            ],
             5
         );
         return $this->render('main/homepage.html.twig', [
@@ -250,6 +252,9 @@ class MainController extends BaseController
             [
                 'isPassed' => false,
                 'isCancelled' => false
+            ],
+            [
+                'date' => 'ASC'
             ]
         );
         return $this->render('main/shows.html.twig', [
